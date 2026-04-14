@@ -1,463 +1,463 @@
 {
   "common": {
     "brand": "Teleprompter Online",
-    "tagline": "Free online teleprompter for creators",
-    "ctaTryNow": "Try it now",
-    "ctaLearnMore": "Learn more",
-    "skipToContent": "Skip to content",
-    "toggleTheme": "Toggle theme",
-    "changeLanguage": "Change language",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "tagline": "Teleprompter online grátis para criadores",
+    "ctaTryNow": "Experimente agora",
+    "ctaLearnMore": "Saiba mais",
+    "skipToContent": "Pular para o conteúdo",
+    "toggleTheme": "Alternar tema",
+    "changeLanguage": "Mudar idioma",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
   },
   "nav": {
-    "home": "Home",
-    "features": "Features",
-    "howToUse": "How to use",
-    "useCases": "Use cases",
-    "faq": "FAQ"
+    "home": "Início",
+    "features": "Recursos",
+    "howToUse": "Como usar",
+    "useCases": "Casos de uso",
+    "faq": "Perguntas frequentes"
   },
   "footer": {
-    "tagline": "A free, privacy-friendly teleprompter that runs entirely in your browser.",
-    "product": "Product",
-    "resources": "Resources",
+    "tagline": "Um teleprompter grátis, focado em privacidade, que roda inteiramente no seu navegador.",
+    "product": "Produto",
+    "resources": "Recursos",
     "legal": "Legal",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "copyright": "© {year} Teleprompter Online. All rights reserved.",
-    "madeWith": "Built for creators, educators and speakers."
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "copyright": "© {year} Teleprompter Online. Todos os direitos reservados.",
+    "madeWith": "Feito para criadores, educadores e palestrantes."
   },
   "teleprompter": {
-    "placeholder": "Paste or type your script here. Press Space to play.",
+    "placeholder": "Cole ou digite seu roteiro aqui. Pressione Espaço para iniciar.",
     "controls": {
-      "play": "Play",
-      "pause": "Pause",
-      "stop": "Stop",
-      "restart": "Restart",
-      "fullscreen": "Fullscreen",
-      "exitFullscreen": "Exit fullscreen",
-      "settings": "Settings",
-      "save": "Save script",
-      "load": "Load",
-      "shortcuts": "Shortcuts"
+      "play": "Reproduzir",
+      "pause": "Pausar",
+      "stop": "Parar",
+      "restart": "Reiniciar",
+      "fullscreen": "Tela cheia",
+      "exitFullscreen": "Sair da tela cheia",
+      "settings": "Configurações",
+      "save": "Salvar roteiro",
+      "load": "Carregar",
+      "shortcuts": "Atalhos"
     },
     "settings": {
-      "title": "Prompter settings",
-      "speed": "Speed",
-      "fontSize": "Font size",
-      "fontFamily": "Font family",
-      "lineHeight": "Line height",
-      "mirror": "Mirror",
-      "mirrorHorizontal": "Mirror horizontal",
-      "mirrorVertical": "Mirror vertical",
+      "title": "Configurações do prompter",
+      "speed": "Velocidade",
+      "fontSize": "Tamanho da fonte",
+      "fontFamily": "Família da fonte",
+      "lineHeight": "Altura da linha",
+      "mirror": "Espelhar",
+      "mirrorHorizontal": "Espelhar na horizontal",
+      "mirrorVertical": "Espelhar na vertical",
       "fontSans": "Sans",
       "fontSerif": "Serif",
       "fontMono": "Mono",
-      "countdown": "Countdown before start",
-      "countdownSeconds": "{seconds} seconds",
-      "reset": "Reset to defaults",
-      "textColor": "Text color",
-      "backgroundColor": "Background",
-      "alignment": "Alignment",
-      "alignLeft": "Left",
-      "alignCenter": "Center",
-      "alignRight": "Right"
+      "countdown": "Contagem regressiva antes de iniciar",
+      "countdownSeconds": "{seconds} segundos",
+      "reset": "Restaurar padrões",
+      "textColor": "Cor do texto",
+      "backgroundColor": "Plano de fundo",
+      "alignment": "Alinhamento",
+      "alignLeft": "Esquerda",
+      "alignCenter": "Centro",
+      "alignRight": "Direita"
     },
     "savedScripts": {
-      "title": "Saved scripts",
-      "empty": "No saved scripts yet. Write something and save it to keep it locally on this device.",
-      "saveTitle": "Save your script",
-      "namePlaceholder": "Script name",
-      "save": "Save",
-      "cancel": "Cancel",
-      "load": "Load",
-      "delete": "Delete",
-      "confirmDelete": "Delete this script?",
-      "saveSuccess": "Script saved.",
-      "loadSuccess": "Script loaded."
+      "title": "Roteiros salvos",
+      "empty": "Nenhum roteiro salvo ainda. Escreva algo e salve para manter localmente neste dispositivo.",
+      "saveTitle": "Salvar seu roteiro",
+      "namePlaceholder": "Nome do roteiro",
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "load": "Carregar",
+      "delete": "Excluir",
+      "confirmDelete": "Excluir este roteiro?",
+      "saveSuccess": "Roteiro salvo.",
+      "loadSuccess": "Roteiro carregado."
     },
     "shortcuts": {
-      "title": "Keyboard shortcuts",
-      "playPause": "Play / Pause",
-      "speedUp": "Increase speed",
-      "speedDown": "Decrease speed",
-      "fontUp": "Increase font",
-      "fontDown": "Decrease font",
-      "mirror": "Toggle mirror",
-      "fullscreen": "Toggle fullscreen",
-      "restart": "Restart",
-      "save": "Save script",
-      "exit": "Exit fullscreen"
+      "title": "Atalhos de teclado",
+      "playPause": "Reproduzir / Pausar",
+      "speedUp": "Aumentar velocidade",
+      "speedDown": "Diminuir velocidade",
+      "fontUp": "Aumentar fonte",
+      "fontDown": "Diminuir fonte",
+      "mirror": "Alternar espelhamento",
+      "fullscreen": "Alternar tela cheia",
+      "restart": "Reiniciar",
+      "save": "Salvar roteiro",
+      "exit": "Sair da tela cheia"
     },
     "countdown": {
-      "getReady": "Get ready…"
+      "getReady": "Prepare-se…"
     },
     "editor": {
-      "title": "Your script",
-      "wordCount": "{count, plural, =0 {No words} one {1 word} other {# words}}",
-      "estimatedTime": "About {minutes} min at current speed",
-      "clear": "Clear",
-      "confirmClear": "Clear the current script?"
+      "title": "Seu roteiro",
+      "wordCount": "{count, plural, =0 {Nenhuma palavra} one {1 palavra} other {# palavras}}",
+      "estimatedTime": "Cerca de {minutes} min na velocidade atual",
+      "clear": "Limpar",
+      "confirmClear": "Limpar o roteiro atual?"
     },
     "tips": {
-      "title": "Quick tips",
+      "title": "Dicas rápidas",
       "items": [
-        "Press Space to start and pause playback.",
-        "Use the arrow keys to fine-tune speed on the fly.",
-        "Toggle mirror mode if you use a reflective teleprompter rig.",
-        "Your scripts are saved privately in your browser."
+        "Pressione Espaço para iniciar e pausar a reprodução.",
+        "Use as setas do teclado para ajustar a velocidade em tempo real.",
+        "Ative o modo espelho se você usa um rig de teleprompter com reflexo.",
+        "Seus roteiros ficam salvos de forma privada no seu navegador."
       ]
     }
   },
   "home": {
     "meta": {
-      "title": "Teleprompter Online – Free Browser Teleprompter, No Signup",
-      "description": "A free online teleprompter that runs in your browser. Paste your script, adjust speed and font, mirror for reflective rigs, go fullscreen, and start recording. No signup, no install."
+      "title": "Teleprompter Online – Teleprompter grátis no navegador, sem cadastro",
+      "description": "Um teleprompter online grátis que roda no seu navegador. Cole seu roteiro, ajuste velocidade e fonte, espelhe para rigs com reflexo, entre em tela cheia e comece a gravar. Sem cadastro, sem instalação."
     },
     "hero": {
-      "eyebrow": "Free · No signup · Privacy-first",
-      "title": "Free online teleprompter for creators",
-      "subtitle": "Paste your script, hit play, and read with confidence. Teleprompter Online works right in your browser on desktop, tablet and phone — no install, no account, no watermark.",
-      "primaryCta": "Start prompting",
-      "secondaryCta": "See features"
+      "eyebrow": "Grátis · Sem cadastro · Privacidade em primeiro lugar",
+      "title": "Teleprompter online grátis para criadores",
+      "subtitle": "Cole seu roteiro, dê play e leia com confiança. O Teleprompter Online funciona direto no seu navegador, no desktop, tablet ou celular — sem instalação, sem conta e sem marca d'água.",
+      "primaryCta": "Começar a usar o prompter",
+      "secondaryCta": "Ver recursos"
     },
     "features": {
-      "title": "Everything you need to read on camera",
-      "subtitle": "Built with the simplicity of classic tools and the polish of modern web apps.",
+      "title": "Tudo o que você precisa para ler na câmera",
+      "subtitle": "Feito com a simplicidade dos clássicos e o acabamento dos aplicativos web modernos.",
       "items": {
         "instant": {
-          "title": "Instant, no signup",
-          "body": "Open the page, paste your script and hit play. There's nothing to install and no account to create."
+          "title": "Instantâneo, sem cadastro",
+          "body": "Abra a página, cole seu roteiro e dê play. Não há nada para instalar nem conta para criar."
         },
         "speedFont": {
-          "title": "Smooth speed & font control",
-          "body": "Dial in the right scroll speed and text size for your delivery, from calm 20 px/s to rapid 400 px/s."
+          "title": "Controle fluido de velocidade e fonte",
+          "body": "Ajuste a velocidade de rolagem e o tamanho do texto conforme sua fala, de calmos 20 px/s a rápidos 400 px/s."
         },
         "mirror": {
-          "title": "Mirror mode",
-          "body": "Flip the text horizontally or vertically to use with a beam-splitter teleprompter rig in front of any camera."
+          "title": "Modo espelho",
+          "body": "Inverta o texto na horizontal ou na vertical para usar com um rig de teleprompter com vidro bipartido na frente de qualquer câmera."
         },
         "fullscreen": {
-          "title": "Fullscreen focus",
-          "body": "One tap to go distraction-free. The reading indicator keeps you on the next line at a glance."
+          "title": "Foco em tela cheia",
+          "body": "Um toque para um ambiente livre de distrações. O indicador de leitura mantém você na próxima linha de relance."
         },
         "shortcuts": {
-          "title": "Keyboard shortcuts",
-          "body": "Play, pause, adjust speed and font, and toggle mirror without ever leaving the keyboard."
+          "title": "Atalhos de teclado",
+          "body": "Reproduzir, pausar, ajustar velocidade e fonte e alternar o espelhamento sem tirar as mãos do teclado."
         },
         "savedScripts": {
-          "title": "Saved scripts",
-          "body": "Keep multiple scripts on your device. Everything is stored privately in your browser — nothing leaves your computer."
+          "title": "Roteiros salvos",
+          "body": "Mantenha vários roteiros no seu dispositivo. Tudo fica armazenado de forma privada no seu navegador — nada sai do seu computador."
         },
         "mobile": {
-          "title": "Mobile-first",
-          "body": "Tuned for phones and tablets with large touch targets, safe-area padding and landscape fullscreen."
+          "title": "Pensado para o mobile",
+          "body": "Otimizado para celulares e tablets, com áreas de toque amplas, respeito à safe-area e tela cheia em modo paisagem."
         },
         "privacy": {
-          "title": "Privacy-friendly",
-          "body": "No tracking of your scripts, no uploads. The teleprompter engine runs entirely client-side."
+          "title": "Amigável à privacidade",
+          "body": "Sem rastreamento dos seus roteiros e sem uploads. O motor do teleprompter roda inteiramente no lado do cliente."
         }
       }
     },
     "useCases": {
-      "title": "Made for every kind of speaker",
-      "subtitle": "From first-time creators to seasoned presenters, Teleprompter Online adapts to your flow.",
+      "title": "Feito para todo tipo de orador",
+      "subtitle": "De criadores iniciantes a apresentadores experientes, o Teleprompter Online se adapta ao seu ritmo.",
       "items": {
         "youtubers": {
           "title": "YouTubers",
-          "body": "Record sharper intros and B-roll scripts without stumbling over the next line."
+          "body": "Grave introduções e roteiros de B-roll mais precisos sem tropeçar na próxima linha."
         },
         "podcasters": {
           "title": "Podcasters",
-          "body": "Keep long-form monologues tight with a gentle scroll that matches your pacing."
+          "body": "Mantenha monólogos longos afinados com uma rolagem suave que acompanha seu ritmo."
         },
         "presenters": {
-          "title": "Presenters",
-          "body": "Deliver keynotes and webinars with your eyes on the camera, not on your notes."
+          "title": "Apresentadores",
+          "body": "Faça keynotes e webinars olhando para a câmera, não para as anotações."
         },
         "teachers": {
-          "title": "Teachers",
-          "body": "Record lectures and course intros with consistent delivery on every take."
+          "title": "Professores",
+          "body": "Grave aulas e introduções de cursos com entrega consistente em cada take."
         },
         "streamers": {
           "title": "Streamers",
-          "body": "Glance at talking points during live broadcasts without breaking eye contact."
+          "body": "Dê uma olhada rápida nos tópicos durante transmissões ao vivo sem quebrar o contato visual."
         }
       },
-      "seeAll": "View details"
+      "seeAll": "Ver detalhes"
     },
     "howItWorks": {
-      "title": "Three steps to a smoother take",
+      "title": "Três passos para um take mais fluido",
       "steps": {
         "one": {
-          "title": "Paste your script",
-          "body": "Drop in text from Docs, Word or anywhere else. Your script stays in your browser."
+          "title": "Cole seu roteiro",
+          "body": "Insira o texto do Docs, Word ou de qualquer outro lugar. Seu roteiro permanece no seu navegador."
         },
         "two": {
-          "title": "Tune speed & font",
-          "body": "Adjust scroll speed, font size and mirror to match your camera and comfort level."
+          "title": "Ajuste velocidade e fonte",
+          "body": "Regule a velocidade de rolagem, o tamanho da fonte e o espelhamento de acordo com sua câmera e conforto."
         },
         "three": {
-          "title": "Press play & record",
-          "body": "Go fullscreen and read with confidence. Use your phone, tablet or computer — whatever you have."
+          "title": "Dê play e grave",
+          "body": "Entre em tela cheia e leia com confiança. Use seu celular, tablet ou computador — o que você tiver à mão."
         }
       }
     },
     "faq": {
-      "title": "Frequently asked questions",
+      "title": "Perguntas frequentes",
       "items": [
         {
-          "q": "Is Teleprompter Online really free?",
-          "a": "Yes. The app is fully usable for free, forever. There's no account, no watermark, no feature gate and no upload."
+          "q": "O Teleprompter Online é realmente grátis?",
+          "a": "Sim. O aplicativo é totalmente utilizável de graça, para sempre. Sem conta, sem marca d'água, sem limitações de recursos e sem upload."
         },
         {
-          "q": "Do I need to install anything?",
-          "a": "No. Teleprompter Online runs directly in your web browser. It works on Chrome, Safari, Firefox and Edge on desktop, tablet and phone."
+          "q": "Preciso instalar alguma coisa?",
+          "a": "Não. O Teleprompter Online roda diretamente no seu navegador. Funciona no Chrome, Safari, Firefox e Edge, em desktop, tablet e celular."
         },
         {
-          "q": "Is my script private?",
-          "a": "Yes. Your script never leaves your device. Saved scripts live in your browser's local storage and are not uploaded to any server."
+          "q": "Meu roteiro é privado?",
+          "a": "Sim. Seu roteiro nunca sai do seu dispositivo. Os roteiros salvos ficam no armazenamento local do seu navegador e não são enviados para nenhum servidor."
         },
         {
-          "q": "Can I use this with a physical teleprompter rig?",
-          "a": "Yes. Use the mirror toggle to flip the text horizontally for a beam-splitter teleprompter in front of your camera."
+          "q": "Posso usar com um rig físico de teleprompter?",
+          "a": "Sim. Use o botão de espelho para inverter o texto na horizontal e usar com um teleprompter de vidro bipartido na frente da sua câmera."
         },
         {
-          "q": "Does it work on mobile?",
-          "a": "It's designed for mobile. You get large touch targets, landscape fullscreen and a tuned default font size that reads comfortably on small screens."
+          "q": "Funciona no celular?",
+          "a": "Foi projetado para o celular. Você tem áreas de toque amplas, tela cheia em modo paisagem e um tamanho de fonte padrão pensado para leitura confortável em telas pequenas."
         },
         {
-          "q": "Can I control scroll speed while reading?",
-          "a": "Yes. Use the arrow keys on desktop or the on-screen speed slider on mobile to adjust scroll speed in real time."
+          "q": "Dá para controlar a velocidade de rolagem enquanto leio?",
+          "a": "Sim. Use as setas do teclado no desktop ou o controle deslizante de velocidade na tela no celular para ajustar a rolagem em tempo real."
         },
         {
-          "q": "Does the teleprompter stop at the end?",
-          "a": "Yes. Playback gently stops at the end of your script. Press Restart to go back to the top."
+          "q": "O teleprompter para no final?",
+          "a": "Sim. A reprodução para suavemente no final do seu roteiro. Pressione Reiniciar para voltar ao começo."
         }
       ]
     },
     "cta": {
-      "title": "Ready to read on camera with confidence?",
-      "subtitle": "Open the prompter, paste your script, and press play.",
-      "button": "Go to the prompter"
+      "title": "Pronto para ler na câmera com confiança?",
+      "subtitle": "Abra o prompter, cole seu roteiro e dê play.",
+      "button": "Ir para o prompter"
     }
   },
   "features": {
     "meta": {
-      "title": "Features – Teleprompter Online",
-      "description": "Explore every feature of Teleprompter Online: scroll speed control, font tuning, mirror mode, fullscreen, keyboard shortcuts, saved scripts and privacy-first storage."
+      "title": "Recursos – Teleprompter Online grátis",
+      "description": "Explore todos os recursos do Teleprompter Online: controle de velocidade de rolagem, ajuste de fonte, modo espelho, tela cheia, atalhos de teclado, roteiros salvos e armazenamento com privacidade em primeiro lugar."
     },
-    "title": "Features",
-    "subtitle": "A complete list of what Teleprompter Online can do.",
+    "title": "Recursos",
+    "subtitle": "A lista completa do que o Teleprompter Online pode fazer.",
     "sections": {
       "prompter": {
-        "title": "Prompter engine",
+        "title": "Motor do prompter",
         "items": [
-          "Smooth 60 fps scroll powered by requestAnimationFrame.",
-          "Scroll speed from 20 px/s to 400 px/s with fine steps.",
-          "Optional 3-second countdown before playback starts.",
-          "Centered reading indicator so you always know the next line.",
-          "Playback automatically stops when your script ends."
+          "Rolagem suave a 60 fps com requestAnimationFrame.",
+          "Velocidade de rolagem de 20 px/s a 400 px/s com passos finos.",
+          "Contagem regressiva opcional de 3 segundos antes de iniciar.",
+          "Indicador de leitura centralizado para você saber sempre qual é a próxima linha.",
+          "A reprodução para automaticamente quando seu roteiro termina."
         ]
       },
       "typography": {
-        "title": "Typography & display",
+        "title": "Tipografia e exibição",
         "items": [
-          "Font size from 16 px to 128 px.",
-          "Sans, serif and mono font family presets.",
-          "Adjustable line height for comfortable reading.",
-          "Mirror horizontally or vertically for teleprompter rigs.",
-          "Dark and light themes."
+          "Tamanho da fonte de 16 px a 128 px.",
+          "Presets de família de fonte sans, serif e mono.",
+          "Altura de linha ajustável para leitura confortável.",
+          "Espelhamento horizontal ou vertical para rigs de teleprompter.",
+          "Temas claro e escuro."
         ]
       },
       "controls": {
-        "title": "Controls & shortcuts",
+        "title": "Controles e atalhos",
         "items": [
-          "Keyboard: Space play/pause, arrows for speed, +/- for font, M mirror, F fullscreen.",
-          "Tap-to-pause on the prompter canvas for touch devices.",
-          "Fullscreen with landscape orientation lock on supported mobile browsers.",
-          "A minimal control bar stays out of the way while you read."
+          "Teclado: Espaço para reproduzir/pausar, setas para velocidade, +/- para fonte, M para espelho, F para tela cheia.",
+          "Toque para pausar na área do prompter em dispositivos com tela sensível ao toque.",
+          "Tela cheia com bloqueio de orientação em paisagem nos navegadores móveis compatíveis.",
+          "Uma barra de controles mínima permanece fora do caminho enquanto você lê."
         ]
       },
       "scripts": {
-        "title": "Scripts & storage",
+        "title": "Roteiros e armazenamento",
         "items": [
-          "Paste any plain text or formatted content.",
-          "Save multiple named scripts privately in your browser.",
-          "Load or delete scripts with one click.",
-          "Nothing is uploaded — your content stays on your device."
+          "Cole qualquer texto simples ou conteúdo formatado.",
+          "Salve vários roteiros nomeados de forma privada no seu navegador.",
+          "Carregue ou exclua roteiros com um clique.",
+          "Nada é enviado — seu conteúdo permanece no seu dispositivo."
         ]
       },
       "platform": {
-        "title": "Platform & privacy",
+        "title": "Plataforma e privacidade",
         "items": [
-          "Works on any modern browser: Chrome, Safari, Firefox, Edge.",
-          "Responsive layout for phone, tablet and desktop.",
-          "Available in six languages with matching content.",
-          "No tracking of your scripts and no third-party analytics selling your data."
+          "Funciona em qualquer navegador moderno: Chrome, Safari, Firefox, Edge.",
+          "Layout responsivo para celular, tablet e desktop.",
+          "Disponível em seis idiomas com conteúdo correspondente.",
+          "Sem rastreamento dos seus roteiros e sem analytics de terceiros vendendo seus dados."
         ]
       }
     }
   },
   "howToUse": {
     "meta": {
-      "title": "How to use the online teleprompter",
-      "description": "Learn how to use Teleprompter Online in minutes: paste your script, adjust speed and font, mirror for reflective rigs, and start recording."
+      "title": "Como usar o teleprompter online grátis",
+      "description": "Aprenda a usar o Teleprompter Online em minutos: cole seu roteiro, ajuste velocidade e fonte, espelhe para rigs com reflexo e comece a gravar."
     },
-    "title": "How to use Teleprompter Online",
-    "subtitle": "Get a smoother take in a couple of minutes.",
+    "title": "Como usar o Teleprompter Online",
+    "subtitle": "Tenha um take mais fluido em alguns minutos.",
     "steps": [
       {
-        "title": "Open the prompter",
-        "body": "Go to teleprompteronline.net. No login, no install. You're already on the prompter page."
+        "title": "Abra o prompter",
+        "body": "Acesse teleprompteronline.net. Sem login, sem instalação. Você já está na página do prompter."
       },
       {
-        "title": "Paste your script",
-        "body": "Copy text from any document — Google Docs, Microsoft Word, Notion, plain text — and paste it into the script area."
+        "title": "Cole seu roteiro",
+        "body": "Copie o texto de qualquer documento — Google Docs, Microsoft Word, Notion, texto simples — e cole na área do roteiro."
       },
       {
-        "title": "Choose your speed and font",
-        "body": "Use the speed slider to match your natural pace. Pick a font size that feels comfortable from a reading distance."
+        "title": "Escolha sua velocidade e fonte",
+        "body": "Use o controle deslizante de velocidade para acompanhar seu ritmo natural. Escolha um tamanho de fonte confortável para a distância de leitura."
       },
       {
-        "title": "Turn on mirror mode if needed",
-        "body": "If you use a glass teleprompter rig, flip the text horizontally so it reads correctly through the reflection."
+        "title": "Ative o modo espelho se necessário",
+        "body": "Se você usa um rig de teleprompter de vidro, inverta o texto na horizontal para que ele apareça corretamente pelo reflexo."
       },
       {
-        "title": "Go fullscreen",
-        "body": "Tap the fullscreen button for a distraction-free view. On mobile, the prompter will switch to landscape if your device supports it."
+        "title": "Entre em tela cheia",
+        "body": "Toque no botão de tela cheia para uma visão sem distrações. No celular, o prompter vai para o modo paisagem se o seu aparelho for compatível."
       },
       {
-        "title": "Press play and record",
-        "body": "Hit Play (or the Space bar) and start your recording. Use arrow keys or the on-screen slider to nudge speed mid-read."
+        "title": "Dê play e grave",
+        "body": "Pressione Reproduzir (ou a barra de Espaço) e comece a gravar. Use as setas ou o controle deslizante na tela para ajustar a velocidade durante a leitura."
       }
     ],
-    "tipsTitle": "Tips for a great take",
+    "tipsTitle": "Dicas para um ótimo take",
     "tips": [
-      "Do a short rehearsal to find your ideal speed before recording.",
-      "Keep a comfortable distance between your eyes and the screen — around an arm's length for phones.",
-      "If you're filming with an external camera, place the phone or tablet as close to the lens as possible to preserve eye contact.",
-      "Break long paragraphs into shorter lines. Scripts scroll better when each line is readable in one glance.",
-      "Save your common intros and outros as named scripts to reuse later."
+      "Faça um ensaio rápido para encontrar sua velocidade ideal antes de gravar.",
+      "Mantenha uma distância confortável entre os seus olhos e a tela — cerca do comprimento de um braço no celular.",
+      "Se você estiver filmando com uma câmera externa, coloque o celular ou tablet o mais perto possível da lente para preservar o contato visual.",
+      "Quebre parágrafos longos em linhas mais curtas. Roteiros rolam melhor quando cada linha é legível em uma olhada.",
+      "Salve suas aberturas e encerramentos comuns como roteiros nomeados para reutilizar depois."
     ]
   },
   "useCases": {
     "meta": {
-      "title": "Use cases – Teleprompter Online",
-      "description": "See how YouTubers, podcasters, presenters, teachers and streamers use Teleprompter Online to record sharper takes."
+      "title": "Casos de uso – Teleprompter Online grátis",
+      "description": "Veja como YouTubers, podcasters, apresentadores, professores e streamers usam o Teleprompter Online para gravar takes mais precisos."
     },
-    "title": "Who uses Teleprompter Online",
-    "subtitle": "A flexible prompter for every kind of speaker.",
-    "seeAll": "See all use cases",
+    "title": "Quem usa o Teleprompter Online",
+    "subtitle": "Um prompter flexível para todo tipo de orador.",
+    "seeAll": "Ver todos os casos de uso",
     "items": {
       "youtubers": {
         "meta": {
-          "title": "Teleprompter for YouTubers",
-          "description": "Record sharper YouTube intros, tutorials and vlogs with a free browser teleprompter. Mirror mode, fullscreen and keyboard shortcuts included."
+          "title": "Teleprompter online para YouTubers",
+          "description": "Grave introduções, tutoriais e vlogs mais precisos no YouTube com um teleprompter grátis no navegador. Inclui modo espelho, tela cheia e atalhos de teclado."
         },
-        "title": "Teleprompter for YouTubers",
-        "subtitle": "Make every take count.",
+        "title": "Teleprompter para YouTubers",
+        "subtitle": "Faça cada take valer a pena.",
         "sections": {
           "why": {
-            "title": "Why creators love it",
+            "title": "Por que os criadores adoram",
             "items": [
-              "Cut down on retakes with a steady scroll.",
-              "Look directly at the lens while you read.",
-              "Save intros and outros as reusable scripts.",
-              "Works whether you film on a phone or a mirrorless camera."
+              "Reduza o número de refilmagens com uma rolagem constante.",
+              "Olhe diretamente para a lente enquanto lê.",
+              "Salve introduções e encerramentos como roteiros reutilizáveis.",
+              "Funciona tanto se você grava no celular quanto em uma câmera mirrorless."
             ]
           },
           "setup": {
-            "title": "A simple setup",
-            "body": "Put your phone or tablet right under your camera, paste your script, set the speed to match your delivery, and press Play. If you use a beam-splitter rig, turn on mirror mode and you're set."
+            "title": "Uma configuração simples",
+            "body": "Coloque seu celular ou tablet logo abaixo da câmera, cole o roteiro, ajuste a velocidade de acordo com sua fala e pressione Reproduzir. Se você usa um rig de vidro bipartido, ative o modo espelho e está pronto."
           }
         }
       },
       "podcasters": {
         "meta": {
-          "title": "Teleprompter for podcasters",
-          "description": "Use Teleprompter Online for tight podcast monologues, sponsor reads and video podcast takes."
+          "title": "Teleprompter online para podcasters",
+          "description": "Use o Teleprompter Online para monólogos de podcast bem amarrados, leituras de patrocinadores e gravações de videopodcast."
         },
-        "title": "Teleprompter for podcasters",
-        "subtitle": "Keep your monologues tight.",
+        "title": "Teleprompter para podcasters",
+        "subtitle": "Mantenha seus monólogos amarrados.",
         "sections": {
           "why": {
-            "title": "Why podcasters use it",
+            "title": "Por que podcasters usam",
             "items": [
-              "Deliver ad reads and intros with consistent pacing.",
-              "Stay on-script for structured interviews and solo episodes.",
-              "Ideal for video podcasts recorded on a second monitor."
+              "Faça leituras de anúncios e introduções com ritmo consistente.",
+              "Mantenha-se no roteiro em entrevistas estruturadas e episódios solo.",
+              "Ideal para videopodcasts gravados com um segundo monitor."
             ]
           },
           "setup": {
-            "title": "A comfortable read",
-            "body": "Set a slightly slower scroll speed and a larger font for relaxed delivery. Save your intro, outro and ad reads as separate scripts to load when you need them."
+            "title": "Uma leitura confortável",
+            "body": "Defina uma velocidade de rolagem um pouco mais lenta e uma fonte maior para uma entrega relaxada. Salve sua abertura, encerramento e leituras de anúncios como roteiros separados para carregar quando precisar."
           }
         }
       },
       "presenters": {
         "meta": {
-          "title": "Teleprompter for presenters",
-          "description": "A free online teleprompter for keynotes, webinars and internal presentations. Works on any device, no signup."
+          "title": "Teleprompter online para apresentadores",
+          "description": "Um teleprompter online grátis para keynotes, webinars e apresentações internas. Funciona em qualquer dispositivo, sem cadastro."
         },
-        "title": "Teleprompter for presenters",
-        "subtitle": "Deliver keynotes with confidence.",
+        "title": "Teleprompter para apresentadores",
+        "subtitle": "Faça keynotes com confiança.",
         "sections": {
           "why": {
-            "title": "Why presenters use it",
+            "title": "Por que apresentadores usam",
             "items": [
-              "Keep your eyes on the camera during webinars.",
-              "Never lose your place in long keynote scripts.",
-              "Run it on a second monitor or tablet while you present."
+              "Mantenha os olhos na câmera durante webinars.",
+              "Nunca se perca em roteiros longos de keynote.",
+              "Use em um segundo monitor ou tablet enquanto apresenta."
             ]
           },
           "setup": {
-            "title": "Pro delivery in minutes",
-            "body": "Paste your script, dial in a calm scroll speed, and go fullscreen on a secondary screen. Your audience won't notice a thing."
+            "title": "Entrega profissional em minutos",
+            "body": "Cole seu roteiro, ajuste uma velocidade calma de rolagem e entre em tela cheia em uma tela secundária. Seu público não vai perceber."
           }
         }
       },
       "teachers": {
         "meta": {
-          "title": "Teleprompter for teachers",
-          "description": "Record lectures, course intros and classroom videos with a free online teleprompter that saves scripts locally."
+          "title": "Teleprompter online para professores",
+          "description": "Grave aulas, introduções de cursos e vídeos de sala de aula com um teleprompter online grátis que salva os roteiros localmente."
         },
-        "title": "Teleprompter for teachers",
-        "subtitle": "Consistent delivery, every lesson.",
+        "title": "Teleprompter para professores",
+        "subtitle": "Entrega consistente em cada aula.",
         "sections": {
           "why": {
-            "title": "Why educators use it",
+            "title": "Por que educadores usam",
             "items": [
-              "Record course intros and lessons with a steady pace.",
-              "Reuse standard scripts across multiple classes.",
-              "Keep your energy up without stumbling on the next line."
+              "Grave introduções de cursos e aulas com ritmo constante.",
+              "Reutilize roteiros padrão entre várias turmas.",
+              "Mantenha a energia sem tropeçar na próxima linha."
             ]
           },
           "setup": {
-            "title": "Classroom-ready",
-            "body": "Save a standard intro as a script, load it before each lecture, adjust the font for your camera distance, and press Play."
+            "title": "Pronto para a sala de aula",
+            "body": "Salve uma introdução padrão como roteiro, carregue-a antes de cada aula, ajuste a fonte para a distância da sua câmera e pressione Reproduzir."
           }
         }
       },
       "streamers": {
         "meta": {
-          "title": "Teleprompter for streamers",
-          "description": "Use Teleprompter Online during live streams to glance at notes without breaking eye contact."
+          "title": "Teleprompter online para streamers",
+          "description": "Use o Teleprompter Online durante transmissões ao vivo para consultar anotações sem quebrar o contato visual."
         },
-        "title": "Teleprompter for streamers",
-        "subtitle": "Notes on demand, without breaking eye contact.",
+        "title": "Teleprompter para streamers",
+        "subtitle": "Notas à mão, sem quebrar o contato visual.",
         "sections": {
           "why": {
-            "title": "Why streamers use it",
+            "title": "Por que streamers usam",
             "items": [
-              "Open it on a second screen during your live stream.",
-              "Save sponsor reads and CTAs for quick recall.",
-              "Keep pacing natural even during long broadcasts."
+              "Abra em uma segunda tela durante sua transmissão ao vivo.",
+              "Salve leituras de patrocinadores e CTAs para acesso rápido.",
+              "Mantenha o ritmo natural mesmo em transmissões longas."
             ]
           },
           "setup": {
-            "title": "Fit it to your stream",
-            "body": "Dock the teleprompter on a secondary monitor near your camera. Use light theme in bright rooms and dark theme at night."
+            "title": "Ajuste à sua live",
+            "body": "Posicione o teleprompter em um monitor secundário perto da sua câmera. Use o tema claro em ambientes iluminados e o tema escuro à noite."
           }
         }
       }
@@ -465,75 +465,75 @@
   },
   "faq": {
     "meta": {
-      "title": "FAQ – Teleprompter Online",
-      "description": "Answers to common questions about Teleprompter Online: pricing, privacy, features, mobile support and teleprompter rig compatibility."
+      "title": "Perguntas frequentes – Teleprompter Online grátis",
+      "description": "Respostas às perguntas mais comuns sobre o Teleprompter Online: preço, privacidade, recursos, suporte em celulares e compatibilidade com rigs de teleprompter."
     },
-    "title": "Frequently asked questions",
-    "subtitle": "Everything you might want to know before using Teleprompter Online."
+    "title": "Perguntas frequentes",
+    "subtitle": "Tudo o que você pode querer saber antes de usar o Teleprompter Online."
   },
   "privacy": {
     "meta": {
-      "title": "Privacy policy – Teleprompter Online",
-      "description": "How Teleprompter Online handles your data. Spoiler: we don't collect your scripts."
+      "title": "Política de privacidade – Teleprompter Online",
+      "description": "Como o Teleprompter Online lida com os seus dados. Spoiler: não coletamos seus roteiros."
     },
-    "title": "Privacy policy",
-    "updated": "Last updated: {date}",
+    "title": "Política de privacidade",
+    "updated": "Última atualização: {date}",
     "sections": [
       {
-        "title": "The short version",
-        "body": "Teleprompter Online is a static web app that runs entirely in your browser. We don't create accounts, we don't receive your scripts, and we don't sell data."
+        "title": "A versão curta",
+        "body": "O Teleprompter Online é um aplicativo web estático que roda inteiramente no seu navegador. Não criamos contas, não recebemos seus roteiros e não vendemos dados."
       },
       {
-        "title": "What stays on your device",
-        "body": "Any scripts you save are stored in your browser's local storage on the device you used. Clearing your browser data will remove them. They are never uploaded to a server."
+        "title": "O que fica no seu dispositivo",
+        "body": "Quaisquer roteiros que você salvar são armazenados no armazenamento local do seu navegador, no dispositivo que você usou. Limpar os dados do navegador vai removê-los. Eles nunca são enviados para um servidor."
       },
       {
         "title": "Analytics",
-        "body": "We may use privacy-friendly, aggregate analytics (such as Cloudflare Web Analytics) to understand which pages are used. These analytics do not use cookies or personal identifiers and do not track you across sites."
+        "body": "Podemos usar analytics agregados e amigáveis à privacidade (como o Cloudflare Web Analytics) para entender quais páginas são utilizadas. Esses analytics não usam cookies nem identificadores pessoais e não rastreiam você entre sites."
       },
       {
-        "title": "Third parties",
-        "body": "The site is hosted on Cloudflare Pages. Cloudflare may log infrastructure-level request data (such as IP addresses) for security and abuse prevention."
+        "title": "Terceiros",
+        "body": "O site é hospedado no Cloudflare Pages. A Cloudflare pode registrar dados de requisição em nível de infraestrutura (como endereços IP) para fins de segurança e prevenção de abuso."
       },
       {
-        "title": "Contact",
-        "body": "Questions about privacy? Reach out through the contact details on our website."
+        "title": "Contato",
+        "body": "Dúvidas sobre privacidade? Entre em contato pelos dados disponíveis no nosso site."
       }
     ]
   },
   "terms": {
     "meta": {
-      "title": "Terms of service – Teleprompter Online",
-      "description": "The terms under which you can use Teleprompter Online."
+      "title": "Termos de serviço – Teleprompter Online",
+      "description": "Os termos sob os quais você pode usar o Teleprompter Online."
     },
-    "title": "Terms of service",
-    "updated": "Last updated: {date}",
+    "title": "Termos de serviço",
+    "updated": "Última atualização: {date}",
     "sections": [
       {
-        "title": "Acceptance",
-        "body": "By using Teleprompter Online you agree to these terms. If you do not agree, please do not use the service."
+        "title": "Aceitação",
+        "body": "Ao usar o Teleprompter Online você concorda com estes termos. Se não concordar, por favor não utilize o serviço."
       },
       {
-        "title": "Use of the service",
-        "body": "Teleprompter Online is provided free of charge, as-is, for personal and commercial use. You are responsible for the content of your scripts."
+        "title": "Uso do serviço",
+        "body": "O Teleprompter Online é fornecido gratuitamente, no estado em que se encontra, para uso pessoal e comercial. Você é responsável pelo conteúdo dos seus roteiros."
       },
       {
-        "title": "No warranty",
-        "body": "The service is provided without warranty of any kind. We do our best to keep it reliable, but we cannot guarantee uninterrupted availability."
+        "title": "Sem garantia",
+        "body": "O serviço é fornecido sem garantia de qualquer tipo. Fazemos o possível para mantê-lo confiável, mas não podemos garantir disponibilidade ininterrupta."
       },
       {
-        "title": "Limitation of liability",
-        "body": "To the extent permitted by law, the operators of Teleprompter Online are not liable for any damages arising from the use or inability to use the service."
+        "title": "Limitação de responsabilidade",
+        "body": "Na medida permitida por lei, os operadores do Teleprompter Online não são responsáveis por quaisquer danos decorrentes do uso ou da impossibilidade de usar o serviço."
       },
       {
-        "title": "Changes",
-        "body": "We may update these terms from time to time. Continued use after changes constitutes acceptance of the updated terms."
+        "title": "Alterações",
+        "body": "Podemos atualizar estes termos de tempos em tempos. O uso contínuo após as alterações constitui aceitação dos termos atualizados."
       }
     ]
   },
   "notFound": {
-    "title": "Page not found",
-    "body": "The page you are looking for isn't here. It may have been moved or never existed.",
-    "cta": "Back to the teleprompter"
+    "title": "Página não encontrada",
+    "body": "A página que você está procurando não está aqui. Ela pode ter sido movida ou nunca ter existido.",
+    "cta": "Voltar ao teleprompter"
   }
 }

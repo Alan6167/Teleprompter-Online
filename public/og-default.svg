@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#1d3aa3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80 230)">
+    <rect width="88" height="88" rx="20" fill="#2563eb"/>
+    <path d="M44 20c-9 0-16 7-16 16v16c0 9 7 16 16 16s16-7 16-16V36c0-9-7-16-16-16z" fill="#fff"/>
+  </g>
+  <text x="200" y="290" font-family="Inter, -apple-system, system-ui, Arial, sans-serif" font-size="56" font-weight="700" fill="#fff">Teleprompter Online</text>
+  <text x="200" y="360" font-family="Inter, -apple-system, system-ui, Arial, sans-serif" font-size="32" fill="#a5b4fc">Free online teleprompter for creators</text>
+  <text x="200" y="420" font-family="Inter, -apple-system, system-ui, Arial, sans-serif" font-size="24" fill="#c7d2fe">No signup · No install · Privacy-first</text>
+</svg>

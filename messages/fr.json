@@ -1,0 +1,539 @@
+{
+  "common": {
+    "brand": "Teleprompter Online",
+    "tagline": "Free online teleprompter for creators",
+    "ctaTryNow": "Try it now",
+    "ctaLearnMore": "Learn more",
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Toggle theme",
+    "changeLanguage": "Change language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "howToUse": "How to use",
+    "useCases": "Use cases",
+    "faq": "FAQ"
+  },
+  "footer": {
+    "tagline": "A free, privacy-friendly teleprompter that runs entirely in your browser.",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© {year} Teleprompter Online. All rights reserved.",
+    "madeWith": "Built for creators, educators and speakers."
+  },
+  "teleprompter": {
+    "placeholder": "Paste or type your script here. Press Space to play.",
+    "controls": {
+      "play": "Play",
+      "pause": "Pause",
+      "stop": "Stop",
+      "restart": "Restart",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit fullscreen",
+      "settings": "Settings",
+      "save": "Save script",
+      "load": "Load",
+      "shortcuts": "Shortcuts"
+    },
+    "settings": {
+      "title": "Prompter settings",
+      "speed": "Speed",
+      "fontSize": "Font size",
+      "fontFamily": "Font family",
+      "lineHeight": "Line height",
+      "mirror": "Mirror",
+      "mirrorHorizontal": "Mirror horizontal",
+      "mirrorVertical": "Mirror vertical",
+      "fontSans": "Sans",
+      "fontSerif": "Serif",
+      "fontMono": "Mono",
+      "countdown": "Countdown before start",
+      "countdownSeconds": "{seconds} seconds",
+      "reset": "Reset to defaults",
+      "textColor": "Text color",
+      "backgroundColor": "Background",
+      "alignment": "Alignment",
+      "alignLeft": "Left",
+      "alignCenter": "Center",
+      "alignRight": "Right"
+    },
+    "savedScripts": {
+      "title": "Saved scripts",
+      "empty": "No saved scripts yet. Write something and save it to keep it locally on this device.",
+      "saveTitle": "Save your script",
+      "namePlaceholder": "Script name",
+      "save": "Save",
+      "cancel": "Cancel",
+      "load": "Load",
+      "delete": "Delete",
+      "confirmDelete": "Delete this script?",
+      "saveSuccess": "Script saved.",
+      "loadSuccess": "Script loaded."
+    },
+    "shortcuts": {
+      "title": "Keyboard shortcuts",
+      "playPause": "Play / Pause",
+      "speedUp": "Increase speed",
+      "speedDown": "Decrease speed",
+      "fontUp": "Increase font",
+      "fontDown": "Decrease font",
+      "mirror": "Toggle mirror",
+      "fullscreen": "Toggle fullscreen",
+      "restart": "Restart",
+      "save": "Save script",
+      "exit": "Exit fullscreen"
+    },
+    "countdown": {
+      "getReady": "Get ready…"
+    },
+    "editor": {
+      "title": "Your script",
+      "wordCount": "{count, plural, =0 {No words} one {1 word} other {# words}}",
+      "estimatedTime": "About {minutes} min at current speed",
+      "clear": "Clear",
+      "confirmClear": "Clear the current script?"
+    },
+    "tips": {
+      "title": "Quick tips",
+      "items": [
+        "Press Space to start and pause playback.",
+        "Use the arrow keys to fine-tune speed on the fly.",
+        "Toggle mirror mode if you use a reflective teleprompter rig.",
+        "Your scripts are saved privately in your browser."
+      ]
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Teleprompter Online – Free Browser Teleprompter, No Signup",
+      "description": "A free online teleprompter that runs in your browser. Paste your script, adjust speed and font, mirror for reflective rigs, go fullscreen, and start recording. No signup, no install."
+    },
+    "hero": {
+      "eyebrow": "Free · No signup · Privacy-first",
+      "title": "Free online teleprompter for creators",
+      "subtitle": "Paste your script, hit play, and read with confidence. Teleprompter Online works right in your browser on desktop, tablet and phone — no install, no account, no watermark.",
+      "primaryCta": "Start prompting",
+      "secondaryCta": "See features"
+    },
+    "features": {
+      "title": "Everything you need to read on camera",
+      "subtitle": "Built with the simplicity of classic tools and the polish of modern web apps.",
+      "items": {
+        "instant": {
+          "title": "Instant, no signup",
+          "body": "Open the page, paste your script and hit play. There's nothing to install and no account to create."
+        },
+        "speedFont": {
+          "title": "Smooth speed & font control",
+          "body": "Dial in the right scroll speed and text size for your delivery, from calm 20 px/s to rapid 400 px/s."
+        },
+        "mirror": {
+          "title": "Mirror mode",
+          "body": "Flip the text horizontally or vertically to use with a beam-splitter teleprompter rig in front of any camera."
+        },
+        "fullscreen": {
+          "title": "Fullscreen focus",
+          "body": "One tap to go distraction-free. The reading indicator keeps you on the next line at a glance."
+        },
+        "shortcuts": {
+          "title": "Keyboard shortcuts",
+          "body": "Play, pause, adjust speed and font, and toggle mirror without ever leaving the keyboard."
+        },
+        "savedScripts": {
+          "title": "Saved scripts",
+          "body": "Keep multiple scripts on your device. Everything is stored privately in your browser — nothing leaves your computer."
+        },
+        "mobile": {
+          "title": "Mobile-first",
+          "body": "Tuned for phones and tablets with large touch targets, safe-area padding and landscape fullscreen."
+        },
+        "privacy": {
+          "title": "Privacy-friendly",
+          "body": "No tracking of your scripts, no uploads. The teleprompter engine runs entirely client-side."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Made for every kind of speaker",
+      "subtitle": "From first-time creators to seasoned presenters, Teleprompter Online adapts to your flow.",
+      "items": {
+        "youtubers": {
+          "title": "YouTubers",
+          "body": "Record sharper intros and B-roll scripts without stumbling over the next line."
+        },
+        "podcasters": {
+          "title": "Podcasters",
+          "body": "Keep long-form monologues tight with a gentle scroll that matches your pacing."
+        },
+        "presenters": {
+          "title": "Presenters",
+          "body": "Deliver keynotes and webinars with your eyes on the camera, not on your notes."
+        },
+        "teachers": {
+          "title": "Teachers",
+          "body": "Record lectures and course intros with consistent delivery on every take."
+        },
+        "streamers": {
+          "title": "Streamers",
+          "body": "Glance at talking points during live broadcasts without breaking eye contact."
+        }
+      },
+      "seeAll": "View details"
+    },
+    "howItWorks": {
+      "title": "Three steps to a smoother take",
+      "steps": {
+        "one": {
+          "title": "Paste your script",
+          "body": "Drop in text from Docs, Word or anywhere else. Your script stays in your browser."
+        },
+        "two": {
+          "title": "Tune speed & font",
+          "body": "Adjust scroll speed, font size and mirror to match your camera and comfort level."
+        },
+        "three": {
+          "title": "Press play & record",
+          "body": "Go fullscreen and read with confidence. Use your phone, tablet or computer — whatever you have."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Is Teleprompter Online really free?",
+          "a": "Yes. The app is fully usable for free, forever. There's no account, no watermark, no feature gate and no upload."
+        },
+        {
+          "q": "Do I need to install anything?",
+          "a": "No. Teleprompter Online runs directly in your web browser. It works on Chrome, Safari, Firefox and Edge on desktop, tablet and phone."
+        },
+        {
+          "q": "Is my script private?",
+          "a": "Yes. Your script never leaves your device. Saved scripts live in your browser's local storage and are not uploaded to any server."
+        },
+        {
+          "q": "Can I use this with a physical teleprompter rig?",
+          "a": "Yes. Use the mirror toggle to flip the text horizontally for a beam-splitter teleprompter in front of your camera."
+        },
+        {
+          "q": "Does it work on mobile?",
+          "a": "It's designed for mobile. You get large touch targets, landscape fullscreen and a tuned default font size that reads comfortably on small screens."
+        },
+        {
+          "q": "Can I control scroll speed while reading?",
+          "a": "Yes. Use the arrow keys on desktop or the on-screen speed slider on mobile to adjust scroll speed in real time."
+        },
+        {
+          "q": "Does the teleprompter stop at the end?",
+          "a": "Yes. Playback gently stops at the end of your script. Press Restart to go back to the top."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to read on camera with confidence?",
+      "subtitle": "Open the prompter, paste your script, and press play.",
+      "button": "Go to the prompter"
+    }
+  },
+  "features": {
+    "meta": {
+      "title": "Features – Teleprompter Online",
+      "description": "Explore every feature of Teleprompter Online: scroll speed control, font tuning, mirror mode, fullscreen, keyboard shortcuts, saved scripts and privacy-first storage."
+    },
+    "title": "Features",
+    "subtitle": "A complete list of what Teleprompter Online can do.",
+    "sections": {
+      "prompter": {
+        "title": "Prompter engine",
+        "items": [
+          "Smooth 60 fps scroll powered by requestAnimationFrame.",
+          "Scroll speed from 20 px/s to 400 px/s with fine steps.",
+          "Optional 3-second countdown before playback starts.",
+          "Centered reading indicator so you always know the next line.",
+          "Playback automatically stops when your script ends."
+        ]
+      },
+      "typography": {
+        "title": "Typography & display",
+        "items": [
+          "Font size from 16 px to 128 px.",
+          "Sans, serif and mono font family presets.",
+          "Adjustable line height for comfortable reading.",
+          "Mirror horizontally or vertically for teleprompter rigs.",
+          "Dark and light themes."
+        ]
+      },
+      "controls": {
+        "title": "Controls & shortcuts",
+        "items": [
+          "Keyboard: Space play/pause, arrows for speed, +/- for font, M mirror, F fullscreen.",
+          "Tap-to-pause on the prompter canvas for touch devices.",
+          "Fullscreen with landscape orientation lock on supported mobile browsers.",
+          "A minimal control bar stays out of the way while you read."
+        ]
+      },
+      "scripts": {
+        "title": "Scripts & storage",
+        "items": [
+          "Paste any plain text or formatted content.",
+          "Save multiple named scripts privately in your browser.",
+          "Load or delete scripts with one click.",
+          "Nothing is uploaded — your content stays on your device."
+        ]
+      },
+      "platform": {
+        "title": "Platform & privacy",
+        "items": [
+          "Works on any modern browser: Chrome, Safari, Firefox, Edge.",
+          "Responsive layout for phone, tablet and desktop.",
+          "Available in six languages with matching content.",
+          "No tracking of your scripts and no third-party analytics selling your data."
+        ]
+      }
+    }
+  },
+  "howToUse": {
+    "meta": {
+      "title": "How to use the online teleprompter",
+      "description": "Learn how to use Teleprompter Online in minutes: paste your script, adjust speed and font, mirror for reflective rigs, and start recording."
+    },
+    "title": "How to use Teleprompter Online",
+    "subtitle": "Get a smoother take in a couple of minutes.",
+    "steps": [
+      {
+        "title": "Open the prompter",
+        "body": "Go to teleprompteronline.net. No login, no install. You're already on the prompter page."
+      },
+      {
+        "title": "Paste your script",
+        "body": "Copy text from any document — Google Docs, Microsoft Word, Notion, plain text — and paste it into the script area."
+      },
+      {
+        "title": "Choose your speed and font",
+        "body": "Use the speed slider to match your natural pace. Pick a font size that feels comfortable from a reading distance."
+      },
+      {
+        "title": "Turn on mirror mode if needed",
+        "body": "If you use a glass teleprompter rig, flip the text horizontally so it reads correctly through the reflection."
+      },
+      {
+        "title": "Go fullscreen",
+        "body": "Tap the fullscreen button for a distraction-free view. On mobile, the prompter will switch to landscape if your device supports it."
+      },
+      {
+        "title": "Press play and record",
+        "body": "Hit Play (or the Space bar) and start your recording. Use arrow keys or the on-screen slider to nudge speed mid-read."
+      }
+    ],
+    "tipsTitle": "Tips for a great take",
+    "tips": [
+      "Do a short rehearsal to find your ideal speed before recording.",
+      "Keep a comfortable distance between your eyes and the screen — around an arm's length for phones.",
+      "If you're filming with an external camera, place the phone or tablet as close to the lens as possible to preserve eye contact.",
+      "Break long paragraphs into shorter lines. Scripts scroll better when each line is readable in one glance.",
+      "Save your common intros and outros as named scripts to reuse later."
+    ]
+  },
+  "useCases": {
+    "meta": {
+      "title": "Use cases – Teleprompter Online",
+      "description": "See how YouTubers, podcasters, presenters, teachers and streamers use Teleprompter Online to record sharper takes."
+    },
+    "title": "Who uses Teleprompter Online",
+    "subtitle": "A flexible prompter for every kind of speaker.",
+    "seeAll": "See all use cases",
+    "items": {
+      "youtubers": {
+        "meta": {
+          "title": "Teleprompter for YouTubers",
+          "description": "Record sharper YouTube intros, tutorials and vlogs with a free browser teleprompter. Mirror mode, fullscreen and keyboard shortcuts included."
+        },
+        "title": "Teleprompter for YouTubers",
+        "subtitle": "Make every take count.",
+        "sections": {
+          "why": {
+            "title": "Why creators love it",
+            "items": [
+              "Cut down on retakes with a steady scroll.",
+              "Look directly at the lens while you read.",
+              "Save intros and outros as reusable scripts.",
+              "Works whether you film on a phone or a mirrorless camera."
+            ]
+          },
+          "setup": {
+            "title": "A simple setup",
+            "body": "Put your phone or tablet right under your camera, paste your script, set the speed to match your delivery, and press Play. If you use a beam-splitter rig, turn on mirror mode and you're set."
+          }
+        }
+      },
+      "podcasters": {
+        "meta": {
+          "title": "Teleprompter for podcasters",
+          "description": "Use Teleprompter Online for tight podcast monologues, sponsor reads and video podcast takes."
+        },
+        "title": "Teleprompter for podcasters",
+        "subtitle": "Keep your monologues tight.",
+        "sections": {
+          "why": {
+            "title": "Why podcasters use it",
+            "items": [
+              "Deliver ad reads and intros with consistent pacing.",
+              "Stay on-script for structured interviews and solo episodes.",
+              "Ideal for video podcasts recorded on a second monitor."
+            ]
+          },
+          "setup": {
+            "title": "A comfortable read",
+            "body": "Set a slightly slower scroll speed and a larger font for relaxed delivery. Save your intro, outro and ad reads as separate scripts to load when you need them."
+          }
+        }
+      },
+      "presenters": {
+        "meta": {
+          "title": "Teleprompter for presenters",
+          "description": "A free online teleprompter for keynotes, webinars and internal presentations. Works on any device, no signup."
+        },
+        "title": "Teleprompter for presenters",
+        "subtitle": "Deliver keynotes with confidence.",
+        "sections": {
+          "why": {
+            "title": "Why presenters use it",
+            "items": [
+              "Keep your eyes on the camera during webinars.",
+              "Never lose your place in long keynote scripts.",
+              "Run it on a second monitor or tablet while you present."
+            ]
+          },
+          "setup": {
+            "title": "Pro delivery in minutes",
+            "body": "Paste your script, dial in a calm scroll speed, and go fullscreen on a secondary screen. Your audience won't notice a thing."
+          }
+        }
+      },
+      "teachers": {
+        "meta": {
+          "title": "Teleprompter for teachers",
+          "description": "Record lectures, course intros and classroom videos with a free online teleprompter that saves scripts locally."
+        },
+        "title": "Teleprompter for teachers",
+        "subtitle": "Consistent delivery, every lesson.",
+        "sections": {
+          "why": {
+            "title": "Why educators use it",
+            "items": [
+              "Record course intros and lessons with a steady pace.",
+              "Reuse standard scripts across multiple classes.",
+              "Keep your energy up without stumbling on the next line."
+            ]
+          },
+          "setup": {
+            "title": "Classroom-ready",
+            "body": "Save a standard intro as a script, load it before each lecture, adjust the font for your camera distance, and press Play."
+          }
+        }
+      },
+      "streamers": {
+        "meta": {
+          "title": "Teleprompter for streamers",
+          "description": "Use Teleprompter Online during live streams to glance at notes without breaking eye contact."
+        },
+        "title": "Teleprompter for streamers",
+        "subtitle": "Notes on demand, without breaking eye contact.",
+        "sections": {
+          "why": {
+            "title": "Why streamers use it",
+            "items": [
+              "Open it on a second screen during your live stream.",
+              "Save sponsor reads and CTAs for quick recall.",
+              "Keep pacing natural even during long broadcasts."
+            ]
+          },
+          "setup": {
+            "title": "Fit it to your stream",
+            "body": "Dock the teleprompter on a secondary monitor near your camera. Use light theme in bright rooms and dark theme at night."
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "FAQ – Teleprompter Online",
+      "description": "Answers to common questions about Teleprompter Online: pricing, privacy, features, mobile support and teleprompter rig compatibility."
+    },
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you might want to know before using Teleprompter Online."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy – Teleprompter Online",
+      "description": "How Teleprompter Online handles your data. Spoiler: we don't collect your scripts."
+    },
+    "title": "Privacy policy",
+    "updated": "Last updated: {date}",
+    "sections": [
+      {
+        "title": "The short version",
+        "body": "Teleprompter Online is a static web app that runs entirely in your browser. We don't create accounts, we don't receive your scripts, and we don't sell data."
+      },
+      {
+        "title": "What stays on your device",
+        "body": "Any scripts you save are stored in your browser's local storage on the device you used. Clearing your browser data will remove them. They are never uploaded to a server."
+      },
+      {
+        "title": "Analytics",
+        "body": "We may use privacy-friendly, aggregate analytics (such as Cloudflare Web Analytics) to understand which pages are used. These analytics do not use cookies or personal identifiers and do not track you across sites."
+      },
+      {
+        "title": "Third parties",
+        "body": "The site is hosted on Cloudflare Pages. Cloudflare may log infrastructure-level request data (such as IP addresses) for security and abuse prevention."
+      },
+      {
+        "title": "Contact",
+        "body": "Questions about privacy? Reach out through the contact details on our website."
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of service – Teleprompter Online",
+      "description": "The terms under which you can use Teleprompter Online."
+    },
+    "title": "Terms of service",
+    "updated": "Last updated: {date}",
+    "sections": [
+      {
+        "title": "Acceptance",
+        "body": "By using Teleprompter Online you agree to these terms. If you do not agree, please do not use the service."
+      },
+      {
+        "title": "Use of the service",
+        "body": "Teleprompter Online is provided free of charge, as-is, for personal and commercial use. You are responsible for the content of your scripts."
+      },
+      {
+        "title": "No warranty",
+        "body": "The service is provided without warranty of any kind. We do our best to keep it reliable, but we cannot guarantee uninterrupted availability."
+      },
+      {
+        "title": "Limitation of liability",
+        "body": "To the extent permitted by law, the operators of Teleprompter Online are not liable for any damages arising from the use or inability to use the service."
+      },
+      {
+        "title": "Changes",
+        "body": "We may update these terms from time to time. Continued use after changes constitutes acceptance of the updated terms."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for isn't here. It may have been moved or never existed.",
+    "cta": "Back to the teleprompter"
+  }
+}

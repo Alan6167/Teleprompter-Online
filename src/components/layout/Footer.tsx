@@ -1,5 +1,5 @@
-import { Mic } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { Logo } from './Logo';
 import { localePath, type Locale } from '@/lib/site';
 
 interface FooterProps {
@@ -15,9 +15,7 @@ export function Footer({ locale }: FooterProps) {
       <div className="mx-auto grid max-w-7xl gap-8 px-3 py-10 sm:px-6 md:grid-cols-4">
         <div className="space-y-3 md:col-span-2">
           <div className="flex items-center gap-2 font-semibold">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Mic className="h-4 w-4" />
-            </span>
+            <Logo className="h-8 w-8 rounded-lg" />
             <span>{t('common.brand')}</span>
           </div>
           <p className="max-w-md text-sm text-muted-foreground">{t('footer.tagline')}</p>

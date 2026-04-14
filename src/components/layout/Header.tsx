@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, Mic } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import {
@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/sheet';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { ThemeToggle } from './ThemeToggle';
+import { Logo } from './Logo';
 import { localePath, type Locale } from '@/lib/site';
 
 interface HeaderProps {
@@ -38,9 +39,7 @@ export function Header({ locale }: HeaderProps) {
           className="flex items-center gap-2 font-semibold tracking-tight"
           aria-label={t('common.brand')}
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Mic className="h-4 w-4" />
-          </span>
+          <Logo className="h-8 w-8 rounded-lg" />
           <span className="hidden sm:inline">{t('common.brand')}</span>
         </a>
 

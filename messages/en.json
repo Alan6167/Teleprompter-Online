@@ -115,13 +115,13 @@
   },
   "home": {
     "meta": {
-      "title": "Teleprompter Online – Free Browser Teleprompter, No Signup",
-      "description": "A free online teleprompter that runs in your browser. Paste your script, adjust speed and font, mirror for reflective rigs, go fullscreen, and start recording. No signup, no install."
+      "title": "Teleprompter Online – Free Browser Teleprompter with Mirror Mode",
+      "description": "A free online teleprompter with mirror mode that runs in your browser. Paste your script, adjust speed and font, flip the text for reflective rigs, go fullscreen, and start recording. No signup, no install."
     },
     "hero": {
       "eyebrow": "Free · No signup · Privacy-first",
-      "title": "Free online teleprompter for creators",
-      "subtitle": "Paste your script, hit play, and read with confidence. Teleprompter Online works right in your browser on desktop, tablet and phone — no install, no account, no watermark.",
+      "title": "Free online teleprompter with mirror mode for creators",
+      "subtitle": "Paste your script, hit play, and read with confidence. Teleprompter Online works right in your browser on desktop, tablet and phone — with one-tap mirror mode for reflective teleprompter rigs, full-screen playback, and no account or install.",
       "primaryCta": "Start prompting",
       "secondaryCta": "See features"
     },

@@ -115,13 +115,13 @@
   },
   "home": {
     "meta": {
-      "title": "Teleprompter Online – Kostenloser Browser-Teleprompter, keine Anmeldung",
-      "description": "Ein kostenloser Online-Teleprompter für dein Browser. Füge dein Skript ein, passe Geschwindigkeit und Schriftart an, spiegle für reflektierende Rigs, gehe in den Vollbildmodus und starte die Aufzeichnung. Keine Anmeldung, kein Download."
+      "title": "Teleprompter Online – Kostenloser Browser-Teleprompter mit Spiegelmodus",
+      "description": "Ein kostenloser Online-Teleprompter mit Spiegelmodus, der direkt im Browser läuft. Skript einfügen, Geschwindigkeit und Schrift anpassen, Text für Spiegel-Rigs invertieren, Vollbild aktivieren und aufnehmen. Ohne Anmeldung, ohne Installation."
     },
     "hero": {
       "eyebrow": "Kostenlos · Ohne Anmeldung · Datenschutz zuerst",
-      "title": "Kostenloser Online-Teleprompter für Creator",
-      "subtitle": "Geben Sie Ihr Skript ein, drücken Sie Abspielen und lesen Sie mit Selbstvertrauen. Teleprompter Online funktioniert direkt in Ihrem Browser auf Desktop, Tablet und Smartphone – ohne Installation, ohne Konto, ohne Wasserzeichen.",
+      "title": "Kostenloser Online-Teleprompter mit Spiegelmodus für Creator",
+      "subtitle": "Fügen Sie Ihr Skript ein, starten Sie die Wiedergabe und lesen Sie mit Selbstvertrauen. Teleprompter Online läuft direkt im Browser auf Desktop, Tablet und Smartphone — mit Ein-Tipp-Spiegelmodus für Teleprompter-Spiegel-Rigs, Vollbildwiedergabe und ohne Konto oder Installation.",
       "primaryCta": "Jetzt prompting starten",
       "secondaryCta": "Funktionen ansehen"
     },

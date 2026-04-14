@@ -115,13 +115,13 @@
   },
   "home": {
     "meta": {
-      "title": "Teleprompter Online – Téléprompteur gratuit, sans inscription",
-      "description": "Un téléprompteur en ligne gratuit qui fonctionne dans votre navigateur. Collez votre script, ajustez la vitesse et la police, activez le mode miroir pour les installations réfléchissantes, passez en plein écran et commencez à enregistrer. Pas d'inscription, pas d'installation."
+      "title": "Teleprompter Online – Téléprompteur gratuit en ligne avec mode miroir",
+      "description": "Un téléprompteur en ligne gratuit avec mode miroir qui fonctionne dans votre navigateur. Collez votre texte, réglez vitesse et police, inversez le texte pour les supports réfléchissants, passez en plein écran et lancez l'enregistrement. Sans inscription, sans installation."
     },
     "hero": {
       "eyebrow": "Gratuit · Sans inscription · Respect de la vie privée",
-      "title": "Téléprompteur gratuit en ligne pour créateurs",
-      "subtitle": "Collez votre script, appuyez sur lancer, et lisez en toute confiance. Teleprompter Online fonctionne directement dans votre navigateur sur ordinateur, tablette et téléphone — pas d'installation, pas de compte, pas de filigrane.",
+      "title": "Téléprompteur gratuit en ligne avec mode miroir pour créateurs",
+      "subtitle": "Collez votre texte, appuyez sur lecture et lisez en confiance. Teleprompter Online fonctionne directement dans votre navigateur sur ordinateur, tablette et mobile — avec un mode miroir en un clic pour les prompteurs à verre réfléchissant, lecture plein écran et sans compte ni installation.",
       "primaryCta": "Commencer à prompter",
       "secondaryCta": "Voir les fonctionnalités"
     },

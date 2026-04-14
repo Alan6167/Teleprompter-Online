@@ -18,6 +18,9 @@ import {
   Type,
   Trash2,
   ListPlus,
+  Upload,
+  FileText,
+  X,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
@@ -80,8 +83,11 @@ export function TeleprompterApp() {
   const [saveDialogOpen, setSaveDialogOpen] = useState(false);
   const [shortcutsOpen, setShortcutsOpen] = useState(false);
   const [newScriptName, setNewScriptName] = useState('');
+  const [isDragOver, setIsDragOver] = useState(false);
+  const [uploadedFileName, setUploadedFileName] = useState<string | null>(null);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const countdownTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -189,6 +195,63 @@ export function TeleprompterApp() {
     // Tap-to-pause on mobile
     if (isPlaying) pause();
   }, [isPlaying, pause]);
+
+  // --- File upload / drag-and-drop ---
+  const loadTextFromFile = useCallback(async (file: File) => {
+    const raw = await file.text();
+    const name = file.name.toLowerCase();
+    let text = raw;
+    if (name.endsWith('.srt')) {
+      // Strip SRT index lines and timestamps, keep cue text
+      text = raw
+        .split(/\r?\n/)
+        .filter((line) => !/^\d+$/.test(line.trim()))
+        .filter((line) => !/^\d{2}:\d{2}:\d{2}[,.]\d{3}\s*-->\s*/.test(line.trim()))
+        .join('\n')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+    } else if (name.endsWith('.rtf')) {
+      // Minimal RTF → plain text: drop control words + groups
+      text = raw
+        .replace(/\{\\\*?[^{}]*\}/g, '')
+        .replace(/\\[a-zA-Z]+-?\d* ?/g, '')
+        .replace(/[{}]/g, '')
+        .replace(/\\'[0-9a-fA-F]{2}/g, '')
+        .trim();
+    }
+    setScript(text);
+    setUploadedFileName(file.name);
+  }, []);
+
+  const onFileInputChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0];
+      if (file) loadTextFromFile(file);
+      // Allow re-uploading the same file
+      if (e.target) e.target.value = '';
+    },
+    [loadTextFromFile]
+  );
+
+  const onDragOver = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(true);
+  }, []);
+  const onDragLeave = useCallback(() => setIsDragOver(false), []);
+  const onDrop = useCallback(
+    (e: React.DragEvent) => {
+      e.preventDefault();
+      setIsDragOver(false);
+      const file = e.dataTransfer.files?.[0];
+      if (file) loadTextFromFile(file);
+    },
+    [loadTextFromFile]
+  );
+
+  const clearScript = useCallback(() => {
+    setScript('');
+    setUploadedFileName(null);
+  }, []);
 
   return (
     <div
@@ -387,39 +450,41 @@ export function TeleprompterApp() {
         </div>
       </div>
 
-      {/* Script editor toolbar below the prompter (sticky/collapsible area) */}
+      {/* Script editor — always visible (except when playing fullscreen) */}
       {!isFullscreen && (
         <div className="border-t border-white/10 bg-black/70">
-          <details className="group">
-            <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-3 py-3 text-sm text-white/80 sm:px-4">
-              <span className="inline-flex items-center gap-2 font-medium">
+          <div className="px-3 pt-3 sm:px-4 sm:pt-4">
+            {/* Header row: title + meta + action buttons */}
+            <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+              <span className="inline-flex items-center gap-2 font-medium text-white/90">
                 <Type className="h-4 w-4" />
                 {t('editor.title')}
                 <span className="text-white/50">
                   · {t('editor.wordCount', { count: wordCount })} · {t('editor.estimatedTime', { minutes: estimatedMinutes })}
                 </span>
               </span>
-              <span className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-1.5">
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".txt,.md,.srt,.rtf,text/plain,text/markdown"
+                  onChange={onFileInputChange}
+                  className="sr-only"
+                />
                 <Button
-                  variant="ghost"
+                  variant="secondary"
                   size="sm"
-                  className="text-white hover:bg-white/10"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setShortcutsOpen(true);
-                  }}
+                  onClick={() => fileInputRef.current?.click()}
+                  aria-label={t('editor.uploadFile')}
                 >
-                  <Keyboard className="h-4 w-4" />
-                  <span className="hidden sm:inline">{t('controls.shortcuts')}</span>
+                  <Upload className="h-4 w-4" />
+                  <span className="hidden sm:inline">{t('editor.uploadFile')}</span>
                 </Button>
                 <Button
                   variant="ghost"
                   size="sm"
                   className="text-white hover:bg-white/10"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setSavedOpen(true);
-                  }}
+                  onClick={() => setSavedOpen(true)}
                 >
                   <FolderOpen className="h-4 w-4" />
                   <span className="hidden sm:inline">{t('controls.load')}</span>
@@ -428,25 +493,89 @@ export function TeleprompterApp() {
                   variant="ghost"
                   size="sm"
                   className="text-white hover:bg-white/10"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setSaveDialogOpen(true);
-                  }}
+                  onClick={() => setSaveDialogOpen(true)}
                 >
                   <Save className="h-4 w-4" />
                   <span className="hidden sm:inline">{t('controls.save')}</span>
                 </Button>
-              </span>
-            </summary>
-            <div className="px-3 pb-3 sm:px-4 sm:pb-4">
+                {script && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-white/70 hover:bg-white/10 hover:text-white"
+                    onClick={() => {
+                      if (confirm(t('editor.confirmClear'))) clearScript();
+                    }}
+                    aria-label={t('editor.clear')}
+                  >
+                    <Trash2 className="h-4 w-4" />
+                    <span className="hidden md:inline">{t('editor.clear')}</span>
+                  </Button>
+                )}
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-white hover:bg-white/10"
+                  onClick={() => setShortcutsOpen(true)}
+                >
+                  <Keyboard className="h-4 w-4" />
+                  <span className="hidden lg:inline">{t('controls.shortcuts')}</span>
+                </Button>
+              </div>
+            </div>
+
+            {/* Uploaded file indicator */}
+            {uploadedFileName && (
+              <div className="mt-2 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-2 py-1 text-xs text-white/70">
+                <FileText className="h-3.5 w-3.5" />
+                <span>{uploadedFileName}</span>
+                <button
+                  type="button"
+                  onClick={() => setUploadedFileName(null)}
+                  className="ml-1 rounded-sm p-0.5 hover:bg-white/10"
+                  aria-label="Dismiss"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Textarea with drag-and-drop */}
+          <div className="relative px-3 pb-3 pt-2 sm:px-4 sm:pb-4">
+            <div
+              onDragOver={onDragOver}
+              onDragLeave={onDragLeave}
+              onDrop={onDrop}
+              className={cn(
+                'relative rounded-md transition-all',
+                isDragOver && 'ring-2 ring-primary ring-offset-2 ring-offset-black'
+              )}
+            >
               <Textarea
                 value={script}
-                onChange={(e) => setScript(e.target.value)}
-                placeholder={t('placeholder')}
-                className="min-h-[160px] bg-white/5 text-white placeholder:text-white/40 focus-visible:ring-primary"
+                onChange={(e) => {
+                  setScript(e.target.value);
+                  if (uploadedFileName) setUploadedFileName(null);
+                }}
+                placeholder={t('editor.placeholderWithUpload')}
+                className="min-h-[180px] resize-y bg-white/5 text-base leading-relaxed text-white placeholder:text-white/40 focus-visible:ring-primary sm:min-h-[200px]"
               />
+              {isDragOver && (
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-md bg-primary/20 text-white">
+                  <div className="flex flex-col items-center gap-2">
+                    <Upload className="h-8 w-8" />
+                    <span className="text-sm font-medium">{t('editor.dropHere')}</span>
+                  </div>
+                </div>
+              )}
             </div>
-          </details>
+            {!script && (
+              <p className="mt-2 text-center text-xs text-white/50">
+                {t('editor.uploadHint')}
+              </p>
+            )}
+          </div>
         </div>
       )}
 

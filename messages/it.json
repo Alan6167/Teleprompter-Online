@@ -97,7 +97,11 @@
       "wordCount": "{count, plural, =0 {Nessuna parola} one {1 parola} other {# parole}}",
       "estimatedTime": "Circa {minutes} min alla velocità attuale",
       "clear": "Cancella",
-      "confirmClear": "Cancellare il copione attuale?"
+      "confirmClear": "Cancellare il copione attuale?",
+      "uploadFile": "Carica file",
+      "dropHere": "Trascina qui il file per caricarlo",
+      "placeholderWithUpload": "Incolla o scrivi il tuo copione qui — oppure trascina un file .txt, .md, .srt o .rtf in questa area.",
+      "uploadHint": "Suggerimento: puoi anche trascinare e rilasciare un file, oppure fare clic su Carica file sopra."
     },
     "tips": {
       "title": "Suggerimenti rapidi",

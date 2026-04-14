@@ -97,7 +97,11 @@
       "wordCount": "{count, plural, =0 {Keine Wörter} one {1 Wort} other {# Wörter}}",
       "estimatedTime": "Etwa {minutes} Min. bei aktueller Geschwindigkeit",
       "clear": "Löschen",
-      "confirmClear": "Das aktuelle Skript löschen?"
+      "confirmClear": "Das aktuelle Skript löschen?",
+      "uploadFile": "Datei hochladen",
+      "dropHere": "Datei hier ablegen zum Laden",
+      "placeholderWithUpload": "Fügen Sie Ihr Skript hier ein oder geben Sie es ein — oder ziehen Sie eine .txt-, .md-, .srt- oder .rtf-Datei in dieses Feld.",
+      "uploadHint": "Tipp: Sie können auch eine Datei per Drag-and-Drop ablegen oder oben auf „Datei hochladen\" klicken."
     },
     "tips": {
       "title": "Schnelle Tipps",

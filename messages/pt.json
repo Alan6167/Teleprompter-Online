@@ -97,7 +97,11 @@
       "wordCount": "{count, plural, =0 {Nenhuma palavra} one {1 palavra} other {# palavras}}",
       "estimatedTime": "Cerca de {minutes} min na velocidade atual",
       "clear": "Limpar",
-      "confirmClear": "Limpar o roteiro atual?"
+      "confirmClear": "Limpar o roteiro atual?",
+      "uploadFile": "Enviar arquivo",
+      "dropHere": "Solte o arquivo para carregá-lo",
+      "placeholderWithUpload": "Cole ou digite seu roteiro aqui — ou arraste um arquivo .txt, .md, .srt ou .rtf para esta área.",
+      "uploadHint": "Dica: você também pode arrastar e soltar um arquivo, ou clicar em Enviar arquivo acima."
     },
     "tips": {
       "title": "Dicas rápidas",

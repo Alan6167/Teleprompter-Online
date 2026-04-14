@@ -97,7 +97,11 @@
       "wordCount": "{count, plural, =0 {Sin palabras} one {1 palabra} other {# palabras}}",
       "estimatedTime": "Aproximadamente {minutes} min a la velocidad actual",
       "clear": "Borrar",
-      "confirmClear": "¿Borrar el guion actual?"
+      "confirmClear": "¿Borrar el guion actual?",
+      "uploadFile": "Subir archivo",
+      "dropHere": "Suelta tu archivo para cargarlo",
+      "placeholderWithUpload": "Pega o escribe tu guion aquí, o arrastra un archivo .txt, .md, .srt o .rtf sobre esta área.",
+      "uploadHint": "Consejo: también puedes arrastrar y soltar un archivo, o hacer clic en Subir archivo arriba."
     },
     "tips": {
       "title": "Consejos rápidos",

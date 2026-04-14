@@ -97,7 +97,11 @@
       "wordCount": "{count, plural, =0 {Aucun mot} one {1 mot} other {# mots}}",
       "estimatedTime": "Environ {minutes} min à la vitesse actuelle",
       "clear": "Effacer",
-      "confirmClear": "Effacer le script actuel ?"
+      "confirmClear": "Effacer le script actuel ?",
+      "uploadFile": "Charger un fichier",
+      "dropHere": "Déposez votre fichier pour le charger",
+      "placeholderWithUpload": "Collez ou saisissez votre texte ici, ou glissez un fichier .txt, .md, .srt ou .rtf sur cette zone.",
+      "uploadHint": "Astuce : vous pouvez aussi glisser-déposer un fichier, ou cliquer sur Charger un fichier ci-dessus."
     },
     "tips": {
       "title": "Conseils rapides",

@@ -1,17 +1,6 @@
-import type { Metadata, Viewport } from 'next';
-import { setRequestLocale } from 'next-intl/server';
-import { BaseLayout } from '@/components/layout/BaseLayout';
-import { buildMetadata } from '@/lib/seo';
+import type { Viewport } from 'next';
 import { DEFAULT_LOCALE } from '@/lib/site';
 import './globals.css';
-
-export async function generateMetadata(): Promise<Metadata> {
-  return buildMetadata({
-    locale: DEFAULT_LOCALE,
-    path: '',
-    titleNamespace: 'home',
-  });
-}
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -23,13 +12,22 @@ export const viewport: Viewport = {
   ],
 };
 
+/**
+ * Root layout — intentionally minimal.
+ *
+ * Per-locale chrome (Header, Footer, NextIntlClientProvider, ThemeProvider, JSON-LD) is
+ * rendered by the locale-specific layouts at:
+ *   - `src/app/(en)/layout.tsx`      for English at root
+ *   - `src/app/[locale]/layout.tsx`  for es/pt/fr/de/it
+ *
+ * We set `lang="en"` here as a default (server-side) because the root layout cannot know
+ * the locale. Non-English pages override the `<html lang>` at runtime via a small script —
+ * or rely on the `<link rel="alternate" hreflang>` tags for correctness.
+ */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  setRequestLocale(DEFAULT_LOCALE);
   return (
     <html lang={DEFAULT_LOCALE} suppressHydrationWarning>
-      <body>
-        <BaseLayout locale={DEFAULT_LOCALE}>{children}</BaseLayout>
-      </body>
+      <body className="min-h-[100dvh] antialiased">{children}</body>
     </html>
   );
 }

@@ -42,5 +42,18 @@ export default async function LocaleLayout({
   }
   setRequestLocale(locale);
 
-  return <BaseLayout locale={locale as Locale}>{children}</BaseLayout>;
+  return (
+    <>
+      {/* Root layout can only render <html lang="en"> once. Sync the DOM attribute
+          to the active locale ASAP (before React hydration) so assistive tech and
+          browser UI (spellcheck, translation) pick the right language. Crawlers get
+          the correct signal via hreflang alternates. */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.documentElement.lang=${JSON.stringify(locale)};`,
+        }}
+      />
+      <BaseLayout locale={locale as Locale}>{children}</BaseLayout>
+    </>
+  );
 }

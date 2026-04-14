@@ -530,12 +530,12 @@
         "body": "Alle Skripte, die Sie speichern, werden im lokalen Speicher Ihres Browsers auf dem Gerät gespeichert, das Sie verwendet haben. Das Löschen Ihrer Browserdaten entfernt diese. Sie werden niemals auf einen Server hochgeladen."
       },
       {
-        "title": "Analytik",
-        "body": "Wir können datenschutzfreundliche, aggregierte Analysen (wie Cloudflare Web Analytics) verwenden, um zu verstehen, welche Seiten verwendet werden. Diese Analysen verwenden keine Cookies oder persönlichen Identifizierer und verfolgen Sie nicht über Websites hinweg."
+        "title": "Analyse und Cookies",
+        "body": "Wir nutzen Google Analytics 4 (Mess-ID G-8W0LZYG5VX) und Pageview.app, um die aggregierte Nutzung der Website wie Seitenaufrufe und Verweisquellen zu verstehen. Google Analytics setzt Erstanbieter-Cookies (z. B. _ga, _ga_*), um eindeutige Besucher zu zählen; Pageview.app ist ein schlanker, cookieloser Analysedienst. Keiner der Dienste erhält den Inhalt Ihrer Teleprompter-Skripte. Sie können Google Analytics über das offizielle Browser-Add-on oder durch Aktivierung von „Do Not Track\" / Global Privacy Control in Ihrem Browser deaktivieren."
       },
       {
         "title": "Dritte",
-        "body": "Die Website wird auf Cloudflare Pages gehostet. Cloudflare kann Anfragedaten auf Infrastrukturebene (z. B. IP-Adressen) für Sicherheit und Missbrauchsprävention protokollieren."
+        "body": "Die Website wird auf Cloudflare Pages gehostet. Cloudflare kann Anfragedaten auf Infrastrukturebene (wie IP-Adressen) für Sicherheit und Missbrauchsprävention protokollieren. Die Analysedaten werden von Google (Google Analytics) und von den Betreibern von Pageview.app verarbeitet."
       },
       {
         "title": "Kontakt",

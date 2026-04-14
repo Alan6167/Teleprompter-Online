@@ -530,12 +530,12 @@
         "body": "Any scripts you save are stored in your browser's local storage on the device you used. Clearing your browser data will remove them. They are never uploaded to a server."
       },
       {
-        "title": "Analytics",
-        "body": "We may use privacy-friendly, aggregate analytics (such as Cloudflare Web Analytics) to understand which pages are used. These analytics do not use cookies or personal identifiers and do not track you across sites."
+        "title": "Analytics & cookies",
+        "body": "We use Google Analytics 4 (measurement ID G-8W0LZYG5VX) and Pageview.app to understand aggregate site usage such as page views and referrers. Google Analytics sets first-party cookies (e.g. _ga, _ga_*) to count unique visitors; Pageview.app is a lightweight, cookieless analytics service. Neither service receives the content of your teleprompter scripts. You can opt out of Google Analytics via the official browser add-on or by enabling \"Do Not Track\" / Global Privacy Control in your browser."
       },
       {
         "title": "Third parties",
-        "body": "The site is hosted on Cloudflare Pages. Cloudflare may log infrastructure-level request data (such as IP addresses) for security and abuse prevention."
+        "body": "The site is hosted on Cloudflare Pages. Cloudflare may log infrastructure-level request data (such as IP addresses) for security and abuse prevention. Analytics data is processed by Google (Google Analytics) and by the operators of Pageview.app."
       },
       {
         "title": "Contact",

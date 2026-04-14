@@ -530,12 +530,12 @@
         "body": "Los guiones que guardas se almacenan en el almacenamiento local del navegador del dispositivo que uses. Borrar los datos del navegador los eliminará. Nunca se suben a un servidor."
       },
       {
-        "title": "Analíticas",
-        "body": "Podemos usar analíticas agregadas y respetuosas con la privacidad (como Cloudflare Web Analytics) para entender qué páginas se utilizan. Estas analíticas no usan cookies ni identificadores personales y no te rastrean entre sitios."
+        "title": "Analítica y cookies",
+        "body": "Usamos Google Analytics 4 (ID de medición G-8W0LZYG5VX) y Pageview.app para entender el uso agregado del sitio, como visitas a páginas y referentes. Google Analytics establece cookies de origen (por ejemplo, _ga, _ga_*) para contar visitantes únicos; Pageview.app es un servicio de analítica ligero que no usa cookies. Ninguno de los servicios recibe el contenido de tus guiones. Puedes excluirte de Google Analytics instalando el complemento oficial del navegador o activando \"Do Not Track\" / Global Privacy Control en tu navegador."
       },
       {
         "title": "Terceros",
-        "body": "El sitio está alojado en Cloudflare Pages. Cloudflare puede registrar datos de solicitud a nivel de infraestructura (como direcciones IP) para la seguridad y la prevención de abusos."
+        "body": "El sitio está alojado en Cloudflare Pages. Cloudflare puede registrar datos de solicitud a nivel de infraestructura (como direcciones IP) para seguridad y prevención de abusos. Los datos analíticos son procesados por Google (Google Analytics) y por los operadores de Pageview.app."
       },
       {
         "title": "Contacto",

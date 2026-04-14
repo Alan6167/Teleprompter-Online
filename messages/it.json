@@ -530,12 +530,12 @@
         "body": "Tutti i copioni che salvi sono archiviati nell'archiviazione locale del tuo browser sul dispositivo che hai utilizzato. Cancellare i dati del browser li rimuoverà. Non vengono mai caricati su un server."
       },
       {
-        "title": "Analytics",
-        "body": "Possiamo utilizzare analytics aggregati attenti alla privacy (come Cloudflare Web Analytics) per comprendere quali pagine vengono utilizzate. Questi analytics non utilizzano cookie o identificatori personali e non ti tracciano tra i siti."
+        "title": "Analisi e cookie",
+        "body": "Utilizziamo Google Analytics 4 (ID di misurazione G-8W0LZYG5VX) e Pageview.app per comprendere l'uso aggregato del sito, come visualizzazioni di pagina e sorgenti di traffico. Google Analytics imposta cookie di prima parte (ad esempio _ga, _ga_*) per contare i visitatori unici; Pageview.app è un servizio di analisi leggero che non utilizza cookie. Nessuno dei servizi riceve il contenuto dei tuoi copioni. Puoi escluderti da Google Analytics installando il componente aggiuntivo ufficiale del browser o attivando \"Do Not Track\" / Global Privacy Control nel tuo browser."
       },
       {
         "title": "Terze parti",
-        "body": "Il sito è ospitato su Cloudflare Pages. Cloudflare può registrare dati di richiesta a livello di infrastruttura (come indirizzi IP) per la sicurezza e la prevenzione degli abusi."
+        "body": "Il sito è ospitato su Cloudflare Pages. Cloudflare può registrare dati di richiesta a livello di infrastruttura (come indirizzi IP) per sicurezza e prevenzione degli abusi. I dati analitici sono elaborati da Google (Google Analytics) e dagli operatori di Pageview.app."
       },
       {
         "title": "Contatti",

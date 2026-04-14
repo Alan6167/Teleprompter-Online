@@ -530,12 +530,12 @@
         "body": "Quaisquer roteiros que você salvar são armazenados no armazenamento local do seu navegador, no dispositivo que você usou. Limpar os dados do navegador vai removê-los. Eles nunca são enviados para um servidor."
       },
       {
-        "title": "Analytics",
-        "body": "Podemos usar analytics agregados e amigáveis à privacidade (como o Cloudflare Web Analytics) para entender quais páginas são utilizadas. Esses analytics não usam cookies nem identificadores pessoais e não rastreiam você entre sites."
+        "title": "Análises e cookies",
+        "body": "Usamos o Google Analytics 4 (ID de medição G-8W0LZYG5VX) e o Pageview.app para entender o uso agregado do site, como visualizações de página e referenciadores. O Google Analytics define cookies próprios (por exemplo, _ga, _ga_*) para contar visitantes únicos; o Pageview.app é um serviço de análise leve que não usa cookies. Nenhum dos serviços recebe o conteúdo dos seus roteiros. Você pode optar por sair do Google Analytics instalando o complemento oficial do navegador ou ativando \"Do Not Track\" / Global Privacy Control no seu navegador."
       },
       {
         "title": "Terceiros",
-        "body": "O site é hospedado no Cloudflare Pages. A Cloudflare pode registrar dados de requisição em nível de infraestrutura (como endereços IP) para fins de segurança e prevenção de abuso."
+        "body": "O site é hospedado no Cloudflare Pages. O Cloudflare pode registrar dados de solicitação em nível de infraestrutura (como endereços IP) para segurança e prevenção de abuso. Os dados de análise são processados pelo Google (Google Analytics) e pelos operadores do Pageview.app."
       },
       {
         "title": "Contato",

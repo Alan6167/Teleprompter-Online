@@ -530,12 +530,12 @@
         "body": "Tous les scripts que vous enregistrez sont stockés dans le stockage local de votre navigateur sur l'appareil que vous avez utilisé. L'effacement de vos données de navigateur les supprimera. Ils ne sont jamais téléchargés sur un serveur."
       },
       {
-        "title": "Analyse",
-        "body": "Nous pouvons utiliser une analyse respectueuse de la vie privée et agrégée (comme Cloudflare Web Analytics) pour comprendre les pages utilisées. Ces analyses n'utilisent pas de cookies ou d'identificateurs personnels et ne vous suivent pas sur les sites."
+        "title": "Analytique et cookies",
+        "body": "Nous utilisons Google Analytics 4 (ID de mesure G-8W0LZYG5VX) et Pageview.app pour comprendre l'utilisation agrégée du site, comme les pages vues et les sources de trafic. Google Analytics dépose des cookies propriétaires (par exemple _ga, _ga_*) pour compter les visiteurs uniques ; Pageview.app est un service d'analyse léger qui n'utilise pas de cookies. Aucun de ces services ne reçoit le contenu de vos scripts. Vous pouvez vous désinscrire de Google Analytics en installant l'extension officielle ou en activant « Do Not Track » / Global Privacy Control dans votre navigateur."
       },
       {
         "title": "Tierces parties",
-        "body": "Le site est hébergé sur Cloudflare Pages. Cloudflare peut enregistrer les données de demande au niveau de l'infrastructure (comme les adresses IP) pour la sécurité et la prévention des abus."
+        "body": "Le site est hébergé sur Cloudflare Pages. Cloudflare peut enregistrer des données de requête au niveau de l'infrastructure (comme les adresses IP) pour la sécurité et la prévention des abus. Les données analytiques sont traitées par Google (Google Analytics) et par les opérateurs de Pageview.app."
       },
       {
         "title": "Contact",

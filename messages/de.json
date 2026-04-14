@@ -121,6 +121,44 @@
       "primaryCta": "Jetzt prompting starten",
       "secondaryCta": "Funktionen ansehen"
     },
+    "intro": {
+      "title": "Was ist ein Online-Teleprompter?",
+      "paragraphs": [
+        "Ein Online-Teleprompter ist ein Browser-basiertes Werkzeug, das Ihr Skript während der Aufzeichnung oder beim Sprechen vor der Kamera mit gleichmäßigem, lesbarem Tempo scrollt. Er ersetzt sowohl teure Hardware-Rigs als auch schwere Desktop-Software durch eine Seite, die Sie in einem Webbrowser öffnen. Diese Zugänglichkeit ist der Grund, warum Teleprompter aus TV-Studios in die Hände von YouTubern, Podcastern, Pädagogen, Vertriebsteams und jedem, der regelmäßig vor der Kamera spricht, gelangt sind.",
+        "Teleprompter Online basiert auf einer Idee: Je weniger Knöpfe zwischen Ihnen und dem nächsten Take stehen, desto besser. Fügen Sie Ihr Skript ein, passen Sie Geschwindigkeit und Schriftart an und drücken Sie Abspielen. Spiegelmodus, Vollbild, Querformatsperre auf Mobilgeräten und ein kurzer Countdown vor dem Start sind alle da, wenn Sie sie brauchen – und außer Sicht, wenn nicht.",
+        "Alles läuft lokal in Ihrem Browser. Skripte werden niemals hochgeladen, verfolgt oder verkauft. Dieser Unterschied spielt eine stille Rolle, wenn Sie eine vertrauliche Briefing, eine Produktankündigung oder eine kundenorientierte Mitteilung vorbereiten."
+      ]
+    },
+    "tips": {
+      "title": "Tipps für ein natürliches On-Camera-Lesen",
+      "subtitle": "Ein guter Teleprompter liest mit Ihnen, nicht für Sie. Kleine Gewohnheiten machen den größten Unterschied, wie selbstbewusst und ungekünstelt Sie klingen.",
+      "items": [
+        {
+          "title": "Mit echter Geschwindigkeit trainieren",
+          "body": "Machen Sie zwei oder drei Aufwärmpässe mit der Scrollgeschwindigkeit, mit der Sie tatsächlich aufzeichnen werden. So können Sie sowohl Ihr Tempo als auch Ihre Atmung kalibrieren, bevor das Aufnahmenlicht angeht."
+        },
+        {
+          "title": "Für das Ohr schreiben",
+          "body": "Kurze Sätze, eine Idee pro Zeile, Kontraktionen, wo sie natürlich klingen. Ihr Skript sollte so gelesen werden, wie Sie sprechen, nicht wie Sie eine formale E-Mail schreiben."
+        },
+        {
+          "title": "An der Linse ausrichten",
+          "body": "Platzieren Sie Ihr Telefon, Tablet oder Monitor so nah wie möglich an der Kamera. Je kleiner die Augenbewegung zwischen Ihrem Skript und der Linse, desto mehr wirken Sie, als würden Sie den Augen Ihres Zuschauers begegnen."
+        },
+        {
+          "title": "Spiegel für Glasrigs verwenden",
+          "body": "Wenn Sie durch einen Strahlteilungs-Teleprompter lesen, spiegeln Sie den Text horizontal, damit er in der Reflexion korrekt gelesen werden kann. Ein einzelnes Tippen schaltet ihn ein oder aus."
+        },
+        {
+          "title": "Eine Zeile voraus lesen",
+          "body": "Lassen Sie Ihr Auge eine Zeile einscannen, bevor Ihre Stimme aufholt. Das klingt natürlicher als das Lesen des genauen Wortes, auf dem Sie sind, und gibt Ihnen Zeit, Betonung hinzuzufügen."
+        },
+        {
+          "title": "Anstreben von Single-Take-Aufnahmen",
+          "body": "Fortlaufende Takes wirken weniger roboterhaft als stark geschnittene Edits. Die Wiedergabe stoppt automatisch am Ende Ihres Skripts, so dass der finale Beat sauber ankommt."
+        }
+      ]
+    },
     "features": {
       "title": "Alles, was Sie zum Lesen vor der Kamera benötigen",
       "subtitle": "Entwickelt mit der Einfachheit klassischer Werkzeuge und dem Glanz moderner Web-Apps.",

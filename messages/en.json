@@ -121,6 +121,44 @@
       "primaryCta": "Start prompting",
       "secondaryCta": "See features"
     },
+    "intro": {
+      "title": "What is an online teleprompter?",
+      "paragraphs": [
+        "An online teleprompter is a browser-based tool that scrolls your script at a steady, readable pace while you record or speak on camera. It replaces both expensive hardware rigs and heavy desktop software with a page you open in a web browser. That accessibility is why teleprompters have moved beyond TV studios into the hands of YouTubers, podcasters, educators, sales teams and anyone who goes on camera regularly.",
+        "Teleprompter Online is built around one idea: the fewer buttons between you and the next take, the better. Paste your script, adjust speed and font, and press play. Mirror mode, fullscreen, landscape lock on mobile, and a short countdown before you begin are all there when you need them — and out of the way when you don't.",
+        "Everything runs locally in your browser. Scripts are never uploaded, tracked, or sold. That distinction quietly matters the moment you prepare a confidential briefing, a product announcement, or a client-facing message."
+      ]
+    },
+    "tips": {
+      "title": "Tips for a natural on-camera read",
+      "subtitle": "A good teleprompter reads with you, not for you. Small habits make the biggest difference in how confident and conversational you sound.",
+      "items": [
+        {
+          "title": "Rehearse at the real speed",
+          "body": "Do two or three warm-up passes at the scroll speed you'll actually record at. It lets you calibrate both your pace and your breathing before the record light turns on."
+        },
+        {
+          "title": "Write for the ear",
+          "body": "Short sentences, one idea per line, contractions where they sound natural. Your script should read the way you talk, not the way you write a formal email."
+        },
+        {
+          "title": "Line up with the lens",
+          "body": "Place your phone, tablet or monitor as close to the camera as you can. The smaller the eye travel between your script and the lens, the more you appear to meet your viewer's eyes."
+        },
+        {
+          "title": "Use mirror for glass rigs",
+          "body": "If you read through a beam-splitter teleprompter, flip the text horizontally so it reads correctly in the reflection. A single tap turns it on or off."
+        },
+        {
+          "title": "Read a line ahead",
+          "body": "Let your eye scan one line before your voice catches up. It sounds more natural than reading the exact word you're on and gives you time to add inflection."
+        },
+        {
+          "title": "Aim for one-take reads",
+          "body": "Continuous takes feel less robotic than heavily cut edits. Playback stops automatically at the end of your script so the final beat lands cleanly."
+        }
+      ]
+    },
     "features": {
       "title": "Everything you need to read on camera",
       "subtitle": "Built with the simplicity of classic tools and the polish of modern web apps.",

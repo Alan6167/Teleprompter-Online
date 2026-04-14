@@ -1,9 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { TeleprompterApp } from '@/components/teleprompter/TeleprompterApp';
+import { Intro } from '@/components/marketing/Intro';
 import { FeatureGrid } from '@/components/marketing/FeatureGrid';
 import { UseCaseCards } from '@/components/marketing/UseCaseCards';
 import { HowItWorks } from '@/components/marketing/HowItWorks';
+import { Tips } from '@/components/marketing/Tips';
 import { FAQAccordion } from '@/components/marketing/FAQAccordion';
 import { CTA } from '@/components/marketing/CTA';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -45,9 +47,11 @@ export async function HomePage({ locale }: HomePageProps) {
         </div>
       </section>
 
+      <Intro />
       <FeatureGrid />
       <UseCaseCards locale={locale} />
       <HowItWorks />
+      <Tips />
       <FAQAccordion items={faqItems} title={t('home.faq.title')} />
       <CTA locale={locale} />
     </>

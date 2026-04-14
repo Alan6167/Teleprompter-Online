@@ -121,6 +121,44 @@
       "primaryCta": "Inizia a leggere",
       "secondaryCta": "Vedi funzionalità"
     },
+    "intro": {
+      "title": "Cos'è un teleprompter online?",
+      "paragraphs": [
+        "Un teleprompter online è uno strumento basato su browser che fa scorrere il tuo copione a un ritmo costante e leggibile mentre registri o parli davanti alla telecamera. Sostituisce sia i costosi impianti hardware che i pesanti software desktop con una pagina che apri in un browser web. Questa accessibilità è il motivo per cui i teleprompter sono usciti dai studi televisivi e sono finiti nelle mani di YouTuber, podcaster, educatori, team di vendita e chiunque vada regolarmente davanti a una telecamera.",
+        "Teleprompter Online è costruito intorno a un'idea: meno pulsanti tra te e la prossima ripresa, meglio è. Incolla il tuo copione, regola velocità e font, e premi riproduci. La modalità specchio, lo schermo intero, il blocco del paesaggio su mobile e un breve conto alla rovescia prima di iniziare sono tutti lì quando ne hai bisogno — e fuori dai piedi quando non li usi.",
+        "Tutto viene eseguito localmente nel tuo browser. I copioni non vengono mai caricati, tracciati o venduti. Questa distinzione importa silenziosamente quando prepari un briefing confidenziale, un annuncio di prodotto o un messaggio rivolto ai clienti."
+      ]
+    },
+    "tips": {
+      "title": "Suggerimenti per una lettura naturale davanti alla telecamera",
+      "subtitle": "Un buon teleprompter legge con te, non per te. Le piccole abitudini fanno la differenza maggiore nel suono sicuro e conversazionale della tua voce.",
+      "items": [
+        {
+          "title": "Fai prove alla velocità reale",
+          "body": "Fai due o tre passaggi di riscaldamento alla velocità di scorrimento che effettivamente registrerai. Ti permette di calibrare sia il tuo ritmo che la tua respirazione prima che la spia di registrazione si accenda."
+        },
+        {
+          "title": "Scrivi per l'orecchio",
+          "body": "Frasi brevi, un'idea per riga, contrazioni dove suonano naturali. Il tuo copione dovrebbe leggersi come parli, non come scrivi un'email formale."
+        },
+        {
+          "title": "Allineati con l'obiettivo",
+          "body": "Posiziona il tuo telefono, tablet o monitor il più vicino possibile alla telecamera. Minore è il movimento degli occhi tra il tuo copione e l'obiettivo, più appari a contatto con gli occhi dello spettatore."
+        },
+        {
+          "title": "Usa lo specchio per i setup in vetro",
+          "body": "Se leggi attraverso un teleprompter a divisore di fascio, capovolgi il testo orizzontalmente in modo che si legga correttamente nel riflesso. Un singolo tocco lo attiva o disattiva."
+        },
+        {
+          "title": "Leggi una riga in anticipo",
+          "body": "Lascia che il tuo sguardo scansioni una riga prima che la tua voce la raggiunga. Suona più naturale che leggere la parola esatta su cui sei e ti dà tempo di aggiungere inflessione."
+        },
+        {
+          "title": "Punta a letture in una sola ripresa",
+          "body": "Le riprese continue suonano meno robottiche rispetto ai montaggi pesantemente tagliati. La riproduzione si interrompe automaticamente alla fine del tuo copione in modo che il battito finale rimanga pulito."
+        }
+      ]
+    },
     "features": {
       "title": "Tutto ciò che ti serve per leggere davanti alla telecamera",
       "subtitle": "Costruito con la semplicità di strumenti classici e la raffinatezza delle app web moderne.",

@@ -121,6 +121,44 @@
       "primaryCta": "Empezar a leer",
       "secondaryCta": "Ver características"
     },
+    "intro": {
+      "title": "¿Qué es un teleprompter online?",
+      "paragraphs": [
+        "Un teleprompter online es una herramienta basada en navegador que desplaza tu guion a un ritmo constante y legible mientras grabas o hablas frente a la cámara. Reemplaza tanto los costosos rigs de hardware como el pesado software de escritorio con una página que abres en un navegador web. Es esa accesibilidad la que ha llevado los teleprompters más allá de los estudios de televisión a manos de creadores de YouTube, podcasters, educadores, equipos de ventas y cualquiera que trabaje regularmente frente a cámara.",
+        "Teleprompter Online está construido sobre una idea simple: cuantos menos botones haya entre tú y la siguiente toma, mejor. Pega tu guion, ajusta la velocidad y la fuente, y pulsa reproducir. El modo espejo, la pantalla completa, el bloqueo de orientación horizontal en móvil y una breve cuenta atrás antes de empezar están ahí cuando los necesitas, y fuera del camino cuando no.",
+        "Todo se ejecuta localmente en tu navegador. Los guiones nunca se suben, se rastrean ni se venden. Esa distinción importa discretamente en el momento en que preparas un informe confidencial, un anuncio de producto o un mensaje dirigido al cliente."
+      ]
+    },
+    "tips": {
+      "title": "Consejos para una lectura natural frente a cámara",
+      "subtitle": "Un buen teleprompter lee contigo, no por ti. Los pequeños hábitos marcan la mayor diferencia en lo seguro y conversacional que suenes.",
+      "items": [
+        {
+          "title": "Ensaya a la velocidad real",
+          "body": "Haz dos o tres pasadas de calentamiento a la velocidad de desplazamiento con la que grabarás. Te permite calibrar tanto tu ritmo como tu respiración antes de que se encienda la luz de grabación."
+        },
+        {
+          "title": "Escribe para el oído",
+          "body": "Frases cortas, una idea por línea, contracciones donde suenen naturales. Tu guion debe leerse como hablas, no como escribes un correo formal."
+        },
+        {
+          "title": "Alinea con la lente",
+          "body": "Coloca tu teléfono, tablet o monitor lo más cerca posible de la cámara. Cuanto menor sea la distancia de visión entre tu guion y la lente, más directo parecerá que miras a los ojos de tu espectador."
+        },
+        {
+          "title": "Usa el espejo para rigs de cristal",
+          "body": "Si lees a través de un teleprompter de divisor de haz, gira el texto horizontalmente para que se lea correctamente en el reflejo. Un solo toque lo activa o desactiva."
+        },
+        {
+          "title": "Lee una línea por delante",
+          "body": "Deja que tu vista escanee una línea antes de que tu voz las alcance. Suena más natural que leer la palabra exacta donde estás y te da tiempo para añadir entonación."
+        },
+        {
+          "title": "Aspira a tomas de un solo intento",
+          "body": "Las tomas continuas suenan menos robóticas que los edits muy cortados. La reproducción se detiene automáticamente al final de tu guion para que el último punto destaque limpiamente."
+        }
+      ]
+    },
     "features": {
       "title": "Todo lo que necesitas para leer ante la cámara",
       "subtitle": "Creado con la sencillez de las herramientas clásicas y la elegancia de las apps web modernas.",

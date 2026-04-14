@@ -121,6 +121,44 @@
       "primaryCta": "Commencer à prompter",
       "secondaryCta": "Voir les fonctionnalités"
     },
+    "intro": {
+      "title": "Qu'est-ce qu'un téléprompteur en ligne ?",
+      "paragraphs": [
+        "Un téléprompteur en ligne est un outil basé sur le navigateur qui défile votre script à un rythme régulier et lisible pendant que vous enregistrez ou parlez à la caméra. Il remplace à la fois les installations matérielles coûteuses et les logiciels de bureau lourds par une page que vous ouvrez dans un navigateur web. Cette accessibilité explique pourquoi les téléprompteurs ont quitté les studios de télévision pour se retrouver entre les mains des YouTubeurs, podcasteurs, éducateurs, équipes commerciales et tous ceux qui apparaissent régulièrement à la caméra.",
+        "Teleprompter Online repose sur une seule idée : moins il y a de boutons entre vous et la prise suivante, mieux c'est. Collez votre script, ajustez la vitesse et la police, et appuyez sur lancer. Le mode miroir, le plein écran, le verrouillage du paysage sur mobile et un court compte à rebours avant de commencer sont tous là quand vous en avez besoin — et hors de votre chemin quand vous ne les utilisez pas.",
+        "Tout fonctionne localement dans votre navigateur. Les scripts ne sont jamais téléchargés, suivis ou vendus. Cette distinction a une importance discrète quand vous préparez un briefing confidentiel, une annonce de produit ou un message destiné aux clients."
+      ]
+    },
+    "tips": {
+      "title": "Conseils pour une lecture naturelle à la caméra",
+      "subtitle": "Un bon téléprompteur lit avec vous, pas pour vous. Les petites habitudes font la plus grande différence dans la confiance et la naturel de votre discours.",
+      "items": [
+        {
+          "title": "Répétez à la vitesse réelle",
+          "body": "Faites deux ou trois passages d'échauffement à la vitesse de défilement à laquelle vous allez réellement enregistrer. Cela vous permet d'étalonner à la fois votre rythme et votre respiration avant que le témoin d'enregistrement ne s'allume."
+        },
+        {
+          "title": "Écrivez pour l'oreille",
+          "body": "Des phrases courtes, une idée par ligne, des contractions où elles sonnent naturel. Votre script devrait lire comme vous parlez, pas comme vous écrivez un email formel."
+        },
+        {
+          "title": "Alignez-vous avec l'objectif",
+          "body": "Placez votre téléphone, votre tablette ou votre moniteur aussi près de la caméra que possible. Plus la distance des yeux entre votre script et l'objectif est petite, plus vous semblez regarder dans les yeux de votre spectateur."
+        },
+        {
+          "title": "Utilisez le miroir pour les installations en verre",
+          "body": "Si vous lisez à travers un téléprompteur avec séparatrice de faisceaux, retournez le texte horizontalement pour qu'il se lise correctement dans le reflet. Un simple clic le bascule."
+        },
+        {
+          "title": "Lisez une ligne d'avance",
+          "body": "Laissez votre regard scanner une ligne avant votre voix. Cela sonne plus naturel que de lire le mot exact sur lequel vous êtes et vous donne du temps pour ajouter de l'inflexion."
+        },
+        {
+          "title": "Visez des prises en une seule fois",
+          "body": "Les prises continues semblent moins robotiques que les montages fortement découpés. La lecture s'arrête automatiquement à la fin de votre script pour que le final soit net."
+        }
+      ]
+    },
     "features": {
       "title": "Tout ce qu'il faut pour lire à la caméra",
       "subtitle": "Construit avec la simplicité des outils classiques et le polissage des applications web modernes.",

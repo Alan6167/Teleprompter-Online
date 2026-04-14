@@ -121,6 +121,44 @@
       "primaryCta": "Começar a usar o prompter",
       "secondaryCta": "Ver recursos"
     },
+    "intro": {
+      "title": "O que é um teleprompter online?",
+      "paragraphs": [
+        "Um teleprompter online é uma ferramenta baseada em navegador que rola seu roteiro em um ritmo constante e legível enquanto você grava ou fala na câmera. Ele substitui tanto rigs de hardware caros quanto software pesado de desktop por uma página que você abre em um navegador web. Essa acessibilidade é o motivo pelo qual os teleprompters saíram dos estúdios de TV e chegaram às mãos de YouTubers, podcasters, educadores, equipes de vendas e qualquer pessoa que grava regularmente.",
+        "Teleprompter Online é construído em torno de uma ideia: quanto menos botões entre você e o próximo take, melhor. Cole seu roteiro, ajuste a velocidade e a fonte, e aperte play. Modo espelho, tela cheia, bloqueio de paisagem no celular e uma contagem regressiva curta antes de começar estão lá quando você precisa deles — e fora do caminho quando não precisa.",
+        "Tudo roda localmente no seu navegador. Roteiros nunca são enviados, rastreados ou vendidos. Essa distinção importa silenciosamente no momento em que você prepara um briefing confidencial, um anúncio de produto ou uma mensagem voltada para o cliente."
+      ]
+    },
+    "tips": {
+      "title": "Dicas para uma leitura natural na câmera",
+      "subtitle": "Um bom teleprompter lê com você, não para você. Pequenos hábitos fazem a maior diferença em como você soa confiante e conversável.",
+      "items": [
+        {
+          "title": "Ensaie na velocidade real",
+          "body": "Faça dois ou três passes de aquecimento na velocidade de rolagem que você realmente vai gravar. Isso permite que você calibre o seu ritmo e sua respiração antes de a luz de gravação acender."
+        },
+        {
+          "title": "Escreva para o ouvido",
+          "body": "Frases curtas, uma ideia por linha, contrações onde elas soam naturais. Seu roteiro deve ler como você fala, não como você escreveria um email formal."
+        },
+        {
+          "title": "Alinhe com a lente",
+          "body": "Coloque seu telefone, tablet ou monitor o mais próximo da câmera quanto possível. Quanto menor o deslocamento do olho entre seu roteiro e a lente, mais você parece encontrar os olhos do seu espectador."
+        },
+        {
+          "title": "Use espelho para rigs de vidro",
+          "body": "Se você ler através de um teleprompter com divisor de feixe, inverta o texto na horizontal para que ele leia corretamente no reflexo. Um único toque liga ou desliga."
+        },
+        {
+          "title": "Leia uma linha à frente",
+          "body": "Deixe seu olho escanear uma linha antes de sua voz alcançar. Soa mais natural do que ler a palavra exata em que você está e lhe dá tempo de adicionar inflexão."
+        },
+        {
+          "title": "Procure por gravações de uma única tomada",
+          "body": "Gravações contínuas parecem menos robóticas do que edições muito cortadas. A reprodução para automaticamente no final do seu roteiro para que o batida final seja limpa."
+        }
+      ]
+    },
     "features": {
       "title": "Tudo o que você precisa para ler na câmera",
       "subtitle": "Feito com a simplicidade dos clássicos e o acabamento dos aplicativos web modernos.",

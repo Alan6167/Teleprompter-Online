@@ -17,7 +17,9 @@
     "useCases": "Anwendungsfälle",
     "faq": "Häufig gefragt",
     "about": "Über uns",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "scriptTimer": "Skript-Timer",
+    "blog": "Ratgeber"
   },
   "footer": {
     "tagline": "Ein kostenloser, datenschutzfreundlicher Teleprompter, der vollständig in Ihrem Browser läuft.",
@@ -1078,5 +1080,67 @@
       }
     ],
     "emailLabel": "Schreib uns an"
+  },
+  "scriptTimer": {
+    "meta": {
+      "title": "Skript-Timer – Wie lange dauert meine Rede?",
+      "description": "Füge dein Skript ein und sieh, wie lange es laut gelesen dauert. Kostenloser Lesezeit-Rechner mit einstellbarem Sprechtempo — und direkt im Teleprompter öffnen."
+    },
+    "title": "Skript-Timer",
+    "subtitle": "Füge dein Skript ein und sieh, wie lange es gesprochen wirklich dauert.",
+    "inputLabel": "Dein Skript",
+    "placeholder": "Füge hier dein Skript ein oder tippe es, um die Vorlesedauer zu sehen…",
+    "durationLabel": "Sprechdauer",
+    "wordsLabel": "Wörter",
+    "charactersLabel": "Zeichen",
+    "wpmLabel": "Wörter pro Minute",
+    "pace": {
+      "slow": "Langsam",
+      "conversational": "Gesprächig",
+      "fast": "Schnell"
+    },
+    "scrollHint": "Bei diesem Tempo stell den Teleprompter auf etwa {speed} px/s bei der Standardgröße von 48 px.",
+    "openInPrompter": "Im Teleprompter öffnen",
+    "sections": [
+      {
+        "title": "Warum Wortzahl besser ist als Seitenzahl",
+        "body": "Eine Seite kann je nach Schrift und Zeilenabstand 250 bis 600 Wörter fassen — „zwei Seiten\" sagt deshalb fast nichts über deine Sprechdauer. Wörter pro Minute ist das einzige Maß, das einen Formatwechsel übersteht, und genau das nutzen Fernseh- und Kongressproduzenten seit Jahrzehnten."
+      },
+      {
+        "title": "Welches Sprechtempo ist richtig?",
+        "body": "Die meisten liegen im Gespräch zwischen 130 und 150 Wörtern pro Minute. Formale Vorträge laufen langsamer, etwa 110 bis 130, weil Pausen im Raum echte Arbeit leisten. Kurzvideo und Werbesprecher gehen über 160. Im Zweifel nimm dich eine Minute lesend auf und zähl nach: Deine eigene Zahl schlägt jeden Durchschnitt."
+      },
+      {
+        "title": "Plan auch die Zeit ein, in der du nicht sprichst",
+        "body": "Der Rechner misst Sprechen, nicht Stille. Ein Hochzeitstoast muss Platz fürs Lachen lassen, eine Keynote braucht Pausen nach jedem Punkt, eine Demo muss aufs Laden warten. Als Faustregel: Schlag auf den gesprochenen Wert fünfzehn bis zwanzig Prozent auf, sobald Publikum im Raum ist."
+      },
+      {
+        "title": "Von der Schätzung zur echten Aufnahme",
+        "body": "Die Schätzung bringt dich nah heran, aber der einzige echte Test ist lautes Lesen im Tempo, das du nutzen wirst. Öffne das Skript im Teleprompter, stell die vorgeschlagene Geschwindigkeit ein und mach einen kompletten Durchlauf. Bist du zu früh fertig oder zu spät, justiere und notier die Geschwindigkeit, die gepasst hat — sie stimmt ungefähr für alles, was du künftig schreibst."
+      }
+    ],
+    "faqTitle": "Häufige Fragen",
+    "faq": [
+      {
+        "q": "Wie viele Wörter hat eine 5-Minuten-Rede?",
+        "a": "Etwa 650 bis 750 Wörter bei normalem Tempo von 130–150 Wörtern pro Minute. Bei formalem oder emotionalem Vortrag füllen auch 600 Wörter fünf Minuten bequem."
+      },
+      {
+        "q": "Wie lange dauert es, 1.000 Wörter zu lesen?",
+        "a": "Rund 7 Minuten bei 140 Wörtern pro Minute. Bei bedächtigen 110 sind es gut 9 Minuten, bei schnellen 170 unter 6."
+      },
+      {
+        "q": "Wie viele Wörter hat ein 30-Sekunden-Video?",
+        "a": "Ungefähr 70 bis 80 Wörter. Kurzformat läuft schneller als ein Gespräch, aber du willst trotzdem Raum für eine Pause vor der Pointe."
+      },
+      {
+        "q": "Ist Sprechdauer dasselbe wie Lesedauer?",
+        "a": "Nein. Stilles Lesen liegt bei etwa 240 Wörtern pro Minute — weit schneller, als irgendjemand spricht. Dieser Rechner misst lautes Lesen, und darauf kommt es bei Video, Reden und Präsentationen an."
+      },
+      {
+        "q": "Funktioniert das auch in anderen Sprachen?",
+        "a": "Die Zählung funktioniert für jede Sprache, die Wörter durch Leerzeichen trennt; chinesischer, japanischer und koreanischer Text wird mit einer Anpassung nach Zeichen gezählt. Sprechtempi unterscheiden sich je Sprache — verlass dich lieber auf eine Minute Aufnahme deiner eigenen Stimme."
+      }
+    ]
   }
 }

@@ -17,7 +17,9 @@
     "useCases": "Use cases",
     "faq": "FAQ",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "scriptTimer": "Script timer",
+    "blog": "Guides"
   },
   "footer": {
     "tagline": "A free, privacy-friendly teleprompter that runs entirely in your browser.",
@@ -1078,5 +1080,67 @@
       }
     ],
     "emailLabel": "Write to us at"
+  },
+  "scriptTimer": {
+    "meta": {
+      "title": "Script Timer – How long will my speech take to read?",
+      "description": "Paste your script and see exactly how long it takes to say out loud. Free reading time calculator with adjustable speaking pace, then open it straight in the teleprompter."
+    },
+    "title": "Script timer",
+    "subtitle": "Paste your script and find out how long it really takes to say.",
+    "inputLabel": "Your script",
+    "placeholder": "Paste or type your script here to see how long it takes to read aloud…",
+    "durationLabel": "Speaking time",
+    "wordsLabel": "Words",
+    "charactersLabel": "Characters",
+    "wpmLabel": "Words per minute",
+    "pace": {
+      "slow": "Slow",
+      "conversational": "Conversational",
+      "fast": "Fast"
+    },
+    "scrollHint": "At this pace, set the teleprompter to about {speed} px/s at the default 48 px text size.",
+    "openInPrompter": "Open in the teleprompter",
+    "sections": [
+      {
+        "title": "Why word count beats page count",
+        "body": "A page of text can be anything from 250 to 600 words depending on font and spacing, which is why \"two pages\" tells you almost nothing about how long you'll be talking. Words per minute is the only measure that survives a change of formatting, and it's the one broadcast and conference producers have used for decades."
+      },
+      {
+        "title": "What speaking pace should you use?",
+        "body": "Most people land between 130 and 150 words per minute in conversation. Formal presentations run slower, around 110 to 130, because pauses do real work in a room. Short-form video and advertising reads push past 160. If you're unsure, record yourself reading for one minute and count — your own number beats any average."
+      },
+      {
+        "title": "Build in time you're not speaking",
+        "body": "The calculator measures speech, not silence. A wedding toast has to leave room for laughter; a keynote needs beats after each point; a demo has to wait for something to load. As a rule of thumb, add fifteen to twenty percent on top of the spoken figure for anything delivered to a live audience."
+      },
+      {
+        "title": "From estimate to actual take",
+        "body": "The estimate gets you close, but the only real test is reading it out loud at the pace you'll use. Open the script in the teleprompter, set the suggested scroll speed and do one full pass. If you finish early or run long, adjust and note the speed that worked — it'll be roughly right for everything you write from now on."
+      }
+    ],
+    "faqTitle": "Common questions",
+    "faq": [
+      {
+        "q": "How many words is a 5-minute speech?",
+        "a": "Around 650 to 750 words at a normal speaking pace of 130–150 words per minute. Slow down for a formal or emotional delivery and 600 words can fill five minutes comfortably."
+      },
+      {
+        "q": "How long does it take to read 1,000 words?",
+        "a": "About 7 minutes at 140 words per minute. At a slow, deliberate 110 words per minute it's just over 9 minutes; at a fast 170 it's under 6."
+      },
+      {
+        "q": "How many words is a 30-second video?",
+        "a": "Roughly 70 to 80 words. Short-form delivery runs faster than conversation, but you still want room for a pause before the payoff."
+      },
+      {
+        "q": "Is speaking time the same as reading time?",
+        "a": "No. Silent reading runs about 240 words per minute — far faster than anyone speaks. This calculator measures reading aloud, which is what matters for video, speeches and presentations."
+      },
+      {
+        "q": "Does it work for languages other than English?",
+        "a": "The word count works for any language that separates words with spaces, and Chinese, Japanese and Korean text is counted by character with an adjustment. Speaking rates do differ by language, so trust a one-minute recording of your own voice over the default."
+      }
+    ]
   }
 }

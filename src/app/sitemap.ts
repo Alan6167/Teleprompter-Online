@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { LOCALES, USE_CASE_SLUGS, absoluteUrl, DEFAULT_LOCALE } from '@/lib/site';
 import { lastModified } from '@/lib/content-dates';
+import { BLOG_POSTS } from '@/lib/blog';
 
 export const dynamic = 'force-static';
 
@@ -53,6 +54,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: { languages },
       });
     }
+  }
+
+  // The blog is English-only for now, so its URLs carry no hreflang alternates —
+  // advertising /es/blog/ would point crawlers at a 404.
+  entries.push({
+    url: absoluteUrl(DEFAULT_LOCALE, 'blog'),
+    lastModified: lastModified('blog'),
+    changeFrequency: 'weekly',
+    priority: 0.7,
+  });
+
+  for (const post of BLOG_POSTS) {
+    entries.push({
+      url: absoluteUrl(DEFAULT_LOCALE, `blog/${post.slug}`),
+      lastModified: new Date(post.updatedAt),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    });
   }
 
   return entries;

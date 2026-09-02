@@ -17,6 +17,11 @@ interface BuildMetadataArgs {
   titleNamespace?: string;
   title?: string;
   description?: string;
+  /**
+   * Whether this route exists in every locale. English-only routes (the blog) must not
+   * advertise hreflang alternates for URLs that would 404.
+   */
+  localized?: boolean;
 }
 
 /**
@@ -30,6 +35,7 @@ export async function buildMetadata({
   titleNamespace,
   title,
   description,
+  localized = true,
 }: BuildMetadataArgs): Promise<Metadata> {
   let resolvedTitle = title;
   let resolvedDescription = description;
@@ -43,8 +49,10 @@ export async function buildMetadata({
   const canonical = absoluteUrl(locale, path);
 
   const languages: Record<string, string> = {};
-  for (const l of LOCALES) {
-    languages[l] = absoluteUrl(l, path);
+  if (localized) {
+    for (const l of LOCALES) {
+      languages[l] = absoluteUrl(l, path);
+    }
   }
   languages['x-default'] = absoluteUrl(DEFAULT_LOCALE, path);
 

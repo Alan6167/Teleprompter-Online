@@ -17,7 +17,9 @@
     "useCases": "Cas d'usage",
     "faq": "FAQ",
     "about": "À propos",
-    "contact": "Contact"
+    "contact": "Contact",
+    "scriptTimer": "Minuteur",
+    "blog": "Guides"
   },
   "footer": {
     "tagline": "Un téléprompteur gratuit et respectueux de la vie privée qui fonctionne entièrement dans votre navigateur.",
@@ -1078,5 +1080,67 @@
       }
     ],
     "emailLabel": "Écrivez-nous à"
+  },
+  "scriptTimer": {
+    "meta": {
+      "title": "Minuteur de script – Combien de temps dure mon discours ?",
+      "description": "Collez votre texte et voyez combien de temps il dure à voix haute. Calculateur gratuit de temps de lecture avec débit réglable, puis ouvrez-le dans le prompteur."
+    },
+    "title": "Minuteur de script",
+    "subtitle": "Collez votre texte et voyez combien de temps il dure vraiment à l'oral.",
+    "inputLabel": "Votre texte",
+    "placeholder": "Collez ou saisissez votre texte ici pour voir sa durée à voix haute…",
+    "durationLabel": "Temps de parole",
+    "wordsLabel": "Mots",
+    "charactersLabel": "Caractères",
+    "wpmLabel": "Mots par minute",
+    "pace": {
+      "slow": "Lent",
+      "conversational": "Conversationnel",
+      "fast": "Rapide"
+    },
+    "scrollHint": "À ce débit, réglez le prompteur sur environ {speed} px/s avec la taille de texte par défaut de 48 px.",
+    "openInPrompter": "Ouvrir dans le prompteur",
+    "sections": [
+      {
+        "title": "Pourquoi compter les mots plutôt que les pages",
+        "body": "Une page peut contenir de 250 à 600 mots selon la police et l'interligne : « deux pages » ne dit donc presque rien sur votre temps de parole. Les mots par minute sont la seule mesure qui résiste à un changement de mise en forme, et c'est celle qu'utilisent depuis des décennies les producteurs de télévision et de congrès."
+      },
+      {
+        "title": "Quel débit adopter ?",
+        "body": "La plupart des gens se situent entre 130 et 150 mots par minute en conversation. Les présentations formelles sont plus lentes, entre 110 et 130, parce que les silences travaillent vraiment dans une salle. La vidéo courte et les voix publicitaires dépassent 160. Dans le doute, enregistrez-vous une minute et comptez : votre chiffre vaut mieux que n'importe quelle moyenne."
+      },
+      {
+        "title": "Prévoyez le temps où vous ne parlez pas",
+        "body": "Le calculateur mesure la parole, pas le silence. Un toast de mariage doit laisser place aux rires ; une keynote a besoin de respirations après chaque point ; une démo doit attendre qu'un écran se charge. En règle générale, ajoutez quinze à vingt pour cent au chiffre parlé pour toute intervention devant un public."
+      },
+      {
+        "title": "De l'estimation à la vraie prise",
+        "body": "L'estimation vous rapproche, mais le seul vrai test est de lire à voix haute au débit que vous emploierez. Ouvrez le texte dans le prompteur, réglez la vitesse suggérée et faites un passage complet. Si vous finissez trop tôt ou trop tard, ajustez et notez la vitesse qui a marché : elle sera à peu près juste pour tout ce que vous écrirez ensuite."
+      }
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      {
+        "q": "Combien de mots pour un discours de 5 minutes ?",
+        "a": "Entre 650 et 750 mots à un débit normal de 130–150 mots par minute. Pour une prise de parole formelle ou émouvante, plus lente, 600 mots remplissent confortablement cinq minutes."
+      },
+      {
+        "q": "Combien de temps pour lire 1 000 mots ?",
+        "a": "Environ 7 minutes à 140 mots par minute. À un rythme posé de 110 mots par minute, un peu plus de 9 minutes ; à 170, moins de 6."
+      },
+      {
+        "q": "Combien de mots pour une vidéo de 30 secondes ?",
+        "a": "Environ 70 à 80 mots. Le format court est plus rapide que la conversation, mais il faut garder de la place pour une pause avant la chute."
+      },
+      {
+        "q": "Temps de parole et temps de lecture, est-ce pareil ?",
+        "a": "Non. La lecture silencieuse tourne autour de 240 mots par minute, bien plus vite que quiconque ne parle. Ce calculateur mesure la lecture à voix haute, ce qui compte pour la vidéo, les discours et les présentations."
+      },
+      {
+        "q": "Cela fonctionne-t-il dans d'autres langues ?",
+        "a": "Le comptage fonctionne pour toute langue qui sépare les mots par des espaces, et les textes chinois, japonais et coréens sont comptés par caractère avec un ajustement. Les débits varient selon la langue : fiez-vous plutôt à un enregistrement d'une minute de votre propre voix."
+      }
+    ]
   }
 }

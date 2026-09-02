@@ -17,7 +17,9 @@
     "useCases": "Casos de uso",
     "faq": "Preguntas frecuentes",
     "about": "Acerca de",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "scriptTimer": "Cronómetro",
+    "blog": "Guías"
   },
   "footer": {
     "tagline": "Un teleprompter gratis, respetuoso con tu privacidad, que funciona íntegramente en tu navegador.",
@@ -1078,5 +1080,67 @@
       }
     ],
     "emailLabel": "Escríbenos a"
+  },
+  "scriptTimer": {
+    "meta": {
+      "title": "Cronómetro de guiones – ¿Cuánto dura mi discurso?",
+      "description": "Pega tu guion y descubre cuánto tarda en leerse en voz alta. Calculadora gratuita de tiempo de lectura con ritmo ajustable, y ábrelo directo en el teleprompter."
+    },
+    "title": "Cronómetro de guiones",
+    "subtitle": "Pega tu guion y descubre cuánto dura de verdad al decirlo.",
+    "inputLabel": "Tu guion",
+    "placeholder": "Pega o escribe aquí tu guion para ver cuánto tarda en leerse en voz alta…",
+    "durationLabel": "Tiempo hablado",
+    "wordsLabel": "Palabras",
+    "charactersLabel": "Caracteres",
+    "wpmLabel": "Palabras por minuto",
+    "pace": {
+      "slow": "Lento",
+      "conversational": "Conversacional",
+      "fast": "Rápido"
+    },
+    "scrollHint": "A este ritmo, pon el teleprompter en unos {speed} px/s con el tamaño de letra por defecto de 48 px.",
+    "openInPrompter": "Abrir en el teleprompter",
+    "sections": [
+      {
+        "title": "Por qué el recuento de palabras gana al de páginas",
+        "body": "Una página puede tener entre 250 y 600 palabras según la fuente y el interlineado, por eso «dos páginas» no dice casi nada sobre cuánto vas a hablar. Las palabras por minuto son la única medida que sobrevive a un cambio de formato, y es la que llevan décadas usando los productores de televisión y de congresos."
+      },
+      {
+        "title": "¿Qué ritmo deberías usar?",
+        "body": "La mayoría se sitúa entre 130 y 150 palabras por minuto en conversación. Las presentaciones formales van más lentas, entre 110 y 130, porque las pausas trabajan de verdad en una sala. El vídeo corto y las cuñas publicitarias superan las 160. Si tienes dudas, grábate leyendo un minuto y cuenta: tu propio número vale más que cualquier promedio."
+      },
+      {
+        "title": "Reserva el tiempo en el que no hablas",
+        "body": "La calculadora mide habla, no silencio. Un brindis de boda tiene que dejar sitio a las risas; una keynote necesita pausas tras cada idea; una demo debe esperar a que algo cargue. Como regla, añade entre un quince y un veinte por ciento sobre la cifra hablada para cualquier intervención ante público en directo."
+      },
+      {
+        "title": "De la estimación a la toma real",
+        "body": "La estimación te deja cerca, pero la única prueba real es leerlo en voz alta al ritmo que vas a usar. Abre el guion en el teleprompter, pon la velocidad sugerida y haz una pasada completa. Si acabas antes o te alargas, ajusta y apunta la velocidad que funcionó: será aproximadamente la correcta para todo lo que escribas a partir de ahora."
+      }
+    ],
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+      {
+        "q": "¿Cuántas palabras son 5 minutos de discurso?",
+        "a": "Entre 650 y 750 palabras a un ritmo normal de 130–150 por minuto. Si vas más lento por ser una entrega formal o emotiva, 600 palabras llenan cinco minutos con holgura."
+      },
+      {
+        "q": "¿Cuánto se tarda en leer 1.000 palabras?",
+        "a": "Unos 7 minutos a 140 palabras por minuto. A un ritmo pausado de 110 son algo más de 9 minutos; a 170, menos de 6."
+      },
+      {
+        "q": "¿Cuántas palabras son 30 segundos de vídeo?",
+        "a": "Entre 70 y 80 palabras. El formato corto va más rápido que la conversación, pero conviene dejar hueco para una pausa antes del remate."
+      },
+      {
+        "q": "¿Es lo mismo tiempo hablado que tiempo de lectura?",
+        "a": "No. La lectura silenciosa ronda las 240 palabras por minuto, mucho más rápido de lo que habla nadie. Esta calculadora mide la lectura en voz alta, que es lo que importa en vídeo, discursos y presentaciones."
+      },
+      {
+        "q": "¿Funciona en otros idiomas?",
+        "a": "El recuento funciona con cualquier idioma que separe palabras con espacios, y el texto en chino, japonés y coreano se cuenta por caracteres con un ajuste. Los ritmos varían según el idioma, así que fíate más de una grabación de un minuto con tu propia voz que del valor por defecto."
+      }
+    ]
   }
 }

@@ -1,4 +1,5 @@
-import { SITE_NAME, SITE_URL, absoluteUrl, type Locale } from './site';
+import { SITE_NAME, SITE_URL, absoluteUrl, DEFAULT_LOCALE, type Locale } from './site';
+import type { BlogPost } from './blog';
 
 export function softwareApplicationJsonLd(locale: Locale) {
   return {
@@ -58,5 +59,71 @@ export function organizationJsonLd() {
     '@type': 'Organization',
     name: SITE_NAME,
     url: SITE_URL,
+  };
+}
+
+/** Structured data for a standalone browser tool such as the script timer. */
+export function webApplicationJsonLd(
+  locale: Locale,
+  { name, description, path }: { name: string; description: string; path: string }
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name,
+    description,
+    url: absoluteUrl(locale, path),
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    inLanguage: locale,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  };
+}
+
+/** Article markup for a single blog post. */
+export function blogPostJsonLd(post: BlogPost) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    url: absoluteUrl(DEFAULT_LOCALE, `blog/${post.slug}`),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': absoluteUrl(DEFAULT_LOCALE, `blog/${post.slug}`),
+    },
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    inLanguage: DEFAULT_LOCALE,
+    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  };
+}
+
+/** Blog markup listing every published post. */
+export function blogIndexJsonLd(posts: BlogPost[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: `${SITE_NAME} guides`,
+    url: absoluteUrl(DEFAULT_LOCALE, 'blog'),
+    inLanguage: DEFAULT_LOCALE,
+    blogPost: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.description,
+      url: absoluteUrl(DEFAULT_LOCALE, `blog/${post.slug}`),
+      datePublished: post.publishedAt,
+      dateModified: post.updatedAt,
+    })),
   };
 }

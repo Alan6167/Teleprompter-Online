@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Logo } from './Logo';
-import { localePath, type Locale } from '@/lib/site';
+import { DEFAULT_LOCALE, localePath, type Locale } from '@/lib/site';
 
 interface FooterProps {
   locale: Locale;
@@ -42,10 +42,23 @@ export function Footer({ locale }: FooterProps) {
               </a>
             </li>
             <li>
+              <a href={localePath(locale, 'script-timer')} className="hover:underline">
+                {t('nav.scriptTimer')}
+              </a>
+            </li>
+            <li>
               <a href={localePath(locale, 'faq')} className="hover:underline">
                 {t('nav.faq')}
               </a>
             </li>
+            {/* The blog is English-only, so it is only linked from English pages. */}
+            {locale === DEFAULT_LOCALE && (
+              <li>
+                <a href={localePath(locale, 'blog')} className="hover:underline">
+                  {t('nav.blog')}
+                </a>
+              </li>
+            )}
           </ul>
         </div>
         <div>

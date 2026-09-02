@@ -17,7 +17,9 @@
     "useCases": "Casi d'uso",
     "faq": "FAQ",
     "about": "Chi siamo",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "scriptTimer": "Cronometro",
+    "blog": "Guide"
   },
   "footer": {
     "tagline": "Un teleprompter gratuito e attento alla privacy che funziona interamente nel tuo browser.",
@@ -1078,5 +1080,67 @@
       }
     ],
     "emailLabel": "Scrivici a"
+  },
+  "scriptTimer": {
+    "meta": {
+      "title": "Cronometro copioni – Quanto dura il mio discorso?",
+      "description": "Incolla il copione e scopri quanto dura letto ad alta voce. Calcolatore gratuito del tempo di lettura con ritmo regolabile, poi aprilo direttamente nel gobbo."
+    },
+    "title": "Cronometro copioni",
+    "subtitle": "Incolla il copione e scopri quanto dura davvero pronunciato.",
+    "inputLabel": "Il tuo copione",
+    "placeholder": "Incolla o scrivi qui il copione per vedere quanto dura letto ad alta voce…",
+    "durationLabel": "Tempo di parlato",
+    "wordsLabel": "Parole",
+    "charactersLabel": "Caratteri",
+    "wpmLabel": "Parole al minuto",
+    "pace": {
+      "slow": "Lento",
+      "conversational": "Conversazionale",
+      "fast": "Veloce"
+    },
+    "scrollHint": "A questo ritmo, imposta il gobbo su circa {speed} px/s con la dimensione predefinita di 48 px.",
+    "openInPrompter": "Apri nel gobbo",
+    "sections": [
+      {
+        "title": "Perché contare le parole batte contare le pagine",
+        "body": "Una pagina può contenere da 250 a 600 parole a seconda del carattere e dell'interlinea: per questo «due pagine» non dice quasi nulla su quanto parlerai. Le parole al minuto sono l'unica misura che sopravvive a un cambio di impaginazione, ed è quella che produttori televisivi e congressuali usano da decenni."
+      },
+      {
+        "title": "Che ritmo dovresti usare?",
+        "body": "La maggior parte delle persone sta tra 130 e 150 parole al minuto in conversazione. Le presentazioni formali vanno più lente, tra 110 e 130, perché in una sala le pause lavorano davvero. Video brevi e speakeraggi pubblicitari superano le 160. Nel dubbio, registrati mentre leggi per un minuto e conta: il tuo numero vale più di qualsiasi media."
+      },
+      {
+        "title": "Metti in conto il tempo in cui non parli",
+        "body": "Il calcolatore misura il parlato, non il silenzio. Un brindisi deve lasciare spazio alle risate; una keynote ha bisogno di pause dopo ogni punto; una demo deve aspettare che qualcosa si carichi. Come regola, aggiungi dal quindici al venti per cento sul valore parlato per qualsiasi intervento dal vivo."
+      },
+      {
+        "title": "Dalla stima alla ripresa vera",
+        "body": "La stima ti porta vicino, ma l'unico test reale è leggere ad alta voce al ritmo che userai. Apri il copione nel gobbo, imposta la velocità suggerita e fai una passata completa. Se finisci prima o sfori, regola e annota la velocità che ha funzionato: sarà all'incirca giusta per tutto ciò che scriverai d'ora in poi."
+      }
+    ],
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      {
+        "q": "Quante parole sono un discorso di 5 minuti?",
+        "a": "Tra 650 e 750 parole a un ritmo normale di 130–150 al minuto. Se rallenti per una resa formale o emotiva, 600 parole riempiono cinque minuti con agio."
+      },
+      {
+        "q": "Quanto ci vuole a leggere 1.000 parole?",
+        "a": "Circa 7 minuti a 140 parole al minuto. A un ritmo pacato di 110 sono poco più di 9 minuti; a 170, meno di 6."
+      },
+      {
+        "q": "Quante parole sono un video di 30 secondi?",
+        "a": "Circa 70-80 parole. Il formato breve corre più veloce della conversazione, ma serve comunque spazio per una pausa prima della chiusa."
+      },
+      {
+        "q": "Tempo di parlato e tempo di lettura sono la stessa cosa?",
+        "a": "No. La lettura silenziosa viaggia intorno alle 240 parole al minuto, molto più veloce di quanto chiunque parli. Questo calcolatore misura la lettura ad alta voce, che è ciò che conta per video, discorsi e presentazioni."
+      },
+      {
+        "q": "Funziona anche in altre lingue?",
+        "a": "Il conteggio funziona per qualsiasi lingua che separi le parole con spazi, e i testi in cinese, giapponese e coreano sono contati per carattere con una correzione. I ritmi variano da lingua a lingua: fidati più di un minuto di registrazione della tua voce che del valore predefinito."
+      }
+    ]
   }
 }

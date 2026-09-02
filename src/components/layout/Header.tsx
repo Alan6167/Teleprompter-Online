@@ -14,7 +14,7 @@ import {
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { ThemeToggle } from './ThemeToggle';
 import { Logo } from './Logo';
-import { localePath, type Locale } from '@/lib/site';
+import { DEFAULT_LOCALE, localePath, type Locale } from '@/lib/site';
 
 interface HeaderProps {
   locale: Locale;
@@ -28,8 +28,15 @@ export function Header({ locale }: HeaderProps) {
     { key: 'features', href: localePath(locale, 'features') },
     { key: 'howToUse', href: localePath(locale, 'how-to-use') },
     { key: 'useCases', href: localePath(locale, 'use-cases') },
+    { key: 'scriptTimer', href: localePath(locale, 'script-timer') },
     { key: 'faq', href: localePath(locale, 'faq') },
   ];
+
+  // The blog only exists in English; linking it from other locales would send readers
+  // to a page in a language they did not choose.
+  if (locale === DEFAULT_LOCALE) {
+    navItems.push({ key: 'blog', href: localePath(locale, 'blog') });
+  }
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur safe-top">

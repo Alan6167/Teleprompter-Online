@@ -15,7 +15,9 @@
     "features": "Funktionen",
     "howToUse": "Anleitung",
     "useCases": "Anwendungsfälle",
-    "faq": "Häufig gefragt"
+    "faq": "Häufig gefragt",
+    "about": "Über uns",
+    "contact": "Kontakt"
   },
   "footer": {
     "tagline": "Ein kostenloser, datenschutzfreundlicher Teleprompter, der vollständig in Ihrem Browser läuft.",
@@ -25,7 +27,8 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
     "copyright": "© {year} Teleprompter Online. Alle Rechte vorbehalten.",
-    "madeWith": "Entwickelt für Creator, Pädagogen und Redner."
+    "madeWith": "Entwickelt für Creator, Pädagogen und Redner.",
+    "company": "Unternehmen"
   },
   "teleprompter": {
     "placeholder": "Geben Sie Ihr Skript ein oder fügen Sie es hier ein. Drücken Sie die Leertaste zum Abspielen.",
@@ -61,7 +64,8 @@
       "alignment": "Ausrichtung",
       "alignLeft": "Linksbündig",
       "alignCenter": "Zentriert",
-      "alignRight": "Rechtsbündig"
+      "alignRight": "Rechtsbündig",
+      "custom": "Eigene Farbe"
     },
     "savedScripts": {
       "title": "Gespeicherte Skripte",
@@ -87,7 +91,8 @@
       "fullscreen": "Vollbild umschalten",
       "restart": "Neustarten",
       "save": "Skript speichern",
-      "exit": "Vollbild beenden"
+      "exit": "Vollbild beenden",
+      "voice": "Sprachmodus umschalten"
     },
     "countdown": {
       "getReady": "Machen Sie sich bereit…"
@@ -101,7 +106,14 @@
       "uploadFile": "Datei hochladen",
       "dropHere": "Datei hier ablegen zum Laden",
       "placeholderWithUpload": "Fügen Sie Ihr Skript hier ein oder geben Sie es ein — oder ziehen Sie eine .txt-, .md-, .srt- oder .rtf-Datei in dieses Feld.",
-      "uploadHint": "Tipp: Sie können auch eine Datei per Drag-and-Drop ablegen oder oben auf „Datei hochladen\" klicken."
+      "uploadHint": "Tipp: Sie können auch eine Datei per Drag-and-Drop ablegen oder oben auf „Datei hochladen\" klicken.",
+      "dismiss": "Schließen",
+      "importError": {
+        "unsupported": "Dieser Dateityp wird nicht unterstützt. Versuche .txt, .md, .docx, .rtf oder .srt.",
+        "docxUnsupported": "Dein Browser kann keine .docx-Dateien öffnen. Nutze Chrome, Edge oder Safari — oder füge den Text ein.",
+        "empty": "Diese Datei scheint leer zu sein.",
+        "failed": "Die Datei konnte nicht gelesen werden. Speichere sie als .txt oder .docx und lade sie erneut hoch."
+      }
     },
     "tips": {
       "title": "Schnelle Tipps",
@@ -111,6 +123,15 @@
         "Schalten Sie den Spiegelmodus um, wenn Sie ein reflektierendes Teleprompter-Rig verwenden.",
         "Ihre Skripte werden privat in Ihrem Browser gespeichert."
       ]
+    },
+    "defaultScript": "Willkommen bei Teleprompter Online.\n\nFüge dein Skript hier ein oder schreib es direkt und drücke die Leertaste zum Starten.\n\nPasse Scrollgeschwindigkeit und Schriftgröße an dein Sprechtempo an. Aktiviere den Spiegelmodus, wenn du einen Glas-Teleprompter nutzt, und wechsle in den Vollbildmodus für ablenkungsfreies Lesen.\n\nLieber freihändig? Schalte den Sprachmodus ein — das Skript folgt deiner Stimme.\n\nSkript und Einstellungen werden privat in deinem Browser gespeichert — nichts wird hochgeladen.",
+    "voice": {
+      "label": "Sprache",
+      "toggle": "Sprachgesteuertes Scrollen umschalten",
+      "listening": "Hört zu — das Skript folgt deiner Stimme",
+      "denied": "Der Mikrofonzugriff wurde blockiert. Erlaube ihn in den Website-Einstellungen deines Browsers.",
+      "unsupported": "Der Sprachmodus benötigt Chrome, Edge oder Safari.",
+      "hint": "Der Sprachmodus nutzt die Spracherkennung deines Browsers, um das Skript beim Sprechen zu scrollen. Dein Skript verlässt dein Gerät nie — je nach Browser kann das Audio jedoch zur Erkennung an den Sprachdienst des Browser-Herstellers gesendet werden."
     }
   },
   "home": {
@@ -250,31 +271,59 @@
       "items": [
         {
           "q": "Ist Teleprompter Online wirklich kostenlos?",
-          "a": "Ja. Die App ist vollständig kostenlos nutzbar, für immer. Es gibt kein Konto, kein Wasserzeichen, keine gesperrten Funktionen und keinen Upload."
+          "a": "Ja. Die App ist dauerhaft komplett kostenlos nutzbar. Kein Konto, kein Wasserzeichen, keine gesperrten Funktionen und kein Upload."
         },
         {
           "q": "Muss ich etwas installieren?",
-          "a": "Nein. Teleprompter Online läuft direkt in Ihrem Webbrowser. Es funktioniert in Chrome, Safari, Firefox und Edge auf Desktop, Tablet und Smartphone."
+          "a": "Nein. Teleprompter Online läuft direkt im Browser: Chrome, Safari, Firefox und Edge, auf Desktop, Tablet und Smartphone."
         },
         {
-          "q": "Ist mein Skript privat?",
-          "a": "Ja. Ihr Skript verlässt niemals Ihr Gerät. Gespeicherte Skripte befinden sich im lokalen Speicher Ihres Browsers und werden nicht auf einen Server hochgeladen."
+          "q": "Bleibt mein Skript privat?",
+          "a": "Ja. Dein Skript verlässt dein Gerät nie. Gespeicherte Skripte, der aktuelle Entwurf und deine Einstellungen liegen im lokalen Speicher deines Browsers und werden an keinen Server übertragen."
         },
         {
-          "q": "Kann ich das mit einem physischen Teleprompter-Rig verwenden?",
-          "a": "Ja. Verwenden Sie den Spiegel-Umschalter, um den Text horizontal für einen Strahlteilungs-Teleprompter vor Ihrer Kamera zu spiegeln."
+          "q": "Ist mein Skript noch da, wenn ich den Tab schließe?",
+          "a": "Ja. Der aktuelle Entwurf und alle Prompter-Einstellungen werden automatisch im Browser gespeichert — beim erneuten Öffnen machst du genau dort weiter, wo du aufgehört hast. Beim Löschen der Browserdaten verschwinden sie."
         },
         {
-          "q": "Funktioniert es auf mobilen Geräten?",
-          "a": "Es ist für Mobilgeräte konzipiert. Sie erhalten große Touch-Ziele, Vollbild im Querformat und eine optimierte Standard-Schriftgröße, die auf kleinen Bildschirmen bequem lesbar ist."
+          "q": "Kann ich es mit einem echten Teleprompter-Rig nutzen?",
+          "a": "Ja. Der Spiegelmodus dreht den Text horizontal für einen Glas-Teleprompter vor der Kamera. Für Overhead-Aufbauten lässt er sich auch vertikal spiegeln."
         },
         {
-          "q": "Kann ich die Scrollgeschwindigkeit während des Lesens steuern?",
-          "a": "Ja. Verwenden Sie die Pfeiltasten auf dem Desktop oder den On-Screen-Geschwindigkeitsregler auf mobilen Geräten, um die Scrollgeschwindigkeit in Echtzeit anzupassen."
+          "q": "Funktioniert es auf dem Handy?",
+          "a": "Es ist für mobile Geräte gebaut: große Touchflächen, Vollbild im Querformat, passend voreingestellte Schriftgröße und Pause bzw. Fortsetzen per Tippen an beliebiger Stelle, damit du mitten in der Aufnahme nicht nach den Reglern suchen musst."
+        },
+        {
+          "q": "Kann ich die Geschwindigkeit beim Lesen ändern?",
+          "a": "Ja. Nutze am Rechner die Pfeiltasten oder am Handy den Regler auf dem Bildschirm, um die Geschwindigkeit in Echtzeit anzupassen."
+        },
+        {
+          "q": "Scrollt der Text automatisch, während ich spreche?",
+          "a": "Ja: Schalte den Sprachmodus ein, dann folgt das Skript deiner Stimme statt einem Timer — Pausen und spontane Einschübe hängen dich nicht mehr ab. Erfordert Chrome, Edge oder Safari und Mikrofonfreigabe."
+        },
+        {
+          "q": "Welche Dateiformate kann ich hochladen?",
+          "a": "Reinen Text (.txt), Markdown (.md), Word-Dokumente (.docx), Rich Text (.rtf) und Untertitel (.srt, .vtt). Zieh eine Datei auf das Skriptfeld oder nutze den Upload-Button. Dateien werden im Browser gelesen und nie hochgeladen."
+        },
+        {
+          "q": "Kann ich es mit Zoom, Google Meet oder Microsoft Teams nutzen?",
+          "a": "Ja. Öffne den Prompter in einem Browserfenster direkt unter der Webcam oder auf einem zweiten Bildschirm bzw. Tablet. Teile nur das Fenster deiner Meeting-App, nicht das des Prompters — dann bleiben deine Notizen für alle anderen unsichtbar."
+        },
+        {
+          "q": "Wie nutze ich es auf einem iPad oder iPhone?",
+          "a": "Öffne teleprompteronline.net in Safari oder Chrome, füge dein Skript ein und tippe auf Vollbild. Über „Zum Home-Bildschirm“ startest du es wie eine App. Platziere das Gerät direkt unter dem Objektiv, damit die Blickrichtung natürlich bleibt."
+        },
+        {
+          "q": "Kann ich Text- und Hintergrundfarbe ändern?",
+          "a": "Ja. Im Einstellungsbereich gibt es Voreinstellungen für beides plus einen freien Farbwähler. Weiß auf Schwarz ist der Klassiker; Gelb auf Schwarz reduziert Blendung, Schwarz auf Weiß liest sich in hellen Räumen besser."
+        },
+        {
+          "q": "Funktioniert es offline?",
+          "a": "Ja, nach dem ersten Besuch. Die Seite wird im Browser zwischengespeichert, sodass du den Prompter öffnen und deine gespeicherten Skripte ohne Verbindung lesen kannst."
         },
         {
           "q": "Stoppt der Teleprompter am Ende?",
-          "a": "Ja. Die Wiedergabe stoppt sanft am Ende Ihres Skripts. Drücken Sie Neustarten, um zum Anfang zurückzugehen."
+          "a": "Ja. Die Wiedergabe stoppt sanft am Ende deines Skripts. Mit „Neu starten“ geht es zurück an den Anfang."
         }
       ]
     },
@@ -526,8 +575,8 @@
         "body": "Teleprompter Online ist eine statische Web-App, die vollständig in Ihrem Browser läuft. Wir erstellen keine Konten, wir erhalten Ihre Skripte nicht und wir verkaufen keine Daten."
       },
       {
-        "title": "Was auf Ihrem Gerät bleibt",
-        "body": "Alle Skripte, die Sie speichern, werden im lokalen Speicher Ihres Browsers auf dem Gerät gespeichert, das Sie verwendet haben. Das Löschen Ihrer Browserdaten entfernt diese. Sie werden niemals auf einen Server hochgeladen."
+        "title": "Was auf deinem Gerät bleibt",
+        "body": "Deine gespeicherten Skripte, der gerade bearbeitete Entwurf und sämtliche Prompter-Einstellungen (Geschwindigkeit, Schrift, Farben, Spiegelung, Countdown) liegen im lokalen Speicher deines Browsers auf dem genutzten Gerät. Beim Löschen der Browserdaten verschwinden sie. Nichts davon wird je auf einen Server hochgeladen."
       },
       {
         "title": "Analyse und Cookies",
@@ -538,8 +587,12 @@
         "body": "Die Website wird auf Cloudflare Pages gehostet. Cloudflare kann Anfragedaten auf Infrastrukturebene (wie IP-Adressen) für Sicherheit und Missbrauchsprävention protokollieren. Die Analysedaten werden von Google (Google Analytics) und von den Betreibern von Pageview.app verarbeitet."
       },
       {
+        "title": "Sprachmodus und dein Mikrofon",
+        "body": "Der Sprachmodus ist aus, bis du ihn einschaltest, und dein Browser fragt vorher nach der Mikrofonfreigabe. Der Skripttext wird lokal in der Seite mit deiner Sprache abgeglichen und nie übertragen. Beim Audio ist es anders: Die meisten Browser, Chrome eingeschlossen, senden es zur Transkription an ihren eigenen Spracherkennungsdienst — für dieses Audio gilt damit die Datenschutzerklärung deines Browser-Herstellers. Wenn kein Ton dein Gerät verlassen soll, lass den Sprachmodus aus; alle anderen Funktionen arbeiten ohne ihn."
+      },
+      {
         "title": "Kontakt",
-        "body": "Fragen zum Datenschutz? Kontaktieren Sie uns über die Kontaktangaben auf unserer Website."
+        "body": "Fragen zum Datenschutz? Schreib an hello@teleprompteronline.net oder nutze die Kontaktseite."
       }
     ]
   },
@@ -577,5 +630,66 @@
     "title": "Seite nicht gefunden",
     "body": "Die Seite, die Sie suchen, ist nicht hier. Sie wurde möglicherweise verschoben oder hat nie existiert.",
     "cta": "Zurück zum Teleprompter"
+  },
+  "about": {
+    "meta": {
+      "title": "Über Teleprompter Online",
+      "description": "Wer Teleprompter Online entwickelt, warum es kostenlos ist und welche Prinzipien hinter einem Teleprompter stehen, der komplett im Browser läuft."
+    },
+    "title": "Über Teleprompter Online",
+    "subtitle": "Ein kostenloser Teleprompter mit einer Idee dahinter: weniger Knöpfe zwischen dir und der nächsten Aufnahme.",
+    "sections": [
+      {
+        "title": "Warum es das gibt",
+        "body": "Teleprompter hieß früher Studio, Operator und ein Rig, das mehr kostete als die Kamera. Danach hieß es Desktop-Software mit Lizenzschlüssel. Beides ergab keinen Sinn für jemanden, der an einem Dienstagabend am Küchentisch das Intro für einen Kurs aufnimmt. Teleprompter Online ist das Werkzeug, das wir uns gewünscht hätten: Seite öffnen, Skript einfügen, Play drücken."
+      },
+      {
+        "title": "Wie es funktioniert",
+        "body": "Alles läuft in deinem Browser. Die Scroll-Engine, die Spiegelung, der Datei-Import, die gespeicherten Skripte — alles ist JavaScript, das auf deinem eigenen Gerät ausgeführt wird. Kein Backend liest deine Worte, denn es gibt überhaupt kein Backend: Die Seite besteht aus statischen Dateien von einem CDN."
+      },
+      {
+        "title": "Was wir mit privat meinen",
+        "body": "Dein Skript, dein aktueller Entwurf und deine Einstellungen liegen im lokalen Speicher deines Browsers. Sie werden nicht hochgeladen, nicht auf einem Server gesichert und sind für uns nicht lesbar. Der Kompromiss ist ehrlich: Löschst du deine Browserdaten, sind sie weg. Für ein Werkzeug, mit dem Produktankündigungen und vertrauliche Briefings geprobt werden, halten wir das für den richtigen Tausch."
+      },
+      {
+        "title": "Kostenlos — und warum",
+        "body": "Der Betrieb kostet sehr wenig, weil serverseitig sehr wenig passiert. Es gibt keine Kosten pro Nutzer zu decken, also keine Paywall, kein Wasserzeichen, kein Exportlimit und keine Testphase. Sollte sich das ändern, geschieht es offen — nicht dadurch, dass Funktionen, auf die du dich verlässt, still gesperrt werden."
+      },
+      {
+        "title": "Für sechs Sprachen gebaut",
+        "body": "Oberfläche und alle Seiten gibt es auf Englisch, Spanisch, Portugiesisch, Französisch, Deutsch und Italienisch — mit echten Übersetzungen statt maschineller Ausgabe in einer Vorlage. Klingt etwas in deiner Sprache falsch, schreib uns: Das ist die Art Fehlermeldung, die wir am liebsten bekommen."
+      }
+    ]
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt – Teleprompter Online",
+      "description": "Schreib uns zu Fehlern, Funktionswünschen, Übersetzungskorrekturen oder Presseanfragen."
+    },
+    "title": "Kontakt",
+    "subtitle": "Fragen, Fehler und Ideen landen im selben Postfach.",
+    "sections": [
+      {
+        "title": "E-Mail",
+        "body": "Schreib an die Adresse unten — wir lesen alles. Wir sind ein kleines Team, eine Antwort dauert eher ein paar Tage als ein paar Stunden."
+      },
+      {
+        "title": "Einen Fehler melden",
+        "body": "Die nützlichsten Meldungen nennen Browser und Gerät, was du erwartet hast und was stattdessen passiert ist. Wenn der Prompter mitten im Lesen gesponnen hat, helfen Scrollgeschwindigkeit und Schriftgröße enorm — diese zwei Einstellungen erklären einen überraschend großen Teil der Probleme."
+      },
+      {
+        "title": "Funktionswünsche",
+        "body": "Erzähl uns, was du erreichen wolltest, nicht nur die Funktion, die dir vorschwebt. Erst die Aufgabe, für die du den Prompter einsetzt, zeigt, ob ein neuer Knopf die richtige Antwort ist."
+      },
+      {
+        "title": "Übersetzungen",
+        "body": "Klingt eine Formulierung in deiner Sprache schief, oder zeigt eine Seite noch englischen Text, wo sie es nicht sollte? Schick uns die Seitenadresse und die Formulierung, die du nehmen würdest."
+      },
+      {
+        "title": "Fragen zum Datenschutz",
+        "body": "Für alles rund um Datenverarbeitung wirf zuerst einen Blick in die Datenschutzerklärung: Sie beschreibt, was gespeichert wird, wo, und was die Analyse-Tools tun. Beantwortet sie deine Frage nicht, frag nach."
+      }
+    ],
+    "emailLabel": "Schreib uns an"
   }
 }

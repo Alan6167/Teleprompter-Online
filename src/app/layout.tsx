@@ -1,5 +1,6 @@
 import type { Viewport } from 'next';
 import { Analytics } from '@/components/analytics/Analytics';
+import { ServiceWorkerRegistration } from '@/components/pwa/ServiceWorkerRegistration';
 import { DEFAULT_LOCALE } from '@/lib/site';
 import './globals.css';
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-[100dvh] antialiased">
         {children}
         <Analytics />
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );

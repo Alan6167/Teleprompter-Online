@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import {
   Play,
   Pause,
@@ -14,7 +14,8 @@ import {
   FolderOpen,
   Keyboard,
   FlipHorizontal,
-  FlipVertical,
+  Mic,
+  MicOff,
   Type,
   Trash2,
   ListPlus,
@@ -42,41 +43,50 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { SettingsPanel } from './SettingsPanel';
 import { useTeleprompter } from '@/hooks/useTeleprompter';
 import { useFullscreen } from '@/hooks/useFullscreen';
 import { useHotkeys } from '@/hooks/useHotkeys';
 import { useLocalScripts } from '@/hooks/useLocalScripts';
+import { usePersistentState } from '@/hooks/usePersistentState';
+import { tokenizeScript, useVoiceScroll } from '@/hooks/useVoiceScroll';
+import {
+  DEFAULT_SETTINGS,
+  FONT_FAMILIES,
+  FONT_SIZE_RANGE,
+  SPEED_RANGE,
+  countWords,
+  impliedWordsPerMinute,
+  reviveDraft,
+  reviveSettings,
+  type PrompterSettings,
+} from '@/lib/prompter';
+import {
+  ACCEPTED_FILE_TYPES,
+  ScriptImportError,
+  importScriptFile,
+  type ImportErrorReason,
+} from '@/lib/script-import';
 import { cn } from '@/lib/utils';
 
-type FontFamily = 'sans' | 'serif' | 'mono';
-
-const FONT_FAMILIES: Record<FontFamily, string> = {
-  sans:
-    '"Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
-  serif: '"Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif',
-  mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, "Liberation Mono", monospace',
-};
-
-const DEFAULT_SCRIPT = `Welcome to Teleprompter Online.
-
-Paste or write your script here and press the Space bar to start.
-
-Adjust the scroll speed and font size to match your delivery. Turn on mirror mode if you use a reflective teleprompter rig, then go fullscreen for a distraction-free read.
-
-Your scripts are saved privately in your browser — nothing is uploaded.`;
+const SETTINGS_KEY = 'tpo:settings';
+const DRAFT_KEY = 'tpo:draft';
 
 export function TeleprompterApp() {
   const t = useTranslations('teleprompter');
   const tShortcuts = useTranslations('teleprompter.shortcuts');
+  const locale = useLocale();
 
-  const [script, setScript] = useState(DEFAULT_SCRIPT);
-  const [speed, setSpeed] = useState(80); // px/s
-  const [fontSize, setFontSize] = useState(48);
-  const [lineHeight, setLineHeight] = useState(1.5);
-  const [fontFamily, setFontFamily] = useState<FontFamily>('sans');
-  const [mirrorH, setMirrorH] = useState(false);
-  const [mirrorV, setMirrorV] = useState(false);
-  const [countdownSeconds, setCountdownSeconds] = useState(3);
+  const [settings, setSettings] = usePersistentState<PrompterSettings>(
+    SETTINGS_KEY,
+    DEFAULT_SETTINGS,
+    { revive: reviveSettings }
+  );
+  const [script, setScript] = usePersistentState<string>(DRAFT_KEY, t('defaultScript'), {
+    revive: reviveDraft,
+    debounceMs: 600,
+  });
+
   const [countdownValue, setCountdownValue] = useState<number | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [savedOpen, setSavedOpen] = useState(false);
@@ -85,6 +95,8 @@ export function TeleprompterApp() {
   const [newScriptName, setNewScriptName] = useState('');
   const [isDragOver, setIsDragOver] = useState(false);
   const [uploadedFileName, setUploadedFileName] = useState<string | null>(null);
+  const [importError, setImportError] = useState<ImportErrorReason | null>(null);
+  const [voiceEnabled, setVoiceEnabled] = useState(false);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -93,10 +105,56 @@ export function TeleprompterApp() {
 
   const { isPlaying, progress, play, pause, stop, restart } = useTeleprompter({
     scrollRef,
-    speed,
+    speed: settings.speed,
   });
   const { isFullscreen, toggle: toggleFullscreen } = useFullscreen(containerRef);
   const { scripts, saveScript, deleteScript, hydrated } = useLocalScripts();
+
+  const update = useCallback(
+    <K extends keyof PrompterSettings>(key: K, value: PrompterSettings[K]) => {
+      setSettings((prev) => ({ ...prev, [key]: value }));
+    },
+    [setSettings]
+  );
+
+  const resetSettings = useCallback(() => setSettings(DEFAULT_SETTINGS), [setSettings]);
+
+  // --- Voice-following scroll -------------------------------------------------
+  const scriptWords = useMemo(() => tokenizeScript(script), [script]);
+
+  const scrollToWord = useCallback((wordIndex: number) => {
+    const container = scrollRef.current;
+    if (!container) return;
+    const el = container.querySelector<HTMLElement>(`[data-word="${wordIndex}"]`);
+    if (!el) return;
+
+    // Rect maths rather than offsetTop: the text block is not the container's
+    // offsetParent, and this stays correct whatever the mirror transform is doing.
+    const containerRect = container.getBoundingClientRect();
+    const wordRect = el.getBoundingClientRect();
+    const delta =
+      wordRect.top + wordRect.height / 2 - (containerRect.top + containerRect.height / 2);
+
+    if (Math.abs(delta) < 8) return; // already on the reading line
+    container.scrollTo({ top: container.scrollTop + delta, behavior: 'smooth' });
+  }, []);
+
+  const {
+    status: voiceStatus,
+    supported: voiceSupported,
+    resetCursor: resetVoiceCursor,
+  } = useVoiceScroll({
+    enabled: voiceEnabled,
+    locale,
+    scriptWords,
+    onPosition: scrollToWord,
+  });
+
+  useEffect(() => {
+    if (voiceStatus === 'denied' || voiceStatus === 'unsupported' || voiceStatus === 'error') {
+      setVoiceEnabled(false);
+    }
+  }, [voiceStatus]);
 
   const clearCountdown = useCallback(() => {
     if (countdownTimerRef.current) {
@@ -106,17 +164,30 @@ export function TeleprompterApp() {
     setCountdownValue(null);
   }, []);
 
+  const toggleVoice = useCallback(() => {
+    setVoiceEnabled((on) => {
+      if (!on) {
+        // Voice following replaces timed scrolling — running both fights for the scrollbar.
+        clearCountdown();
+        pause();
+        resetVoiceCursor();
+      }
+      return !on;
+    });
+  }, [clearCountdown, pause, resetVoiceCursor]);
+
   const startWithCountdown = useCallback(() => {
     if (isPlaying) {
       pause();
       return;
     }
-    if (countdownSeconds <= 0) {
+    setVoiceEnabled(false);
+    if (settings.countdownSeconds <= 0) {
       play();
       return;
     }
-    setCountdownValue(countdownSeconds);
-    let remaining = countdownSeconds;
+    setCountdownValue(settings.countdownSeconds);
+    let remaining = settings.countdownSeconds;
     const tick = () => {
       remaining -= 1;
       if (remaining <= 0) {
@@ -128,23 +199,24 @@ export function TeleprompterApp() {
       }
     };
     countdownTimerRef.current = setTimeout(tick, 1000);
-  }, [isPlaying, pause, play, countdownSeconds, clearCountdown]);
+  }, [isPlaying, pause, play, settings.countdownSeconds, clearCountdown]);
 
   const stopAll = useCallback(() => {
     clearCountdown();
+    resetVoiceCursor();
     stop();
-  }, [clearCountdown, stop]);
+  }, [clearCountdown, resetVoiceCursor, stop]);
 
   const restartAll = useCallback(() => {
     clearCountdown();
+    resetVoiceCursor();
     restart();
-  }, [clearCountdown, restart]);
+  }, [clearCountdown, resetVoiceCursor, restart]);
 
   useEffect(() => {
     return () => clearCountdown();
   }, [clearCountdown]);
 
-  // Hotkeys
   useHotkeys({
     Space: (e) => {
       e.preventDefault();
@@ -152,82 +224,77 @@ export function TeleprompterApp() {
     },
     ArrowUp: (e) => {
       e.preventDefault();
-      setSpeed((s) => Math.min(400, s + 10));
+      setSettings((s) => ({ ...s, speed: Math.min(SPEED_RANGE.max, s.speed + 10) }));
     },
     ArrowDown: (e) => {
       e.preventDefault();
-      setSpeed((s) => Math.max(10, s - 10));
+      setSettings((s) => ({ ...s, speed: Math.max(SPEED_RANGE.min, s.speed - 10) }));
     },
-    Equal: () => setFontSize((f) => Math.min(128, f + 2)),
-    Minus: () => setFontSize((f) => Math.max(16, f - 2)),
-    KeyM: () => setMirrorH((v) => !v),
+    Equal: () =>
+      setSettings((s) => ({ ...s, fontSize: Math.min(FONT_SIZE_RANGE.max, s.fontSize + 2) })),
+    Minus: () =>
+      setSettings((s) => ({ ...s, fontSize: Math.max(FONT_SIZE_RANGE.min, s.fontSize - 2) })),
+    KeyM: () => setSettings((s) => ({ ...s, mirrorH: !s.mirrorH })),
     KeyF: () => toggleFullscreen(),
     KeyR: () => restartAll(),
     KeyS: () => setSaveDialogOpen(true),
+    KeyV: () => toggleVoice(),
     Escape: () => {
       if (isFullscreen) {
-        // the browser already exits fullscreen on Esc, but we also stop.
+        // The browser already exits fullscreen on Esc; stop playback to match.
         stopAll();
       }
     },
   });
 
-  const wordCount = useMemo(() => {
-    return script.trim() ? script.trim().split(/\s+/).length : 0;
-  }, [script]);
+  const wordCount = useMemo(() => countWords(script), [script]);
 
   const estimatedMinutes = useMemo(() => {
-    // rough: words ≈ 0.35 * fontSize height per line; use speed instead
-    // Use a heuristic: at fontSize 48 and speed 80 px/s, ~= 160 wpm
-    const approxWpm = (speed / fontSize) * 90;
-    const mins = wordCount / Math.max(40, approxWpm);
-    return Math.max(1, Math.round(mins));
-  }, [wordCount, speed, fontSize]);
+    const wpm = impliedWordsPerMinute(settings);
+    if (wordCount === 0) return 0;
+    return Math.max(1, Math.round(wordCount / Math.max(40, wpm)));
+  }, [wordCount, settings]);
 
   const transform = useMemo(() => {
     const parts: string[] = [];
-    if (mirrorH) parts.push('scaleX(-1)');
-    if (mirrorV) parts.push('scaleY(-1)');
+    if (settings.mirrorH) parts.push('scaleX(-1)');
+    if (settings.mirrorV) parts.push('scaleY(-1)');
     return parts.join(' ');
-  }, [mirrorH, mirrorV]);
+  }, [settings.mirrorH, settings.mirrorV]);
 
   const onCanvasClick = useCallback(() => {
-    // Tap-to-pause on mobile
-    if (isPlaying) pause();
-  }, [isPlaying, pause]);
-
-  // --- File upload / drag-and-drop ---
-  const loadTextFromFile = useCallback(async (file: File) => {
-    const raw = await file.text();
-    const name = file.name.toLowerCase();
-    let text = raw;
-    if (name.endsWith('.srt')) {
-      // Strip SRT index lines and timestamps, keep cue text
-      text = raw
-        .split(/\r?\n/)
-        .filter((line) => !/^\d+$/.test(line.trim()))
-        .filter((line) => !/^\d{2}:\d{2}:\d{2}[,.]\d{3}\s*-->\s*/.test(line.trim()))
-        .join('\n')
-        .replace(/\n{3,}/g, '\n\n')
-        .trim();
-    } else if (name.endsWith('.rtf')) {
-      // Minimal RTF → plain text: drop control words + groups
-      text = raw
-        .replace(/\{\\\*?[^{}]*\}/g, '')
-        .replace(/\\[a-zA-Z]+-?\d* ?/g, '')
-        .replace(/[{}]/g, '')
-        .replace(/\\'[0-9a-fA-F]{2}/g, '')
-        .trim();
+    // Tap the reading surface to pause, tap again to pick straight back up: on a phone
+    // clamped near the lens the control bar is often out of reach mid-take.
+    if (voiceEnabled) return;
+    if (isPlaying) {
+      pause();
+    } else {
+      clearCountdown();
+      play();
     }
-    setScript(text);
-    setUploadedFileName(file.name);
-  }, []);
+  }, [voiceEnabled, isPlaying, pause, play, clearCountdown]);
+
+  // --- File import ------------------------------------------------------------
+  const loadTextFromFile = useCallback(
+    async (file: File) => {
+      setImportError(null);
+      try {
+        const text = await importScriptFile(file);
+        setScript(text);
+        setUploadedFileName(file.name);
+      } catch (error) {
+        setUploadedFileName(null);
+        setImportError(error instanceof ScriptImportError ? error.reason : 'failed');
+      }
+    },
+    [setScript]
+  );
 
   const onFileInputChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const file = e.target.files?.[0];
       if (file) loadTextFromFile(file);
-      // Allow re-uploading the same file
+      // Allow re-uploading the same file.
       if (e.target) e.target.value = '';
     },
     [loadTextFromFile]
@@ -251,15 +318,37 @@ export function TeleprompterApp() {
   const clearScript = useCallback(() => {
     setScript('');
     setUploadedFileName(null);
-  }, []);
+    setImportError(null);
+  }, [setScript]);
+
+  // Word-level spans are only needed while the recognizer is driving the scroll; a long
+  // script is thousands of extra nodes otherwise.
+  const renderedScript = useMemo(() => {
+    if (!voiceEnabled) return script;
+    let index = -1;
+    return script.split(/(\s+)/).map((part, i) => {
+      if (!part || /^\s+$/.test(part)) return part;
+      index += 1;
+      return (
+        <span key={i} data-word={index}>
+          {part}
+        </span>
+      );
+    });
+  }, [voiceEnabled, script]);
+
+  const fade = (direction: 'to bottom' | 'to top') => ({
+    background: `linear-gradient(${direction}, ${settings.backgroundColor}, transparent)`,
+  });
 
   return (
     <div
       ref={containerRef}
       className={cn(
-        'relative flex w-full flex-col overflow-hidden rounded-2xl border border-border bg-black text-white shadow-xl',
+        'relative flex w-full flex-col overflow-hidden rounded-2xl border border-border text-white shadow-xl',
         isFullscreen ? 'h-[100dvh] rounded-none' : 'h-[calc(100dvh-4rem)] min-h-[520px]'
       )}
+      style={{ backgroundColor: settings.backgroundColor }}
     >
       {/* Prompter surface */}
       <div className="relative flex-1 overflow-hidden">
@@ -270,14 +359,8 @@ export function TeleprompterApp() {
         />
 
         {/* Gradient fades */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 z-10 h-16 bg-gradient-to-b from-black to-transparent"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-gradient-to-t from-black to-transparent"
-        />
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 z-10 h-16" style={fade('to bottom')} />
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16" style={fade('to top')} />
 
         {/* Scrolling text */}
         <div
@@ -290,16 +373,16 @@ export function TeleprompterApp() {
           }}
         >
           <div
-            className="mx-auto max-w-4xl whitespace-pre-wrap py-[50vh] text-center"
+            className="mx-auto max-w-4xl whitespace-pre-wrap py-[50vh]"
             style={{
-              fontSize: `${fontSize}px`,
-              lineHeight,
-              fontFamily: FONT_FAMILIES[fontFamily],
+              fontSize: `${settings.fontSize}px`,
+              lineHeight: settings.lineHeight,
+              fontFamily: FONT_FAMILIES[settings.fontFamily],
+              color: settings.textColor,
+              textAlign: settings.alignment,
             }}
           >
-            {script || (
-              <span className="text-white/40">{t('placeholder')}</span>
-            )}
+            {script ? renderedScript : <span style={{ opacity: 0.4 }}>{t('placeholder')}</span>}
           </div>
         </div>
 
@@ -317,11 +400,19 @@ export function TeleprompterApp() {
           </div>
         )}
 
+        {/* Listening badge */}
+        {voiceEnabled && (
+          <div className="pointer-events-none absolute left-1/2 top-4 z-20 flex -translate-x-1/2 items-center gap-2 rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white backdrop-blur">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+            </span>
+            {t('voice.listening')}
+          </div>
+        )}
+
         {/* Progress bar */}
-        <div
-          aria-hidden
-          className="absolute inset-x-0 top-0 z-20 h-1 bg-white/10"
-        >
+        <div aria-hidden className="absolute inset-x-0 top-0 z-20 h-1 bg-white/10">
           <div
             className="h-full bg-primary transition-[width] duration-150"
             style={{ width: `${progress * 100}%` }}
@@ -341,12 +432,7 @@ export function TeleprompterApp() {
             {isPlaying ? <Pause /> : <Play />}
             <span>{isPlaying ? t('controls.pause') : t('controls.play')}</span>
           </Button>
-          <Button
-            onClick={stopAll}
-            variant="secondary"
-            size="lg"
-            aria-label={t('controls.stop')}
-          >
+          <Button onClick={stopAll} variant="secondary" size="lg" aria-label={t('controls.stop')}>
             <Square />
             <span className="hidden sm:inline">{t('controls.stop')}</span>
           </Button>
@@ -361,12 +447,25 @@ export function TeleprompterApp() {
           </Button>
 
           <div className="ml-auto flex items-center gap-2">
+            {voiceSupported && (
+              <Button
+                onClick={toggleVoice}
+                variant={voiceEnabled ? 'default' : 'secondary'}
+                size="lg"
+                aria-label={t('voice.toggle')}
+                aria-pressed={voiceEnabled}
+                title={t('voice.toggle')}
+              >
+                {voiceEnabled ? <Mic /> : <MicOff />}
+                <span className="hidden md:inline">{t('voice.label')}</span>
+              </Button>
+            )}
             <Button
-              onClick={() => setMirrorH((v) => !v)}
-              variant={mirrorH ? 'default' : 'secondary'}
+              onClick={() => update('mirrorH', !settings.mirrorH)}
+              variant={settings.mirrorH ? 'default' : 'secondary'}
               size="lg"
               aria-label={t('settings.mirrorHorizontal')}
-              aria-pressed={mirrorH}
+              aria-pressed={settings.mirrorH}
               title={t('settings.mirrorHorizontal')}
             >
               <FlipHorizontal />
@@ -379,26 +478,14 @@ export function TeleprompterApp() {
                   <span className="hidden md:inline">{t('controls.settings')}</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-full max-w-md bg-background text-foreground">
+              <SheetContent
+                side="right"
+                className="flex w-full max-w-md flex-col bg-background text-foreground"
+              >
                 <SheetHeader>
                   <SheetTitle>{t('settings.title')}</SheetTitle>
                 </SheetHeader>
-                <SettingsPanel
-                  speed={speed}
-                  setSpeed={setSpeed}
-                  fontSize={fontSize}
-                  setFontSize={setFontSize}
-                  lineHeight={lineHeight}
-                  setLineHeight={setLineHeight}
-                  fontFamily={fontFamily}
-                  setFontFamily={setFontFamily}
-                  mirrorH={mirrorH}
-                  setMirrorH={setMirrorH}
-                  mirrorV={mirrorV}
-                  setMirrorV={setMirrorV}
-                  countdownSeconds={countdownSeconds}
-                  setCountdownSeconds={setCountdownSeconds}
-                />
+                <SettingsPanel settings={settings} update={update} reset={resetSettings} />
               </SheetContent>
             </Sheet>
             <Button
@@ -422,52 +509,54 @@ export function TeleprompterApp() {
               {t('settings.speed')}
             </label>
             <Slider
-              value={[speed]}
-              min={10}
-              max={400}
-              step={5}
-              onValueChange={(v) => setSpeed(v[0])}
+              value={[settings.speed]}
+              min={SPEED_RANGE.min}
+              max={SPEED_RANGE.max}
+              step={SPEED_RANGE.step}
+              onValueChange={(v) => update('speed', v[0])}
               aria-label={t('settings.speed')}
             />
-            <span className="w-12 text-right text-xs tabular-nums text-white/70">{speed}</span>
+            <span className="w-12 text-right text-xs tabular-nums text-white/70">
+              {settings.speed}
+            </span>
           </div>
           <div className="flex items-center gap-3">
             <label className="w-20 shrink-0 text-xs uppercase tracking-wide text-white/60">
               {t('settings.fontSize')}
             </label>
             <Slider
-              value={[fontSize]}
-              min={16}
-              max={128}
-              step={2}
-              onValueChange={(v) => setFontSize(v[0])}
+              value={[settings.fontSize]}
+              min={FONT_SIZE_RANGE.min}
+              max={FONT_SIZE_RANGE.max}
+              step={FONT_SIZE_RANGE.step}
+              onValueChange={(v) => update('fontSize', v[0])}
               aria-label={t('settings.fontSize')}
             />
             <span className="w-12 text-right text-xs tabular-nums text-white/70">
-              {fontSize}
+              {settings.fontSize}
             </span>
           </div>
         </div>
       </div>
 
-      {/* Script editor — always visible (except when playing fullscreen) */}
+      {/* Script editor — always visible (except in fullscreen) */}
       {!isFullscreen && (
         <div className="border-t border-white/10 bg-black/70">
           <div className="px-3 pt-3 sm:px-4 sm:pt-4">
-            {/* Header row: title + meta + action buttons */}
             <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
               <span className="inline-flex items-center gap-2 font-medium text-white/90">
                 <Type className="h-4 w-4" />
                 {t('editor.title')}
                 <span className="text-white/50">
-                  · {t('editor.wordCount', { count: wordCount })} · {t('editor.estimatedTime', { minutes: estimatedMinutes })}
+                  · {t('editor.wordCount', { count: wordCount })} ·{' '}
+                  {t('editor.estimatedTime', { minutes: estimatedMinutes })}
                 </span>
               </span>
               <div className="flex flex-wrap items-center gap-1.5">
                 <input
                   ref={fileInputRef}
                   type="file"
-                  accept=".txt,.md,.srt,.rtf,text/plain,text/markdown"
+                  accept={ACCEPTED_FILE_TYPES}
                   onChange={onFileInputChange}
                   className="sr-only"
                 />
@@ -524,7 +613,6 @@ export function TeleprompterApp() {
               </div>
             </div>
 
-            {/* Uploaded file indicator */}
             {uploadedFileName && (
               <div className="mt-2 inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-2 py-1 text-xs text-white/70">
                 <FileText className="h-3.5 w-3.5" />
@@ -533,11 +621,23 @@ export function TeleprompterApp() {
                   type="button"
                   onClick={() => setUploadedFileName(null)}
                   className="ml-1 rounded-sm p-0.5 hover:bg-white/10"
-                  aria-label="Dismiss"
+                  aria-label={t('editor.dismiss')}
                 >
                   <X className="h-3 w-3" />
                 </button>
               </div>
+            )}
+
+            {importError && (
+              <p role="alert" className="mt-2 text-xs text-red-300">
+                {t(`editor.importError.${importError}`)}
+              </p>
+            )}
+
+            {voiceStatus === 'denied' && (
+              <p role="alert" className="mt-2 text-xs text-red-300">
+                {t('voice.denied')}
+              </p>
             )}
           </div>
 
@@ -557,6 +657,7 @@ export function TeleprompterApp() {
                 onChange={(e) => {
                   setScript(e.target.value);
                   if (uploadedFileName) setUploadedFileName(null);
+                  if (importError) setImportError(null);
                 }}
                 placeholder={t('editor.placeholderWithUpload')}
                 className="min-h-[180px] resize-y bg-white/5 text-base leading-relaxed text-white placeholder:text-white/40 focus-visible:ring-primary sm:min-h-[200px]"
@@ -571,9 +672,7 @@ export function TeleprompterApp() {
               )}
             </div>
             {!script && (
-              <p className="mt-2 text-center text-xs text-white/50">
-                {t('editor.uploadHint')}
-              </p>
+              <p className="mt-2 text-center text-xs text-white/50">{t('editor.uploadHint')}</p>
             )}
           </div>
         </div>
@@ -615,7 +714,7 @@ export function TeleprompterApp() {
           <SheetHeader>
             <SheetTitle>{t('savedScripts.title')}</SheetTitle>
           </SheetHeader>
-          <div className="mt-6 space-y-3">
+          <div className="mt-6 space-y-3 overflow-y-auto">
             {hydrated && scripts.length === 0 && (
               <p className="text-sm text-muted-foreground">{t('savedScripts.empty')}</p>
             )}
@@ -672,6 +771,7 @@ export function TeleprompterApp() {
             <ShortcutRow keys={['+']} label={tShortcuts('fontUp')} />
             <ShortcutRow keys={['-']} label={tShortcuts('fontDown')} />
             <ShortcutRow keys={['M']} label={tShortcuts('mirror')} />
+            <ShortcutRow keys={['V']} label={tShortcuts('voice')} />
             <ShortcutRow keys={['F']} label={tShortcuts('fullscreen')} />
             <ShortcutRow keys={['R']} label={tShortcuts('restart')} />
             <ShortcutRow keys={['S']} label={tShortcuts('save')} />
@@ -698,129 +798,5 @@ function ShortcutRow({ keys, label }: { keys: string[]; label: string }) {
         ))}
       </span>
     </li>
-  );
-}
-
-interface SettingsPanelProps {
-  speed: number;
-  setSpeed: (n: number) => void;
-  fontSize: number;
-  setFontSize: (n: number) => void;
-  lineHeight: number;
-  setLineHeight: (n: number) => void;
-  fontFamily: FontFamily;
-  setFontFamily: (f: FontFamily) => void;
-  mirrorH: boolean;
-  setMirrorH: (v: boolean) => void;
-  mirrorV: boolean;
-  setMirrorV: (v: boolean) => void;
-  countdownSeconds: number;
-  setCountdownSeconds: (n: number) => void;
-}
-
-function SettingsPanel(props: SettingsPanelProps) {
-  const t = useTranslations('teleprompter.settings');
-  const {
-    speed,
-    setSpeed,
-    fontSize,
-    setFontSize,
-    lineHeight,
-    setLineHeight,
-    fontFamily,
-    setFontFamily,
-    mirrorH,
-    setMirrorH,
-    mirrorV,
-    setMirrorV,
-    countdownSeconds,
-    setCountdownSeconds,
-  } = props;
-
-  return (
-    <div className="mt-6 flex flex-col gap-5 pr-2">
-      <Field label={t('speed')} value={`${speed} px/s`}>
-        <Slider value={[speed]} min={10} max={400} step={5} onValueChange={(v) => setSpeed(v[0])} />
-      </Field>
-      <Field label={t('fontSize')} value={`${fontSize} px`}>
-        <Slider value={[fontSize]} min={16} max={128} step={2} onValueChange={(v) => setFontSize(v[0])} />
-      </Field>
-      <Field label={t('lineHeight')} value={lineHeight.toFixed(2)}>
-        <Slider
-          value={[lineHeight * 100]}
-          min={100}
-          max={240}
-          step={5}
-          onValueChange={(v) => setLineHeight(v[0] / 100)}
-        />
-      </Field>
-
-      <div>
-        <div className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-          {t('fontFamily')}
-        </div>
-        <div className="grid grid-cols-3 gap-2">
-          {(['sans', 'serif', 'mono'] as FontFamily[]).map((f) => (
-            <Button
-              key={f}
-              variant={fontFamily === f ? 'default' : 'outline'}
-              onClick={() => setFontFamily(f)}
-              className="capitalize"
-            >
-              {t(f === 'sans' ? 'fontSans' : f === 'serif' ? 'fontSerif' : 'fontMono')}
-            </Button>
-          ))}
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 gap-2">
-        <Button
-          variant={mirrorH ? 'default' : 'outline'}
-          onClick={() => setMirrorH(!mirrorH)}
-          aria-pressed={mirrorH}
-        >
-          <FlipHorizontal className="h-4 w-4" />
-          {t('mirrorHorizontal')}
-        </Button>
-        <Button
-          variant={mirrorV ? 'default' : 'outline'}
-          onClick={() => setMirrorV(!mirrorV)}
-          aria-pressed={mirrorV}
-        >
-          <FlipVertical className="h-4 w-4" />
-          {t('mirrorVertical')}
-        </Button>
-      </div>
-
-      <Field label={t('countdown')} value={t('countdownSeconds', { seconds: countdownSeconds })}>
-        <Slider
-          value={[countdownSeconds]}
-          min={0}
-          max={10}
-          step={1}
-          onValueChange={(v) => setCountdownSeconds(v[0])}
-        />
-      </Field>
-    </div>
-  );
-}
-
-function Field({
-  label,
-  value,
-  children,
-}: {
-  label: string;
-  value?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div>
-      <div className="mb-2 flex items-center justify-between text-xs uppercase tracking-wide text-muted-foreground">
-        <span>{label}</span>
-        {value && <span className="font-mono text-foreground">{value}</span>}
-      </div>
-      {children}
-    </div>
   );
 }

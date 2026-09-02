@@ -1,16 +1,26 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 type KeyHandler = (event: KeyboardEvent) => void;
 type HotkeyMap = Record<string, KeyHandler>;
 
 /**
- * Simple hotkey hook. Keys are matched against `event.code` or the `event.key`.
+ * Simple hotkey hook. Keys are matched against `event.code` or `event.key`.
  * Skips events dispatched on editable elements (textarea, input) unless `ignoreInputs` is false.
+ *
+ * The map is held in a ref so callers can pass a fresh object literal on every render —
+ * which they all do — without the window listener being torn down and re-attached each
+ * time a slider moves.
  */
-export function useHotkeys(hotkeys: HotkeyMap, options: { enabled?: boolean; ignoreInputs?: boolean } = {}) {
+export function useHotkeys(
+  hotkeys: HotkeyMap,
+  options: { enabled?: boolean; ignoreInputs?: boolean } = {}
+) {
   const { enabled = true, ignoreInputs = true } = options;
+
+  const hotkeysRef = useRef(hotkeys);
+  hotkeysRef.current = hotkeys;
 
   useEffect(() => {
     if (!enabled) return;
@@ -24,9 +34,8 @@ export function useHotkeys(hotkeys: HotkeyMap, options: { enabled?: boolean; ign
         }
       }
 
-      const keys: string[] = [event.code, event.key];
-      for (const k of keys) {
-        const fn = hotkeys[k];
+      for (const key of [event.code, event.key]) {
+        const fn = hotkeysRef.current[key];
         if (fn) {
           fn(event);
           return;
@@ -36,5 +45,5 @@ export function useHotkeys(hotkeys: HotkeyMap, options: { enabled?: boolean; ign
 
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [hotkeys, enabled, ignoreInputs]);
+  }, [enabled, ignoreInputs]);
 }

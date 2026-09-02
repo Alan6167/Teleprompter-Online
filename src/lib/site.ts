@@ -1,6 +1,9 @@
 export const SITE_URL = 'https://teleprompteronline.net';
 export const SITE_NAME = 'Teleprompter Online';
 
+/** Published on the contact page and in structured data. */
+export const CONTACT_EMAIL = 'hello@teleprompteronline.net';
+
 export const LOCALES = ['en', 'es', 'pt', 'fr', 'de', 'it'] as const;
 export type Locale = (typeof LOCALES)[number];
 

@@ -15,7 +15,9 @@
     "features": "Funzionalità",
     "howToUse": "Come usare",
     "useCases": "Casi d'uso",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "about": "Chi siamo",
+    "contact": "Contatti"
   },
   "footer": {
     "tagline": "Un teleprompter gratuito e attento alla privacy che funziona interamente nel tuo browser.",
@@ -25,7 +27,8 @@
     "privacy": "Privacy",
     "terms": "Termini",
     "copyright": "© {year} Teleprompter Online. Tutti i diritti riservati.",
-    "madeWith": "Realizzato per creator, educatori e oratori."
+    "madeWith": "Realizzato per creator, educatori e oratori.",
+    "company": "Azienda"
   },
   "teleprompter": {
     "placeholder": "Incolla o digita il tuo copione qui. Premi Spazio per riprodurre.",
@@ -61,7 +64,8 @@
       "alignment": "Allineamento",
       "alignLeft": "Sinistra",
       "alignCenter": "Centro",
-      "alignRight": "Destra"
+      "alignRight": "Destra",
+      "custom": "Personalizzato"
     },
     "savedScripts": {
       "title": "Copioni salvati",
@@ -87,7 +91,8 @@
       "fullscreen": "Attiva/disattiva schermo intero",
       "restart": "Ricomincia",
       "save": "Salva copione",
-      "exit": "Esci da schermo intero"
+      "exit": "Esci da schermo intero",
+      "voice": "Attiva modalità voce"
     },
     "countdown": {
       "getReady": "Preparati…"
@@ -101,7 +106,14 @@
       "uploadFile": "Carica file",
       "dropHere": "Trascina qui il file per caricarlo",
       "placeholderWithUpload": "Incolla o scrivi il tuo copione qui — oppure trascina un file .txt, .md, .srt o .rtf in questa area.",
-      "uploadHint": "Suggerimento: puoi anche trascinare e rilasciare un file, oppure fare clic su Carica file sopra."
+      "uploadHint": "Suggerimento: puoi anche trascinare e rilasciare un file, oppure fare clic su Carica file sopra.",
+      "dismiss": "Chiudi",
+      "importError": {
+        "unsupported": "Questo tipo di file non è supportato. Prova con .txt, .md, .docx, .rtf o .srt.",
+        "docxUnsupported": "Il tuo browser non riesce ad aprire i file .docx. Usa Chrome, Edge o Safari, oppure incolla il testo.",
+        "empty": "Questo file sembra vuoto.",
+        "failed": "Impossibile leggere il file. Salvalo come .txt o .docx e riprova."
+      }
     },
     "tips": {
       "title": "Suggerimenti rapidi",
@@ -111,6 +123,15 @@
         "Attiva la modalità specchio se usi un impianto teleprompter riflessivo.",
         "I tuoi copioni vengono salvati privatamente nel tuo browser."
       ]
+    },
+    "defaultScript": "Benvenuto su Teleprompter Online.\n\nIncolla o scrivi qui il tuo copione e premi la barra spaziatrice per iniziare.\n\nRegola la velocità di scorrimento e la dimensione del testo in base al tuo ritmo. Attiva la modalità specchio se usi un gobbo a specchio, poi passa a schermo intero per leggere senza distrazioni.\n\nPreferisci le mani libere? Attiva la modalità voce: il copione segue il tuo parlato.\n\nCopione e impostazioni restano salvati in privato nel tuo browser — nulla viene caricato.",
+    "voice": {
+      "label": "Voce",
+      "toggle": "Attiva lo scorrimento vocale",
+      "listening": "In ascolto — il copione segue la tua voce",
+      "denied": "L'accesso al microfono è stato bloccato. Consentilo nelle impostazioni del sito per usare la modalità voce.",
+      "unsupported": "La modalità voce richiede Chrome, Edge o Safari.",
+      "hint": "La modalità voce usa il riconoscimento vocale integrato nel browser per far scorrere il copione mentre parli. Il copione non lascia mai il tuo dispositivo, ma a seconda del browser l'audio può essere inviato al servizio vocale del produttore per il riconoscimento."
     }
   },
   "home": {
@@ -249,32 +270,60 @@
       "title": "Domande frequenti",
       "items": [
         {
-          "q": "Teleprompter Online è veramente gratuito?",
-          "a": "Sì. L'app è completamente utilizzabile gratuitamente, per sempre. Non c'è account, nessun watermark, nessun blocco di funzionalità e nessun caricamento."
+          "q": "Teleprompter Online è davvero gratuito?",
+          "a": "Sì. L'app è completamente gratuita, per sempre. Nessun account, nessuna filigrana, nessuna funzione bloccata e nessun caricamento."
         },
         {
           "q": "Devo installare qualcosa?",
-          "a": "No. Teleprompter Online funziona direttamente nel tuo browser web. Funziona su Chrome, Safari, Firefox e Edge su desktop, tablet e telefono."
+          "a": "No. Teleprompter Online funziona direttamente nel browser: Chrome, Safari, Firefox ed Edge, su computer, tablet e telefono."
         },
         {
-          "q": "Il mio copione è privato?",
-          "a": "Sì. Il tuo copione non lascia mai il tuo dispositivo. I copioni salvati vivono nell'archiviazione locale del tuo browser e non vengono caricati su nessun server."
+          "q": "Il mio copione resta privato?",
+          "a": "Sì. Il copione non lascia mai il tuo dispositivo. I copioni salvati, la bozza corrente e le impostazioni restano nella memoria locale del browser e non vengono inviati a nessun server."
         },
         {
-          "q": "Posso usare questo con un impianto teleprompter fisico?",
-          "a": "Sì. Usa l'interruttore specchio per capovolgere il testo orizzontalmente per un teleprompter a divisore di fascio davanti alla tua telecamera."
+          "q": "Il copione resta salvato se chiudo la scheda?",
+          "a": "Sì. La bozza corrente e tutte le impostazioni del gobbo vengono salvate automaticamente nel browser, così riaprendo la pagina riprendi esattamente da dove eri. Cancellando i dati del browser vengono rimossi."
         },
         {
-          "q": "Funziona su mobile?",
-          "a": "È progettato per mobile. Ottieni aree tattili grandi, schermo intero paesaggistico e una dimensione font predefinita ottimizzata che si legge comodamente su schermi piccoli."
+          "q": "Posso usarlo con un gobbo fisico?",
+          "a": "Sì. La modalità specchio ribalta il testo in orizzontale per un gobbo a specchio davanti alla telecamera. Puoi ribaltarlo anche in verticale per i montaggi dall'alto."
         },
         {
-          "q": "Posso controllare la velocità di scorrimento mentre leggo?",
-          "a": "Sì. Usa i tasti freccia su desktop o il cursore di velocità sullo schermo su mobile per regolare la velocità di scorrimento in tempo reale."
+          "q": "Funziona su smartphone?",
+          "a": "È pensato per il mobile: aree touch generose, schermo intero in orizzontale, dimensione del testo predefinita calibrata e pausa o ripresa toccando un punto qualsiasi, così non devi cercare i comandi durante la ripresa."
         },
         {
-          "q": "Il teleprompter si ferma alla fine?",
-          "a": "Sì. La riproduzione si interrompe delicatamente alla fine del tuo copione. Premi Ricomincia per tornare all'inizio."
+          "q": "Posso regolare la velocità mentre leggo?",
+          "a": "Sì. Usa le frecce della tastiera sul computer o il cursore sullo schermo su mobile per regolare la velocità in tempo reale."
+        },
+        {
+          "q": "Il testo scorre da solo mentre parlo?",
+          "a": "Sì: attiva la modalità voce e il copione segue il tuo parlato invece di scorrere a tempo, così pause e improvvisazioni non ti lasciano indietro. Richiede Chrome, Edge o Safari e il permesso del microfono."
+        },
+        {
+          "q": "Quali formati posso caricare?",
+          "a": "Testo semplice (.txt), Markdown (.md), documenti Word (.docx), rich text (.rtf) e sottotitoli (.srt, .vtt). Trascina un file sulla casella del copione o usa il pulsante Carica. I file vengono letti nel browser e mai caricati online."
+        },
+        {
+          "q": "Posso usarlo con Zoom, Google Meet o Microsoft Teams?",
+          "a": "Sì. Apri il gobbo in una finestra del browser subito sotto la webcam, oppure su un secondo schermo o tablet. Condividi solo la finestra della videochiamata, non quella del gobbo, e i tuoi appunti resteranno invisibili agli altri."
+        },
+        {
+          "q": "Come lo uso su iPad o iPhone?",
+          "a": "Apri teleprompteronline.net in Safari o Chrome, incolla il copione e tocca schermo intero. Aggiungilo alla schermata Home per avviarlo come un'app. Posiziona il dispositivo appena sotto l'obiettivo per mantenere lo sguardo naturale."
+        },
+        {
+          "q": "Posso cambiare il colore del testo e dello sfondo?",
+          "a": "Sì. Il pannello impostazioni offre combinazioni predefinite e un selettore di colore personalizzato. Bianco su nero è la scelta classica; giallo su nero riduce i riflessi e nero su bianco si legge meglio in una stanza molto luminosa."
+        },
+        {
+          "q": "Funziona offline?",
+          "a": "Sì, dopo la prima visita. La pagina resta nella cache del browser, così puoi aprire il gobbo e leggere i copioni salvati anche senza connessione."
+        },
+        {
+          "q": "Il gobbo si ferma alla fine?",
+          "a": "Sì. Lo scorrimento si arresta dolcemente alla fine del copione. Premi Riavvia per tornare all'inizio."
         }
       ]
     },
@@ -526,8 +575,8 @@
         "body": "Teleprompter Online è un'app web statica che funziona interamente nel tuo browser. Non creiamo account, non riceviamo i tuoi copioni e non vendiamo dati."
       },
       {
-        "title": "Ciò che rimane sul tuo dispositivo",
-        "body": "Tutti i copioni che salvi sono archiviati nell'archiviazione locale del tuo browser sul dispositivo che hai utilizzato. Cancellare i dati del browser li rimuoverà. Non vengono mai caricati su un server."
+        "title": "Cosa resta sul tuo dispositivo",
+        "body": "I copioni salvati, la bozza che stai modificando e ogni impostazione del gobbo (velocità, carattere, colori, specchio, conto alla rovescia) sono conservati nella memoria locale del browser, sul dispositivo che hai usato. Cancellando i dati del browser vengono rimossi. Nulla di tutto ciò viene mai caricato su un server."
       },
       {
         "title": "Analisi e cookie",
@@ -538,8 +587,12 @@
         "body": "Il sito è ospitato su Cloudflare Pages. Cloudflare può registrare dati di richiesta a livello di infrastruttura (come indirizzi IP) per sicurezza e prevenzione degli abusi. I dati analitici sono elaborati da Google (Google Analytics) e dagli operatori di Pageview.app."
       },
       {
+        "title": "Modalità voce e microfono",
+        "body": "La modalità voce è disattivata finché non la accendi e il browser chiede il permesso prima di usare il microfono. Il testo del copione viene confrontato con il tuo parlato in locale, dentro la pagina, e non viene mai trasmesso. L'audio è un'altra cosa: la maggior parte dei browser, Chrome compreso, lo invia al proprio servizio di riconoscimento vocale per trascriverlo, quindi quell'audio ricade nell'informativa privacy del produttore del browser. Se preferisci che nessun audio lasci il dispositivo, lascia spenta la modalità voce: tutte le altre funzioni continuano a funzionare."
+      },
+      {
         "title": "Contatti",
-        "body": "Domande sulla privacy? Contattaci tramite i dettagli di contatto sul nostro sito web."
+        "body": "Domande sulla privacy? Scrivi a hello@teleprompteronline.net o usa la pagina dei contatti."
       }
     ]
   },
@@ -577,5 +630,66 @@
     "title": "Pagina non trovata",
     "body": "La pagina che stai cercando non è qui. Potrebbe essere stata spostata o non è mai esistita.",
     "cta": "Torna al teleprompter"
+  },
+  "about": {
+    "meta": {
+      "title": "Chi siamo – Teleprompter Online",
+      "description": "Chi sviluppa Teleprompter Online, perché è gratuito e i principi dietro un gobbo che funziona interamente nel browser."
+    },
+    "title": "Chi siamo",
+    "subtitle": "Un gobbo elettronico gratuito con un'idea alla base: meno pulsanti tra te e la prossima ripresa.",
+    "sections": [
+      {
+        "title": "Perché esiste",
+        "body": "Un tempo gobbo voleva dire studio, operatore e un'attrezzatura più costosa della telecamera. Poi ha voluto dire software desktop con chiave di licenza. Nessuna delle due cose aveva senso per chi registra l'introduzione di un corso al tavolo della cucina un martedì sera. Teleprompter Online è lo strumento che avremmo voluto avere: apri una pagina, incolli il copione, premi play."
+      },
+      {
+        "title": "Come funziona",
+        "body": "Tutto gira nel tuo browser. Il motore di scorrimento, la modalità specchio, l'importazione dei file, i copioni salvati: è tutto JavaScript eseguito sul tuo dispositivo. Non c'è un server che legge le tue parole perché non c'è alcun server: il sito è un insieme di file statici serviti da una CDN."
+      },
+      {
+        "title": "Cosa intendiamo per privato",
+        "body": "Il copione, la bozza corrente e le impostazioni restano nella memoria locale del browser. Non vengono caricati, non hanno copie su server e noi non possiamo leggerli. Il compromesso è onesto: se cancelli i dati del browser, spariscono. Per uno strumento con cui si provano annunci di prodotto e comunicazioni riservate ci sembra lo scambio giusto."
+      },
+      {
+        "title": "Gratuito, e perché",
+        "body": "Mantenere il sito costa pochissimo perché fa pochissimo lato server. Non c'è un costo per utente da coprire, quindi niente paywall, niente filigrana, nessun limite di esportazione e nessuna prova a tempo. Se dovesse cambiare, cambierà alla luce del sole — non bloccando in silenzio funzioni su cui già contate."
+      },
+      {
+        "title": "Costruito per sei lingue",
+        "body": "Interfaccia e pagine esistono in inglese, spagnolo, portoghese, francese, tedesco e italiano, con traduzioni vere e non con output automatico riversato in un modello. Se qualcosa suona storto nella tua lingua, scrivici: è il tipo di segnalazione che ci interessa di più."
+      }
+    ]
+  },
+  "contact": {
+    "meta": {
+      "title": "Contatti – Teleprompter Online",
+      "description": "Scrivici per bug, richieste di funzionalità, correzioni di traduzione o richieste stampa."
+    },
+    "title": "Contatti",
+    "subtitle": "Domande, bug e idee arrivano nella stessa casella.",
+    "sections": [
+      {
+        "title": "E-mail",
+        "body": "Scrivi all'indirizzo qui sotto: leggiamo tutto. Siamo una squadra piccola, quindi la risposta richiede qualche giorno più che qualche ora."
+      },
+      {
+        "title": "Segnalare un bug",
+        "body": "Le segnalazioni più utili indicano browser e dispositivo, cosa ti aspettavi e cosa è successo invece. Se il gobbo si è comportato male a metà lettura, la velocità di scorrimento e la dimensione del testo aiutano molto: quelle due impostazioni spiegano una quota sorprendente dei problemi."
+      },
+      {
+        "title": "Richieste di funzionalità",
+        "body": "Raccontaci cosa stavi cercando di fare, non solo la funzione che hai in mente. Sapere per quale lavoro stai ingaggiando il gobbo ci dice se un pulsante nuovo è la risposta giusta."
+      },
+      {
+        "title": "Traduzioni",
+        "body": "Se una frase suona male nella tua lingua, o una pagina mostra ancora testo in inglese dove non dovrebbe, mandaci l'indirizzo della pagina e la formulazione che useresti."
+      },
+      {
+        "title": "Domande sulla privacy",
+        "body": "Per tutto ciò che riguarda il trattamento dei dati, parti dall'informativa sulla privacy: spiega cosa viene salvato, dove, e cosa fanno gli strumenti di analisi. Se non risponde alla tua domanda, chiedi."
+      }
+    ],
+    "emailLabel": "Scrivici a"
   }
 }

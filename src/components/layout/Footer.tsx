@@ -12,7 +12,7 @@ export function Footer({ locale }: FooterProps) {
 
   return (
     <footer className="border-t border-border bg-background safe-bottom">
-      <div className="mx-auto grid max-w-7xl gap-8 px-3 py-10 sm:px-6 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-8 px-3 py-10 sm:px-6 md:grid-cols-5">
         <div className="space-y-3 md:col-span-2">
           <div className="flex items-center gap-2 font-semibold">
             <Logo className="h-8 w-8 rounded-lg" />
@@ -44,6 +44,23 @@ export function Footer({ locale }: FooterProps) {
             <li>
               <a href={localePath(locale, 'faq')} className="hover:underline">
                 {t('nav.faq')}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+            {t('footer.company')}
+          </div>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href={localePath(locale, 'about')} className="hover:underline">
+                {t('nav.about')}
+              </a>
+            </li>
+            <li>
+              <a href={localePath(locale, 'contact')} className="hover:underline">
+                {t('nav.contact')}
               </a>
             </li>
           </ul>

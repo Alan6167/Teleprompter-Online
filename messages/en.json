@@ -15,7 +15,9 @@
     "features": "Features",
     "howToUse": "How to use",
     "useCases": "Use cases",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact"
   },
   "footer": {
     "tagline": "A free, privacy-friendly teleprompter that runs entirely in your browser.",
@@ -25,7 +27,8 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "copyright": "© {year} Teleprompter Online. All rights reserved.",
-    "madeWith": "Built for creators, educators and speakers."
+    "madeWith": "Built for creators, educators and speakers.",
+    "company": "Company"
   },
   "teleprompter": {
     "placeholder": "Paste or type your script here. Press Space to play.",
@@ -61,7 +64,8 @@
       "alignment": "Alignment",
       "alignLeft": "Left",
       "alignCenter": "Center",
-      "alignRight": "Right"
+      "alignRight": "Right",
+      "custom": "Custom"
     },
     "savedScripts": {
       "title": "Saved scripts",
@@ -87,7 +91,8 @@
       "fullscreen": "Toggle fullscreen",
       "restart": "Restart",
       "save": "Save script",
-      "exit": "Exit fullscreen"
+      "exit": "Exit fullscreen",
+      "voice": "Toggle voice mode"
     },
     "countdown": {
       "getReady": "Get ready…"
@@ -101,7 +106,14 @@
       "uploadFile": "Upload file",
       "dropHere": "Drop your file to load it",
       "placeholderWithUpload": "Paste or type your script here — or drag a .txt, .md, .srt or .rtf file onto this box.",
-      "uploadHint": "Tip: you can also drag and drop a file, or click Upload file above."
+      "uploadHint": "Tip: you can also drag and drop a file, or click Upload file above.",
+      "dismiss": "Dismiss",
+      "importError": {
+        "unsupported": "That file type isn't supported. Try .txt, .md, .docx, .rtf or .srt.",
+        "docxUnsupported": "Your browser can't open .docx files. Try Chrome, Edge or Safari, or paste the text instead.",
+        "empty": "That file appears to be empty.",
+        "failed": "That file couldn't be read. Try saving it as .txt or .docx and upload again."
+      }
     },
     "tips": {
       "title": "Quick tips",
@@ -111,6 +123,15 @@
         "Toggle mirror mode if you use a reflective teleprompter rig.",
         "Your scripts are saved privately in your browser."
       ]
+    },
+    "defaultScript": "Welcome to Teleprompter Online.\n\nPaste or write your script here and press the Space bar to start.\n\nAdjust the scroll speed and font size to match your delivery. Turn on mirror mode if you use a reflective teleprompter rig, then go fullscreen for a distraction-free read.\n\nPrefer to go hands-free? Switch on Voice mode and the script follows your speech.\n\nYour script and settings are saved privately in your browser — nothing is uploaded.",
+    "voice": {
+      "label": "Voice",
+      "toggle": "Toggle voice-following scroll",
+      "listening": "Listening — the script follows your voice",
+      "denied": "Microphone access was blocked. Allow it in your browser's site settings to use voice mode.",
+      "unsupported": "Voice mode needs Chrome, Edge or Safari.",
+      "hint": "Voice mode uses your browser's built-in speech recognition to scroll the script as you speak. Your script never leaves your device, but depending on the browser, audio may be sent to the browser vendor's speech service for recognition."
     }
   },
   "home": {
@@ -258,19 +279,47 @@
         },
         {
           "q": "Is my script private?",
-          "a": "Yes. Your script never leaves your device. Saved scripts live in your browser's local storage and are not uploaded to any server."
+          "a": "Yes. Your script never leaves your device. Saved scripts, your current draft and your settings all live in your browser's local storage and are not uploaded to any server."
+        },
+        {
+          "q": "Will my script still be there if I close the tab?",
+          "a": "Yes. Your current draft and all your prompter settings are saved automatically in your browser, so reopening the page picks up exactly where you left off. Clearing your browser data removes them."
         },
         {
           "q": "Can I use this with a physical teleprompter rig?",
-          "a": "Yes. Use the mirror toggle to flip the text horizontally for a beam-splitter teleprompter in front of your camera."
+          "a": "Yes. Use the mirror toggle to flip the text horizontally for a beam-splitter teleprompter in front of your camera. You can also flip it vertically for overhead rigs."
         },
         {
           "q": "Does it work on mobile?",
-          "a": "It's designed for mobile. You get large touch targets, landscape fullscreen and a tuned default font size that reads comfortably on small screens."
+          "a": "It's designed for mobile. You get large touch targets, landscape fullscreen, a tuned default font size, and tap-anywhere pause and resume so you don't have to reach for the controls mid-take."
         },
         {
           "q": "Can I control scroll speed while reading?",
           "a": "Yes. Use the arrow keys on desktop or the on-screen speed slider on mobile to adjust scroll speed in real time."
+        },
+        {
+          "q": "Does the teleprompter scroll automatically when I speak?",
+          "a": "Yes — switch on Voice mode and the script follows your speech instead of running on a timer, so pauses and ad-libs don't leave you behind. It needs Chrome, Edge or Safari and microphone permission."
+        },
+        {
+          "q": "What file formats can I upload?",
+          "a": "Plain text (.txt), Markdown (.md), Word documents (.docx), rich text (.rtf) and subtitles (.srt, .vtt). Drag a file onto the script box or use the Upload button. Files are read in your browser and never uploaded."
+        },
+        {
+          "q": "Can I use it with Zoom, Google Meet or Microsoft Teams?",
+          "a": "Yes. Open the prompter in a browser window and position it just below your webcam, or run it on a second screen or tablet. Share only your meeting app's window, not the prompter, and your notes stay invisible to everyone else."
+        },
+        {
+          "q": "How do I use it on an iPad or iPhone?",
+          "a": "Open teleprompteronline.net in Safari or Chrome, paste your script and tap fullscreen. Add it to your home screen to launch it like an app. Mount the device just under your camera lens to keep your eye line natural."
+        },
+        {
+          "q": "Can I change the text and background colours?",
+          "a": "Yes. The settings panel has presets for both, plus a custom colour picker. White on black is the classic choice; yellow on black reduces glare, and black on white reads better in a bright room."
+        },
+        {
+          "q": "Does it work offline?",
+          "a": "Yes, after your first visit. The page is cached in your browser, so you can open the prompter and read your saved scripts without a connection."
         },
         {
           "q": "Does the teleprompter stop at the end?",
@@ -527,7 +576,7 @@
       },
       {
         "title": "What stays on your device",
-        "body": "Any scripts you save are stored in your browser's local storage on the device you used. Clearing your browser data will remove them. They are never uploaded to a server."
+        "body": "Your saved scripts, the draft you're currently editing, and every prompter setting (speed, font, colours, mirror, countdown) are stored in your browser's local storage on the device you used. Clearing your browser data will remove them. None of it is ever uploaded to a server."
       },
       {
         "title": "Analytics & cookies",
@@ -538,8 +587,12 @@
         "body": "The site is hosted on Cloudflare Pages. Cloudflare may log infrastructure-level request data (such as IP addresses) for security and abuse prevention. Analytics data is processed by Google (Google Analytics) and by the operators of Pageview.app."
       },
       {
+        "title": "Voice mode and your microphone",
+        "body": "Voice mode is off unless you turn it on, and your browser will ask permission before the microphone is used. The script text itself is matched against your speech locally in the page and is never transmitted. The audio is a separate matter: most browsers, including Chrome, send it to their own speech-recognition service to transcribe it, so that audio is handled under your browser vendor's privacy policy. If you would rather no audio leave your device, leave voice mode off — every other feature works without it."
+      },
+      {
         "title": "Contact",
-        "body": "Questions about privacy? Reach out through the contact details on our website."
+        "body": "Questions about privacy? Email us at hello@teleprompteronline.net or use the contact page."
       }
     ]
   },
@@ -577,5 +630,66 @@
     "title": "Page not found",
     "body": "The page you are looking for isn't here. It may have been moved or never existed.",
     "cta": "Back to the teleprompter"
+  },
+  "about": {
+    "meta": {
+      "title": "About Teleprompter Online",
+      "description": "Who builds Teleprompter Online, why it's free, and the principles behind a teleprompter that runs entirely in your browser."
+    },
+    "title": "About Teleprompter Online",
+    "subtitle": "A free teleprompter built on one idea: fewer buttons between you and the next take.",
+    "sections": [
+      {
+        "title": "Why this exists",
+        "body": "Teleprompters used to mean a studio, an operator and a rig that cost more than the camera. Then they meant desktop software with a licence key. Neither made sense for someone recording a course intro at a kitchen table on a Tuesday night. Teleprompter Online is the version of that tool we wanted: open a page, paste a script, press play."
+      },
+      {
+        "title": "How it works",
+        "body": "Everything runs in your browser. The scrolling engine, the mirror transform, the file import, the saved scripts — all of it is JavaScript executing on your own device. There is no backend that reads your words, because there is no backend at all: the site is a set of static files served from a CDN."
+      },
+      {
+        "title": "What we mean by private",
+        "body": "Your script, your current draft and your prompter settings are stored in your browser's local storage. They are not uploaded, not backed up to a server, and not readable by us. The trade-off is honest: clear your browser data and they're gone. We think that's the right trade for a tool people use to rehearse product announcements and confidential briefings."
+      },
+      {
+        "title": "Free, and why",
+        "body": "The site costs very little to run because it does so little on the server side. There's no per-user cost to cover, so there's no paywall, no watermark, no export limit and no trial. If that changes, it will change in the open — not by quietly gating features you already rely on."
+      },
+      {
+        "title": "Built for six languages",
+        "body": "The interface and every page are available in English, Spanish, Portuguese, French, German and Italian, with real translations rather than machine output dropped into a template. If something reads wrong in your language, tell us — that's the kind of bug report we most want."
+      }
+    ]
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact – Teleprompter Online",
+      "description": "Get in touch about bugs, feature requests, translation fixes or press enquiries."
+    },
+    "title": "Contact",
+    "subtitle": "Questions, bugs and ideas all reach the same inbox.",
+    "sections": [
+      {
+        "title": "Email",
+        "body": "Write to us at the address below and we'll read it. We're a small team, so a reply usually takes a couple of days rather than a couple of hours."
+      },
+      {
+        "title": "Reporting a bug",
+        "body": "The most useful reports name your browser and device, what you expected, and what happened instead. If the prompter misbehaved mid-read, the scroll speed and font size you were using help a lot — those two settings explain a surprising share of issues."
+      },
+      {
+        "title": "Feature requests",
+        "body": "Tell us what you were trying to do, not just the feature you have in mind. Knowing the job you're hiring the prompter for is what tells us whether a new button is the right answer."
+      },
+      {
+        "title": "Translations",
+        "body": "If a phrase reads awkwardly in your language, or a page still shows English text where it shouldn't, send the page address and the wording you'd use instead."
+      },
+      {
+        "title": "Privacy questions",
+        "body": "For anything about data handling, see the privacy policy first — it covers what's stored, where, and what the analytics do. If it doesn't answer your question, ask."
+      }
+    ],
+    "emailLabel": "Write to us at"
   }
 }

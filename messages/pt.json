@@ -15,7 +15,9 @@
     "features": "Recursos",
     "howToUse": "Como usar",
     "useCases": "Casos de uso",
-    "faq": "Perguntas frequentes"
+    "faq": "Perguntas frequentes",
+    "about": "Sobre",
+    "contact": "Contato"
   },
   "footer": {
     "tagline": "Um teleprompter grátis, focado em privacidade, que roda inteiramente no seu navegador.",
@@ -25,7 +27,8 @@
     "privacy": "Privacidade",
     "terms": "Termos",
     "copyright": "© {year} Teleprompter Online. Todos os direitos reservados.",
-    "madeWith": "Feito para criadores, educadores e palestrantes."
+    "madeWith": "Feito para criadores, educadores e palestrantes.",
+    "company": "Empresa"
   },
   "teleprompter": {
     "placeholder": "Cole ou digite seu roteiro aqui. Pressione Espaço para iniciar.",
@@ -61,7 +64,8 @@
       "alignment": "Alinhamento",
       "alignLeft": "Esquerda",
       "alignCenter": "Centro",
-      "alignRight": "Direita"
+      "alignRight": "Direita",
+      "custom": "Personalizado"
     },
     "savedScripts": {
       "title": "Roteiros salvos",
@@ -87,7 +91,8 @@
       "fullscreen": "Alternar tela cheia",
       "restart": "Reiniciar",
       "save": "Salvar roteiro",
-      "exit": "Sair da tela cheia"
+      "exit": "Sair da tela cheia",
+      "voice": "Ativar modo voz"
     },
     "countdown": {
       "getReady": "Prepare-se…"
@@ -101,7 +106,14 @@
       "uploadFile": "Enviar arquivo",
       "dropHere": "Solte o arquivo para carregá-lo",
       "placeholderWithUpload": "Cole ou digite seu roteiro aqui — ou arraste um arquivo .txt, .md, .srt ou .rtf para esta área.",
-      "uploadHint": "Dica: você também pode arrastar e soltar um arquivo, ou clicar em Enviar arquivo acima."
+      "uploadHint": "Dica: você também pode arrastar e soltar um arquivo, ou clicar em Enviar arquivo acima.",
+      "dismiss": "Dispensar",
+      "importError": {
+        "unsupported": "Esse tipo de arquivo não é aceito. Tente .txt, .md, .docx, .rtf ou .srt.",
+        "docxUnsupported": "Seu navegador não consegue abrir arquivos .docx. Use Chrome, Edge ou Safari, ou cole o texto.",
+        "empty": "Esse arquivo parece estar vazio.",
+        "failed": "Não foi possível ler o arquivo. Salve como .txt ou .docx e envie novamente."
+      }
     },
     "tips": {
       "title": "Dicas rápidas",
@@ -111,6 +123,15 @@
         "Ative o modo espelho se você usa um rig de teleprompter com reflexo.",
         "Seus roteiros ficam salvos de forma privada no seu navegador."
       ]
+    },
+    "defaultScript": "Bem-vindo ao Teleprompter Online.\n\nCole ou escreva seu roteiro aqui e pressione a barra de espaço para começar.\n\nAjuste a velocidade de rolagem e o tamanho da fonte ao seu ritmo. Ative o modo espelho se usar um teleprompter de vidro e vá para tela cheia para ler sem distrações.\n\nPrefere ficar com as mãos livres? Ative o modo voz e o roteiro acompanha sua fala.\n\nSeu roteiro e suas configurações ficam salvos de forma privada no navegador — nada é enviado.",
+    "voice": {
+      "label": "Voz",
+      "toggle": "Ativar rolagem por voz",
+      "listening": "Ouvindo — o roteiro acompanha sua voz",
+      "denied": "O acesso ao microfone foi bloqueado. Permita nas configurações do site para usar o modo voz.",
+      "unsupported": "O modo voz precisa de Chrome, Edge ou Safari.",
+      "hint": "O modo voz usa o reconhecimento de fala do próprio navegador para rolar o roteiro enquanto você fala. Seu roteiro nunca sai do aparelho, mas, dependendo do navegador, o áudio pode ser enviado ao serviço de voz do fabricante para reconhecimento."
     }
   },
   "home": {
@@ -249,32 +270,60 @@
       "title": "Perguntas frequentes",
       "items": [
         {
-          "q": "O Teleprompter Online é realmente grátis?",
-          "a": "Sim. O aplicativo é totalmente utilizável de graça, para sempre. Sem conta, sem marca d'água, sem limitações de recursos e sem upload."
+          "q": "O Teleprompter Online é mesmo gratuito?",
+          "a": "Sim. O aplicativo é totalmente gratuito, para sempre. Sem conta, sem marca d'água, sem recursos bloqueados e sem envio de arquivos."
         },
         {
           "q": "Preciso instalar alguma coisa?",
-          "a": "Não. O Teleprompter Online roda diretamente no seu navegador. Funciona no Chrome, Safari, Firefox e Edge, em desktop, tablet e celular."
+          "a": "Não. O Teleprompter Online funciona direto no navegador: Chrome, Safari, Firefox e Edge, no computador, tablet e celular."
         },
         {
           "q": "Meu roteiro é privado?",
-          "a": "Sim. Seu roteiro nunca sai do seu dispositivo. Os roteiros salvos ficam no armazenamento local do seu navegador e não são enviados para nenhum servidor."
+          "a": "Sim. Seu roteiro nunca sai do seu aparelho. Roteiros salvos, o rascunho atual e suas configurações ficam no armazenamento local do navegador e não são enviados a nenhum servidor."
         },
         {
-          "q": "Posso usar com um rig físico de teleprompter?",
-          "a": "Sim. Use o botão de espelho para inverter o texto na horizontal e usar com um teleprompter de vidro bipartido na frente da sua câmera."
+          "q": "Meu roteiro continua lá se eu fechar a aba?",
+          "a": "Sim. O rascunho atual e todas as configurações do teleprompter são salvos automaticamente no navegador, então ao reabrir a página você continua exatamente de onde parou. Limpar os dados do navegador remove tudo."
+        },
+        {
+          "q": "Posso usar com um teleprompter físico?",
+          "a": "Sim. Use o modo espelho para inverter o texto na horizontal em um teleprompter de vidro à frente da câmera. Também dá para inverter na vertical em montagens suspensas."
         },
         {
           "q": "Funciona no celular?",
-          "a": "Foi projetado para o celular. Você tem áreas de toque amplas, tela cheia em modo paisagem e um tamanho de fonte padrão pensado para leitura confortável em telas pequenas."
+          "a": "Foi feito para celular: botões grandes, tela cheia na horizontal, tamanho de fonte padrão ajustado e pausa ou retomada tocando em qualquer ponto, para você não precisar procurar os controles no meio da gravação."
         },
         {
-          "q": "Dá para controlar a velocidade de rolagem enquanto leio?",
-          "a": "Sim. Use as setas do teclado no desktop ou o controle deslizante de velocidade na tela no celular para ajustar a rolagem em tempo real."
+          "q": "Consigo controlar a velocidade enquanto leio?",
+          "a": "Sim. Use as setas do teclado no computador ou o controle deslizante na tela do celular para ajustar a velocidade em tempo real."
         },
         {
-          "q": "O teleprompter para no final?",
-          "a": "Sim. A reprodução para suavemente no final do seu roteiro. Pressione Reiniciar para voltar ao começo."
+          "q": "O texto rola sozinho quando eu falo?",
+          "a": "Sim: ative o modo voz e o roteiro acompanha sua fala em vez de correr por tempo, então pausas e improvisos não deixam você para trás. Precisa de Chrome, Edge ou Safari e permissão de microfone."
+        },
+        {
+          "q": "Que formatos de arquivo posso enviar?",
+          "a": "Texto simples (.txt), Markdown (.md), documentos do Word (.docx), rich text (.rtf) e legendas (.srt, .vtt). Arraste o arquivo para a caixa do roteiro ou use o botão Enviar. Os arquivos são lidos no navegador e nunca são enviados."
+        },
+        {
+          "q": "Posso usar com Zoom, Google Meet ou Microsoft Teams?",
+          "a": "Sim. Abra o teleprompter em uma janela do navegador logo abaixo da webcam, ou use em uma segunda tela ou tablet. Compartilhe apenas a janela da reunião, nunca a do teleprompter, e suas anotações ficam invisíveis para os outros."
+        },
+        {
+          "q": "Como uso no iPad ou iPhone?",
+          "a": "Abra teleprompteronline.net no Safari ou Chrome, cole seu roteiro e toque em tela cheia. Adicione à tela de início para abrir como um aplicativo. Posicione o aparelho logo abaixo da lente para manter o olhar natural."
+        },
+        {
+          "q": "Dá para mudar a cor do texto e do fundo?",
+          "a": "Sim. O painel de configurações traz combinações prontas e um seletor de cor personalizado. Branco no preto é o clássico; amarelo no preto reduz o brilho e preto no branco lê melhor em ambientes muito claros."
+        },
+        {
+          "q": "Funciona sem internet?",
+          "a": "Sim, depois da primeira visita. A página fica em cache no navegador, então você pode abrir o teleprompter e ler seus roteiros salvos sem conexão."
+        },
+        {
+          "q": "O teleprompter para no fim do roteiro?",
+          "a": "Sim. A rolagem para suavemente no fim do texto. Toque em Reiniciar para voltar ao começo."
         }
       ]
     },
@@ -526,8 +575,8 @@
         "body": "O Teleprompter Online é um aplicativo web estático que roda inteiramente no seu navegador. Não criamos contas, não recebemos seus roteiros e não vendemos dados."
       },
       {
-        "title": "O que fica no seu dispositivo",
-        "body": "Quaisquer roteiros que você salvar são armazenados no armazenamento local do seu navegador, no dispositivo que você usou. Limpar os dados do navegador vai removê-los. Eles nunca são enviados para um servidor."
+        "title": "O que fica no seu aparelho",
+        "body": "Seus roteiros salvos, o rascunho que você está editando e todas as configurações do teleprompter (velocidade, fonte, cores, espelho, contagem regressiva) ficam no armazenamento local do navegador, no aparelho que você usou. Limpar os dados do navegador remove tudo. Nada disso é enviado a um servidor."
       },
       {
         "title": "Análises e cookies",
@@ -538,8 +587,12 @@
         "body": "O site é hospedado no Cloudflare Pages. O Cloudflare pode registrar dados de solicitação em nível de infraestrutura (como endereços IP) para segurança e prevenção de abuso. Os dados de análise são processados pelo Google (Google Analytics) e pelos operadores do Pageview.app."
       },
       {
+        "title": "Modo voz e seu microfone",
+        "body": "O modo voz fica desligado até você ativá-lo, e o navegador pede permissão antes de usar o microfone. O texto do roteiro é comparado com sua fala localmente na própria página e nunca é transmitido. O áudio é outra história: a maioria dos navegadores, Chrome incluído, envia o áudio ao próprio serviço de reconhecimento de fala para transcrevê-lo, então esse áudio segue a política de privacidade do fabricante do navegador. Se preferir que nenhum áudio saia do aparelho, deixe o modo voz desligado — todos os outros recursos continuam funcionando."
+      },
+      {
         "title": "Contato",
-        "body": "Dúvidas sobre privacidade? Entre em contato pelos dados disponíveis no nosso site."
+        "body": "Dúvidas sobre privacidade? Escreva para hello@teleprompteronline.net ou use a página de contato."
       }
     ]
   },
@@ -577,5 +630,66 @@
     "title": "Página não encontrada",
     "body": "A página que você está procurando não está aqui. Ela pode ter sido movida ou nunca ter existido.",
     "cta": "Voltar ao teleprompter"
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre o Teleprompter Online",
+      "description": "Quem faz o Teleprompter Online, por que ele é gratuito e os princípios de um teleprompter que roda inteiramente no navegador."
+    },
+    "title": "Sobre o Teleprompter Online",
+    "subtitle": "Um teleprompter gratuito com uma ideia por trás: menos botões entre você e a próxima gravação.",
+    "sections": [
+      {
+        "title": "Por que isso existe",
+        "body": "Teleprompter já significou estúdio, operador e um equipamento mais caro que a câmera. Depois passou a significar software de desktop com chave de licença. Nada disso fazia sentido para quem grava a abertura de um curso na mesa da cozinha numa terça à noite. O Teleprompter Online é a ferramenta que queríamos ter: abre uma página, cola o roteiro e aperta play."
+      },
+      {
+        "title": "Como funciona",
+        "body": "Tudo roda no seu navegador. O motor de rolagem, o modo espelho, a importação de arquivos, os roteiros salvos — tudo é JavaScript executando no seu próprio aparelho. Não existe um servidor lendo suas palavras porque não existe servidor: o site é um conjunto de arquivos estáticos entregues por uma CDN."
+      },
+      {
+        "title": "O que queremos dizer com privado",
+        "body": "Seu roteiro, seu rascunho atual e suas configurações ficam no armazenamento local do navegador. Não são enviados, não têm cópia em servidor e não podemos lê-los. A contrapartida é honesta: se você limpar os dados do navegador, eles somem. Achamos que essa é a troca certa para uma ferramenta usada para ensaiar anúncios de produto e comunicados confidenciais."
+      },
+      {
+        "title": "Gratuito, e por quê",
+        "body": "Manter o site custa muito pouco porque ele faz muito pouco no servidor. Não há custo por usuário a cobrir, então não há paywall, marca d'água, limite de exportação nem período de teste. Se isso mudar, mudará às claras — não bloqueando em silêncio recursos dos quais você já depende."
+      },
+      {
+        "title": "Feito para seis idiomas",
+        "body": "A interface e todas as páginas existem em inglês, espanhol, português, francês, alemão e italiano, com traduções de verdade e não com resultado automático jogado num modelo. Se algo soar errado no seu idioma, avise: é o tipo de relato que mais queremos receber."
+      }
+    ]
+  },
+  "contact": {
+    "meta": {
+      "title": "Contato – Teleprompter Online",
+      "description": "Fale conosco sobre erros, sugestões de recursos, correções de tradução ou imprensa."
+    },
+    "title": "Contato",
+    "subtitle": "Dúvidas, erros e ideias chegam à mesma caixa de entrada.",
+    "sections": [
+      {
+        "title": "E-mail",
+        "body": "Escreva para o endereço abaixo que vamos ler. Somos uma equipe pequena, então a resposta costuma levar alguns dias, não algumas horas."
+      },
+      {
+        "title": "Relatar um erro",
+        "body": "Os relatos mais úteis dizem qual navegador e aparelho você usa, o que esperava e o que aconteceu. Se o teleprompter falhou no meio da leitura, a velocidade e o tamanho da fonte em uso ajudam muito — esses dois ajustes explicam uma parcela surpreendente dos problemas."
+      },
+      {
+        "title": "Sugestões de recursos",
+        "body": "Conte o que você estava tentando fazer, não apenas o recurso que imaginou. Saber para qual tarefa você contratou o teleprompter é o que mostra se um botão novo é mesmo a resposta."
+      },
+      {
+        "title": "Traduções",
+        "body": "Se uma frase soar estranha no seu idioma, ou se alguma página ainda mostrar texto em inglês onde não deveria, mande o endereço da página e a redação que você usaria."
+      },
+      {
+        "title": "Dúvidas de privacidade",
+        "body": "Para qualquer coisa sobre tratamento de dados, veja primeiro a política de privacidade: ela cobre o que é guardado, onde, e o que as análises fazem. Se não responder sua dúvida, pergunte."
+      }
+    ],
+    "emailLabel": "Escreva para"
   }
 }

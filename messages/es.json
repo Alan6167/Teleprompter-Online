@@ -15,7 +15,9 @@
     "features": "Características",
     "howToUse": "Cómo usarlo",
     "useCases": "Casos de uso",
-    "faq": "Preguntas frecuentes"
+    "faq": "Preguntas frecuentes",
+    "about": "Acerca de",
+    "contact": "Contacto"
   },
   "footer": {
     "tagline": "Un teleprompter gratis, respetuoso con tu privacidad, que funciona íntegramente en tu navegador.",
@@ -25,7 +27,8 @@
     "privacy": "Privacidad",
     "terms": "Términos",
     "copyright": "© {year} Teleprompter Online. Todos los derechos reservados.",
-    "madeWith": "Hecho para creadores, docentes y oradores."
+    "madeWith": "Hecho para creadores, docentes y oradores.",
+    "company": "Empresa"
   },
   "teleprompter": {
     "placeholder": "Pega o escribe aquí tu guion. Pulsa Espacio para reproducir.",
@@ -61,7 +64,8 @@
       "alignment": "Alineación",
       "alignLeft": "Izquierda",
       "alignCenter": "Centro",
-      "alignRight": "Derecha"
+      "alignRight": "Derecha",
+      "custom": "Personalizado"
     },
     "savedScripts": {
       "title": "Guiones guardados",
@@ -87,7 +91,8 @@
       "fullscreen": "Activar/desactivar pantalla completa",
       "restart": "Reiniciar",
       "save": "Guardar guion",
-      "exit": "Salir de pantalla completa"
+      "exit": "Salir de pantalla completa",
+      "voice": "Activar modo voz"
     },
     "countdown": {
       "getReady": "Prepárate…"
@@ -101,7 +106,14 @@
       "uploadFile": "Subir archivo",
       "dropHere": "Suelta tu archivo para cargarlo",
       "placeholderWithUpload": "Pega o escribe tu guion aquí, o arrastra un archivo .txt, .md, .srt o .rtf sobre esta área.",
-      "uploadHint": "Consejo: también puedes arrastrar y soltar un archivo, o hacer clic en Subir archivo arriba."
+      "uploadHint": "Consejo: también puedes arrastrar y soltar un archivo, o hacer clic en Subir archivo arriba.",
+      "dismiss": "Descartar",
+      "importError": {
+        "unsupported": "Ese tipo de archivo no es compatible. Prueba con .txt, .md, .docx, .rtf o .srt.",
+        "docxUnsupported": "Tu navegador no puede abrir archivos .docx. Prueba con Chrome, Edge o Safari, o pega el texto.",
+        "empty": "Ese archivo parece estar vacío.",
+        "failed": "No se pudo leer el archivo. Guárdalo como .txt o .docx e inténtalo de nuevo."
+      }
     },
     "tips": {
       "title": "Consejos rápidos",
@@ -111,6 +123,15 @@
         "Activa el modo espejo si usas un rig de teleprompter con reflejo.",
         "Tus guiones se guardan de forma privada en tu navegador."
       ]
+    },
+    "defaultScript": "Bienvenido a Teleprompter Online.\n\nPega o escribe tu guion aquí y pulsa la barra espaciadora para empezar.\n\nAjusta la velocidad de desplazamiento y el tamaño de letra a tu ritmo. Activa el modo espejo si usas un teleprompter de cristal y pasa a pantalla completa para leer sin distracciones.\n\n¿Prefieres no usar las manos? Activa el modo voz y el guion seguirá tu habla.\n\nTu guion y tus ajustes se guardan de forma privada en tu navegador: no se sube nada.",
+    "voice": {
+      "label": "Voz",
+      "toggle": "Activar desplazamiento por voz",
+      "listening": "Escuchando: el guion sigue tu voz",
+      "denied": "Se bloqueó el acceso al micrófono. Permítelo en la configuración del sitio para usar el modo voz.",
+      "unsupported": "El modo voz necesita Chrome, Edge o Safari.",
+      "hint": "El modo voz usa el reconocimiento de voz integrado del navegador para desplazar el guion mientras hablas. Tu guion nunca sale de tu dispositivo, pero según el navegador el audio puede enviarse al servicio de voz del fabricante para su reconocimiento."
     }
   },
   "home": {
@@ -250,31 +271,59 @@
       "items": [
         {
           "q": "¿Teleprompter Online es realmente gratis?",
-          "a": "Sí. La aplicación es totalmente utilizable gratis, para siempre. No hay cuentas, ni marca de agua, ni funciones de pago, ni subidas."
+          "a": "Sí. La aplicación es totalmente gratuita, para siempre. Sin cuenta, sin marca de agua, sin funciones bloqueadas y sin subir nada."
         },
         {
           "q": "¿Necesito instalar algo?",
-          "a": "No. Teleprompter Online funciona directamente en tu navegador. Es compatible con Chrome, Safari, Firefox y Edge en escritorio, tablet y móvil."
+          "a": "No. Teleprompter Online funciona directamente en tu navegador: Chrome, Safari, Firefox y Edge, en ordenador, tableta y móvil."
         },
         {
           "q": "¿Mi guion es privado?",
-          "a": "Sí. Tu guion nunca sale de tu dispositivo. Los guiones guardados viven en el almacenamiento local de tu navegador y no se suben a ningún servidor."
+          "a": "Sí. Tu guion nunca sale de tu dispositivo. Los guiones guardados, el borrador actual y tus ajustes se almacenan en el almacenamiento local del navegador y no se envían a ningún servidor."
         },
         {
-          "q": "¿Puedo usarlo con un rig de teleprompter físico?",
-          "a": "Sí. Usa la opción de espejo para invertir el texto horizontalmente y utilizarlo con un teleprompter de divisor de haz delante de tu cámara."
+          "q": "¿Seguirá ahí mi guion si cierro la pestaña?",
+          "a": "Sí. El borrador actual y todos los ajustes del teleprompter se guardan automáticamente en tu navegador, así que al volver a abrir la página continúas justo donde lo dejaste. Se borran si limpias los datos del navegador."
         },
         {
-          "q": "¿Funciona en móvil?",
-          "a": "Está diseñado para móvil. Incluye áreas táctiles grandes, pantalla completa en horizontal y un tamaño de fuente predeterminado cómodo para pantallas pequeñas."
+          "q": "¿Puedo usarlo con un teleprompter físico?",
+          "a": "Sí. Usa el modo espejo para voltear el texto horizontalmente en un teleprompter de cristal delante de la cámara. También puedes voltearlo verticalmente para montajes cenitales."
+        },
+        {
+          "q": "¿Funciona en el móvil?",
+          "a": "Está pensado para móvil: botones grandes, pantalla completa en horizontal, un tamaño de letra por defecto ajustado y pausa o reanudación tocando en cualquier punto, para no tener que buscar los controles a media toma."
         },
         {
           "q": "¿Puedo controlar la velocidad mientras leo?",
-          "a": "Sí. Usa las teclas de flecha en escritorio o el deslizador de velocidad en pantalla en móvil para ajustar la velocidad en tiempo real."
+          "a": "Sí. Usa las flechas del teclado en el ordenador o el control deslizante en pantalla en el móvil para ajustar la velocidad en tiempo real."
+        },
+        {
+          "q": "¿El texto avanza solo cuando hablo?",
+          "a": "Sí: activa el modo voz y el guion sigue tu habla en lugar de avanzar por temporizador, así las pausas y las improvisaciones no te dejan atrás. Requiere Chrome, Edge o Safari y permiso de micrófono."
+        },
+        {
+          "q": "¿Qué formatos de archivo puedo subir?",
+          "a": "Texto plano (.txt), Markdown (.md), documentos de Word (.docx), texto enriquecido (.rtf) y subtítulos (.srt, .vtt). Arrastra el archivo al cuadro del guion o usa el botón Subir. Los archivos se leen en tu navegador y nunca se envían."
+        },
+        {
+          "q": "¿Puedo usarlo con Zoom, Google Meet o Microsoft Teams?",
+          "a": "Sí. Abre el teleprompter en una ventana del navegador y colócala justo debajo de la webcam, o úsalo en una segunda pantalla o tableta. Comparte solo la ventana de la videollamada, no la del teleprompter, y tus notas quedarán invisibles para los demás."
+        },
+        {
+          "q": "¿Cómo lo uso en un iPad o iPhone?",
+          "a": "Abre teleprompteronline.net en Safari o Chrome, pega tu guion y toca pantalla completa. Añádelo a la pantalla de inicio para abrirlo como una app. Coloca el dispositivo justo debajo del objetivo para mantener una mirada natural."
+        },
+        {
+          "q": "¿Puedo cambiar el color del texto y del fondo?",
+          "a": "Sí. El panel de ajustes incluye combinaciones predefinidas y un selector de color personalizado. Blanco sobre negro es la opción clásica; amarillo sobre negro reduce el reflejo y negro sobre blanco se lee mejor en salas muy iluminadas."
+        },
+        {
+          "q": "¿Funciona sin conexión?",
+          "a": "Sí, después de la primera visita. La página queda en caché en tu navegador, así que puedes abrir el teleprompter y leer tus guiones guardados sin conexión."
         },
         {
           "q": "¿El teleprompter se detiene al final?",
-          "a": "Sí. La reproducción se detiene suavemente al final de tu guion. Pulsa Reiniciar para volver al principio."
+          "a": "Sí. La reproducción se detiene suavemente al final del guion. Pulsa Reiniciar para volver al principio."
         }
       ]
     },
@@ -526,8 +575,8 @@
         "body": "Teleprompter Online es una aplicación web estática que se ejecuta íntegramente en tu navegador. No creamos cuentas, no recibimos tus guiones y no vendemos datos."
       },
       {
-        "title": "Lo que permanece en tu dispositivo",
-        "body": "Los guiones que guardas se almacenan en el almacenamiento local del navegador del dispositivo que uses. Borrar los datos del navegador los eliminará. Nunca se suben a un servidor."
+        "title": "Qué permanece en tu dispositivo",
+        "body": "Tus guiones guardados, el borrador que estás editando y todos los ajustes del teleprompter (velocidad, fuente, colores, espejo, cuenta atrás) se almacenan en el almacenamiento local del navegador, en el dispositivo que usaste. Si borras los datos del navegador, se eliminarán. Nada de esto se sube nunca a un servidor."
       },
       {
         "title": "Analítica y cookies",
@@ -538,8 +587,12 @@
         "body": "El sitio está alojado en Cloudflare Pages. Cloudflare puede registrar datos de solicitud a nivel de infraestructura (como direcciones IP) para seguridad y prevención de abusos. Los datos analíticos son procesados por Google (Google Analytics) y por los operadores de Pageview.app."
       },
       {
+        "title": "El modo voz y tu micrófono",
+        "body": "El modo voz está desactivado salvo que tú lo actives, y el navegador pedirá permiso antes de usar el micrófono. El texto del guion se compara con tu habla de forma local en la propia página y nunca se transmite. El audio es otra cuestión: la mayoría de los navegadores, incluido Chrome, lo envían a su propio servicio de reconocimiento de voz para transcribirlo, así que ese audio se rige por la política de privacidad del fabricante de tu navegador. Si prefieres que no salga ningún audio de tu dispositivo, deja el modo voz desactivado: todas las demás funciones siguen funcionando."
+      },
+      {
         "title": "Contacto",
-        "body": "¿Tienes preguntas sobre la privacidad? Escríbenos a través de los datos de contacto de nuestro sitio web."
+        "body": "¿Dudas sobre privacidad? Escríbenos a hello@teleprompteronline.net o usa la página de contacto."
       }
     ]
   },
@@ -577,5 +630,66 @@
     "title": "Página no encontrada",
     "body": "La página que buscas no está aquí. Puede que se haya movido o que nunca haya existido.",
     "cta": "Volver al teleprompter"
+  },
+  "about": {
+    "meta": {
+      "title": "Acerca de Teleprompter Online",
+      "description": "Quién desarrolla Teleprompter Online, por qué es gratis y los principios de un teleprompter que funciona íntegramente en tu navegador."
+    },
+    "title": "Acerca de Teleprompter Online",
+    "subtitle": "Un teleprompter gratuito con una idea de fondo: menos botones entre tú y la siguiente toma.",
+    "sections": [
+      {
+        "title": "Por qué existe",
+        "body": "Antes, un teleprompter significaba un plató, un operador y un equipo más caro que la cámara. Después, software de escritorio con clave de licencia. Nada de eso tenía sentido para quien graba la introducción de un curso en la mesa de la cocina un martes por la noche. Teleprompter Online es la herramienta que nos habría gustado tener: abres una página, pegas el guion y pulsas play."
+      },
+      {
+        "title": "Cómo funciona",
+        "body": "Todo se ejecuta en tu navegador. El motor de desplazamiento, el modo espejo, la importación de archivos, los guiones guardados: todo es JavaScript funcionando en tu propio dispositivo. No hay un servidor que lea tus palabras porque no hay servidor: el sitio es un conjunto de archivos estáticos servidos desde una CDN."
+      },
+      {
+        "title": "Qué queremos decir con privado",
+        "body": "Tu guion, tu borrador actual y tus ajustes se guardan en el almacenamiento local del navegador. No se suben, no se copian a ningún servidor y nosotros no podemos leerlos. La contrapartida es honesta: si borras los datos del navegador, desaparecen. Nos parece el equilibrio correcto para una herramienta con la que se ensayan anuncios de producto e informes confidenciales."
+      },
+      {
+        "title": "Gratis, y por qué",
+        "body": "Mantener el sitio cuesta muy poco porque hace muy poco en el servidor. No hay un coste por usuario que cubrir, así que no hay muro de pago, ni marca de agua, ni límite de exportación, ni versión de prueba. Si eso cambiara, se anunciaría abiertamente, no bloqueando en silencio funciones que ya usas."
+      },
+      {
+        "title": "Pensado para seis idiomas",
+        "body": "La interfaz y todas las páginas están en inglés, español, portugués, francés, alemán e italiano, con traducciones reales y no con resultados automáticos volcados en una plantilla. Si algo suena mal en tu idioma, dínoslo: es el tipo de informe que más agradecemos."
+      }
+    ]
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacto – Teleprompter Online",
+      "description": "Escríbenos por errores, sugerencias de funciones, correcciones de traducción o consultas de prensa."
+    },
+    "title": "Contacto",
+    "subtitle": "Preguntas, errores e ideas llegan al mismo buzón.",
+    "sections": [
+      {
+        "title": "Correo electrónico",
+        "body": "Escríbenos a la dirección de abajo y lo leeremos. Somos un equipo pequeño, así que la respuesta suele tardar un par de días, no un par de horas."
+      },
+      {
+        "title": "Informar de un error",
+        "body": "Los informes más útiles indican tu navegador y dispositivo, qué esperabas y qué ocurrió en su lugar. Si el teleprompter falló a media lectura, la velocidad y el tamaño de letra que usabas ayudan mucho: esos dos ajustes explican una parte sorprendente de los problemas."
+      },
+      {
+        "title": "Sugerencias de funciones",
+        "body": "Cuéntanos qué intentabas hacer, no solo la función que tienes en mente. Saber para qué trabajo contratas al teleprompter es lo que nos dice si un botón nuevo es la respuesta correcta."
+      },
+      {
+        "title": "Traducciones",
+        "body": "Si una frase suena rara en tu idioma, o una página sigue mostrando texto en inglés donde no debería, envíanos la dirección de la página y la redacción que usarías."
+      },
+      {
+        "title": "Dudas sobre privacidad",
+        "body": "Para cualquier cosa sobre el tratamiento de datos, consulta primero la política de privacidad: explica qué se guarda, dónde y qué hacen las analíticas. Si no resuelve tu duda, pregúntanos."
+      }
+    ],
+    "emailLabel": "Escríbenos a"
   }
 }

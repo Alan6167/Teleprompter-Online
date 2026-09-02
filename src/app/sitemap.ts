@@ -1,12 +1,23 @@
 import type { MetadataRoute } from 'next';
 import { LOCALES, USE_CASE_SLUGS, absoluteUrl, DEFAULT_LOCALE } from '@/lib/site';
+import { lastModified } from '@/lib/content-dates';
 
 export const dynamic = 'force-static';
 
-const ROUTES = ['', 'features', 'how-to-use', 'use-cases', 'faq', 'privacy', 'terms'] as const;
+const ROUTES = [
+  '',
+  'features',
+  'how-to-use',
+  'use-cases',
+  'script-timer',
+  'faq',
+  'about',
+  'contact',
+  'privacy',
+  'terms',
+] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of LOCALES) {
@@ -19,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       entries.push({
         url: absoluteUrl(locale, route),
-        lastModified: now,
+        lastModified: lastModified(route),
         changeFrequency: route === '' ? 'weekly' : 'monthly',
         priority: route === '' ? 1.0 : 0.7,
         alternates: { languages },
@@ -36,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       entries.push({
         url: absoluteUrl(locale, path),
-        lastModified: now,
+        lastModified: lastModified(path),
         changeFrequency: 'monthly',
         priority: 0.6,
         alternates: { languages },

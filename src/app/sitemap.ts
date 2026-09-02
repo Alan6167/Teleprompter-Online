@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { LOCALES, USE_CASE_SLUGS, absoluteUrl, DEFAULT_LOCALE } from '@/lib/site';
 import { lastModified } from '@/lib/content-dates';
 import { BLOG_POSTS } from '@/lib/blog';
+import { ALTERNATIVES } from '@/lib/alternatives';
 
 export const dynamic = 'force-static';
 
@@ -71,6 +72,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(post.updatedAt),
       changeFrequency: 'monthly',
       priority: 0.6,
+    });
+  }
+
+  for (const item of ALTERNATIVES) {
+    entries.push({
+      url: absoluteUrl(DEFAULT_LOCALE, `alternatives/${item.slug}`),
+      lastModified: new Date(item.updatedAt),
+      changeFrequency: 'monthly',
+      priority: 0.5,
     });
   }
 

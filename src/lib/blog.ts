@@ -56,7 +56,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'Drag the window to the top of your screen, directly beneath your webcam.',
           'Resize it into a narrow horizontal strip — wide enough to read, short enough that your eyes barely travel vertically.',
           'Set the font size smaller than you would for camera work: 32–48 px suits a window this close to your face.',
-          'Set the scroll speed to 50–75 px/s. Call delivery should sound like thinking, not reciting.',
+          'Set the pace to 120–140 words per minute — the prompter shows the pace it is actually delivering next to the speed slider. Call delivery should sound like thinking, not reciting.',
           'Paste your script and leave it paused. Press Space only when you reach a part you actually want to read.',
         ],
       },
@@ -308,7 +308,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Plan the length before you record, not after',
         paragraphs: [
-          'At a normal conversational pace of 130 to 150 words per minute, a five-minute video is around 700 words and a thirty-second clip is around 75. Knowing this before you write saves the demoralising experience of cutting a finished script in half.',
+          'At a normal conversational pace of 130 to 150 words per minute, a five-minute video is around 700 words and a thirty-second clip is around 75. Knowing this before you write saves the demoralising experience of cutting a finished script in half. The script timer works it out for you if you would rather not do the arithmetic.',
           'Add fifteen to twenty percent for anything with a live audience, since laughter, pauses and questions all consume real time that a word count cannot see.',
         ],
       },
@@ -340,28 +340,30 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     sections: [
       {
-        heading: 'Speed is measured in pixels, but you think in words',
+        heading: 'Why a px/s number is not worth copying',
         paragraphs: [
-          'A prompter scrolls in pixels per second, because that is what a screen can measure. You care about words per minute, because that is how speech works. The two are related by your font size: at a large font, fewer words occupy the same vertical space, so the same pixel speed delivers fewer words per minute.',
-          'This is why copying someone else\'s speed setting rarely works. Their 80 px/s at 40 px text is a completely different delivery from your 80 px/s at 64 px text. Always adjust speed after you have set font size, never before.',
+          'A prompter scrolls in pixels per second, because that is what a screen can measure. You care about words per minute, because that is how speech works. Converting between them depends on how many words fit on a line — and that changes with screen width and font size, not just one of them.',
+          'The gap is much larger than most people assume. We measured our own prompter at its default 48 px type: a phone in portrait fits about two words per line, a laptop about five. The same 80 px/s is therefore a comfortable 133 words per minute on the phone and an unreadable 333 on the laptop. Any speed figure you find online is only true for the screen it was written on.',
+          'So set the pace in words per minute and let the tool work out the pixels. Teleprompter Online shows the pace it is actually delivering next to the speed slider, measured from the text as laid out on your screen.',
         ],
       },
       {
-        heading: 'Starting points by format',
+        heading: 'Starting points by format, in words per minute',
         list: [
-          'Wedding speeches and toasts: 40–60 px/s. Nerves make everyone faster on the night than in rehearsal.',
-          'Keynotes and formal presentations: 45–70 px/s. Authority comes from unhurried pacing.',
-          'Podcasts and long-form monologue: 50–75 px/s.',
-          'Video calls: 50–75 px/s. You want to sound like you are thinking, not reciting.',
-          'YouTube talking head: 70–100 px/s.',
-          'TikTok, Reels and Shorts: 90–130 px/s. Short-form energy is genuinely quicker.',
+          'Wedding speeches and toasts: 100–120 wpm. Nerves make everyone faster on the night than in rehearsal.',
+          'Keynotes and formal presentations: 110–130 wpm. Authority comes from unhurried pacing.',
+          'Interviews and self-tapes: 110–130 wpm, mostly paused.',
+          'Podcasts and long-form monologue: 120–140 wpm.',
+          'Video calls: 120–140 wpm. You want to sound like you are thinking, not reciting.',
+          'YouTube talking head: 130–150 wpm.',
+          'TikTok, Reels and Shorts: 160–180 wpm. Short-form energy is genuinely quicker.',
         ],
       },
       {
         heading: 'Finding your number in one pass',
         paragraphs: [
-          'Load a script you know well. Set the font size you will actually use, at the distance you will actually sit. Start at the middle of the range for your format and read the first paragraph aloud at your natural pace, without trying to match the scroll.',
-          'If the reading line drifts above your voice, the scroll is too fast — drop it by ten. If it drifts below, raise it by ten. Two or three corrections and you will be within a few pixels of right. Write that number down; it will be your starting point for everything you record in that setup from now on.',
+          'Load a script you know well. Set the font size you will actually use, at the distance you will actually sit. Drag the speed slider until the pace readout shows the middle of the range for your format, then read the first paragraph aloud at your natural pace without trying to match the scroll.',
+          'If the reading line drifts above your voice, the pace is too fast — drop it by ten. If it drifts below, raise it by ten. Two or three corrections and you will be close. Write down the words-per-minute figure rather than the slider value: the pace is yours and it travels between devices, while the pixel number belongs to one screen.',
         ],
       },
       {
@@ -382,11 +384,11 @@ export const BLOG_POSTS: BlogPost[] = [
     faq: [
       {
         q: 'What is a normal teleprompter speed?',
-        a: 'For conversational delivery at a 48 px font, 70–100 px/s is a common range. But the right number depends on your font size and reading distance, so treat any figure as a starting point rather than a setting to copy.',
+        a: 'Around 130–150 words per minute for conversational delivery, slower for formal presentations and faster for short-form video. Set it in words per minute rather than pixels per second: the pixel figure that produces those words depends on your screen width and font size, so it is not portable between devices.',
       },
       {
         q: 'Should I change speed while recording?',
-        a: 'Small corrections are fine and normal — arrow keys adjust in steps of ten without interrupting playback. If you are correcting constantly, the underlying speed is wrong; stop and reset it rather than steering all the way through.',
+        a: 'Small corrections are fine and normal — arrow keys adjust without interrupting playback. If you are correcting constantly, the underlying pace is wrong; stop and reset it rather than steering all the way through.',
       },
     ],
   },

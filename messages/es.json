@@ -67,7 +67,9 @@
       "alignLeft": "Izquierda",
       "alignCenter": "Centro",
       "alignRight": "Derecha",
-      "custom": "Personalizado"
+      "custom": "Personalizado",
+      "wpmShort": "{wpm} ppm",
+      "wpm": "Ritmo de lectura"
     },
     "savedScripts": {
       "title": "Guiones guardados",
@@ -102,7 +104,6 @@
     "editor": {
       "title": "Tu guion",
       "wordCount": "{count, plural, =0 {Sin palabras} one {1 palabra} other {# palabras}}",
-      "estimatedTime": "Aproximadamente {minutes} min a la velocidad actual",
       "clear": "Borrar",
       "confirmClear": "¿Borrar el guion actual?",
       "uploadFile": "Subir archivo",
@@ -115,7 +116,8 @@
         "docxUnsupported": "Tu navegador no puede abrir archivos .docx. Prueba con Chrome, Edge o Safari, o pega el texto.",
         "empty": "Ese archivo parece estar vacío.",
         "failed": "No se pudo leer el archivo. Guárdalo como .txt o .docx e inténtalo de nuevo."
-      }
+      },
+      "readingTime": "{duration} a la velocidad actual"
     },
     "tips": {
       "title": "Consejos rápidos",
@@ -196,7 +198,7 @@
         },
         "speedFont": {
           "title": "Control fluido de velocidad y fuente",
-          "body": "Ajusta la velocidad de desplazamiento y el tamaño del texto ideales para tu lectura, desde unos tranquilos 20 px/s hasta unos rápidos 400 px/s."
+          "body": "Ajusta la velocidad y el tamaño de texto ideales para tu lectura. Un indicador de palabras por minuto muestra el ritmo real, medido sobre el texto en tu pantalla."
         },
         "mirror": {
           "title": "Modo espejo",
@@ -367,10 +369,12 @@
         "title": "Motor del prompter",
         "items": [
           "Desplazamiento fluido a 60 fps impulsado por requestAnimationFrame.",
-          "Velocidad de desplazamiento desde 20 px/s hasta 400 px/s con pasos finos.",
+          "Velocidad de desplazamiento desde 10 px/s hasta 400 px/s con pasos finos.",
+          "Indicador de palabras por minuto en vivo, medido sobre el texto tal como se muestra en tu pantalla.",
           "Cuenta atrás opcional de 3 segundos antes de reproducir.",
           "Indicador de lectura centrado para saber siempre cuál es la próxima línea.",
-          "La reproducción se detiene automáticamente al terminar tu guion."
+          "La reproducción se detiene automáticamente al terminar tu guion.",
+          "Modo voz: el guion sigue tu habla en lugar de un temporizador."
         ]
       },
       "typography": {
@@ -379,6 +383,7 @@
           "Tamaño de fuente de 16 px a 128 px.",
           "Preajustes de familia sans, serif y mono.",
           "Interlineado ajustable para una lectura cómoda.",
+          "Combinaciones de color de texto y fondo, selector personalizado y alineación izquierda, centro o derecha.",
           "Espejo horizontal o vertical para rigs de teleprompter.",
           "Temas claro y oscuro."
         ]
@@ -396,6 +401,8 @@
         "title": "Guiones y almacenamiento",
         "items": [
           "Pega cualquier texto plano o contenido con formato.",
+          "Importa archivos .txt, .md, .docx, .rtf, .srt y .vtt: se procesan en tu navegador y nunca se suben.",
+          "Tu borrador y todos los ajustes se guardan solos y se restauran en tu próxima visita.",
           "Guarda varios guiones con nombre de forma privada en tu navegador.",
           "Carga o elimina guiones con un solo clic.",
           "Nada se sube — tu contenido permanece en tu dispositivo."
@@ -405,6 +412,7 @@
         "title": "Plataforma y privacidad",
         "items": [
           "Funciona en cualquier navegador moderno: Chrome, Safari, Firefox, Edge.",
+          "Funciona sin conexión tras la primera visita y se instala en la pantalla de inicio.",
           "Diseño responsivo para móvil, tablet y escritorio.",
           "Disponible en seis idiomas con contenido equivalente.",
           "Sin rastreo de tus guiones ni analíticas de terceros que vendan tus datos."
@@ -491,7 +499,7 @@
         ],
         "recommended": {
           "summary": "Una lectura a cámara va algo más rápida que una presentación. Empieza aquí y ajusta tras un ensayo.",
-          "speed": "70–100 px/s para un ritmo natural a cámara. Ajústalo con las flechas a media toma.",
+          "speed": "130–150 ppm. El teleprompter muestra el ritmo real junto al control de velocidad: arrástralo hasta que marque unas 140.",
           "fontSize": "48–64 px si la pantalla está a un brazo de distancia; más grande si la cámara está más lejos.",
           "display": "Blanco sobre negro es la opción segura. Activa el espejo solo si lees a través de un equipo de cristal."
         },
@@ -538,7 +546,7 @@
         ],
         "recommended": {
           "summary": "La entrega en podcast es más lenta y relajada que una intro de YouTube. Date margen para respirar.",
-          "speed": "50–75 px/s. Más lento de lo que esperarías: una lectura tranquila suena mejor que una apresurada.",
+          "speed": "120–140 ppm. Más lento de lo que esperarías: una lectura tranquila suena mejor que una apresurada.",
           "fontSize": "56–72 px, para leer sentado a distancia normal sin inclinarte.",
           "display": "Amarillo cálido sobre negro cansa menos la vista en grabaciones largas que el blanco puro."
         },
@@ -585,7 +593,7 @@
         ],
         "recommended": {
           "summary": "La presentación es la entrega más lenta de todos los casos habituales: la autoridad viene de un ritmo sin prisa.",
-          "speed": "45–70 px/s. Si sientes agobio, el desplazamiento va demasiado rápido, no tu entrega demasiado lenta.",
+          "speed": "110–130 ppm. Si sientes agobio, el desplazamiento va demasiado rápido, no tu entrega demasiado lenta.",
           "fontSize": "64–80 px cuando la pantalla queda lejos, como suele pasar en un atril o un segundo monitor.",
           "display": "Negro sobre blanco se lee mejor con la iluminación intensa de un escenario o una sala de conferencias."
         },
@@ -632,7 +640,7 @@
         ],
         "recommended": {
           "summary": "La docencia prioriza la claridad sobre la velocidad. En la primera pasada, quédate más lento de lo que parece natural.",
-          "speed": "55–80 px/s, más lento aún en material técnico que el alumnado necesita asimilar.",
+          "speed": "115–135 ppm, aún más lento en material técnico que el alumnado necesita asimilar.",
           "fontSize": "56–72 px para poder separarte de la pantalla y seguir gesticulando con naturalidad.",
           "display": "Blanco sobre negro en una sala a oscuras; negro sobre blanco si grabas en un aula luminosa."
         },
@@ -679,7 +687,7 @@
         ],
         "recommended": {
           "summary": "Un teleprompter de directo se ojea, no se lee de continuo: prioriza texto grande que captes en medio segundo.",
-          "speed": "40–70 px/s, o déjalo en pausa y avanza a mano cuando llegues a un tramo guionizado.",
+          "speed": "Déjalo en pausa por defecto y pulsa Espacio al llegar a un tramo guionizado; 110–130 ppm cuando avance.",
           "fontSize": "64 px o más. Lees desde el otro lado del escritorio, de reojo y haciendo otra cosa.",
           "display": "Blanco o amarillo sobre negro para que una ventana brillante no te lave la cara en cámara."
         },
@@ -726,7 +734,7 @@
         },
         "recommended": {
           "summary": "En una llamada hay que sonar espontáneo: mantén el teleprompter pequeño, cerca del objetivo y más lento de lo que crees.",
-          "speed": "50–75 px/s. En una llamada quieres sonar como si pensaras, no como si recitaras.",
+          "speed": "120–140 ppm. En una llamada quieres sonar como si pensaras, no como si recitaras.",
           "fontSize": "32–48 px, menos de lo habitual: la ventana está cerca de tu cara y debe quedar estrecha.",
           "display": "Adáptalo a la sala: blanco sobre negro en un despacho en penumbra, negro sobre blanco si te ilumina una ventana."
         },
@@ -772,8 +780,8 @@
           }
         },
         "recommended": {
-          "summary": "Las pantallas pequeñas piden una letra relativamente mayor y un desplazamiento más lento que un monitor a la misma distancia.",
-          "speed": "60–90 px/s en el móvil; con menos texto visible, una velocidad alta resulta agobiante.",
+          "summary": "Las pantallas pequeñas muestran menos palabras por línea, así que el mismo número de velocidad da una lectura más lenta. Ajusta el ritmo por el indicador de palabras por minuto, no por el valor del control.",
+          "speed": "130–150 ppm. Fíjate en el indicador de ritmo y no en el número: una pantalla estrecha muestra menos palabras por línea, así que necesita más px/s para la misma entrega.",
           "fontSize": "36–48 px en móvil y 56–72 px en una tableta usada junto a la cámara.",
           "display": "Blanco sobre negro para que el reflejo de la pantalla no te ilumine la cara, algo que se nota más a esta distancia."
         },
@@ -820,7 +828,7 @@
         },
         "recommended": {
           "summary": "El vídeo corto es más rápido y directo que cualquier otro formato, y sus guiones son lo bastante breves para ensayarlos de verdad.",
-          "speed": "90–130 px/s. La energía del formato corto va más rápida que un vídeo a cámara.",
+          "speed": "160–180 ppm. La energía del formato corto va realmente más rápida que un vídeo a cámara.",
           "fontSize": "40–56 px, en columna estrecha para que el plano vertical no saque el texto de tu línea de mirada.",
           "display": "Mucho contraste, blanco sobre negro. Sueles grabar a pulso y con luz cambiante."
         },
@@ -867,7 +875,7 @@
         },
         "recommended": {
           "summary": "Un brindis es más lento que cualquier otra lectura. Los nervios aceleran a todo el mundo, así que ponlo más lento de lo que parece correcto.",
-          "speed": "40–60 px/s. Más lento de lo que crees: esa noche hablarás más rápido que en el ensayo.",
+          "speed": "100–120 ppm. Más lento de lo que crees: esa noche hablarás más rápido que en el ensayo.",
           "fontSize": "48–64 px para sostener el móvil a la altura del pecho y no junto a la cara.",
           "display": "Blanco sobre negro y brillo al máximo. Los salones están más oscuros de lo que recuerdas."
         },
@@ -914,7 +922,7 @@
         },
         "recommended": {
           "summary": "Una entrevista debe sonar meditada, no leída. Guion escueto y desplazamiento lento.",
-          "speed": "Déjalo en pausa para la mayoría de respuestas y avanza cuando lo necesites; 40–60 px/s cuando lo pongas en marcha.",
+          "speed": "Déjalo en pausa para la mayoría de respuestas y arráncalo cuando lo necesites; 110–130 ppm cuando avance.",
           "fontSize": "36–52 px, de forma que un vistazo abarque una línea entera sin barrido visible.",
           "display": "Lo que encaje con la luz de tu sala: lo importante es que la pantalla no se refleje en tus gafas."
         },
@@ -1099,7 +1107,7 @@
       "conversational": "Conversacional",
       "fast": "Rápido"
     },
-    "scrollHint": "A este ritmo, pon el teleprompter en unos {speed} px/s con el tamaño de letra por defecto de 48 px.",
+    "scrollHint": "Ábrelo en el teleprompter y ajustará la velocidad de desplazamiento a este ritmo en tu pantalla.",
     "openInPrompter": "Abrir en el teleprompter",
     "sections": [
       {

@@ -3,6 +3,7 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { CTA } from '@/components/marketing/CTA';
 import { blogIndexJsonLd } from '@/lib/jsonld';
 import { BLOG_POSTS } from '@/lib/blog';
+import { ALTERNATIVES } from '@/lib/alternatives';
 import { DEFAULT_LOCALE, localePath } from '@/lib/site';
 
 export function BlogIndexPage() {
@@ -53,6 +54,25 @@ export function BlogIndexPage() {
             </li>
           ))}
         </ul>
+        <section className="mt-16 border-t border-border pt-12">
+          <h2 className="text-2xl font-bold tracking-tight">Comparisons</h2>
+          <p className="mt-3 text-muted-foreground">
+            How Teleprompter Online stacks up against the alternatives, including where they
+            are the better choice.
+          </p>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+            {ALTERNATIVES.map((item) => (
+              <li key={item.slug}>
+                <a
+                  href={localePath(DEFAULT_LOCALE, `alternatives/${item.slug}`)}
+                  className="block h-full rounded-xl border border-border bg-card p-4 text-sm font-medium transition-colors hover:border-primary hover:text-primary"
+                >
+                  vs {item.competitor}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       </main>
 
       <CTA locale={DEFAULT_LOCALE} />

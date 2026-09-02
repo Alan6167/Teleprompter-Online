@@ -127,3 +127,31 @@ export function blogIndexJsonLd(posts: BlogPost[]) {
     })),
   };
 }
+
+/** HowTo markup for the step-by-step usage guide. */
+export function howToJsonLd(
+  locale: Locale,
+  {
+    name,
+    description,
+    steps,
+  }: { name: string; description: string; steps: Array<{ title: string; body: string }> }
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    description,
+    inLanguage: locale,
+    totalTime: 'PT5M',
+    supply: [],
+    tool: [{ '@type': 'HowToTool', name: 'A web browser' }],
+    step: steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.title,
+      text: step.body,
+      url: `${absoluteUrl(locale, 'how-to-use')}#step-${index + 1}`,
+    })),
+  };
+}

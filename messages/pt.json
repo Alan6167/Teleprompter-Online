@@ -67,7 +67,9 @@
       "alignLeft": "Esquerda",
       "alignCenter": "Centro",
       "alignRight": "Direita",
-      "custom": "Personalizado"
+      "custom": "Personalizado",
+      "wpmShort": "{wpm} ppm",
+      "wpm": "Ritmo de leitura"
     },
     "savedScripts": {
       "title": "Roteiros salvos",
@@ -102,7 +104,6 @@
     "editor": {
       "title": "Seu roteiro",
       "wordCount": "{count, plural, =0 {Nenhuma palavra} one {1 palavra} other {# palavras}}",
-      "estimatedTime": "Cerca de {minutes} min na velocidade atual",
       "clear": "Limpar",
       "confirmClear": "Limpar o roteiro atual?",
       "uploadFile": "Enviar arquivo",
@@ -115,7 +116,8 @@
         "docxUnsupported": "Seu navegador não consegue abrir arquivos .docx. Use Chrome, Edge ou Safari, ou cole o texto.",
         "empty": "Esse arquivo parece estar vazio.",
         "failed": "Não foi possível ler o arquivo. Salve como .txt ou .docx e envie novamente."
-      }
+      },
+      "readingTime": "{duration} na velocidade atual"
     },
     "tips": {
       "title": "Dicas rápidas",
@@ -196,7 +198,7 @@
         },
         "speedFont": {
           "title": "Controle fluido de velocidade e fonte",
-          "body": "Ajuste a velocidade de rolagem e o tamanho do texto conforme sua fala, de calmos 20 px/s a rápidos 400 px/s."
+          "body": "Ajuste a velocidade e o tamanho do texto conforme sua fala. Um indicador de palavras por minuto mostra o ritmo real, medido no texto da sua tela."
         },
         "mirror": {
           "title": "Modo espelho",
@@ -367,10 +369,12 @@
         "title": "Motor do prompter",
         "items": [
           "Rolagem suave a 60 fps com requestAnimationFrame.",
-          "Velocidade de rolagem de 20 px/s a 400 px/s com passos finos.",
+          "Velocidade de rolagem de 10 px/s a 400 px/s com passos finos.",
+          "Indicador de palavras por minuto ao vivo, medido no texto como ele aparece na sua tela.",
           "Contagem regressiva opcional de 3 segundos antes de iniciar.",
           "Indicador de leitura centralizado para você saber sempre qual é a próxima linha.",
-          "A reprodução para automaticamente quando seu roteiro termina."
+          "A reprodução para automaticamente quando seu roteiro termina.",
+          "Modo voz: o roteiro acompanha sua fala em vez de um cronômetro."
         ]
       },
       "typography": {
@@ -379,6 +383,7 @@
           "Tamanho da fonte de 16 px a 128 px.",
           "Presets de família de fonte sans, serif e mono.",
           "Altura de linha ajustável para leitura confortável.",
+          "Predefinições de cor de texto e fundo, seletor personalizado e alinhamento à esquerda, centro ou direita.",
           "Espelhamento horizontal ou vertical para rigs de teleprompter.",
           "Temas claro e escuro."
         ]
@@ -396,6 +401,8 @@
         "title": "Roteiros e armazenamento",
         "items": [
           "Cole qualquer texto simples ou conteúdo formatado.",
+          "Importe arquivos .txt, .md, .docx, .rtf, .srt e .vtt — lidos no navegador, nunca enviados.",
+          "Seu rascunho e todas as configurações são salvos sozinhos e restaurados na próxima visita.",
           "Salve vários roteiros nomeados de forma privada no seu navegador.",
           "Carregue ou exclua roteiros com um clique.",
           "Nada é enviado — seu conteúdo permanece no seu dispositivo."
@@ -405,6 +412,7 @@
         "title": "Plataforma e privacidade",
         "items": [
           "Funciona em qualquer navegador moderno: Chrome, Safari, Firefox, Edge.",
+          "Funciona offline após a primeira visita e instala na tela de início.",
           "Layout responsivo para celular, tablet e desktop.",
           "Disponível em seis idiomas com conteúdo correspondente.",
           "Sem rastreamento dos seus roteiros e sem analytics de terceiros vendendo seus dados."
@@ -491,7 +499,7 @@
         ],
         "recommended": {
           "summary": "Uma leitura direto para a câmera é um pouco mais rápida que uma apresentação. Comece por aqui e ajuste após um ensaio.",
-          "speed": "70–100 px/s para um ritmo natural de fala. Ajuste com as setas no meio da gravação.",
+          "speed": "130–150 ppm. O teleprompter mostra o ritmo real ao lado do controle de velocidade — arraste até marcar cerca de 140.",
           "fontSize": "48–64 px se a tela estiver a um braço de distância; aumente se a câmera ficar mais longe.",
           "display": "Branco no preto é o padrão seguro. Ative o espelho só se você lê através de um equipamento de vidro."
         },
@@ -538,7 +546,7 @@
         ],
         "recommended": {
           "summary": "A entrega de podcast é mais lenta e relaxada que uma intro de YouTube. Dê espaço para respirar.",
-          "speed": "50–75 px/s. Mais devagar do que parece — uma leitura tranquila soa melhor que uma apressada.",
+          "speed": "120–140 ppm. Mais devagar do que parece: uma leitura tranquila soa melhor que uma apressada.",
           "fontSize": "56–72 px, para ler sentado à distância normal sem se inclinar.",
           "display": "Amarelo quente no preto cansa menos os olhos em gravações longas do que branco puro."
         },
@@ -585,7 +593,7 @@
         ],
         "recommended": {
           "summary": "A apresentação é a entrega mais lenta entre os usos comuns — a autoridade vem de um ritmo sem pressa.",
-          "speed": "45–70 px/s. Se você se sentir apressado, a rolagem está rápida demais, não sua fala lenta demais.",
+          "speed": "110–130 ppm. Se você se sentir apressado, a rolagem está rápida demais, não sua fala lenta demais.",
           "fontSize": "64–80 px quando a tela fica mais longe, como costuma acontecer em púlpito ou segundo monitor.",
           "display": "Preto no branco lê melhor sob a iluminação forte de palco ou sala de conferência."
         },
@@ -632,7 +640,7 @@
         ],
         "recommended": {
           "summary": "Ensinar pede clareza mais que velocidade. Na primeira passada, fique mais lento do que parece natural.",
-          "speed": "55–80 px/s, mais devagar em conteúdo técnico que os alunos precisam absorver.",
+          "speed": "115–135 ppm, ainda mais devagar em conteúdo técnico que os alunos precisam absorver.",
           "fontSize": "56–72 px para poder se afastar da tela e ainda gesticular com naturalidade.",
           "display": "Branco no preto para sala escurecida; preto no branco se você grava numa sala clara."
         },
@@ -679,7 +687,7 @@
         ],
         "recommended": {
           "summary": "Um teleprompter de live é olhado de relance, não lido continuamente — priorize texto grande que se capta em meio segundo.",
-          "speed": "40–70 px/s, ou deixe pausado e role manualmente ao chegar num trecho roteirizado.",
+          "speed": "Deixe pausado por padrão e aperte Espaço num trecho roteirizado; 110–130 ppm quando estiver rodando.",
           "fontSize": "64 px para cima. Você lê do outro lado da mesa, de relance, enquanto faz outra coisa.",
           "display": "Branco ou amarelo no preto para que uma janela clara não lave seu rosto na câmera."
         },
@@ -726,7 +734,7 @@
         },
         "recommended": {
           "summary": "Numa chamada é preciso soar espontâneo: mantenha o teleprompter pequeno, perto da lente e mais lento do que você imagina.",
-          "speed": "50–75 px/s. Numa chamada você quer soar como quem pensa, não como quem recita.",
+          "speed": "120–140 ppm. Numa chamada você quer soar como quem pensa, não como quem recita.",
           "fontSize": "32–48 px — menor que o normal, porque a janela fica perto do rosto e precisa ser estreita.",
           "display": "Combine com a sala: branco no preto num escritório com pouca luz, preto no branco se houver janela iluminando."
         },
@@ -772,8 +780,8 @@
           }
         },
         "recommended": {
-          "summary": "Telas pequenas pedem tipo relativamente maior e rolagem mais lenta que um monitor à mesma distância.",
-          "speed": "60–90 px/s no celular; com menos texto visível, uma rolagem rápida parece frenética.",
+          "summary": "Telas pequenas cabem menos palavras por linha, então o mesmo número de velocidade entrega uma leitura mais lenta. Ajuste o ritmo pelo indicador de palavras por minuto, não pelo valor do controle.",
+          "speed": "130–150 ppm. Observe o indicador de ritmo, não o número: uma tela estreita cabe menos palavras por linha, então precisa de mais px/s para a mesma entrega.",
           "fontSize": "36–48 px no celular, 56–72 px num tablet usado ao lado da câmera.",
           "display": "Branco no preto para o brilho da tela não bater no rosto, o que pesa mais a essa distância."
         },
@@ -820,7 +828,7 @@
         },
         "recommended": {
           "summary": "Vídeo curto é mais rápido e direto que qualquer outro formato — e os roteiros são curtos o bastante para ensaiar de verdade.",
-          "speed": "90–130 px/s. A energia do formato curto é mais acelerada que a de um vídeo falado.",
+          "speed": "160–180 ppm. A energia do formato curto é realmente mais rápida que um vídeo falado em câmera.",
           "fontSize": "40–56 px, em coluna estreita para o enquadramento vertical não tirar o texto da sua linha de olhar.",
           "display": "Muito contraste, branco no preto. Você costuma gravar na mão e com luz mudando."
         },
@@ -867,7 +875,7 @@
         },
         "recommended": {
           "summary": "Um brinde é mais lento que qualquer outra leitura. O nervosismo acelera todo mundo, então deixe mais devagar do que parece certo.",
-          "speed": "40–60 px/s. Mais devagar do que você imagina: na hora você vai falar mais rápido que no ensaio.",
+          "speed": "100–120 ppm. Mais devagar do que você imagina: na hora você vai falar mais rápido que no ensaio.",
           "fontSize": "48–64 px para segurar o celular na altura do peito, e não perto do rosto.",
           "display": "Branco no preto e brilho no máximo. Salões são mais escuros do que a memória sugere."
         },
@@ -914,7 +922,7 @@
         },
         "recommended": {
           "summary": "Uma entrevista deve soar pensada, não lida. Roteiro enxuto e rolagem lenta.",
-          "speed": "Deixe pausado na maior parte das respostas e role quando precisar; 40–60 px/s quando estiver rodando.",
+          "speed": "Deixe pausado na maior parte das respostas e acione quando precisar; 110–130 ppm quando estiver rodando.",
           "fontSize": "36–52 px, de modo que um olhar abarque uma linha inteira sem varredura visível.",
           "display": "O que combinar com a luz da sala — o importante é a tela não refletir nos seus óculos."
         },
@@ -1099,7 +1107,7 @@
       "conversational": "Conversacional",
       "fast": "Rápido"
     },
-    "scrollHint": "Nesse ritmo, deixe o teleprompter em cerca de {speed} px/s com o tamanho padrão de 48 px.",
+    "scrollHint": "Abra no teleprompter e ele ajusta a velocidade de rolagem para esse ritmo na sua tela.",
     "openInPrompter": "Abrir no teleprompter",
     "sections": [
       {

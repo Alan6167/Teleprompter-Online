@@ -95,31 +95,6 @@ export function reviveDraft(stored: unknown, fallback: string): string {
   return typeof stored === 'string' ? stored : fallback;
 }
 
-/**
- * Words per minute implied by the current scroll speed and type size.
- *
- * A line of text occupies roughly `fontSize * lineHeight` pixels, and an average line at a
- * comfortable reading measure holds about 7 words, so the scroll rate in px/s converts to
- * words per minute as: (speed / lineHeightPx) lines per second * 7 words * 60.
- */
-export function impliedWordsPerMinute(settings: PrompterSettings): number {
-  const lineHeightPx = settings.fontSize * settings.lineHeight;
-  if (lineHeightPx <= 0) return 0;
-  const WORDS_PER_LINE = 7;
-  return (settings.speed / lineHeightPx) * WORDS_PER_LINE * 60;
-}
-
-/** Scroll speed in px/s that delivers a target words-per-minute at the current type size. */
-export function speedForWordsPerMinute(wpm: number, fontSize: number, lineHeight: number): number {
-  const lineHeightPx = fontSize * lineHeight;
-  const WORDS_PER_LINE = 7;
-  return clamp(
-    Math.round((wpm * lineHeightPx) / (WORDS_PER_LINE * 60)),
-    SPEED_RANGE.min,
-    SPEED_RANGE.max
-  );
-}
-
 /** Count words in a way that works for both space-separated and CJK scripts. */
 export function countWords(text: string): number {
   const trimmed = text.trim();

@@ -102,21 +102,25 @@ async function parseDocx(file: File): Promise<string> {
   const xml = new TextDecoder().decode(entry);
   const paragraphs: string[] = [];
 
+  // Word splits a sentence across runs, so a paragraph's text is the concatenation of its
+  // <w:t> nodes — but explicit breaks and tabs are their own elements sitting *between*
+  // those runs, so they have to be picked up in the same pass or they are lost.
+  const TOKEN = /<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>|<w:br\s*\/?>|<w:tab\s*\/?>/g;
+
   for (const chunk of xml.split(/<\/w:p>/)) {
-    // Word splits a sentence across runs, so a paragraph's text is the concatenation of
-    // all of its <w:t> nodes; explicit breaks and tabs carry their own elements.
-    const withBreaks = chunk
-      .replace(/<w:br[^>]*\/>/g, '\n')
-      .replace(/<w:tab[^>]*\/>/g, '\t');
-    const runs = withBreaks.match(/<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>/g);
-    if (!runs) {
-      paragraphs.push('');
-      continue;
+    let text = '';
+    let match: RegExpExecArray | null;
+    TOKEN.lastIndex = 0;
+    while ((match = TOKEN.exec(chunk)) !== null) {
+      if (match[1] !== undefined) {
+        text += decodeXmlEntities(match[1]);
+      } else if (match[0].startsWith('<w:br')) {
+        text += '\n';
+      } else {
+        text += '\t';
+      }
     }
-    const text = runs
-      .map((run) => run.replace(/<w:t(?:\s[^>]*)?>/, '').replace(/<\/w:t>$/, ''))
-      .join('');
-    paragraphs.push(decodeXmlEntities(text));
+    paragraphs.push(text);
   }
 
   return paragraphs

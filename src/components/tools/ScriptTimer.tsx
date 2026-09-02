@@ -6,7 +6,7 @@ import { ArrowRight, Timer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Textarea } from '@/components/ui/textarea';
-import { countWords, speedForWordsPerMinute, DEFAULT_SETTINGS } from '@/lib/prompter';
+import { countWords } from '@/lib/prompter';
 import { localePath, type Locale } from '@/lib/site';
 import { cn } from '@/lib/utils';
 
@@ -18,6 +18,7 @@ const PACES = [
 ] as const;
 
 const DRAFT_KEY = 'tpo:draft';
+const PACE_KEY = 'tpo:pace';
 
 export function ScriptTimer({ locale }: { locale: Locale }) {
   const t = useTranslations('scriptTimer');
@@ -37,19 +38,19 @@ export function ScriptTimer({ locale }: { locale: Locale }) {
     return { minutes, seconds };
   }, [totalSeconds]);
 
-  const scrollSpeed = useMemo(
-    () => speedForWordsPerMinute(wpm, DEFAULT_SETTINGS.fontSize, DEFAULT_SETTINGS.lineHeight),
-    [wpm]
-  );
-
   /**
    * Hand the script to the prompter through the same storage key the prompter restores
    * its draft from, then navigate. Keeps the text on the device — a query string would
-   * put it in history, and analytics referrers.
+   * put it in history, and in analytics referrers.
+   *
+   * The chosen pace goes with it. A words-per-minute figure is portable in a way a scroll
+   * speed is not: px/s depends on how many words fit on a line, which changes with screen
+   * width, so the prompter solves for the right speed once it has measured its own layout.
    */
   const openInPrompter = () => {
     try {
       window.localStorage.setItem(DRAFT_KEY, JSON.stringify(text));
+      window.localStorage.setItem(PACE_KEY, JSON.stringify(wpm));
     } catch {
       // Storage unavailable — still navigate; the reader can paste it themselves.
     }
@@ -132,9 +133,7 @@ export function ScriptTimer({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        <p className="text-xs leading-5 text-muted-foreground">
-          {t('scrollHint', { speed: scrollSpeed })}
-        </p>
+        <p className="text-xs leading-5 text-muted-foreground">{t('scrollHint')}</p>
 
         <Button onClick={openInPrompter} disabled={!text.trim()} className="w-full">
           {t('openInPrompter')}

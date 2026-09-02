@@ -67,7 +67,9 @@
       "alignLeft": "Sinistra",
       "alignCenter": "Centro",
       "alignRight": "Destra",
-      "custom": "Personalizzato"
+      "custom": "Personalizzato",
+      "wpmShort": "{wpm} ppm",
+      "wpm": "Ritmo di lettura"
     },
     "savedScripts": {
       "title": "Copioni salvati",
@@ -102,7 +104,6 @@
     "editor": {
       "title": "Il tuo copione",
       "wordCount": "{count, plural, =0 {Nessuna parola} one {1 parola} other {# parole}}",
-      "estimatedTime": "Circa {minutes} min alla velocità attuale",
       "clear": "Cancella",
       "confirmClear": "Cancellare il copione attuale?",
       "uploadFile": "Carica file",
@@ -115,7 +116,8 @@
         "docxUnsupported": "Il tuo browser non riesce ad aprire i file .docx. Usa Chrome, Edge o Safari, oppure incolla il testo.",
         "empty": "Questo file sembra vuoto.",
         "failed": "Impossibile leggere il file. Salvalo come .txt o .docx e riprova."
-      }
+      },
+      "readingTime": "{duration} alla velocità attuale"
     },
     "tips": {
       "title": "Suggerimenti rapidi",
@@ -196,7 +198,7 @@
         },
         "speedFont": {
           "title": "Controllo fluido di velocità e font",
-          "body": "Regola la velocità di scorrimento e la dimensione del testo per il tuo stile di lettura, da tranquilli 20 px/s a rapidi 400 px/s."
+          "body": "Imposta velocità di scorrimento e dimensione del testo secondo il tuo ritmo. Un indicatore di parole al minuto mostra il ritmo reale, misurato sul testo così come appare sul tuo schermo."
         },
         "mirror": {
           "title": "Modalità specchio",
@@ -367,10 +369,12 @@
         "title": "Motore prompter",
         "items": [
           "Scorrimento fluido a 60 fps alimentato da requestAnimationFrame.",
-          "Velocità di scorrimento da 20 px/s a 400 px/s con passaggi fini.",
+          "Velocità di scorrimento da 10 px/s a 400 px/s con passaggi fini.",
+          "Indicatore dal vivo di parole al minuto, misurato sul testo così come appare sul tuo schermo.",
           "Conto alla rovescia facoltativo di 3 secondi prima che la riproduzione inizi.",
           "Indicatore di lettura centrato in modo che tu conosca sempre la riga successiva.",
-          "La riproduzione si interrompe automaticamente quando il tuo copione termina."
+          "La riproduzione si interrompe automaticamente quando il tuo copione termina.",
+          "Modalità voce: il copione segue il tuo parlato invece di un timer."
         ]
       },
       "typography": {
@@ -379,6 +383,7 @@
           "Dimensione font da 16 px a 128 px.",
           "Preimpostazioni per famiglia di font sans, serif e mono.",
           "Altezza riga regolabile per una lettura confortevole.",
+          "Preset di colore per testo e sfondo, selettore personalizzato e allineamento a sinistra, al centro o a destra.",
           "Specchio orizzontale o verticale per impianti teleprompter.",
           "Temi scuri e chiari."
         ]
@@ -396,6 +401,8 @@
         "title": "Copioni e archiviazione",
         "items": [
           "Incolla qualsiasi testo semplice o contenuto formattato.",
+          "Importa file .txt, .md, .docx, .rtf, .srt e .vtt: letti nel browser, mai caricati online.",
+          "La bozza e tutte le impostazioni vengono salvate da sole e ripristinate alla visita successiva.",
           "Salva più copioni denominati privatamente nel tuo browser.",
           "Carica o elimina copioni con un clic.",
           "Nulla viene caricato — il tuo contenuto rimane sul tuo dispositivo."
@@ -405,6 +412,7 @@
         "title": "Piattaforma e privacy",
         "items": [
           "Funziona su qualsiasi browser moderno: Chrome, Safari, Firefox, Edge.",
+          "Funziona offline dopo la prima visita e si installa nella schermata Home.",
           "Layout reattivo per telefono, tablet e desktop.",
           "Disponibile in sei lingue con contenuto corrispondente.",
           "Nessun tracciamento dei tuoi copioni e nessuna analisi di terze parti che vende i tuoi dati."
@@ -491,7 +499,7 @@
         ],
         "recommended": {
           "summary": "Una ripresa in camera va un po' più veloce di una presentazione. Parti da qui e regola dopo una prova.",
-          "speed": "70–100 px/s per un ritmo naturale in camera. Regola con le frecce durante la ripresa.",
+          "speed": "130–150 ppm. Accanto al cursore della velocità compare il ritmo davvero erogato: trascina finché segna circa 140.",
           "fontSize": "48–64 px se lo schermo è a un braccio di distanza; più grande se la camera è più lontana.",
           "display": "Bianco su nero è la scelta sicura. Attiva lo specchio solo se leggi attraverso un gobbo a specchio."
         },
@@ -538,7 +546,7 @@
         ],
         "recommended": {
           "summary": "Il ritmo del podcast è più lento e disteso di un'intro YouTube. Concediti spazio per respirare.",
-          "speed": "50–75 px/s. Più lento di quanto pensi: una lettura tranquilla suona meglio di una di fretta.",
+          "speed": "120–140 ppm. Più lento di quanto pensi: una lettura tranquilla suona meglio di una di fretta.",
           "fontSize": "56–72 px, per leggere seduto a distanza normale senza sporgerti.",
           "display": "Un giallo caldo su nero affatica meno gli occhi del bianco puro nelle registrazioni lunghe."
         },
@@ -585,7 +593,7 @@
         ],
         "recommended": {
           "summary": "La presentazione è la lettura più lenta tra gli usi comuni: l'autorevolezza nasce da un ritmo senza fretta.",
-          "speed": "45–70 px/s. Se ti senti incalzato, è lo scorrimento troppo veloce, non il tuo parlato troppo lento.",
+          "speed": "110–130 ppm. Se ti senti incalzato, è lo scorrimento troppo veloce, non il tuo parlato troppo lento.",
           "fontSize": "64–80 px quando lo schermo è più lontano, come succede su un leggio o un secondo monitor.",
           "display": "Nero su bianco si legge meglio sotto la luce intensa di un palco o di una sala conferenze."
         },
@@ -632,7 +640,7 @@
         ],
         "recommended": {
           "summary": "L'insegnamento privilegia la chiarezza sulla velocità. Alla prima passata stai più lento di quanto sembri naturale.",
-          "speed": "55–80 px/s, ancora più lento su materiale tecnico che gli studenti devono assimilare.",
+          "speed": "115–135 ppm, ancora più lento su materiale tecnico che gli studenti devono assimilare.",
           "fontSize": "56–72 px, così puoi allontanarti dallo schermo e gesticolare con naturalezza.",
           "display": "Bianco su nero in una stanza oscurata; nero su bianco se giri in un'aula luminosa."
         },
@@ -679,7 +687,7 @@
         ],
         "recommended": {
           "summary": "Un gobbo da diretta si guarda di sfuggita, non si legge di continuo: punta su testo grande, leggibile in mezzo secondo.",
-          "speed": "40–70 px/s, oppure lascialo in pausa e scorri a mano quando arrivi a un tratto scritto.",
+          "speed": "Lascialo in pausa di default e premi Spazio a un tratto scritto; 110–130 ppm quando è in moto.",
           "fontSize": "64 px in su. Leggi dall'altra parte della scrivania, con la coda dell'occhio, mentre fai altro.",
           "display": "Bianco o giallo su nero, così una finestra chiara non ti slava il viso in camera."
         },
@@ -726,7 +734,7 @@
         },
         "recommended": {
           "summary": "In call devi suonare spontaneo: tieni il gobbo piccolo, vicino all'obiettivo e più lento di quanto credi.",
-          "speed": "50–75 px/s. In una call vuoi sembrare uno che pensa, non uno che recita.",
+          "speed": "120–140 ppm. In una call vuoi sembrare uno che pensa, non uno che recita.",
           "fontSize": "32–48 px — più piccolo del solito, perché la finestra sta vicino al viso e deve restare stretta.",
           "display": "Abbinalo alla stanza: bianco su nero in uno studio in penombra, nero su bianco se ti illumina una finestra."
         },
@@ -772,8 +780,8 @@
           }
         },
         "recommended": {
-          "summary": "Gli schermi piccoli chiedono un testo relativamente più grande e uno scorrimento più lento di un monitor alla stessa distanza.",
-          "speed": "60–90 px/s su telefono; con meno testo visibile, uno scorrimento veloce risulta frenetico.",
+          "summary": "Gli schermi piccoli contengono meno parole per riga, quindi lo stesso numero di velocità produce una lettura più lenta. Regola il ritmo sull'indicatore di parole al minuto, non sul valore del cursore.",
+          "speed": "130–150 ppm. Guarda l'indicatore del ritmo e non il numero: uno schermo stretto contiene meno parole per riga, quindi richiede più px/s a parità di resa.",
           "fontSize": "36–48 px su telefono, 56–72 px su un tablet usato accanto alla camera.",
           "display": "Bianco su nero, così il bagliore dello schermo non ti illumina il viso — a questa distanza si nota di più."
         },
@@ -820,7 +828,7 @@
         },
         "recommended": {
           "summary": "Il video breve è più veloce e incisivo di ogni altro formato — e i copioni sono abbastanza corti da provarli davvero.",
-          "speed": "90–130 px/s. L'energia del formato breve è più rapida di un video parlato in camera.",
+          "speed": "160–180 ppm. L'energia del formato breve è davvero più rapida di un video parlato in camera.",
           "fontSize": "40–56 px, in colonna stretta perché l'inquadratura verticale non spinga il testo fuori dalla linea di sguardo.",
           "display": "Contrasto alto, bianco su nero. Spesso si gira a mano libera e con luce che cambia."
         },
@@ -867,7 +875,7 @@
         },
         "recommended": {
           "summary": "Un brindisi è più lento di qualsiasi altra lettura. L'emozione accelera tutti, quindi imposta più lento di quanto sembri giusto.",
-          "speed": "40–60 px/s. Più lento di quanto pensi: quella sera parlerai più in fretta che alla prova.",
+          "speed": "100–120 ppm. Più lento di quanto pensi: quella sera parlerai più in fretta che alla prova.",
           "fontSize": "48–64 px, per tenere il telefono all'altezza del petto e non davanti al viso.",
           "display": "Bianco su nero e luminosità al massimo. Le sale da ricevimento sono più buie di come le ricordi."
         },
@@ -914,7 +922,7 @@
         },
         "recommended": {
           "summary": "Un colloquio deve suonare ragionato, non letto. Copione essenziale e scorrimento lento.",
-          "speed": "Lascialo in pausa per la maggior parte delle risposte e scorri quando serve; 40–60 px/s quando è in moto.",
+          "speed": "Lascialo in pausa per la maggior parte delle risposte e avvialo quando serve; 110–130 ppm quando è in moto.",
           "fontSize": "36–52 px, dimensionato perché un'occhiata abbracci una riga intera senza spostamenti visibili.",
           "display": "Quello che si abbina alla luce della stanza — l'importante è che lo schermo non si rifletta sugli occhiali."
         },
@@ -1099,7 +1107,7 @@
       "conversational": "Conversazionale",
       "fast": "Veloce"
     },
-    "scrollHint": "A questo ritmo, imposta il gobbo su circa {speed} px/s con la dimensione predefinita di 48 px.",
+    "scrollHint": "Aprilo nel gobbo: imposterà la velocità di scorrimento su questo ritmo per il tuo schermo.",
     "openInPrompter": "Apri nel gobbo",
     "sections": [
       {

@@ -67,7 +67,9 @@
       "alignLeft": "Left",
       "alignCenter": "Center",
       "alignRight": "Right",
-      "custom": "Custom"
+      "custom": "Custom",
+      "wpmShort": "{wpm} wpm",
+      "wpm": "Reading pace"
     },
     "savedScripts": {
       "title": "Saved scripts",
@@ -102,7 +104,6 @@
     "editor": {
       "title": "Your script",
       "wordCount": "{count, plural, =0 {No words} one {1 word} other {# words}}",
-      "estimatedTime": "About {minutes} min at current speed",
       "clear": "Clear",
       "confirmClear": "Clear the current script?",
       "uploadFile": "Upload file",
@@ -115,7 +116,8 @@
         "docxUnsupported": "Your browser can't open .docx files. Try Chrome, Edge or Safari, or paste the text instead.",
         "empty": "That file appears to be empty.",
         "failed": "That file couldn't be read. Try saving it as .txt or .docx and upload again."
-      }
+      },
+      "readingTime": "{duration} at current speed"
     },
     "tips": {
       "title": "Quick tips",
@@ -196,7 +198,7 @@
         },
         "speedFont": {
           "title": "Smooth speed & font control",
-          "body": "Dial in the right scroll speed and text size for your delivery, from calm 20 px/s to rapid 400 px/s."
+          "body": "Dial in the right scroll speed and text size for your delivery. A live words-per-minute readout shows the pace you are actually setting, measured from the text on your screen."
         },
         "mirror": {
           "title": "Mirror mode",
@@ -367,10 +369,12 @@
         "title": "Prompter engine",
         "items": [
           "Smooth 60 fps scroll powered by requestAnimationFrame.",
-          "Scroll speed from 20 px/s to 400 px/s with fine steps.",
+          "Scroll speed from 10 px/s to 400 px/s with fine steps.",
+          "A live words-per-minute readout, measured from the text as laid out on your screen.",
           "Optional 3-second countdown before playback starts.",
           "Centered reading indicator so you always know the next line.",
-          "Playback automatically stops when your script ends."
+          "Playback automatically stops when your script ends.",
+          "Voice mode: the script follows your speech instead of a timer."
         ]
       },
       "typography": {
@@ -379,6 +383,7 @@
           "Font size from 16 px to 128 px.",
           "Sans, serif and mono font family presets.",
           "Adjustable line height for comfortable reading.",
+          "Text and background colour presets plus a custom picker, and left, centre or right alignment.",
           "Mirror horizontally or vertically for teleprompter rigs.",
           "Dark and light themes."
         ]
@@ -396,6 +401,8 @@
         "title": "Scripts & storage",
         "items": [
           "Paste any plain text or formatted content.",
+          "Import .txt, .md, .docx, .rtf, .srt and .vtt files — parsed in your browser, never uploaded.",
+          "Your draft and every setting are saved automatically and restored on your next visit.",
           "Save multiple named scripts privately in your browser.",
           "Load or delete scripts with one click.",
           "Nothing is uploaded — your content stays on your device."
@@ -405,6 +412,7 @@
         "title": "Platform & privacy",
         "items": [
           "Works on any modern browser: Chrome, Safari, Firefox, Edge.",
+          "Works offline after your first visit, and installs to your home screen.",
           "Responsive layout for phone, tablet and desktop.",
           "Available in six languages with matching content.",
           "No tracking of your scripts and no third-party analytics selling your data."
@@ -491,7 +499,7 @@
         ],
         "recommended": {
           "summary": "A talking-head read sits a little quicker than a presentation. Start here and adjust after one rehearsal pass.",
-          "speed": "70–100 px/s for a natural talking-head pace. Nudge it with the arrow keys mid-take.",
+          "speed": "130–150 wpm. The prompter shows the pace it is actually delivering next to the speed slider — drag until it reads about 140.",
           "fontSize": "48–64 px if the screen is an arm's length away; go bigger if your camera sits further back.",
           "display": "White on black is the safe default. Turn on mirror only if you read through a beam-splitter rig."
         },
@@ -538,7 +546,7 @@
         ],
         "recommended": {
           "summary": "Podcast delivery is slower and more relaxed than a YouTube intro. Give yourself room to breathe.",
-          "speed": "50–75 px/s. Slower than you'd expect — a relaxed read sounds better than a rushed one.",
+          "speed": "120–140 wpm. Slower than you'd expect: a relaxed read sounds better than a rushed one.",
           "fontSize": "56–72 px, so you can read it from a normal seated distance without leaning in.",
           "display": "Warm yellow on black is easier on the eyes across a long record than pure white."
         },
@@ -585,7 +593,7 @@
         ],
         "recommended": {
           "summary": "Presentation delivery is the slowest of the common use cases — authority comes from unhurried pacing.",
-          "speed": "45–70 px/s. If you feel rushed, the scroll is too fast, not your delivery too slow.",
+          "speed": "110–130 wpm. If you feel rushed, the scroll is too fast, not your delivery too slow.",
           "fontSize": "64–80 px when the screen sits further away, as it usually does on a lectern or second monitor.",
           "display": "Black on white reads better under bright stage or conference-room lighting than white on black."
         },
@@ -632,7 +640,7 @@
         ],
         "recommended": {
           "summary": "Teaching delivery wants clarity over speed. Err slower than feels natural on the first pass.",
-          "speed": "55–80 px/s, slower for technical material your students need time to absorb.",
+          "speed": "115–135 wpm, slower still for technical material students need time to absorb.",
           "fontSize": "56–72 px so you can stand back from the screen and still gesture naturally.",
           "display": "White on black for a darkened recording room; black on white if you film in a bright classroom."
         },
@@ -679,7 +687,7 @@
         ],
         "recommended": {
           "summary": "A stream prompter is glanced at, not read continuously — favour large text you can catch in half a second.",
-          "speed": "40–70 px/s, or leave it paused and scroll manually when you reach a scripted beat.",
+          "speed": "Leave it paused by default and press Space at a scripted beat; 110–130 wpm when it runs.",
           "fontSize": "64 px and up. You're reading from across a desk, at a glance, while doing something else.",
           "display": "White or yellow on black so a bright prompter window doesn't wash out your face on camera."
         },
@@ -726,7 +734,7 @@
         },
         "recommended": {
           "summary": "Call delivery should sound spontaneous, so keep the prompter small, close to the lens, and slower than you think.",
-          "speed": "50–75 px/s. On a call you want to sound like you're thinking, not reciting.",
+          "speed": "120–140 wpm. On a call you want to sound like you're thinking, not reciting.",
           "fontSize": "32–48 px — smaller than usual, because the window sits close to your face and needs to stay narrow.",
           "display": "Match your room: white on black in a dim home office, black on white if you're lit by a window."
         },
@@ -772,8 +780,8 @@
           }
         },
         "recommended": {
-          "summary": "Small screens need bigger relative type and a slower scroll than a monitor at the same distance.",
-          "speed": "60–90 px/s on a phone; a small screen means less text visible, so a fast scroll feels frantic.",
+          "summary": "Small screens fit fewer words per line, so the same scroll number delivers a slower read. Set the pace by the words-per-minute readout, not the slider value.",
+          "speed": "130–150 wpm. Watch the pace readout rather than the raw number: a narrow phone screen fits fewer words per line, so it needs a higher px/s for the same delivery.",
           "fontSize": "36–48 px on a phone, 56–72 px on a tablet used as a camera-side prompter.",
           "display": "White on black to keep screen glare off your face, which matters more on a device this close."
         },
@@ -820,7 +828,7 @@
         },
         "recommended": {
           "summary": "Short-form delivery is faster and punchier than any other format — and the scripts are short enough to rehearse properly.",
-          "speed": "90–130 px/s. Short-form energy is quicker than a talking-head video.",
+          "speed": "160–180 wpm. Short-form energy is genuinely quicker than a talking-head video.",
           "fontSize": "40–56 px, kept narrow so a vertical shot doesn't push the text out of your eye line.",
           "display": "High contrast, white on black. You're often filming handheld in changing light."
         },
@@ -867,7 +875,7 @@
         },
         "recommended": {
           "summary": "A toast is slower than any other kind of read. Nerves speed everyone up, so set the scroll slower than feels right.",
-          "speed": "40–60 px/s. Slower than you think — you will speak faster on the night than in rehearsal.",
+          "speed": "100–120 wpm. Slower than you think — you will speak faster on the night than in rehearsal.",
           "fontSize": "48–64 px so you can hold the phone at chest height rather than up near your face.",
           "display": "White on black, screen brightness up. Reception rooms are darker than you remember."
         },
@@ -914,7 +922,7 @@
         },
         "recommended": {
           "summary": "Interview delivery should sound thought-through, not read out. Keep the script sparse and the scroll slow.",
-          "speed": "Leave it paused for most answers and scroll when you need to; 40–60 px/s when you do run it.",
+          "speed": "Leave it paused for most answers and start it when you need to; 110–130 wpm when it runs.",
           "fontSize": "36–52 px, sized so a glance takes in a whole line without a visible eye sweep.",
           "display": "Whatever matches your room lighting — you want the screen not to reflect in your glasses."
         },
@@ -1099,7 +1107,7 @@
       "conversational": "Conversational",
       "fast": "Fast"
     },
-    "scrollHint": "At this pace, set the teleprompter to about {speed} px/s at the default 48 px text size.",
+    "scrollHint": "Open this in the teleprompter and it sets the scroll speed to match this pace on your screen.",
     "openInPrompter": "Open in the teleprompter",
     "sections": [
       {

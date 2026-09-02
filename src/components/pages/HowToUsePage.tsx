@@ -1,6 +1,8 @@
 import { Lightbulb } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { CTA } from '@/components/marketing/CTA';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { howToJsonLd } from '@/lib/jsonld';
 import type { Locale } from '@/lib/site';
 
 interface HowToUsePageProps {
@@ -15,6 +17,13 @@ export async function HowToUsePage({ locale }: HowToUsePageProps) {
 
   return (
     <div className="bg-background">
+      <JsonLd
+        data={howToJsonLd(locale, {
+          name: t('title'),
+          description: t('meta.description'),
+          steps,
+        })}
+      />
       <header className="border-b border-border bg-gradient-to-b from-primary/5 via-background to-background py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-3 text-center sm:px-6">
           <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl">{t('title')}</h1>
@@ -29,7 +38,8 @@ export async function HowToUsePage({ locale }: HowToUsePageProps) {
           {steps.map((step, i) => (
             <li
               key={i}
-              className="relative overflow-hidden rounded-2xl border border-border bg-card p-6"
+              id={`step-${i + 1}`}
+              className="relative scroll-mt-20 overflow-hidden rounded-2xl border border-border bg-card p-6"
             >
               <div className="flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">

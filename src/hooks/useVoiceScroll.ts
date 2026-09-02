@@ -93,7 +93,9 @@ export function findScriptPosition(
   cursor: number
 ): number {
   const tail = spokenTail.filter(Boolean).slice(-4);
-  if (tail.length === 0 || scriptWords.length === 0) return -1;
+  // One word is not evidence: a filler word matches almost anywhere in a script, so hold
+  // position until the recognizer has produced a phrase.
+  if (tail.length < 2 || scriptWords.length === 0) return -1;
 
   const from = Math.max(0, cursor - 8);
   const to = Math.min(scriptWords.length, cursor + 60);
@@ -112,9 +114,7 @@ export function findScriptPosition(
     }
   }
 
-  // One matching word is noise — a filler word will match almost anywhere.
-  const required = Math.min(2, tail.length);
-  if (bestScore < required) return -1;
+  if (bestScore < 2) return -1;
 
   return Math.min(bestEnd, scriptWords.length - 1);
 }

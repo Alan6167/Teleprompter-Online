@@ -63,7 +63,13 @@ export function usePersistentState<T>(
     };
   }, [key, value, hydrated, debounceMs]);
 
-  // Flush a pending debounced write when the tab goes away.
+  // Flush a pending debounced write when the tab goes away, so closing mid-sentence does
+  // not lose the last few hundred milliseconds of typing. The value is read through a ref
+  // rather than captured, so these listeners are attached once instead of being torn down
+  // and re-attached on every keystroke.
+  const valueRef = useRef(value);
+  valueRef.current = value;
+
   useEffect(() => {
     if (!hydrated) return;
     const flush = () => {
@@ -71,7 +77,7 @@ export function usePersistentState<T>(
       clearTimeout(timerRef.current);
       timerRef.current = null;
       try {
-        window.localStorage.setItem(key, JSON.stringify(value));
+        window.localStorage.setItem(key, JSON.stringify(valueRef.current));
       } catch {
         // ignore
       }
@@ -82,7 +88,7 @@ export function usePersistentState<T>(
       window.removeEventListener('pagehide', flush);
       document.removeEventListener('visibilitychange', flush);
     };
-  }, [key, value, hydrated]);
+  }, [key, hydrated]);
 
   return [value, setValue, hydrated];
 }

@@ -67,7 +67,9 @@
       "alignLeft": "Gauche",
       "alignCenter": "Centre",
       "alignRight": "Droite",
-      "custom": "Personnalisé"
+      "custom": "Personnalisé",
+      "wpmShort": "{wpm} mpm",
+      "wpm": "Rythme de lecture"
     },
     "savedScripts": {
       "title": "Scripts enregistrés",
@@ -102,7 +104,6 @@
     "editor": {
       "title": "Votre script",
       "wordCount": "{count, plural, =0 {Aucun mot} one {1 mot} other {# mots}}",
-      "estimatedTime": "Environ {minutes} min à la vitesse actuelle",
       "clear": "Effacer",
       "confirmClear": "Effacer le script actuel ?",
       "uploadFile": "Charger un fichier",
@@ -115,7 +116,8 @@
         "docxUnsupported": "Votre navigateur ne peut pas ouvrir les fichiers .docx. Essayez Chrome, Edge ou Safari, ou collez le texte.",
         "empty": "Ce fichier semble vide.",
         "failed": "Impossible de lire ce fichier. Enregistrez-le en .txt ou .docx et réessayez."
-      }
+      },
+      "readingTime": "{duration} à la vitesse actuelle"
     },
     "tips": {
       "title": "Conseils rapides",
@@ -196,7 +198,7 @@
         },
         "speedFont": {
           "title": "Contrôle fluide de la vitesse et de la police",
-          "body": "Réglez la bonne vitesse de défilement et la taille du texte pour votre prononcé, de 20 px/s calme à 400 px/s rapide."
+          "body": "Réglez la vitesse de défilement et la taille du texte selon votre débit. Un indicateur de mots par minute affiche le rythme réel, mesuré sur le texte tel qu'il s'affiche chez vous."
         },
         "mirror": {
           "title": "Mode miroir",
@@ -367,10 +369,12 @@
         "title": "Moteur du prompteur",
         "items": [
           "Défilement fluide à 60 fps alimenté par requestAnimationFrame.",
-          "Vitesse de défilement de 20 px/s à 400 px/s avec des étapes fines.",
+          "Vitesse de défilement de 10 px/s à 400 px/s avec des étapes fines.",
+          "Indicateur de mots par minute en direct, mesuré sur le texte tel qu'il s'affiche sur votre écran.",
           "Compte à rebours optionnel de 3 secondes avant le début de la lecture.",
           "Indicateur de lecture centré pour toujours voir la ligne suivante.",
-          "La lecture s'arrête automatiquement à la fin de votre script."
+          "La lecture s'arrête automatiquement à la fin de votre script.",
+          "Mode voix : le texte suit votre parole au lieu d'un minuteur."
         ]
       },
       "typography": {
@@ -379,6 +383,7 @@
           "Taille de police de 16 px à 128 px.",
           "Présets de familles de polices sans serif, serif et mono.",
           "Hauteur de ligne ajustable pour une lecture confortable.",
+          "Couleurs de texte et de fond prédéfinies, sélecteur personnalisé, et alignement à gauche, au centre ou à droite.",
           "Miroir horizontal ou vertical pour les installations de téléprompteur.",
           "Thèmes sombre et clair."
         ]
@@ -396,6 +401,8 @@
         "title": "Scripts et stockage",
         "items": [
           "Collez n'importe quel texte brut ou contenu formaté.",
+          "Importez des fichiers .txt, .md, .docx, .rtf, .srt et .vtt — lus dans votre navigateur, jamais envoyés.",
+          "Votre brouillon et tous vos réglages sont enregistrés automatiquement et restaurés à la visite suivante.",
           "Enregistrez plusieurs scripts nommés de manière privée dans votre navigateur.",
           "Chargez ou supprimez des scripts en un clic.",
           "Rien n'est téléchargé — votre contenu reste sur votre appareil."
@@ -405,6 +412,7 @@
         "title": "Plateforme et confidentialité",
         "items": [
           "Fonctionne sur n'importe quel navigateur moderne : Chrome, Safari, Firefox, Edge.",
+          "Fonctionne hors ligne après la première visite et s'installe sur l'écran d'accueil.",
           "Mise en page réactive pour téléphone, tablette et ordinateur.",
           "Disponible en six langues avec contenu correspondant.",
           "Aucun suivi de vos scripts et aucune analyse tierc vente vendant vos données."
@@ -491,7 +499,7 @@
         ],
         "recommended": {
           "summary": "Une prise face caméra va un peu plus vite qu'une présentation. Partez de là et ajustez après une répétition.",
-          "speed": "70–100 px/s pour un rythme naturel face caméra. Ajustez avec les flèches en pleine prise.",
+          "speed": "130–150 mpm. Le prompteur affiche le rythme réellement délivré à côté du curseur de vitesse : ajustez jusqu'à lire environ 140.",
           "fontSize": "48–64 px si l'écran est à un bras de distance ; plus grand si la caméra est plus loin.",
           "display": "Blanc sur noir est la valeur sûre. N'activez le miroir que si vous lisez à travers un prompteur à glace."
         },
@@ -538,7 +546,7 @@
         ],
         "recommended": {
           "summary": "Le débit d'un podcast est plus lent et plus posé qu'une intro YouTube. Donnez-vous de l'air.",
-          "speed": "50–75 px/s. Plus lent qu'on ne croit : une lecture posée sonne mieux qu'une lecture pressée.",
+          "speed": "120–140 mpm. Plus lent qu'on ne croit : une lecture posée sonne mieux qu'une lecture pressée.",
           "fontSize": "56–72 px, pour lire assis à distance normale sans vous pencher.",
           "display": "Un jaune chaud sur noir fatigue moins les yeux qu'un blanc pur sur un long enregistrement."
         },
@@ -585,7 +593,7 @@
         ],
         "recommended": {
           "summary": "La présentation est le débit le plus lent des usages courants — l'autorité vient d'un rythme sans hâte.",
-          "speed": "45–70 px/s. Si vous vous sentez pressé, c'est le défilement qui est trop rapide, pas votre débit trop lent.",
+          "speed": "110–130 mpm. Si vous vous sentez pressé, c'est le défilement qui est trop rapide, pas votre débit trop lent.",
           "fontSize": "64–80 px quand l'écran est éloigné, ce qui est courant sur un pupitre ou un deuxième moniteur.",
           "display": "Le noir sur blanc se lit mieux sous l'éclairage soutenu d'une scène ou d'une salle de conférence."
         },
@@ -632,7 +640,7 @@
         ],
         "recommended": {
           "summary": "L'enseignement privilégie la clarté sur la vitesse. Au premier passage, restez plus lent que ce qui semble naturel.",
-          "speed": "55–80 px/s, plus lent encore sur du contenu technique que les étudiants doivent assimiler.",
+          "speed": "115–135 mpm, plus lent encore pour du contenu technique que les étudiants doivent assimiler.",
           "fontSize": "56–72 px pour pouvoir vous éloigner de l'écran tout en gardant vos gestes naturels.",
           "display": "Blanc sur noir dans une salle assombrie ; noir sur blanc si vous filmez dans une classe lumineuse."
         },
@@ -679,7 +687,7 @@
         ],
         "recommended": {
           "summary": "Un prompteur de live se consulte d'un coup d'œil : privilégiez un grand texte saisissable en une demi-seconde.",
-          "speed": "40–70 px/s, ou laissez-le en pause et faites défiler à la main quand vous arrivez sur un passage écrit.",
+          "speed": "Laissez-le en pause par défaut et appuyez sur Espace au moment voulu ; 110–130 mpm quand il défile.",
           "fontSize": "64 px et plus. Vous lisez à l'autre bout du bureau, du coin de l'œil, en faisant autre chose.",
           "display": "Blanc ou jaune sur noir, pour qu'une fenêtre claire ne délave pas votre visage à l'image."
         },
@@ -726,7 +734,7 @@
         },
         "recommended": {
           "summary": "En visio il faut sonner spontané : gardez le prompteur petit, près de l'objectif, et plus lent que vous ne le pensez.",
-          "speed": "50–75 px/s. En appel, vous voulez avoir l'air de réfléchir, pas de réciter.",
+          "speed": "120–140 mpm. En appel, vous voulez avoir l'air de réfléchir, pas de réciter.",
           "fontSize": "32–48 px — plus petit que d'habitude, car la fenêtre est proche de votre visage et doit rester étroite.",
           "display": "Accordez-le à la pièce : blanc sur noir dans un bureau tamisé, noir sur blanc si une fenêtre vous éclaire."
         },
@@ -772,8 +780,8 @@
           }
         },
         "recommended": {
-          "summary": "Les petits écrans réclament un texte relativement plus grand et un défilement plus lent qu'un moniteur à la même distance.",
-          "speed": "60–90 px/s sur téléphone ; avec moins de texte visible, un défilement rapide paraît frénétique.",
+          "summary": "Les petits écrans affichent moins de mots par ligne : le même réglage de vitesse donne donc une lecture plus lente. Réglez le rythme sur l'indicateur de mots par minute, pas sur la valeur du curseur.",
+          "speed": "130–150 mpm. Fiez-vous à l'indicateur de rythme plutôt qu'au chiffre : un écran étroit affiche moins de mots par ligne et demande donc plus de px/s pour le même débit.",
           "fontSize": "36–48 px sur téléphone, 56–72 px sur une tablette placée près de la caméra.",
           "display": "Blanc sur noir pour éviter que la lueur de l'écran n'éclaire votre visage, ce qui se voit d'autant plus de près."
         },
@@ -820,7 +828,7 @@
         },
         "recommended": {
           "summary": "Le format court est plus rapide et plus percutant que tous les autres — et ses scripts sont assez brefs pour être vraiment répétés.",
-          "speed": "90–130 px/s. L'énergie du format court est plus vive qu'une vidéo face caméra.",
+          "speed": "160–180 mpm. L'énergie du format court est réellement plus vive qu'une vidéo face caméra.",
           "fontSize": "40–56 px, en colonne étroite pour qu'un cadre vertical ne sorte pas le texte de votre ligne de regard.",
           "display": "Fort contraste, blanc sur noir. On filme souvent à main levée et sous une lumière changeante."
         },
@@ -867,7 +875,7 @@
         },
         "recommended": {
           "summary": "Un toast est plus lent que toute autre lecture. Le trac accélère tout le monde : réglez plus lentement que ce qui semble juste.",
-          "speed": "40–60 px/s. Plus lent qu'on ne croit : le jour J, vous parlerez plus vite qu'à la répétition.",
+          "speed": "100–120 mpm. Plus lent qu'on ne croit : le jour J, vous parlerez plus vite qu'à la répétition.",
           "fontSize": "48–64 px pour tenir le téléphone à hauteur de poitrine plutôt que devant le visage.",
           "display": "Blanc sur noir et luminosité à fond. Les salles de réception sont plus sombres qu'on ne s'en souvient."
         },
@@ -914,7 +922,7 @@
         },
         "recommended": {
           "summary": "Un entretien doit sonner réfléchi, pas lu. Texte épuré et défilement lent.",
-          "speed": "Laissez en pause pour la plupart des réponses et faites défiler au besoin ; 40–60 px/s quand il tourne.",
+          "speed": "Laissez-le en pause pour la plupart des réponses et lancez-le au besoin ; 110–130 mpm quand il défile.",
           "fontSize": "36–52 px, calibré pour qu'un coup d'œil embrasse une ligne entière sans balayage visible.",
           "display": "Ce qui s'accorde à la lumière de votre pièce — l'important est que l'écran ne se reflète pas dans vos lunettes."
         },
@@ -1099,7 +1107,7 @@
       "conversational": "Conversationnel",
       "fast": "Rapide"
     },
-    "scrollHint": "À ce débit, réglez le prompteur sur environ {speed} px/s avec la taille de texte par défaut de 48 px.",
+    "scrollHint": "Ouvrez-le dans le prompteur : il règle la vitesse de défilement sur ce rythme pour votre écran.",
     "openInPrompter": "Ouvrir dans le prompteur",
     "sections": [
       {

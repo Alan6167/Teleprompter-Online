@@ -50,13 +50,13 @@ import { useHotkeys } from '@/hooks/useHotkeys';
 import { useLocalScripts } from '@/hooks/useLocalScripts';
 import { usePersistentState } from '@/hooks/usePersistentState';
 import { tokenizeScript, useVoiceScroll } from '@/hooks/useVoiceScroll';
+import { formatDuration, useReadingEstimate } from '@/hooks/useReadingEstimate';
 import {
   DEFAULT_SETTINGS,
   FONT_FAMILIES,
   FONT_SIZE_RANGE,
   SPEED_RANGE,
   countWords,
-  impliedWordsPerMinute,
   reviveDraft,
   reviveSettings,
   type PrompterSettings,
@@ -71,6 +71,8 @@ import { cn } from '@/lib/utils';
 
 const SETTINGS_KEY = 'tpo:settings';
 const DRAFT_KEY = 'tpo:draft';
+/** Target words-per-minute handed over by the script timer, consumed once. */
+const PACE_KEY = 'tpo:pace';
 
 export function TeleprompterApp() {
   const t = useTranslations('teleprompter');
@@ -101,6 +103,7 @@ export function TeleprompterApp() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const textBlockRef = useRef<HTMLDivElement | null>(null);
   const countdownTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const { isPlaying, progress, play, pause, stop, restart } = useTeleprompter({
@@ -249,11 +252,49 @@ export function TeleprompterApp() {
 
   const wordCount = useMemo(() => countWords(script), [script]);
 
-  const estimatedMinutes = useMemo(() => {
-    const wpm = impliedWordsPerMinute(settings);
-    if (wordCount === 0) return 0;
-    return Math.max(1, Math.round(wordCount / Math.max(40, wpm)));
-  }, [wordCount, settings]);
+  // Measured from the rendered text rather than estimated: how far the script has to
+  // travel is the only thing that makes a px/s speed mean anything.
+  const { seconds: readingSeconds, wordsPerMinute, textHeight } = useReadingEstimate(
+    textBlockRef,
+    { speed: settings.speed, wordCount }
+  );
+
+  // The script timer can hand over a script together with the pace it was planned at.
+  // Words per minute survives the trip between pages; a scroll speed would not, because
+  // how far the text has to travel depends on this screen's width.
+  const [targetWpm, setTargetWpm] = useState<number | null>(null);
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem(PACE_KEY);
+      if (raw == null) return;
+      window.localStorage.removeItem(PACE_KEY);
+      const parsed: unknown = JSON.parse(raw);
+      if (typeof parsed === 'number' && Number.isFinite(parsed) && parsed > 0) {
+        setTargetWpm(parsed);
+      }
+    } catch {
+      // No handover pending.
+    }
+  }, []);
+
+  // Solve for the speed that delivers the requested pace, and keep solving until the
+  // measurement settles: the restored draft arrives a tick after mount, so the first
+  // height seen here belongs to the previous script and would set the pace against the
+  // wrong text.
+  useEffect(() => {
+    if (targetWpm == null) return;
+    if (textHeight <= 0 || wordCount <= 0) return;
+    const durationSeconds = (wordCount / targetWpm) * 60;
+    const desired = Math.min(
+      SPEED_RANGE.max,
+      Math.max(SPEED_RANGE.min, Math.round(textHeight / durationSeconds))
+    );
+    if (desired === settings.speed) {
+      setTargetWpm(null);
+      return;
+    }
+    setSettings((prev) => ({ ...prev, speed: desired }));
+  }, [targetWpm, textHeight, wordCount, settings.speed, setSettings]);
 
   const transform = useMemo(() => {
     const parts: string[] = [];
@@ -373,6 +414,7 @@ export function TeleprompterApp() {
           }}
         >
           <div
+            ref={textBlockRef}
             className="mx-auto max-w-4xl whitespace-pre-wrap py-[50vh]"
             style={{
               fontSize: `${settings.fontSize}px`,
@@ -516,8 +558,10 @@ export function TeleprompterApp() {
               onValueChange={(v) => update('speed', v[0])}
               aria-label={t('settings.speed')}
             />
-            <span className="w-12 text-right text-xs tabular-nums text-white/70">
-              {settings.speed}
+            <span className="w-20 text-right text-xs tabular-nums text-white/70">
+              {wordsPerMinute > 0
+                ? t('settings.wpmShort', { wpm: Math.round(wordsPerMinute) })
+                : settings.speed}
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -549,7 +593,7 @@ export function TeleprompterApp() {
                 {t('editor.title')}
                 <span className="text-white/50">
                   · {t('editor.wordCount', { count: wordCount })} ·{' '}
-                  {t('editor.estimatedTime', { minutes: estimatedMinutes })}
+                  {t('editor.readingTime', { duration: formatDuration(readingSeconds) })}
                 </span>
               </span>
               <div className="flex flex-wrap items-center gap-1.5">

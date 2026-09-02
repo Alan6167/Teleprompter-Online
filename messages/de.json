@@ -67,7 +67,9 @@
       "alignLeft": "Linksbündig",
       "alignCenter": "Zentriert",
       "alignRight": "Rechtsbündig",
-      "custom": "Eigene Farbe"
+      "custom": "Eigene Farbe",
+      "wpmShort": "{wpm} WpM",
+      "wpm": "Lesetempo"
     },
     "savedScripts": {
       "title": "Gespeicherte Skripte",
@@ -102,7 +104,6 @@
     "editor": {
       "title": "Ihr Skript",
       "wordCount": "{count, plural, =0 {Keine Wörter} one {1 Wort} other {# Wörter}}",
-      "estimatedTime": "Etwa {minutes} Min. bei aktueller Geschwindigkeit",
       "clear": "Löschen",
       "confirmClear": "Das aktuelle Skript löschen?",
       "uploadFile": "Datei hochladen",
@@ -115,7 +116,8 @@
         "docxUnsupported": "Dein Browser kann keine .docx-Dateien öffnen. Nutze Chrome, Edge oder Safari — oder füge den Text ein.",
         "empty": "Diese Datei scheint leer zu sein.",
         "failed": "Die Datei konnte nicht gelesen werden. Speichere sie als .txt oder .docx und lade sie erneut hoch."
-      }
+      },
+      "readingTime": "{duration} beim aktuellen Tempo"
     },
     "tips": {
       "title": "Schnelle Tipps",
@@ -196,7 +198,7 @@
         },
         "speedFont": {
           "title": "Sanfte Geschwindigkeits- und Schriftgrößenkontrolle",
-          "body": "Stellen Sie die richtige Scrollgeschwindigkeit und Textgröße für Ihre Präsentation ein, von ruhigen 20 px/s bis zu rasanten 400 px/s."
+          "body": "Stell Scrollgeschwindigkeit und Schriftgröße auf deinen Vortrag ein. Eine Wörter-pro-Minute-Anzeige zeigt das tatsächliche Tempo, gemessen am Text auf deinem Bildschirm."
         },
         "mirror": {
           "title": "Spiegelmodus",
@@ -367,10 +369,12 @@
         "title": "Teleprompter-Engine",
         "items": [
           "Sanftes 60-FPS-Scrolling mit requestAnimationFrame.",
-          "Scrollgeschwindigkeit von 20 px/s bis 400 px/s mit feinen Abstufungen.",
+          "Scrollgeschwindigkeit von 10 px/s bis 400 px/s mit feinen Abstufungen.",
+          "Live-Anzeige der Wörter pro Minute, gemessen am Text, wie er auf deinem Bildschirm umbricht.",
           "Optionaler 3-Sekunden-Countdown vor dem Abspielen.",
           "Zentrierte Leseanzeiger, damit Sie immer die nächste Zeile kennen.",
-          "Die Wiedergabe stoppt automatisch, wenn Ihr Skript endet."
+          "Die Wiedergabe stoppt automatisch, wenn Ihr Skript endet.",
+          "Sprachmodus: Das Skript folgt deiner Stimme statt einem Timer."
         ]
       },
       "typography": {
@@ -379,6 +383,7 @@
           "Schriftgröße von 16 px bis 128 px.",
           "Sans, Serif und Mono Schriftart-Voreinstellungen.",
           "Verstellbare Zeilenhöhe für angenehmes Lesen.",
+          "Vorgaben für Text- und Hintergrundfarbe plus freier Farbwähler sowie Ausrichtung links, zentriert oder rechts.",
           "Horizontal oder vertikal spiegeln für Teleprompter-Rigs.",
           "Helle und dunkle Designs."
         ]
@@ -396,6 +401,8 @@
         "title": "Skripte und Speicherung",
         "items": [
           "Fügen Sie beliebigen Klartext oder formatierten Inhalt ein.",
+          "Importiere .txt-, .md-, .docx-, .rtf-, .srt- und .vtt-Dateien — im Browser gelesen, nie hochgeladen.",
+          "Entwurf und sämtliche Einstellungen werden automatisch gespeichert und beim nächsten Besuch wiederhergestellt.",
           "Speichern Sie mehrere benannte Skripte privat in Ihrem Browser.",
           "Laden oder löschen Sie Skripte mit einem Klick.",
           "Nichts wird hochgeladen – Ihr Inhalt bleibt auf Ihrem Gerät."
@@ -405,6 +412,7 @@
         "title": "Plattform und Datenschutz",
         "items": [
           "Funktioniert in jedem modernen Browser: Chrome, Safari, Firefox, Edge.",
+          "Funktioniert nach dem ersten Besuch offline und lässt sich auf den Home-Bildschirm legen.",
           "Reaktionsfähiges Layout für Smartphone, Tablet und Desktop.",
           "Verfügbar in sechs Sprachen mit passenden Inhalten.",
           "Keine Verfolgung Ihrer Skripte und keine Drittanbieter-Analysen, die Ihre Daten verkaufen."
@@ -491,7 +499,7 @@
         ],
         "recommended": {
           "summary": "Eine Aufnahme direkt in die Kamera läuft etwas schneller als ein Vortrag. Starte hier und justiere nach einem Probelauf.",
-          "speed": "70–100 px/s für ein natürliches Sprechtempo. Mit den Pfeiltasten mitten in der Aufnahme nachjustieren.",
+          "speed": "130–150 WpM. Neben dem Geschwindigkeitsregler steht das tatsächlich gelieferte Tempo — zieh, bis dort etwa 140 steht.",
           "fontSize": "48–64 px, wenn der Bildschirm eine Armlänge entfernt ist; größer, wenn die Kamera weiter weg steht.",
           "display": "Weiß auf Schwarz ist die sichere Wahl. Spiegelmodus nur, wenn du durch ein Glas-Rig liest."
         },
@@ -538,7 +546,7 @@
         ],
         "recommended": {
           "summary": "Podcast-Vortrag ist langsamer und entspannter als ein YouTube-Intro. Gib dir Luft zum Atmen.",
-          "speed": "50–75 px/s. Langsamer als gedacht — eine ruhige Lesung klingt besser als eine gehetzte.",
+          "speed": "120–140 WpM. Langsamer als gedacht: Eine ruhige Lesung klingt besser als eine gehetzte.",
           "fontSize": "56–72 px, damit du aus normaler Sitzentfernung liest, ohne dich vorzubeugen.",
           "display": "Warmes Gelb auf Schwarz schont die Augen bei langen Aufnahmen mehr als reines Weiß."
         },
@@ -585,7 +593,7 @@
         ],
         "recommended": {
           "summary": "Der Vortrag ist der langsamste der gängigen Anwendungsfälle — Autorität entsteht durch unaufgeregtes Tempo.",
-          "speed": "45–70 px/s. Wenn du dich gehetzt fühlst, ist das Scrollen zu schnell, nicht dein Vortrag zu langsam.",
+          "speed": "110–130 WpM. Wenn du dich gehetzt fühlst, ist das Scrollen zu schnell, nicht dein Vortrag zu langsam.",
           "fontSize": "64–80 px, wenn der Bildschirm weiter weg steht, wie meist am Pult oder zweiten Monitor.",
           "display": "Schwarz auf Weiß liest sich unter hellem Bühnen- oder Konferenzlicht besser als Weiß auf Schwarz."
         },
@@ -632,7 +640,7 @@
         ],
         "recommended": {
           "summary": "Unterricht braucht Klarheit statt Tempo. Setz den ersten Durchlauf langsamer an, als sich natürlich anfühlt.",
-          "speed": "55–80 px/s, langsamer bei technischen Inhalten, die Studierende erst verarbeiten müssen.",
+          "speed": "115–135 WpM, noch langsamer bei technischen Inhalten, die Studierende erst verarbeiten müssen.",
           "fontSize": "56–72 px, damit du Abstand zum Bildschirm halten und trotzdem natürlich gestikulieren kannst.",
           "display": "Weiß auf Schwarz im abgedunkelten Aufnahmeraum; Schwarz auf Weiß bei hellem Klassenzimmer."
         },
@@ -679,7 +687,7 @@
         ],
         "recommended": {
           "summary": "Ein Stream-Prompter wird überflogen, nicht durchgelesen — große Schrift, die man in einer halben Sekunde erfasst.",
-          "speed": "40–70 px/s, oder pausiert lassen und manuell scrollen, wenn ein geskripteter Teil kommt.",
+          "speed": "Standardmäßig pausiert lassen und bei einem geskripteten Teil Leertaste drücken; 110–130 WpM, wenn es läuft.",
           "fontSize": "64 px und mehr. Du liest quer über den Schreibtisch, im Vorbeischauen, während du etwas anderes tust.",
           "display": "Weiß oder Gelb auf Schwarz, damit ein helles Fenster dein Gesicht auf der Kamera nicht überstrahlt."
         },
@@ -726,7 +734,7 @@
         },
         "recommended": {
           "summary": "Im Call sollst du spontan klingen: Prompter klein halten, nah an der Linse und langsamer, als du denkst.",
-          "speed": "50–75 px/s. Im Call willst du klingen, als würdest du denken, nicht als würdest du rezitieren.",
+          "speed": "120–140 WpM. Im Call willst du klingen, als würdest du denken, nicht als würdest du rezitieren.",
           "fontSize": "32–48 px — kleiner als sonst, weil das Fenster nah am Gesicht sitzt und schmal bleiben muss.",
           "display": "Passend zum Raum: Weiß auf Schwarz im gedimmten Homeoffice, Schwarz auf Weiß bei Fensterlicht."
         },
@@ -772,8 +780,8 @@
           }
         },
         "recommended": {
-          "summary": "Kleine Displays brauchen relativ größere Schrift und langsameres Scrollen als ein Monitor in gleicher Entfernung.",
-          "speed": "60–90 px/s am Handy; bei weniger sichtbarem Text wirkt schnelles Scrollen hektisch.",
+          "summary": "Kleine Displays fassen weniger Wörter pro Zeile, dieselbe Geschwindigkeitszahl liefert dort also eine langsamere Lesung. Stell das Tempo nach der Wörter-pro-Minute-Anzeige ein, nicht nach dem Reglerwert.",
+          "speed": "130–150 WpM. Achte auf die Tempoanzeige statt auf die Zahl: Ein schmales Display fasst weniger Wörter pro Zeile und braucht deshalb mehr px/s für denselben Vortrag.",
           "fontSize": "36–48 px am Handy, 56–72 px auf einem Tablet direkt neben der Kamera.",
           "display": "Weiß auf Schwarz, damit das Displayleuchten dein Gesicht nicht aufhellt — aus dieser Nähe fällt das stärker auf."
         },
@@ -820,7 +828,7 @@
         },
         "recommended": {
           "summary": "Kurzvideo ist schneller und pointierter als jedes andere Format — und die Skripte sind kurz genug, um sie wirklich zu proben.",
-          "speed": "90–130 px/s. Die Energie im Kurzformat ist flotter als bei einem Talking-Head-Video.",
+          "speed": "160–180 WpM. Die Energie im Kurzformat ist tatsächlich flotter als bei einem Talking-Head-Video.",
           "fontSize": "40–56 px, schmal gesetzt, damit ein Hochformat den Text nicht aus deiner Blickachse schiebt.",
           "display": "Hoher Kontrast, Weiß auf Schwarz. Oft wird aus der Hand und bei wechselndem Licht gefilmt."
         },
@@ -867,7 +875,7 @@
         },
         "recommended": {
           "summary": "Ein Toast ist langsamer als jede andere Lesung. Nervosität beschleunigt jeden — stell langsamer ein, als sich richtig anfühlt.",
-          "speed": "40–60 px/s. Langsamer als gedacht: Am Abend sprichst du schneller als in der Probe.",
+          "speed": "100–120 WpM. Langsamer als gedacht: Am Abend sprichst du schneller als in der Probe.",
           "fontSize": "48–64 px, damit du das Handy auf Brusthöhe hältst statt vors Gesicht.",
           "display": "Weiß auf Schwarz, Helligkeit hoch. Festsäle sind dunkler, als man sie in Erinnerung hat."
         },
@@ -914,7 +922,7 @@
         },
         "recommended": {
           "summary": "Ein Interview soll durchdacht klingen, nicht abgelesen. Knappes Skript, langsames Scrollen.",
-          "speed": "Für die meisten Antworten pausiert lassen und bei Bedarf scrollen; 40–60 px/s, wenn er läuft.",
+          "speed": "Für die meisten Antworten pausiert lassen und bei Bedarf starten; 110–130 WpM, wenn es läuft.",
           "fontSize": "36–52 px, so dimensioniert, dass ein Blick eine ganze Zeile erfasst, ohne sichtbar zu wandern.",
           "display": "Was zum Raumlicht passt — wichtig ist, dass sich der Bildschirm nicht in deiner Brille spiegelt."
         },
@@ -1099,7 +1107,7 @@
       "conversational": "Gesprächig",
       "fast": "Schnell"
     },
-    "scrollHint": "Bei diesem Tempo stell den Teleprompter auf etwa {speed} px/s bei der Standardgröße von 48 px.",
+    "scrollHint": "Im Teleprompter geöffnet, stellt er die Scrollgeschwindigkeit passend zu diesem Tempo auf deinem Bildschirm ein.",
     "openInPrompter": "Im Teleprompter öffnen",
     "sections": [
       {

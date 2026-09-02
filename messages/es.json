@@ -245,6 +245,26 @@
         "streamers": {
           "title": "Streamers",
           "body": "Echa un vistazo a tus puntos clave durante las retransmisiones en directo sin perder el contacto visual."
+        },
+        "zoom": {
+          "title": "Zoom y videollamadas",
+          "body": "Ten las notas junto a la webcam y la mirada en el objetivo, invisibles para los demás."
+        },
+        "mobile": {
+          "title": "iPhone, iPad y Android",
+          "body": "Convierte el dispositivo que ya tienes en teleprompter: sin app, sin cuenta y sin conexión."
+        },
+        "short-form-video": {
+          "title": "TikTok, Reels y Shorts",
+          "body": "Clava los tres primeros segundos y ajusta un guion de 30 segundos a 30 segundos."
+        },
+        "wedding-speeches": {
+          "title": "Discursos de boda",
+          "body": "Lee el brindis desde el móvil en vez de tarjetas y levanta la vista en los remates."
+        },
+        "interviews": {
+          "title": "Entrevistas y self-tapes",
+          "body": "Mantén la estructura y la mirada en cámara en entrevistas remotas y castings."
         }
       },
       "seeAll": "Ver detalles"
@@ -443,116 +463,483 @@
     "items": {
       "youtubers": {
         "meta": {
-          "title": "Teleprompter online para YouTubers",
-          "description": "Graba intros de YouTube, tutoriales y vlogs más pulidos con un teleprompter gratis online. Incluye modo espejo, pantalla completa y atajos de teclado."
+          "title": "Teleprompter para YouTubers – Gratis en el navegador",
+          "description": "Graba mejores intros, tutoriales y vlogs de YouTube con un teleprompter gratuito en el navegador. Modo espejo, desplazamiento por voz y atajos de teclado."
         },
         "title": "Teleprompter para YouTubers",
-        "subtitle": "Haz que cada toma cuente.",
+        "subtitle": "Que cada toma cuente.",
         "sections": {
           "why": {
-            "title": "Por qué les encanta a los creadores",
+            "title": "Por qué gusta a los creadores",
             "items": [
-              "Reduce las repeticiones con un desplazamiento estable.",
-              "Mira directamente al objetivo mientras lees.",
-              "Guarda intros y outros como guiones reutilizables.",
+              "Reduce las repeticiones con un desplazamiento constante y previsible.",
+              "Mira directamente al objetivo mientras lees, no a unas notas.",
+              "Guarda intros, cierres y menciones de patrocinio como guiones reutilizables.",
               "Funciona tanto si grabas con el móvil como con una cámara sin espejo."
             ]
           },
           "setup": {
             "title": "Una configuración sencilla",
-            "body": "Coloca tu móvil o tablet justo debajo de la cámara, pega tu guion, ajusta la velocidad a tu lectura y pulsa Reproducir. Si usas un rig con divisor de haz, activa el modo espejo y listo."
+            "body": "Coloca el móvil o la tableta justo debajo del objetivo: cuanto menor sea la separación, menos se desviará tu mirada en la reproducción. Pega el guion, ajusta la velocidad a tu ritmo y pulsa Play. Si usas un teleprompter de cristal, activa el modo espejo y listo. Para tutoriales largos, divide el guion en secciones y guarda cada una con su nombre para reiniciar entre tomas sin buscar."
           }
-        }
+        },
+        "intro": [
+          "Una intro de YouTube son los veinte segundos que deciden si alguien verá el resto, y casi siempre es la parte que más tomas cuesta. Un teleprompter convierte ese ejercicio de memoria en uno de lectura: conservas la energía de la primera toma sin perder la redacción que te llevó una hora afinar.",
+          "En YouTube el truco está en que la lectura siga sonando conversacional. Los párrafos largos pasan como un aviso legal; las frases cortas, con una idea cada una, te dejan apartar la vista, rematar y volver. Escribe el guion como lo dirías y deja que el desplazamiento se encargue de recordarlo."
+        ],
+        "recommended": {
+          "summary": "Una lectura a cámara va algo más rápida que una presentación. Empieza aquí y ajusta tras un ensayo.",
+          "speed": "70–100 px/s para un ritmo natural a cámara. Ajústalo con las flechas a media toma.",
+          "fontSize": "48–64 px si la pantalla está a un brazo de distancia; más grande si la cámara está más lejos.",
+          "display": "Blanco sobre negro es la opción segura. Activa el espejo solo si lees a través de un equipo de cristal."
+        },
+        "faq": [
+          {
+            "q": "¿Se notará que estoy leyendo?",
+            "a": "No si el teleprompter está cerca del objetivo y lees una línea por delante de tu voz. Lo que delata es el recorrido de la mirada, no la lectura en sí. Mantén el dispositivo a pocos centímetros del objetivo y escribe en frases cortas para mover menos los ojos."
+          },
+          {
+            "q": "¿Cuánto debe durar un guion de YouTube?",
+            "a": "Unas 150 palabras por minuto de vídeo final es una buena referencia para una entrega conversacional. El teleprompter muestra el recuento de palabras y una estimación de tiempo mientras escribes, así recortas antes de grabar y no en el montaje."
+          },
+          {
+            "q": "¿Puedo usarlo grabando con el móvil?",
+            "a": "Sí, pero necesitarás una segunda pantalla: un móvil no puede tener la cámara y el teleprompter a pantalla completa a la vez. La mayoría pone el guion en una tableta o portátil justo debajo del móvil."
+          }
+        ]
       },
       "podcasters": {
         "meta": {
-          "title": "Teleprompter online para podcasters",
-          "description": "Usa Teleprompter Online para monólogos de podcast ajustados, lecturas de patrocinadores y tomas de podcasts en vídeo."
+          "title": "Teleprompter para podcasters – Gratis y online",
+          "description": "Usa Teleprompter Online para monólogos de podcast, menciones de patrocinio y videopodcasts. Gratis, sin registro y en cualquier navegador."
         },
         "title": "Teleprompter para podcasters",
-        "subtitle": "Mantén tus monólogos ajustados.",
+        "subtitle": "Mantén tus monólogos precisos.",
         "sections": {
           "why": {
-            "title": "Por qué los podcasters lo usan",
+            "title": "Por qué lo usan los podcasters",
             "items": [
-              "Lee anuncios e intros con un ritmo constante.",
-              "Mantente fiel al guion en entrevistas estructuradas y episodios en solitario.",
-              "Ideal para podcasts en vídeo grabados con un segundo monitor."
+              "Entrega anuncios e intros con un ritmo constante en cada episodio.",
+              "No te salgas del guion en entrevistas estructuradas y episodios en solitario.",
+              "Ideal para videopodcasts grabados con un segundo monitor.",
+              "Respeta la redacción legal exacta del patrocinador sin memorizarla."
             ]
           },
           "setup": {
             "title": "Una lectura cómoda",
-            "body": "Ajusta una velocidad de desplazamiento algo más lenta y una fuente más grande para una entrega relajada. Guarda tu intro, outro y anuncios como guiones separados para cargarlos cuando los necesites."
+            "body": "Usa una velocidad algo más lenta y una letra más grande que para vídeo corto, y coloca la pantalla justo encima o al lado del micrófono para mantener la cabeza de frente a la cámara. Guarda la intro, el cierre y cada mención de patrocinio como guiones independientes y cárgalos cuando toque: es más rápido que recorrer un documento largo y evita leer por error al anunciante del mes pasado."
           }
-        }
+        },
+        "intro": [
+          "El podcasting premia una voz suelta y conversacional… hasta que llega la mención del patrocinador, donde cada palabra está pactada por contrato y cada tropiezo cuesta una repetición. Un teleprompter te deja conservar el tono suelto para la conversación y pasar a la redacción exacta solo donde importa.",
+          "Importa aún más en videopodcasts, donde el público te ve bajar la vista al guion. Poner las palabras junto al objetivo mantiene estable tu mirada durante noventa minutos de grabación sin obligarte a memorizar nada."
+        ],
+        "recommended": {
+          "summary": "La entrega en podcast es más lenta y relajada que una intro de YouTube. Date margen para respirar.",
+          "speed": "50–75 px/s. Más lento de lo que esperarías: una lectura tranquila suena mejor que una apresurada.",
+          "fontSize": "56–72 px, para leer sentado a distancia normal sin inclinarte.",
+          "display": "Amarillo cálido sobre negro cansa menos la vista en grabaciones largas que el blanco puro."
+        },
+        "faq": [
+          {
+            "q": "¿Cómo evito que una mención suene leída?",
+            "a": "Ensáyala una vez a la velocidad exacta de grabación y marca tus pausas con saltos de línea. Leer una línea por delante de tu voz es lo que te da margen para entonar en lugar de solo pronunciar."
+          },
+          {
+            "q": "¿Funciona con Riverside, Zencastr o SquadCast?",
+            "a": "Sí. El teleprompter es una página del navegador: ábrelo en otra ventana o en una segunda pantalla junto a la pestaña de grabación. No hay que instalar ni conectar nada."
+          },
+          {
+            "q": "¿Sirve para un programa con dos presentadores?",
+            "a": "Para todo lo guionizado, sí: pon el teleprompter en una pantalla compartida que ambos vean, o ábrelo en el dispositivo de cada uno. Cada dispositivo mantiene su propia posición y sus ajustes."
+          }
+        ]
       },
       "presenters": {
         "meta": {
-          "title": "Teleprompter online para presentadores",
-          "description": "Un teleprompter online gratis para keynotes, webinars y presentaciones internas. Funciona en cualquier dispositivo, sin registro."
+          "title": "Teleprompter para ponentes – Keynotes y webinars",
+          "description": "Un teleprompter online y gratuito para keynotes, webinars y presentaciones internas. Funciona en cualquier dispositivo, sin registro ni instalación."
         },
-        "title": "Teleprompter para presentadores",
-        "subtitle": "Da keynotes con confianza.",
+        "title": "Teleprompter para ponentes",
+        "subtitle": "Da tus keynotes con seguridad.",
         "sections": {
           "why": {
-            "title": "Por qué los presentadores lo usan",
+            "title": "Por qué lo usan los ponentes",
             "items": [
-              "Mantén la mirada en la cámara durante los webinars.",
-              "Nunca pierdas el hilo en guiones largos de keynote.",
-              "Ejecútalo en un segundo monitor o tablet mientras presentas."
+              "Mantén la mirada en la cámara durante webinars y reuniones generales.",
+              "No pierdas nunca el hilo en guiones largos de keynote.",
+              "Úsalo en un segundo monitor o en una tableta mientras presentas.",
+              "Respeta la redacción aprobada en contenido legal, financiero o médico."
             ]
           },
           "setup": {
             "title": "Entrega profesional en minutos",
-            "body": "Pega tu guion, elige una velocidad de desplazamiento tranquila y pasa a pantalla completa en una pantalla secundaria. Tu audiencia no notará nada."
+            "body": "Pega el guion, ajusta una velocidad tranquila y ponlo a pantalla completa en una pantalla secundaria, lo más cerca posible de la cámara o de la línea de mirada del público. Haz un ensayo a la velocidad real antes de salir en directo: calibra tanto la respiración como el ritmo. Si tu charla tiene turno de preguntas, detén el teleprompter al acabar la parte guionizada en vez de dejarlo avanzando."
           }
-        }
+        },
+        "intro": [
+          "Lo difícil de una keynote no es dominar el tema: es sostener la sala mientras recuerdas la redacción exacta que tu equipo tardó dos semanas en aprobar. Un teleprompter te quita esa carga de memoria para que tu atención vaya al ritmo, al énfasis y a la gente que tienes delante.",
+          "En webinars y comunicaciones internas grabadas el valor es aún más evidente: no hay nadie en la sala, la cámara es implacable con hacia dónde miras y una segunda pantalla con tu guion resuelve ambas cosas a la vez."
+        ],
+        "recommended": {
+          "summary": "La presentación es la entrega más lenta de todos los casos habituales: la autoridad viene de un ritmo sin prisa.",
+          "speed": "45–70 px/s. Si sientes agobio, el desplazamiento va demasiado rápido, no tu entrega demasiado lenta.",
+          "fontSize": "64–80 px cuando la pantalla queda lejos, como suele pasar en un atril o un segundo monitor.",
+          "display": "Negro sobre blanco se lee mejor con la iluminación intensa de un escenario o una sala de conferencias."
+        },
+        "faq": [
+          {
+            "q": "¿Puedo usarlo mientras comparto pantalla?",
+            "a": "Sí. Comparte solo la ventana o pestaña con tus diapositivas, nunca el escritorio completo, y deja el teleprompter en otra ventana. El público ve la presentación; tú ves el guion."
+          },
+          {
+            "q": "¿Y si me salgo del guion?",
+            "a": "Pulsa Espacio para pausar, di lo que necesites y vuelve a pulsarlo para retomar donde lo dejaste. El modo voz lo gestiona aún mejor: el guion espera y te sigue en cuanto vuelves a la redacción escrita."
+          },
+          {
+            "q": "¿Funciona en la pantalla de un atril o un monitor de confianza?",
+            "a": "Sí. Abre la página en el dispositivo que alimente esa pantalla y ponla a pantalla completa. Si el monitor se refleja en un cristal, voltea el texto con el modo espejo."
+          }
+        ]
       },
       "teachers": {
         "meta": {
-          "title": "Teleprompter online para docentes",
-          "description": "Graba clases, introducciones de cursos y vídeos educativos con un teleprompter gratis online que guarda los guiones localmente."
+          "title": "Teleprompter para docentes – Graba clases e intros de curso",
+          "description": "Graba clases, introducciones de curso y vídeos para el aula con un teleprompter online gratuito que guarda los guiones en tu propio dispositivo."
         },
         "title": "Teleprompter para docentes",
-        "subtitle": "Una entrega consistente en cada lección.",
+        "subtitle": "Entrega constante en cada lección.",
         "sections": {
           "why": {
-            "title": "Por qué los educadores lo usan",
+            "title": "Por qué lo usan los docentes",
             "items": [
-              "Graba introducciones de cursos y clases con un ritmo estable.",
-              "Reutiliza guiones estándar en varias clases.",
-              "Mantén tu energía sin tropezar con la siguiente línea."
+              "Graba intros y lecciones con un ritmo constante y parejo.",
+              "Reutiliza guiones estándar en varias clases y cursos.",
+              "Mantén la energía sin tropezar con la siguiente frase.",
+              "Los guiones se quedan en tu dispositivo: útil con las normas de datos del centro."
             ]
           },
           "setup": {
             "title": "Listo para el aula",
-            "body": "Guarda una intro estándar como guion, cárgala antes de cada clase, ajusta la fuente según la distancia a tu cámara y pulsa Reproducir."
+            "body": "Guarda una intro estándar como guion, cárgala antes de cada clase, ajusta la letra a tu distancia de cámara y pulsa Play. Para un módulo completo, mantén un guion por lección con un nombre claro: la lista de guardados muestra cuándo se editó cada uno, así ves de un vistazo qué has actualizado este curso. Todo se queda en tu navegador y en tu equipo, así que ningún material del alumnado pasa por un servidor de terceros."
           }
-        }
+        },
+        "intro": [
+          "Grabar material de curso es un trabajo distinto de dar clase en un aula. No hay grupo al que leer, ni preguntas a las que reaccionar, y cada tropiezo es un corte que tendrás que hacer después. Un teleprompter devuelve lo único que un aula en directo da gratis: un motivo para seguir hacia delante.",
+          "También resuelve la repetición. Si impartes el mismo módulo cada curso, un guion guardado hace que la grabación de este año coincida en estructura y duración con la del anterior, y solo regrabas lo que de verdad ha cambiado."
+        ],
+        "recommended": {
+          "summary": "La docencia prioriza la claridad sobre la velocidad. En la primera pasada, quédate más lento de lo que parece natural.",
+          "speed": "55–80 px/s, más lento aún en material técnico que el alumnado necesita asimilar.",
+          "fontSize": "56–72 px para poder separarte de la pantalla y seguir gesticulando con naturalidad.",
+          "display": "Blanco sobre negro en una sala a oscuras; negro sobre blanco si grabas en un aula luminosa."
+        },
+        "faq": [
+          {
+            "q": "¿Se sube mi guion a algún sitio?",
+            "a": "No. Los guiones guardados y el borrador actual permanecen en el almacenamiento local del navegador, en el dispositivo que usaste. No se envía nada a un servidor, lo que suele simplificar el cumplimiento de las políticas de datos del centro, aunque son las normas de tu institución las que deciden."
+          },
+          {
+            "q": "¿Puedo usarlo en clases online en directo?",
+            "a": "Sí. Ábrelo en una ventana junto a la videollamada y comparte solo la ventana de la reunión. Va muy bien para la apertura guionizada de la clase; luego lo pausas y sigues con normalidad."
+          },
+          {
+            "q": "¿Cómo mantengo una duración constante?",
+            "a": "Vigila el recuento de palabras y la estimación de tiempo sobre el cuadro del guion. Se actualizan mientras escribes y reflejan tu velocidad actual, así puedes planificar una lección de quince minutos antes de grabar en vez de descubrir la duración después."
+          }
+        ]
       },
       "streamers": {
         "meta": {
-          "title": "Teleprompter online para streamers",
-          "description": "Usa Teleprompter Online durante los directos para consultar tus notas sin perder el contacto visual."
+          "title": "Teleprompter para streamers – Notas en directo",
+          "description": "Usa Teleprompter Online en tus directos para consultar puntos clave, patrocinios y llamadas a la acción sin perder el contacto visual."
         },
         "title": "Teleprompter para streamers",
-        "subtitle": "Notas a demanda, sin perder el contacto visual.",
+        "subtitle": "Notas a mano, sin perder el contacto visual.",
         "sections": {
           "why": {
-            "title": "Por qué los streamers lo usan",
+            "title": "Por qué lo usan los streamers",
             "items": [
-              "Ábrelo en una segunda pantalla durante tu directo.",
-              "Guarda lecturas de patrocinadores y CTAs para tenerlas a mano.",
-              "Mantén un ritmo natural incluso en retransmisiones largas."
+              "Ábrelo en una segunda pantalla durante el directo.",
+              "Guarda patrocinios y llamadas a la acción para recuperarlos al instante.",
+              "Mantén un ritmo natural incluso en sesiones largas.",
+              "Pausa y retoma al momento cuando el chat te saca del guion."
             ]
           },
           "setup": {
-            "title": "Adáptalo a tu stream",
-            "body": "Sitúa el teleprompter en un monitor secundario junto a tu cámara. Usa el tema claro en salas luminosas y el tema oscuro por la noche."
+            "title": "Adáptalo a tu directo",
+            "body": "Ancla el teleprompter en un monitor secundario cerca de la cámara, con un tamaño que puedas leer de reojo sin girar la cabeza. Déjalo en pausa por defecto y pulsa Espacio al llegar a un patrocinio. Usa el tema claro en salas luminosas y el oscuro de noche: una ventana blanca encendida fuera de cámara se nota en la luz de tu cara. Guarda cada sección recurrente como su propio guion para cargarla en un par de segundos entre escenas."
           }
-        }
+        },
+        "intro": [
+          "El directo es sobre todo improvisación, y de eso se trata; pero las partes que no se improvisan suelen ser las que pagan. Las menciones de patrocinio, los avisos de campaña y la estructura de secciones que prometiste a tu audiencia agradecen estar escritos donde puedas verlos.",
+          "El problema es que un directo no admite repeticiones. No necesitas un guion para leer de principio a fin, sino un conjunto de avisos a los que saltar en el momento justo: exactamente para eso están los guiones guardados y un desplazamiento que puedes pausar en cualquier punto."
+        ],
+        "recommended": {
+          "summary": "Un teleprompter de directo se ojea, no se lee de continuo: prioriza texto grande que captes en medio segundo.",
+          "speed": "40–70 px/s, o déjalo en pausa y avanza a mano cuando llegues a un tramo guionizado.",
+          "fontSize": "64 px o más. Lees desde el otro lado del escritorio, de reojo y haciendo otra cosa.",
+          "display": "Blanco o amarillo sobre negro para que una ventana brillante no te lave la cara en cámara."
+        },
+        "faq": [
+          {
+            "q": "¿Se verá el teleprompter en mi captura?",
+            "a": "Solo si capturas esa pantalla o ventana. Captura tu juego o tu cámara como fuente concreta en lugar de un monitor completo y el teleprompter no saldrá en directo."
+          },
+          {
+            "q": "¿Puedo controlarlo sin cambiar de ventana?",
+            "a": "Los atajos de teclado funcionan cuando la ventana del teleprompter tiene el foco. Muchos streamers lo dejan en un segundo monitor y hacen un clic antes de un tramo guionizado; también puedes asignar la tecla Espacio en un stream deck."
+          },
+          {
+            "q": "¿Funciona junto a OBS o Streamlabs?",
+            "a": "Sí. Es una página web sin captura, sin secuestro de atajos y sin procesos en segundo plano, así que convive con el software de emisión sin interferir."
+          }
+        ]
+      },
+      "zoom": {
+        "meta": {
+          "title": "Teleprompter para Zoom, Google Meet y Teams – Gratis",
+          "description": "Usa un teleprompter online gratuito en tus llamadas de Zoom, Google Meet o Microsoft Teams. Tus notas junto a la webcam y la mirada en la cámara."
+        },
+        "title": "Teleprompter para Zoom y videollamadas",
+        "subtitle": "Tus notas, justo al lado del objetivo.",
+        "intro": [
+          "En una videollamada todo el mundo nota cuándo estás leyendo en otra parte de la pantalla. Los ojos se van de lado, te callas en el momento equivocado y una presentación bien preparada empieza a parecer un comunicado leído a la fuerza. La solución no es prepararse menos, sino poner las palabras donde ya está la cámara.",
+          "Un teleprompter de navegador justo debajo de la webcam mantiene tu mirada a pocos grados del objetivo. En una llamada de ventas, un panel de entrevista, un informe al consejo o un webinar, ese pequeño cambio marca la diferencia entre leerle a la gente y hablar con ella."
+        ],
+        "sections": {
+          "why": {
+            "title": "Por qué funciona en videollamadas",
+            "items": [
+              "Mantén la mirada en el objetivo en vez de recorrer la pantalla.",
+              "Compatible con Zoom, Google Meet, Microsoft Teams, Webex y cualquier llamada por navegador.",
+              "Nada que instalar: útil en portátiles de empresa con restricciones.",
+              "Tus notas quedan invisibles para el resto de la llamada."
+            ]
+          },
+          "setup": {
+            "title": "Configúralo en un minuto",
+            "body": "Abre el teleprompter en su propia ventana y redúcela a una franja estrecha justo debajo de la webcam —arriba de la pantalla, no abajo— para que tu mirada quede a la altura del objetivo. Inicia la llamada como siempre. Cuando compartas pantalla, comparte la ventana concreta de tus diapositivas en lugar del escritorio completo y el teleprompter seguirá siendo privado. Si la cámara está en el borde superior del portátil, coloca la ventana inmediatamente debajo y hazla tan estrecha como puedas leer con comodidad."
+          }
+        },
+        "recommended": {
+          "summary": "En una llamada hay que sonar espontáneo: mantén el teleprompter pequeño, cerca del objetivo y más lento de lo que crees.",
+          "speed": "50–75 px/s. En una llamada quieres sonar como si pensaras, no como si recitaras.",
+          "fontSize": "32–48 px, menos de lo habitual: la ventana está cerca de tu cara y debe quedar estrecha.",
+          "display": "Adáptalo a la sala: blanco sobre negro en un despacho en penumbra, negro sobre blanco si te ilumina una ventana."
+        },
+        "faq": [
+          {
+            "q": "¿Pueden ver mi teleprompter los demás?",
+            "a": "No, salvo que lo compartas. Comparte una ventana o pestaña concreta en lugar de toda la pantalla y la ventana del teleprompter nunca se transmite. En Zoom es la opción de ventana de aplicación; Meet y Teams ofrecen lo mismo."
+          },
+          {
+            "q": "¿Funciona en un portátil de empresa bloqueado?",
+            "a": "Normalmente sí, porque no hay nada que instalar: se ejecuta en el navegador que ya tienes. El modo voz además necesita permiso de micrófono, que algunos equipos gestionados restringen; todo lo demás funciona sin él."
+          },
+          {
+            "q": "¿Dónde coloco exactamente la ventana?",
+            "a": "Justo debajo de la webcam y tan estrecha como puedas leer con comodidad. Lo que se nota es el recorrido de la mirada: una ventana alta hace que los ojos suban y bajen visiblemente, mientras que una franja estrecha junto al objetivo parece simplemente que estás pensando."
+          }
+        ]
+      },
+      "mobile": {
+        "meta": {
+          "title": "Teleprompter para iPhone, iPad y Android – Gratis, sin app",
+          "description": "Un teleprompter gratuito para iPad, iPhone y Android que funciona en el navegador móvil. Sin instalar nada, pantalla completa horizontal, modo espejo y uso sin conexión."
+        },
+        "title": "Teleprompter para iPhone, iPad y Android",
+        "subtitle": "Un teleprompter en el dispositivo con el que ya grabas.",
+        "intro": [
+          "Las pantallas de móvil y tableta son excelentes teleprompters: son brillantes, tienen justo el tamaño para colocarse bajo una cámara y ya las tienes. Lo que solía faltar era software que no exigiera instalación, cuenta y suscripción antes de desplazar una página de texto.",
+          "Como Teleprompter Online es una página web, tu dispositivo ya tiene todo lo necesario. Ábrelo en Safari o Chrome, añádelo a la pantalla de inicio si quieres que se abra como una app y funcionará sin conexión tras la primera visita."
+        ],
+        "sections": {
+          "why": {
+            "title": "Por qué el móvil funciona tan bien",
+            "items": [
+              "Sin app que instalar y sin cuenta: se ejecuta en Safari o Chrome.",
+              "Pantalla completa en horizontal con un tamaño de letra pensado para pantallas pequeñas.",
+              "Toca el texto para pausar y vuelve a tocar para retomar a media toma.",
+              "Añádelo a la pantalla de inicio y se abrirá como una app nativa, sin conexión."
+            ]
+          },
+          "setup": {
+            "title": "Cómo prepararlo en iOS o Android",
+            "body": "Abre teleprompteronline.net en Safari o Chrome, pega el guion y toca pantalla completa: la página pasa a horizontal donde el dispositivo lo permite. Para tenerlo a un toque, usa Compartir y Añadir a pantalla de inicio en iOS, o Instalar aplicación en Chrome en Android. Sujeta el dispositivo justo debajo del objetivo; una pinza barata en el mismo trípode basta. Si grabas con el mismo móvil desde el que lees, necesitarás un segundo dispositivo, porque ningún teléfono puede ejecutar la cámara y un teleprompter a pantalla completa a la vez."
+          }
+        },
+        "recommended": {
+          "summary": "Las pantallas pequeñas piden una letra relativamente mayor y un desplazamiento más lento que un monitor a la misma distancia.",
+          "speed": "60–90 px/s en el móvil; con menos texto visible, una velocidad alta resulta agobiante.",
+          "fontSize": "36–48 px en móvil y 56–72 px en una tableta usada junto a la cámara.",
+          "display": "Blanco sobre negro para que el reflejo de la pantalla no te ilumine la cara, algo que se nota más a esta distancia."
+        },
+        "faq": [
+          {
+            "q": "¿Hay una app que descargar?",
+            "a": "No, y es deliberado. Funciona en el navegador del móvil, así que no hay instalación, ni cuenta de tienda de apps, ni actualizaciones que perseguir. Añadirlo a la pantalla de inicio te da un icono que abre directamente el teleprompter."
+          },
+          {
+            "q": "¿Funciona sin conexión en el móvil?",
+            "a": "Sí, tras la primera visita. La página queda guardada en el dispositivo, así que puedes abrir el teleprompter y leer tus guiones guardados en un rodaje sin cobertura."
+          },
+          {
+            "q": "¿Puedo grabar y leer con el mismo móvil?",
+            "a": "No a la vez: la app de cámara y un navegador a pantalla completa no pueden ocupar la pantalla al mismo tiempo. Usa un segundo móvil o una tableta para el guion, o graba con una cámara aparte y deja el móvil como teleprompter."
+          }
+        ]
+      },
+      "short-form-video": {
+        "meta": {
+          "title": "Teleprompter para TikTok, Reels y Shorts – Gratis",
+          "description": "Un teleprompter gratuito para TikTok, Instagram Reels y YouTube Shorts. Clava un gancho de 30 segundos en una sola toma, con modo espejo y desplazamiento por voz."
+        },
+        "title": "Teleprompter para TikTok, Reels y Shorts",
+        "subtitle": "Clava el gancho en una toma.",
+        "intro": [
+          "El vídeo corto es implacable de una forma muy concreta: los tres primeros segundos lo deciden todo y no hay margen para calentar. Es el formato donde más rinde tener guion y donde más caro sale fallar la primera frase.",
+          "La trampa es que el vídeo corto también tiene que parecer improvisado. Aquí un teleprompter ayuda precisamente porque te libera de pensar qué viene después: ese margen mental recuperado es lo que hace que la entrega suene informal."
+        ],
+        "sections": {
+          "why": {
+            "title": "Por qué lo usan los creadores de vídeo corto",
+            "items": [
+              "Clava los tres primeros segundos tal como los escribiste, toma tras toma.",
+              "Ajusta un guion de 30 segundos a 30 segundos con la estimación de tiempo.",
+              "Graba en vertical con el guion justo debajo del objetivo.",
+              "Prepara una semana de clips sin volver a aprenderte cada guion."
+            ]
+          },
+          "setup": {
+            "title": "Montaje para vídeo vertical",
+            "body": "Coloca el móvil en vertical sobre un trípode pequeño y pon el teleprompter en un segundo dispositivo justo detrás o debajo, lo más cerca posible del objetivo. Escribe en frases cortas: una idea por línea se lee mucho mejor a velocidad alta que un párrafo. Usa el recuento de palabras y la estimación de tiempo para ajustar la duración antes de grabar, porque un guion que se pasa seis segundos es una regrabación, no un montaje. Para sesiones en bloque, guarda el guion de cada clip con su nombre y cárgalos uno tras otro."
+          }
+        },
+        "recommended": {
+          "summary": "El vídeo corto es más rápido y directo que cualquier otro formato, y sus guiones son lo bastante breves para ensayarlos de verdad.",
+          "speed": "90–130 px/s. La energía del formato corto va más rápida que un vídeo a cámara.",
+          "fontSize": "40–56 px, en columna estrecha para que el plano vertical no saque el texto de tu línea de mirada.",
+          "display": "Mucho contraste, blanco sobre negro. Sueles grabar a pulso y con luz cambiante."
+        },
+        "faq": [
+          {
+            "q": "¿Cuántas palabras son 30 segundos de TikTok?",
+            "a": "Entre 70 y 80 palabras a un ritmo normal, menos si quieres pausas para enfatizar. La estimación de tiempo sobre el cuadro del guion se actualiza mientras escribes, así recortas antes de grabar en lugar de después."
+          },
+          {
+            "q": "¿Puedo usarlo grabando en vertical?",
+            "a": "Sí. El teleprompter ocupa la pantalla en la que esté, así que un segundo móvil sujeto en vertical va muy bien. Mantén la línea de lectura lo más cerca posible del objetivo con el que grabas."
+          },
+          {
+            "q": "¿Ayuda específicamente con el gancho?",
+            "a": "Ahí es donde más rinde. Escribe tres variantes de tu primera frase, guarda cada una como guion y grábalas seguidas: comparar tomas reales es mejor que adivinar qué gancho funciona."
+          }
+        ]
+      },
+      "wedding-speeches": {
+        "meta": {
+          "title": "Teleprompter para discursos de boda y brindis – Gratis",
+          "description": "Da tu discurso de padrino, dama de honor o padre de la novia sin tarjetas. Un teleprompter gratuito para el móvil, con temporizador para ajustar la duración."
+        },
+        "title": "Teleprompter para discursos de boda",
+        "subtitle": "Dilo como lo escribiste a las 2 de la mañana.",
+        "intro": [
+          "Un discurso de boda es el momento de oratoria de mayor presión que vive la mayoría de la gente: ante una sala llena de personas que te quieren, normalmente después de una copa y leyendo un papel doblado que ha pasado el día en el bolsillo de la chaqueta. El papel es el eslabón débil: cruje, cuesta leerlo con poca luz y bajar la vista rompe justo el contacto visual que hace funcionar un brindis.",
+          "Un móvil a la altura del pecho, con texto grande que avanza despacio, resuelve las tres cosas. Conservas la redacción que tanto trabajaste, levantas la cabeza en los remates y lo ves incluso en una sala con velas."
+        ],
+        "sections": {
+          "why": {
+            "title": "Por qué funciona en discursos",
+            "items": [
+              "Lee desde el móvil en lugar de barajar tarjetas.",
+              "El texto grande y luminoso se lee con la luz tenue del banquete.",
+              "Mantén la cabeza alta en los momentos que importan.",
+              "La estimación de tiempo te mantiene honesto con la duración."
+            ]
+          },
+          "setup": {
+            "title": "La noche del evento",
+            "body": "Carga el discurso antes de la cena y comprueba que avanza a un ritmo cómodo, porque la sala estará más ruidosa y tú irás más rápido que en tu cocina. Sujeta el móvil a la altura del pecho y no delante de la cara, y pausa con un toque cada vez que la sala se ría: un brindis que espera sus risas siempre funciona mejor que uno que habla por encima. Apunta a entre tres y cinco minutos: la estimación de tiempo sobre el cuadro del guion te lo dice antes de levantarte, que es mejor que descubrirlo en el micrófono."
+          }
+        },
+        "recommended": {
+          "summary": "Un brindis es más lento que cualquier otra lectura. Los nervios aceleran a todo el mundo, así que ponlo más lento de lo que parece correcto.",
+          "speed": "40–60 px/s. Más lento de lo que crees: esa noche hablarás más rápido que en el ensayo.",
+          "fontSize": "48–64 px para sostener el móvil a la altura del pecho y no junto a la cara.",
+          "display": "Blanco sobre negro y brillo al máximo. Los salones están más oscuros de lo que recuerdas."
+        },
+        "faq": [
+          {
+            "q": "¿Cuánto debe durar un discurso de boda?",
+            "a": "Entre tres y cinco minutos es el punto justo: unas 450 a 750 palabras. El recuento y la estimación se actualizan mientras escribes, así recortas antes del día y no a mitad del brindis."
+          },
+          {
+            "q": "¿No queda impersonal leer del móvil?",
+            "a": "Menos de lo que crees, y mucho menos que leer de tarjetas. Sujeta el móvil a la altura del pecho, levanta la vista en cada remate y deja que el desplazamiento lleve la redacción. Los invitados notan el contacto visual, no el aparato."
+          },
+          {
+            "q": "¿Y si me emociono y pierdo el hilo?",
+            "a": "Toca la pantalla para pausar y vuelve a tocarla cuando estés listo. Nada se desplaza mientras te tomas un momento, y la línea de lectura marcada te muestra exactamente dónde te quedaste."
+          }
+        ]
+      },
+      "interviews": {
+        "meta": {
+          "title": "Teleprompter para entrevistas y self-tapes – Gratis",
+          "description": "Prepara entrevistas de trabajo, self-tapes y presentaciones grabadas con un teleprompter gratuito en el navegador. Respuestas estructuradas y mirada en cámara."
+        },
+        "title": "Teleprompter para entrevistas y self-tapes",
+        "subtitle": "Respuestas estructuradas, entrega natural.",
+        "intro": [
+          "Las entrevistas a distancia y los self-tapes te piden ser preciso y relajado a la vez, ante la cámara y normalmente solo en una habitación. Las notas a un lado hacen que la mirada se vaya; memorizar te deja rígido. Un teleprompter bajo el objetivo es el punto medio que sí funciona.",
+          "La cantidad adecuada de guion aquí es menor de lo que parece. Las respuestas completas palabra por palabra suenan recitadas; un esqueleto —la frase de apertura, los tres puntos, la cifra que no puedes equivocar— te da una columna sobre la que improvisar."
+        ],
+        "sections": {
+          "why": {
+            "title": "Por qué lo usan candidatos y actores",
+            "items": [
+              "Mantén las respuestas preparadas estructuradas sin sonar recitado.",
+              "Sostén la mirada en el objetivo en self-tapes de casting.",
+              "Carga otro guion entre tomas en un par de segundos.",
+              "No se sube nada: tus notas siguen siendo tuyas."
+            ]
+          },
+          "setup": {
+            "title": "Cómo preparar el guion",
+            "body": "Escribe avisos, no párrafos: una pregunta destacada y tres o cuatro líneas cortas debajo. Guarda un guion por pregunta probable para cargar el correcto entre tomas en vez de buscarlo. Coloca la pantalla justo debajo de la webcam o del objetivo y deja el teleprompter en pausa por defecto: pulsa Espacio solo cuando quieras que avance. Para self-tapes, haz un ensayo a velocidad real para que las réplicas de tu lector y las tuyas mantengan el ritmo."
+          }
+        },
+        "recommended": {
+          "summary": "Una entrevista debe sonar meditada, no leída. Guion escueto y desplazamiento lento.",
+          "speed": "Déjalo en pausa para la mayoría de respuestas y avanza cuando lo necesites; 40–60 px/s cuando lo pongas en marcha.",
+          "fontSize": "36–52 px, de forma que un vistazo abarque una línea entera sin barrido visible.",
+          "display": "Lo que encaje con la luz de tu sala: lo importante es que la pantalla no se refleje en tus gafas."
+        },
+        "faq": [
+          {
+            "q": "¿Es deshonesto usar teleprompter en una entrevista?",
+            "a": "Para notas y estructura, no: equivale a llevar una hoja de puntos preparados, que es justo lo que se espera. Lo que se nota es leer respuestas completas palabra por palabra, y además suena peor. Quédate en el nivel de avisos."
+          },
+          {
+            "q": "¿Sirve para self-tapes de casting?",
+            "a": "Sí, y es un uso habitual. Pon el guion justo debajo del objetivo para que la línea de mirada sea correcta y pausa entre tomas. Muchos actores lo usan también para las réplicas del lector."
+          },
+          {
+            "q": "¿Notará el entrevistador que estoy leyendo?",
+            "a": "Solo si tu mirada se desplaza. Mantén el teleprompter justo debajo de la cámara, usa texto grande para que cada línea sea un vistazo y mira al objetivo entre puntos en lugar de al texto de forma continua."
+          }
+        ]
       }
-    }
+    },
+    "recommended": {
+      "title": "Ajustes recomendados",
+      "speed": "Velocidad",
+      "fontSize": "Tamaño de letra",
+      "display": "Pantalla"
+    },
+    "faqTitle": "Preguntas sobre esta configuración",
+    "relatedTitle": "Otras formas de usarlo"
   },
   "faq": {
     "meta": {

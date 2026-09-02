@@ -245,6 +245,26 @@
         "streamers": {
           "title": "Streamer",
           "body": "Werfen Sie einen Blick auf Redepunkte während Live-Übertragungen, ohne den Augenkontakt zu unterbrechen."
+        },
+        "zoom": {
+          "title": "Zoom & Videocalls",
+          "body": "Notizen direkt neben der Webcam, Blick in die Linse — für alle anderen unsichtbar."
+        },
+        "mobile": {
+          "title": "iPhone, iPad & Android",
+          "body": "Mach aus dem Gerät, das du schon hast, einen Prompter: keine App, kein Konto, offline nutzbar."
+        },
+        "short-form-video": {
+          "title": "TikTok, Reels & Shorts",
+          "body": "Die ersten drei Sekunden sitzen — und 30 Sekunden Skript bleiben 30 Sekunden."
+        },
+        "wedding-speeches": {
+          "title": "Hochzeitsreden",
+          "body": "Lies den Toast vom Handy statt von Karteikarten und heb den Kopf für die Pointen."
+        },
+        "interviews": {
+          "title": "Interviews & Self-Tapes",
+          "body": "Struktur und Blickkontakt halten — bei Remote-Interviews wie bei Casting-Aufnahmen."
         }
       },
       "seeAll": "Details ansehen"
@@ -443,116 +463,483 @@
     "items": {
       "youtubers": {
         "meta": {
-          "title": "Teleprompter für YouTuber",
-          "description": "Zeichnen Sie schärfere YouTube-Intros, Tutorials und Vlogs mit einem kostenlosen Browser-Teleprompter auf. Spiegelmodus, Vollbild und Tastenkombinationen inklusive."
+          "title": "Teleprompter für YouTuber – Kostenlos im Browser",
+          "description": "Nimm bessere YouTube-Intros, Tutorials und Vlogs auf — mit einem kostenlosen Teleprompter im Browser. Spiegelmodus, Sprachsteuerung und Tastenkürzel inklusive."
         },
         "title": "Teleprompter für YouTuber",
-        "subtitle": "Machen Sie jeden Take wertvoll.",
+        "subtitle": "Jede Aufnahme soll sitzen.",
         "sections": {
           "why": {
             "title": "Warum Creator es lieben",
             "items": [
-              "Reduzieren Sie Wiederholungen mit sanftem Scrolling.",
-              "Schauen Sie direkt auf die Linse, während Sie lesen.",
-              "Speichern Sie Intros und Outros als wiederverwendbare Skripte.",
-              "Funktioniert, ob Sie mit einem Smartphone oder einer spiegellosen Kamera filmen."
+              "Weniger Wiederholungen dank gleichmäßigem, planbarem Scrollen.",
+              "Schau beim Lesen direkt in die Linse statt auf Notizen.",
+              "Speichere Intros, Outros und Sponsorentexte als wiederverwendbare Skripte.",
+              "Funktioniert, ob du mit dem Handy oder einer spiegellosen Kamera filmst."
             ]
           },
           "setup": {
             "title": "Ein einfaches Setup",
-            "body": "Platzieren Sie Ihr Smartphone oder Tablet direkt unter Ihrer Kamera, geben Sie Ihr Skript ein, stellen Sie die Geschwindigkeit auf Ihre Lieferung ein und drücken Sie Abspielen. Wenn Sie ein Strahlteilungs-Rig verwenden, schalten Sie den Spiegelmodus ein und Sie sind fertig."
+            "body": "Stell Handy oder Tablet direkt unter das Objektiv — je kleiner der Abstand, desto weniger wandert dein Blick in der Wiedergabe. Skript einfügen, Geschwindigkeit an dein Sprechtempo anpassen, Play drücken. Bei einem Glas-Teleprompter zusätzlich den Spiegelmodus aktivieren, fertig. Für lange Tutorials das Skript in Abschnitte teilen und jeden unter eigenem Namen speichern, damit du zwischen Takes ohne Suchen neu ansetzen kannst."
           }
-        }
+        },
+        "intro": [
+          "Ein YouTube-Intro sind die zwanzig Sekunden, die entscheiden, ob jemand den Rest schaut — und es ist fast immer der Teil mit den meisten Anläufen. Ein Teleprompter macht aus dieser Gedächtnisübung eine Leseübung: Du behältst die Energie der ersten Aufnahme, ohne die Formulierung zu verlieren, an der du eine Stunde gefeilt hast.",
+          "Auf YouTube kommt es darauf an, dass die Lesung gesprochen klingt. Lange Absätze ziehen vorbei wie ein Rechtshinweis; kurze Zeilen mit je einem Gedanken lassen dich wegschauen, die Pointe setzen und zurückkommen. Schreib das Skript so, wie du es sagen würdest, und überlass das Erinnern dem Scrollen."
+        ],
+        "recommended": {
+          "summary": "Eine Aufnahme direkt in die Kamera läuft etwas schneller als ein Vortrag. Starte hier und justiere nach einem Probelauf.",
+          "speed": "70–100 px/s für ein natürliches Sprechtempo. Mit den Pfeiltasten mitten in der Aufnahme nachjustieren.",
+          "fontSize": "48–64 px, wenn der Bildschirm eine Armlänge entfernt ist; größer, wenn die Kamera weiter weg steht.",
+          "display": "Weiß auf Schwarz ist die sichere Wahl. Spiegelmodus nur, wenn du durch ein Glas-Rig liest."
+        },
+        "faq": [
+          {
+            "q": "Merkt man, dass ich ablese?",
+            "a": "Nicht, wenn der Prompter nah an der Linse sitzt und du eine Zeile vor deiner Stimme liest. Verräterisch ist die Augenbewegung, nicht das Lesen selbst. Halte das Gerät wenige Zentimeter neben dem Objektiv und schreib in kurzen Zeilen, damit die Augen weniger wandern."
+          },
+          {
+            "q": "Wie lang sollte ein YouTube-Skript sein?",
+            "a": "Rund 150 Wörter pro Minute fertigem Video ist ein guter Planungswert für gesprochenen Stil. Der Prompter zeigt Wortzahl und Zeitschätzung beim Tippen — du kürzt vor der Aufnahme statt im Schnitt."
+          },
+          {
+            "q": "Kann ich es nutzen, während ich mit dem Handy filme?",
+            "a": "Ja, aber du brauchst einen zweiten Bildschirm: Ein Handy kann Kamera-App und Vollbild-Prompter nicht gleichzeitig anzeigen. Die meisten legen das Skript auf ein Tablet oder Notebook direkt unter das Handy."
+          }
+        ]
       },
       "podcasters": {
         "meta": {
-          "title": "Teleprompter für Podcaster",
-          "description": "Verwenden Sie Teleprompter Online für dichte Podcast-Monologe, Sponsorenlesungen und Video-Podcast-Takes."
+          "title": "Teleprompter für Podcaster – Kostenlos und online",
+          "description": "Nutze Teleprompter Online für Podcast-Monologe, Sponsorentexte und Video-Podcasts. Kostenlos, ohne Anmeldung, in jedem Browser."
         },
         "title": "Teleprompter für Podcaster",
-        "subtitle": "Halten Sie Ihre Monologe kurz.",
+        "subtitle": "Halte deine Monologe knackig.",
         "sections": {
           "why": {
-            "title": "Warum Podcaster es verwenden",
+            "title": "Warum Podcaster es nutzen",
             "items": [
-              "Liefern Sie Sponsorenlesungen und Intros mit konsistenter Pacing.",
-              "Bleiben Sie während strukturierter Interviews und Solo-Episoden bei Ihrem Skript.",
-              "Ideal für Video-Podcasts, die auf einem zweiten Monitor aufgezeichnet werden."
+              "Werbetexte und Intros in jeder Folge mit gleichem Tempo einsprechen.",
+              "Bei strukturierten Interviews und Solofolgen beim Skript bleiben.",
+              "Ideal für Video-Podcasts, aufgenommen mit zweitem Monitor.",
+              "Rechtlich exakte Sponsorenformulierungen halten, ohne sie zu lernen."
             ]
           },
           "setup": {
-            "title": "Eine angenehme Leseerfahrung",
-            "body": "Stellen Sie eine etwas langsamere Scrollgeschwindigkeit und eine größere Schrift für entspannte Lieferung ein. Speichern Sie Ihr Intro, Outro und Sponsorenlesungen als separate Skripte, um sie bei Bedarf zu laden."
+            "title": "Bequem lesen",
+            "body": "Nimm ein etwas langsameres Tempo und eine größere Schrift als bei Kurzvideos und stell den Bildschirm knapp über oder neben das Mikrofon, damit dein Kopf zur Kamera zeigt. Speichere Intro, Outro und jeden Sponsorentext als eigenes Skript und lade sie, wenn sie dran sind — das ist schneller als das Scrollen durch ein langes Dokument und verhindert, dass du versehentlich den Werbekunden vom Vormonat liest."
           }
-        }
+        },
+        "intro": [
+          "Podcasting belohnt eine lockere, gesprochene Stimme — bis zum Sponsorentext, wo jedes Wort vertraglich festgelegt ist und jedes Stolpern eine Wiederholung kostet. Ein Teleprompter lässt dich den lockeren Ton fürs Gespräch behalten und nur dort auf exakte Formulierung wechseln, wo es zählt.",
+          "Bei Video-Podcasts wiegt das noch schwerer, weil das Publikum sieht, wie du zum Skript hinunterblickst. Die Wörter neben der Linse halten deinen Blick über neunzig Minuten Aufnahme stabil, ohne dass du etwas auswendig lernen musst."
+        ],
+        "recommended": {
+          "summary": "Podcast-Vortrag ist langsamer und entspannter als ein YouTube-Intro. Gib dir Luft zum Atmen.",
+          "speed": "50–75 px/s. Langsamer als gedacht — eine ruhige Lesung klingt besser als eine gehetzte.",
+          "fontSize": "56–72 px, damit du aus normaler Sitzentfernung liest, ohne dich vorzubeugen.",
+          "display": "Warmes Gelb auf Schwarz schont die Augen bei langen Aufnahmen mehr als reines Weiß."
+        },
+        "faq": [
+          {
+            "q": "Wie klingt ein Werbetext nicht abgelesen?",
+            "a": "Probe ihn einmal in genau der Aufnahmegeschwindigkeit und markiere deine Atempausen mit Zeilenumbrüchen. Eine Zeile vor der eigenen Stimme zu lesen schafft den Spielraum für Betonung statt bloßes Aussprechen."
+          },
+          {
+            "q": "Klappt das mit Riverside, Zencastr oder SquadCast?",
+            "a": "Ja. Der Prompter ist nur eine Browserseite: Öffne ihn in einem eigenen Fenster oder auf einem zweiten Bildschirm neben dem Aufnahme-Tab. Es muss nichts installiert oder verbunden werden."
+          },
+          {
+            "q": "Taugt das für eine Sendung mit zwei Hosts?",
+            "a": "Für alles Geskriptete ja: Leg den Prompter auf einen Bildschirm, den beide sehen, oder öffne ihn auf jedem Gerät einzeln. Jedes Gerät behält eigene Scrollposition und Einstellungen."
+          }
+        ]
       },
       "presenters": {
         "meta": {
-          "title": "Teleprompter für Redner",
-          "description": "Ein kostenloser Online-Teleprompter für Keynotes, Webinare und interne Präsentationen. Funktioniert auf jedem Gerät, keine Anmeldung erforderlich."
+          "title": "Teleprompter für Vortragende – Keynotes und Webinare",
+          "description": "Ein kostenloser Online-Teleprompter für Keynotes, Webinare und interne Präsentationen. Läuft auf jedem Gerät, ohne Anmeldung und ohne Installation."
         },
-        "title": "Teleprompter für Redner",
-        "subtitle": "Halten Sie Keynotes mit Selbstvertrauen.",
+        "title": "Teleprompter für Vortragende",
+        "subtitle": "Keynotes souverän halten.",
         "sections": {
           "why": {
-            "title": "Warum Redner es verwenden",
+            "title": "Warum Vortragende es nutzen",
             "items": [
-              "Halten Sie Ihre Augen während Webinaren auf der Kamera.",
-              "Verlieren Sie niemals Ihren Platz in langen Keynote-Skripten.",
-              "Führen Sie es auf einem zweiten Monitor oder Tablet aus, während Sie präsentieren."
+              "Den Blick bei Webinaren und Townhalls in der Kamera halten.",
+              "In langen Keynote-Skripten nie den Faden verlieren.",
+              "Auf einem zweiten Monitor oder Tablet mitlaufen lassen.",
+              "Freigegebene Formulierungen bei Rechts-, Finanz- oder Medizinthemen einhalten."
             ]
           },
           "setup": {
-            "title": "Professionelle Lieferung in Minuten",
-            "body": "Geben Sie Ihr Skript ein, stellen Sie eine ruhige Scrollgeschwindigkeit ein und gehen Sie auf einem sekundären Bildschirm in den Vollbildmodus. Ihr Publikum wird nichts bemerken."
+            "title": "In Minuten souverän",
+            "body": "Skript einfügen, ein ruhiges Tempo einstellen und auf einem zweiten Bildschirm in den Vollbildmodus gehen, so nah wie möglich an Kamera oder Blickachse des Publikums. Mach vor dem Live-Gang einen Probelauf im echten Tempo — das kalibriert Atmung und Tempo gleichermaßen. Hat dein Vortrag eine Fragerunde, stoppe den Prompter am Ende des geskripteten Teils, statt ihn weiterlaufen zu lassen."
           }
-        }
+        },
+        "intro": [
+          "Das Schwierige an einer Keynote ist nicht das Thema — es ist, den Raum zu halten und gleichzeitig die exakte Formulierung zu treffen, die dein Team zwei Wochen lang abgestimmt hat. Ein Teleprompter nimmt diese Gedächtnislast ab, damit deine Aufmerksamkeit zu Tempo, Betonung und den Menschen vor dir geht.",
+          "Bei Webinaren und aufgezeichneter interner Kommunikation liegt der Nutzen noch offener: Niemand ist im Raum, die Kamera verzeiht keine wandernden Blicke, und ein zweiter Bildschirm mit dem Skript löst beides auf einmal."
+        ],
+        "recommended": {
+          "summary": "Der Vortrag ist der langsamste der gängigen Anwendungsfälle — Autorität entsteht durch unaufgeregtes Tempo.",
+          "speed": "45–70 px/s. Wenn du dich gehetzt fühlst, ist das Scrollen zu schnell, nicht dein Vortrag zu langsam.",
+          "fontSize": "64–80 px, wenn der Bildschirm weiter weg steht, wie meist am Pult oder zweiten Monitor.",
+          "display": "Schwarz auf Weiß liest sich unter hellem Bühnen- oder Konferenzlicht besser als Weiß auf Schwarz."
+        },
+        "faq": [
+          {
+            "q": "Kann ich ihn nutzen, während ich den Bildschirm teile?",
+            "a": "Ja. Teile nur das Fenster oder den Tab mit deinen Folien, nie den ganzen Desktop, und halte den Prompter in einem eigenen Fenster. Das Publikum sieht die Präsentation; du siehst das Skript."
+          },
+          {
+            "q": "Was, wenn ich vom Skript abweiche?",
+            "a": "Leertaste drücken zum Pausieren, sagen, was zu sagen ist, und erneut drücken, um dort weiterzumachen, wo du warst. Der Sprachmodus löst das noch eleganter: Das Skript wartet und folgt dir, sobald du zur geschriebenen Formulierung zurückkehrst."
+          },
+          {
+            "q": "Funktioniert das auf einem Pult- oder Rückmonitor?",
+            "a": "Ja. Öffne die Seite auf dem Gerät, das diesen Bildschirm ansteuert, und geh in den Vollbildmodus. Wird der Monitor über Glas gespiegelt, dreh den Text mit dem Spiegelmodus."
+          }
+        ]
       },
       "teachers": {
         "meta": {
-          "title": "Teleprompter für Lehrer",
-          "description": "Zeichnen Sie Vorlesungen, Kursintros und Schulvideos mit einem kostenlosen Online-Teleprompter auf, der Skripte lokal speichert."
+          "title": "Teleprompter für Lehrkräfte – Vorlesungen und Kursintros",
+          "description": "Nimm Vorlesungen, Kursintros und Unterrichtsvideos mit einem kostenlosen Online-Teleprompter auf, der Skripte auf deinem eigenen Gerät speichert."
         },
-        "title": "Teleprompter für Lehrer",
-        "subtitle": "Konsistente Lieferung, jede Lektion.",
+        "title": "Teleprompter für Lehrkräfte",
+        "subtitle": "Gleichbleibende Qualität in jeder Einheit.",
         "sections": {
           "why": {
-            "title": "Warum Pädagogen es verwenden",
+            "title": "Warum Lehrende es nutzen",
             "items": [
-              "Zeichnen Sie Kursintros und Lektionen mit einem stetigen Tempo auf.",
-              "Verwenden Sie Standard-Skripte in mehreren Klassen erneut.",
-              "Halten Sie Ihre Energie auf, ohne in der nächsten Zeile zu straucheln."
+              "Kursintros und Einheiten in gleichmäßigem Tempo aufnehmen.",
+              "Standardskripte über mehrere Kurse und Semester wiederverwenden.",
+              "Energie halten, ohne über den nächsten Satz zu stolpern.",
+              "Skripte bleiben auf dem eigenen Gerät — hilfreich bei Datenschutzvorgaben der Schule."
             ]
           },
           "setup": {
-            "title": "Klassenzimmer-bereit",
-            "body": "Speichern Sie ein Standard-Intro als Skript, laden Sie es vor jeder Vorlesung, passen Sie die Schrift an Ihren Kameraabstand an und drücken Sie Abspielen."
+            "title": "Bereit fürs Klassenzimmer",
+            "body": "Speichere ein Standard-Intro als Skript, lade es vor jeder Einheit, passe die Schriftgröße an deinen Kameraabstand an und drück Play. Für ein ganzes Modul führe ein Skript pro Einheit mit klarem Namen: Die Liste zeigt das Datum der letzten Bearbeitung, so siehst du auf einen Blick, was du dieses Semester schon aufgefrischt hast. Alles bleibt im Browser auf deinem Rechner — kein studentisches Material läuft über einen fremden Server."
           }
-        }
+        },
+        "intro": [
+          "Kursmaterial aufzunehmen ist eine andere Aufgabe als vor einer Klasse zu unterrichten. Es gibt keine Gruppe zu lesen, keine Fragen zu beantworten, und jedes Stolpern ist ein Schnitt, den du später machen musst. Ein Teleprompter gibt das Einzige zurück, was ein voller Raum gratis liefert: einen Grund weiterzugehen.",
+          "Er löst auch das Wiederholungsproblem. Wer dasselbe Modul jedes Semester hält, bekommt mit einem gespeicherten Skript eine Aufnahme, die in Struktur und Länge zur letztjährigen passt — und nimmt nur neu auf, was sich wirklich geändert hat."
+        ],
+        "recommended": {
+          "summary": "Unterricht braucht Klarheit statt Tempo. Setz den ersten Durchlauf langsamer an, als sich natürlich anfühlt.",
+          "speed": "55–80 px/s, langsamer bei technischen Inhalten, die Studierende erst verarbeiten müssen.",
+          "fontSize": "56–72 px, damit du Abstand zum Bildschirm halten und trotzdem natürlich gestikulieren kannst.",
+          "display": "Weiß auf Schwarz im abgedunkelten Aufnahmeraum; Schwarz auf Weiß bei hellem Klassenzimmer."
+        },
+        "faq": [
+          {
+            "q": "Wird mein Skript irgendwohin hochgeladen?",
+            "a": "Nein. Gespeicherte Skripte und der aktuelle Entwurf bleiben im lokalen Speicher deines Browsers auf dem genutzten Gerät. Nichts geht an einen Server, was Datenschutzvorgaben meist deutlich vereinfacht — entscheidend sind aber die Regeln deiner Einrichtung."
+          },
+          {
+            "q": "Kann ich es für Live-Онlinекurse nutzen?",
+            "a": "Ja. Lass ihn in einem Fenster neben der Videokonferenz laufen und teile nur das Meeting-Fenster. Für den geskripteten Einstieg einer Stunde funktioniert das gut; danach pausierst du und unterrichtest normal."
+          },
+          {
+            "q": "Wie halte ich Einheiten gleich lang?",
+            "a": "Behalte Wortzahl und Zeitschätzung über dem Skriptfeld im Blick. Beide aktualisieren sich beim Tippen und berücksichtigen dein aktuelles Tempo — so planst du eine Fünfzehn-Minuten-Einheit vor der Aufnahme, statt die Länge hinterher festzustellen."
+          }
+        ]
       },
       "streamers": {
         "meta": {
-          "title": "Teleprompter für Streamer",
-          "description": "Verwenden Sie Teleprompter Online während Live-Übertragungen, um auf Notizen zu schauen, ohne den Augenkontakt zu unterbrechen."
+          "title": "Teleprompter für Streamer – Notizen im Live-Betrieb",
+          "description": "Nutze Teleprompter Online im Livestream, um Stichpunkte, Sponsorentexte und Calls-to-Action abzulesen, ohne den Blickkontakt zu verlieren."
         },
         "title": "Teleprompter für Streamer",
-        "subtitle": "Notizen bei Bedarf, ohne Augenkontakt zu unterbrechen.",
+        "subtitle": "Notizen griffbereit, ohne den Blickkontakt zu verlieren.",
         "sections": {
           "why": {
-            "title": "Warum Streamer es verwenden",
+            "title": "Warum Streamer es nutzen",
             "items": [
-              "Öffnen Sie es während Ihres Live-Streams auf einem zweiten Bildschirm.",
-              "Speichern Sie Sponsorenlesungen und CTAs zum schnellen Abrufen.",
-              "Halten Sie die Pacing natürlich, auch während langer Übertragungen."
+              "Auf einem zweiten Bildschirm während der Live-Sendung öffnen.",
+              "Sponsorentexte und Calls-to-Action zum schnellen Abruf speichern.",
+              "Auch in langen Sessions natürliches Tempo halten.",
+              "Sofort pausieren und weitermachen, wenn der Chat dich aus dem Skript holt."
             ]
           },
           "setup": {
-            "title": "Passen Sie es an Ihren Stream an",
-            "body": "Docken Sie den Teleprompter auf einem sekundären Monitor in der Nähe Ihrer Kamera an. Verwenden Sie das helle Design in hellen Räumen und das dunkle Design nachts."
+            "title": "An deinen Stream anpassen",
+            "body": "Dock den Prompter auf einen zweiten Monitor nahe der Kamera, groß genug, um ihn peripher zu lesen, ohne den Kopf zu drehen. Lass ihn standardmäßig pausiert und drück Leertaste, wenn ein Sponsorentext kommt. Helles Theme im hellen Raum, dunkles nachts — ein leuchtend weißes Fenster außerhalb des Bildes zeigt sich in deinem Gesichtslicht. Speichere jedes wiederkehrende Segment als eigenes Skript, dann lädst du es in Sekunden zwischen zwei Szenen."
           }
-        }
+        },
+        "intro": [
+          "Live-Streaming ist größtenteils improvisiert, und genau das ist der Reiz — aber die nicht improvisierten Teile sind meist die, die bezahlen. Sponsorentexte, Kampagnen-Hinweise und die Segmentstruktur, die du deinem Publikum versprochen hast, profitieren davon, sichtbar aufgeschrieben zu sein.",
+          "Das Problem: Ein Stream kennt keine zweite Aufnahme. Du brauchst kein Skript zum Durchlesen, sondern eine Sammlung von Stichpunkten, in die du im richtigen Moment einsteigst — genau dafür sind gespeicherte Skripte und ein jederzeit pausierbares Scrollen da."
+        ],
+        "recommended": {
+          "summary": "Ein Stream-Prompter wird überflogen, nicht durchgelesen — große Schrift, die man in einer halben Sekunde erfasst.",
+          "speed": "40–70 px/s, oder pausiert lassen und manuell scrollen, wenn ein geskripteter Teil kommt.",
+          "fontSize": "64 px und mehr. Du liest quer über den Schreibtisch, im Vorbeischauen, während du etwas anderes tust.",
+          "display": "Weiß oder Gelb auf Schwarz, damit ein helles Fenster dein Gesicht auf der Kamera nicht überstrahlt."
+        },
+        "faq": [
+          {
+            "q": "Taucht der Prompter in meiner Aufnahme auf?",
+            "a": "Nur wenn du diesen Bildschirm oder dieses Fenster erfasst. Nimm gezielt dein Spiel oder deine Kamera als Quelle statt eines ganzen Monitors, dann bleibt der Prompter außerhalb des Streams."
+          },
+          {
+            "q": "Kann ich ihn ohne Fenstertausch steuern?",
+            "a": "Tastenkürzel funktionieren, wenn das Prompter-Fenster den Fokus hat. Viele Streamer lassen ihn auf einem zweiten Monitor und klicken vor einem geskripteten Segment einmal hinein; auch ein Stream Deck kann die Leertaste senden."
+          },
+          {
+            "q": "Läuft das neben OBS oder Streamlabs?",
+            "a": "Ja. Es ist eine Browserseite ohne Capture, ohne Hotkey-Abfang und ohne Hintergrundprozess — sie stört die Streaming-Software nicht."
+          }
+        ]
+      },
+      "zoom": {
+        "meta": {
+          "title": "Teleprompter für Zoom, Google Meet und Teams – Kostenlos",
+          "description": "Nutze einen kostenlosen Online-Teleprompter in Zoom-, Google-Meet- oder Microsoft-Teams-Calls. Notizen neben der Webcam, Blick in die Kamera."
+        },
+        "title": "Teleprompter für Zoom und Videocalls",
+        "subtitle": "Deine Notizen, direkt neben der Linse.",
+        "intro": [
+          "In einem Videocall merken alle, wenn du woanders auf dem Bildschirm liest. Die Augen wandern zur Seite, du verstummst an den falschen Stellen, und ein gut vorbereiteter Pitch wirkt plötzlich wie eine vorgelesene Erklärung. Die Lösung ist nicht, weniger vorzubereiten — sondern die Wörter dorthin zu legen, wo die Kamera schon ist.",
+          "Ein Browser-Prompter direkt unter der Webcam hält deinen Blick wenige Grad neben der Linse. Bei einem Verkaufsgespräch, einem Interviewpanel, einem Board-Update oder einem Webinar entscheidet diese kleine Änderung darüber, ob du Menschen etwas vorliest oder mit ihnen sprichst."
+        ],
+        "sections": {
+          "why": {
+            "title": "Warum es im Videocall funktioniert",
+            "items": [
+              "Blick in der Linse halten statt über den Bildschirm zu wandern.",
+              "Funktioniert mit Zoom, Google Meet, Microsoft Teams, Webex und jedem Browser-Call.",
+              "Nichts zu installieren — praktisch auf gesperrten Firmen-Laptops.",
+              "Deine Notizen bleiben für alle anderen im Call unsichtbar."
+            ]
+          },
+          "setup": {
+            "title": "In einer Minute eingerichtet",
+            "body": "Öffne den Prompter in einem eigenen Fenster und zieh es zu einem schmalen Streifen direkt unter der Webcam zusammen — oben am Bildschirm, nicht unten, damit dein Blick auf Linsenhöhe bleibt. Starte den Call wie gewohnt. Beim Bildschirmteilen teilst du das konkrete Anwendungsfenster deiner Folien statt des gesamten Desktops, dann bleibt der Prompter privat. Sitzt die Kamera oben am Notebook, setz das Fenster unmittelbar darunter und mach es so schmal, wie du noch bequem liest."
+          }
+        },
+        "recommended": {
+          "summary": "Im Call sollst du spontan klingen: Prompter klein halten, nah an der Linse und langsamer, als du denkst.",
+          "speed": "50–75 px/s. Im Call willst du klingen, als würdest du denken, nicht als würdest du rezitieren.",
+          "fontSize": "32–48 px — kleiner als sonst, weil das Fenster nah am Gesicht sitzt und schmal bleiben muss.",
+          "display": "Passend zum Raum: Weiß auf Schwarz im gedimmten Homeoffice, Schwarz auf Weiß bei Fensterlicht."
+        },
+        "faq": [
+          {
+            "q": "Sehen die anderen im Call meinen Teleprompter?",
+            "a": "Nur wenn du ihn teilst. Teile ein konkretes Fenster oder einen Tab statt des ganzen Bildschirms, dann wird das Prompter-Fenster nie übertragen. In Zoom ist das die Anwendungsfenster-Option; Meet und Teams bieten dieselbe Wahl."
+          },
+          {
+            "q": "Klappt das auf einem gesperrten Firmen-Laptop?",
+            "a": "Meist ja, weil nichts installiert werden muss — es läuft im vorhandenen Browser. Der Sprachmodus braucht zusätzlich Mikrofonfreigabe, die manche verwalteten Geräte einschränken; alles andere funktioniert ohne."
+          },
+          {
+            "q": "Wo genau gehört das Fenster hin?",
+            "a": "Direkt unter die Webcam und so schmal, wie du bequem lesen kannst. Auffällig ist die Augenbewegung: Ein hohes Fenster lässt die Augen sichtbar auf und ab wandern, ein schmaler Streifen nahe der Linse sieht nach normalem Nachdenken aus."
+          }
+        ]
+      },
+      "mobile": {
+        "meta": {
+          "title": "Teleprompter für iPhone, iPad und Android – Gratis, ohne App",
+          "description": "Ein kostenloser Teleprompter für iPad, iPhone und Android, der im mobilen Browser läuft. Ohne Installation, Vollbild im Querformat, Spiegelmodus und offline nutzbar."
+        },
+        "title": "Teleprompter für iPhone, iPad und Android",
+        "subtitle": "Ein Prompter auf dem Gerät, mit dem du ohnehin filmst.",
+        "intro": [
+          "Handy- und Tablet-Displays sind hervorragende Teleprompter: hell, genau in der richtigen Größe, um unter eine Kamera zu passen — und du hast schon eines. Gefehlt hat bisher Software, die nicht Installation, Konto und Abo verlangt, bevor sie eine Seite Text scrollt.",
+          "Weil Teleprompter Online eine Webseite ist, hat dein Gerät bereits alles Nötige. Öffne sie in Safari oder Chrome, leg sie bei Bedarf auf den Home-Bildschirm, damit sie wie eine App startet — nach dem ersten Besuch funktioniert sie offline."
+        ],
+        "sections": {
+          "why": {
+            "title": "Warum Mobilgeräte so gut funktionieren",
+            "items": [
+              "Keine App zu installieren und kein Konto — es läuft in Safari oder Chrome.",
+              "Vollbild im Querformat mit einer auf kleine Displays abgestimmten Schriftgröße.",
+              "Tippe auf den Text zum Pausieren und noch einmal, um mitten im Take weiterzumachen.",
+              "Auf den Home-Bildschirm gelegt öffnet es wie eine native App, auch offline."
+            ]
+          },
+          "setup": {
+            "title": "Einrichtung unter iOS oder Android",
+            "body": "Öffne teleprompteronline.net in Safari oder Chrome, füge dein Skript ein und tippe auf Vollbild — die Seite wechselt ins Querformat, wo das Gerät es zulässt. Für den Schnellzugriff nutze Teilen und Zum Home-Bildschirm unter iOS oder App installieren in Chrome unter Android. Befestige das Gerät knapp unter dem Objektiv; eine günstige Handyklemme am selben Stativ reicht. Filmst du mit demselben Handy, von dem du liest, brauchst du ein zweites Gerät — kein Telefon kann Kamera und Vollbild-Prompter gleichzeitig anzeigen."
+          }
+        },
+        "recommended": {
+          "summary": "Kleine Displays brauchen relativ größere Schrift und langsameres Scrollen als ein Monitor in gleicher Entfernung.",
+          "speed": "60–90 px/s am Handy; bei weniger sichtbarem Text wirkt schnelles Scrollen hektisch.",
+          "fontSize": "36–48 px am Handy, 56–72 px auf einem Tablet direkt neben der Kamera.",
+          "display": "Weiß auf Schwarz, damit das Displayleuchten dein Gesicht nicht aufhellt — aus dieser Nähe fällt das stärker auf."
+        },
+        "faq": [
+          {
+            "q": "Gibt es eine App zum Herunterladen?",
+            "a": "Nein, und das ist Absicht. Es läuft im mobilen Browser: keine Installation, kein Store-Konto, keine Updates. Auf dem Home-Bildschirm bekommst du ein Symbol, das direkt in den Prompter führt."
+          },
+          {
+            "q": "Funktioniert es offline am Handy?",
+            "a": "Ja, nach dem ersten Besuch. Die Seite wird auf dem Gerät zwischengespeichert, sodass du den Prompter öffnen und deine gespeicherten Skripte auch ohne Empfang lesen kannst."
+          },
+          {
+            "q": "Kann ich mit demselben Handy filmen und lesen?",
+            "a": "Nicht gleichzeitig — Kamera-App und Vollbild-Browser können den Bildschirm nicht teilen. Nimm ein zweites Handy oder ein Tablet fürs Skript, oder film mit einer separaten Kamera und nutze das Handy als Prompter."
+          }
+        ]
+      },
+      "short-form-video": {
+        "meta": {
+          "title": "Teleprompter für TikTok, Reels und Shorts – Kostenlos",
+          "description": "Ein kostenloser Teleprompter für TikTok, Instagram Reels und YouTube Shorts. Der 30-Sekunden-Hook sitzt im ersten Take — mit Spiegelmodus und Sprachsteuerung."
+        },
+        "title": "Teleprompter für TikTok, Reels und Shorts",
+        "subtitle": "Der Hook sitzt im ersten Take.",
+        "intro": [
+          "Kurzvideo ist auf eine sehr bestimmte Art unbarmherzig: Die ersten drei Sekunden entscheiden alles, und es gibt keinen Raum zum Warmwerden. Genau deshalb zahlt sich hier ein Skript am meisten aus — und kostet ein verpatzter Einstieg die meisten Takes.",
+          "Der Haken: Kurzvideo muss zugleich ungeskriptet wirken. Ein Prompter hilft hier gerade deshalb, weil er dich davon befreit, an das Nächste zu denken — diese zurückgewonnene mentale Bandbreite ist es, die den Vortrag beiläufig klingen lässt."
+        ],
+        "sections": {
+          "why": {
+            "title": "Warum Kurzvideo-Creator es nutzen",
+            "items": [
+              "Die ersten drei Sekunden sitzen wortgetreu, Take für Take.",
+              "Mit der Zeitschätzung bleibt ein 30-Sekunden-Skript bei 30 Sekunden.",
+              "Hochkant filmen, das Skript direkt unter der Linse.",
+              "Eine Woche Clips am Stück drehen, ohne jedes Skript neu zu lernen."
+            ]
+          },
+          "setup": {
+            "title": "Ein Setup für Hochformat-Video",
+            "body": "Stell dein Handy hochkant auf ein kleines Stativ und leg den Prompter auf ein zweites Gerät direkt dahinter oder darunter, so nah an der Linse wie möglich. Schreib in kurzen Zeilen: Ein Gedanke pro Zeile liest sich bei Tempo weit besser als ein Absatz. Nutze Wortzahl und Zeitschätzung, um vor dem Dreh auf Länge zu kürzen — ein Skript, das sechs Sekunden zu lang ist, bedeutet Neudreh statt Schnitt. Für Batch-Sessions speicherst du jedes Clip-Skript unter eigenem Namen und lädst sie nacheinander."
+          }
+        },
+        "recommended": {
+          "summary": "Kurzvideo ist schneller und pointierter als jedes andere Format — und die Skripte sind kurz genug, um sie wirklich zu proben.",
+          "speed": "90–130 px/s. Die Energie im Kurzformat ist flotter als bei einem Talking-Head-Video.",
+          "fontSize": "40–56 px, schmal gesetzt, damit ein Hochformat den Text nicht aus deiner Blickachse schiebt.",
+          "display": "Hoher Kontrast, Weiß auf Schwarz. Oft wird aus der Hand und bei wechselndem Licht gefilmt."
+        },
+        "faq": [
+          {
+            "q": "Wie viele Wörter sind 30 Sekunden TikTok?",
+            "a": "Etwa 70 bis 80 Wörter bei normalem Sprechtempo, weniger mit Pausen zur Betonung. Die Zeitschätzung über dem Skriptfeld aktualisiert sich beim Tippen — du kürzt vor dem Dreh statt danach."
+          },
+          {
+            "q": "Kann ich es beim Hochkant-Filmen nutzen?",
+            "a": "Ja. Der Prompter füllt den Bildschirm, auf dem er läuft — ein zweites Handy hochkant gehalten oder geklemmt funktioniert gut. Halte die Leselinie so nah wie möglich an der filmenden Linse."
+          },
+          {
+            "q": "Hilft es speziell beim Hook?",
+            "a": "Da spielt er seine Stärke aus. Schreib drei Varianten deines Einstiegs, speichere jede als Skript und dreh alle drei hintereinander — echte Takes zu vergleichen schlägt das Raten, welcher Hook zieht."
+          }
+        ]
+      },
+      "wedding-speeches": {
+        "meta": {
+          "title": "Teleprompter für Hochzeitsreden und Toasts – Kostenlos",
+          "description": "Halte deine Rede als Trauzeuge, Brautjungfer oder Brautvater ohne Karteikarten. Ein kostenloser Teleprompter fürs Handy, mit Zeitschätzung für die Länge."
+        },
+        "title": "Teleprompter für Hochzeitsreden",
+        "subtitle": "Sag es so, wie du es um 2 Uhr nachts geschrieben hast.",
+        "intro": [
+          "Eine Hochzeitsrede ist der Auftritt mit dem höchsten Druck, den die meisten Menschen je erleben: vor einem Raum voller Menschen, die einen mögen, meist nach einem Glas, von einem gefalteten Zettel, der den ganzen Tag in der Jackentasche steckte. Der Zettel ist die Schwachstelle: Er raschelt, ist im Halbdunkel schwer zu lesen, und der Blick nach unten bricht genau den Augenkontakt, der einen Toast trägt.",
+          "Ein Handy auf Brusthöhe mit großem, langsam scrollendem Text löst alle drei Probleme. Du behältst die Formulierung, an der du gefeilt hast, hebst den Kopf für die Pointen und kannst auch im Kerzenlicht lesen."
+        ],
+        "sections": {
+          "why": {
+            "title": "Warum es für Reden funktioniert",
+            "items": [
+              "Vom Handy lesen statt Karteikarten zu sortieren.",
+              "Großer, heller Text bleibt im gedämpften Licht der Feier lesbar.",
+              "Kopf oben halten in den Momenten, die zählen.",
+              "Die Zeitschätzung hält dich bei der Länge ehrlich."
+            ]
+          },
+          "setup": {
+            "title": "Am Abend selbst",
+            "body": "Lade die Rede vor dem Essen und prüfe, ob sie in angenehmem Tempo läuft — der Saal wird lauter und du schneller sein als in deiner Küche. Halte das Handy auf Brusthöhe statt vors Gesicht und pausiere mit einem Tippen, sobald der Raum lacht: Ein Toast, der seine Lacher abwartet, kommt immer besser an als einer, der darüber hinwegredet. Ziel sind drei bis fünf Minuten: Die Zeitschätzung über dem Skriptfeld sagt dir das, bevor du aufstehst — besser, als es am Mikrofon zu merken."
+          }
+        },
+        "recommended": {
+          "summary": "Ein Toast ist langsamer als jede andere Lesung. Nervosität beschleunigt jeden — stell langsamer ein, als sich richtig anfühlt.",
+          "speed": "40–60 px/s. Langsamer als gedacht: Am Abend sprichst du schneller als in der Probe.",
+          "fontSize": "48–64 px, damit du das Handy auf Brusthöhe hältst statt vors Gesicht.",
+          "display": "Weiß auf Schwarz, Helligkeit hoch. Festsäle sind dunkler, als man sie in Erinnerung hat."
+        },
+        "faq": [
+          {
+            "q": "Wie lang sollte eine Hochzeitsrede sein?",
+            "a": "Drei bis fünf Minuten treffen es — etwa 450 bis 750 Wörter. Wortzahl und Zeitschätzung aktualisieren sich beim Schreiben, du kürzt also vor dem Tag statt mitten im Toast."
+          },
+          {
+            "q": "Wirkt Ablesen vom Handy nicht unpersönlich?",
+            "a": "Weniger, als du denkst — und deutlich weniger als das Ablesen von Karten. Halte das Handy auf Brusthöhe, blick bei jeder Pointe auf und lass das Scrollen die Formulierung tragen. Gäste merken sich den Blickkontakt, nicht das Gerät."
+          },
+          {
+            "q": "Was, wenn mich die Rührung übermannt?",
+            "a": "Tippe auf den Bildschirm zum Pausieren und noch einmal, wenn du so weit bist. Nichts scrollt weiter, während du durchatmest, und die markierte Leselinie zeigt genau, wo du warst."
+          }
+        ]
+      },
+      "interviews": {
+        "meta": {
+          "title": "Teleprompter für Interviews und Self-Tapes – Kostenlos",
+          "description": "Bereite Bewerbungsgespräche, Self-Tapes und aufgezeichnete Vorstellungen mit einem kostenlosen Browser-Teleprompter vor. Struktur halten, Blick in die Kamera."
+        },
+        "title": "Teleprompter für Interviews und Self-Tapes",
+        "subtitle": "Strukturierte Antworten, natürlicher Vortrag.",
+        "intro": [
+          "Remote-Interviews und Self-Tapes verlangen, gleichzeitig präzise und entspannt zu sein — vor der Kamera und meist allein im Raum. Notizen seitlich lassen den Blick wandern; Auswendiglernen macht steif. Ein Prompter unter der Linse ist der Kompromiss, der tatsächlich funktioniert.",
+          "Die richtige Menge an Skript ist hier geringer, als man denkt. Vollständig ausformulierte Antworten klingen aufgesagt; ein Gerüst — der Einstiegssatz, die drei Punkte, die Zahl, die sitzen muss — gibt ein Rückgrat, um das herum du improvisierst."
+        ],
+        "sections": {
+          "why": {
+            "title": "Warum Bewerbende und Schauspielende es nutzen",
+            "items": [
+              "Vorbereitete Antworten strukturiert halten, ohne aufgesagt zu klingen.",
+              "Die Blickachse bei Self-Tape-Castings auf der Linse halten.",
+              "Zwischen Takes in Sekunden ein anderes Skript laden.",
+              "Nichts wird hochgeladen — deine Notizen bleiben deine."
+            ]
+          },
+          "setup": {
+            "title": "Das Skript vorbereiten",
+            "body": "Schreib Stichpunkte, keine Absätze: eine hervorgehobene Frage, darunter drei oder vier kurze Zeilen. Speichere ein Skript pro wahrscheinlicher Frage, damit du zwischen Takes das richtige lädst, statt zu suchen. Stell den Bildschirm unmittelbar unter Webcam oder Objektiv und lass den Prompter standardmäßig pausiert: Leertaste nur, wenn er sich bewegen soll. Für Self-Tapes einmal im echten Tempo proben, damit die Stichworte deines Gegenübers und deine eigenen im Rhythmus bleiben."
+          }
+        },
+        "recommended": {
+          "summary": "Ein Interview soll durchdacht klingen, nicht abgelesen. Knappes Skript, langsames Scrollen.",
+          "speed": "Für die meisten Antworten pausiert lassen und bei Bedarf scrollen; 40–60 px/s, wenn er läuft.",
+          "fontSize": "36–52 px, so dimensioniert, dass ein Blick eine ganze Zeile erfasst, ohne sichtbar zu wandern.",
+          "display": "Was zum Raumlicht passt — wichtig ist, dass sich der Bildschirm nicht in deiner Brille spiegelt."
+        },
+        "faq": [
+          {
+            "q": "Ist ein Teleprompter im Interview unehrlich?",
+            "a": "Für Notizen und Struktur nein — es entspricht einer Seite vorbereiteter Punkte, die Interviewende ohnehin erwarten. Auffällig wird erst das wortwörtliche Ablesen ganzer Antworten, und das klingt ohnehin schlechter. Bleib bei Stichpunkten."
+          },
+          {
+            "q": "Taugt das für Self-Tape-Castings?",
+            "a": "Ja, und es ist verbreitet. Leg das Skript direkt unter die Linse, damit die Blickachse stimmt, und pausiere zwischen Takes. Viele Schauspielende nutzen es auch für die Stichworte des Gegenlesers."
+          },
+          {
+            "q": "Merkt mein Gegenüber, dass ich ablese?",
+            "a": "Nur wenn dein Blick wandert. Halte den Prompter direkt unter der Kamera, nutze große Schrift, damit eine Zeile ein Blick ist, und schau zwischen den Punkten in die Linse statt durchgehend auf den Text."
+          }
+        ]
       }
-    }
+    },
+    "recommended": {
+      "title": "Empfohlene Einstellungen",
+      "speed": "Geschwindigkeit",
+      "fontSize": "Schriftgröße",
+      "display": "Darstellung"
+    },
+    "faqTitle": "Fragen zu diesem Setup",
+    "relatedTitle": "Weitere Einsatzmöglichkeiten"
   },
   "faq": {
     "meta": {

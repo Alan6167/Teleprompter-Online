@@ -25,6 +25,11 @@ export const USE_CASE_SLUGS = [
   'presenters',
   'teachers',
   'streamers',
+  'zoom',
+  'mobile',
+  'short-form-video',
+  'wedding-speeches',
+  'interviews',
 ] as const;
 export type UseCaseSlug = (typeof USE_CASE_SLUGS)[number];
 

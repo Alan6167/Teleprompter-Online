@@ -1,4 +1,16 @@
-import { Video, Mic, Presentation, GraduationCap, Radio, ArrowRight } from 'lucide-react';
+import {
+  Video,
+  Mic,
+  Presentation,
+  GraduationCap,
+  Radio,
+  MonitorPlay,
+  Smartphone,
+  Clapperboard,
+  PartyPopper,
+  Briefcase,
+  ArrowRight,
+} from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { localePath, USE_CASE_SLUGS, type Locale, type UseCaseSlug } from '@/lib/site';
 
@@ -8,6 +20,11 @@ const ICONS: Record<UseCaseSlug, React.ComponentType<{ className?: string }>> = 
   presenters: Presentation,
   teachers: GraduationCap,
   streamers: Radio,
+  zoom: MonitorPlay,
+  mobile: Smartphone,
+  'short-form-video': Clapperboard,
+  'wedding-speeches': PartyPopper,
+  interviews: Briefcase,
 };
 
 interface UseCaseCardsProps {
@@ -24,7 +41,7 @@ export function UseCaseCards({ locale }: UseCaseCardsProps) {
         </h2>
         <p className="mt-4 text-balance text-muted-foreground">{t('subtitle')}</p>
       </div>
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {USE_CASE_SLUGS.map((slug) => {
           const Icon = ICONS[slug];
           return (

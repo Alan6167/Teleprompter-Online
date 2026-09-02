@@ -245,6 +245,26 @@
         "streamers": {
           "title": "Streamer",
           "body": "Guarda i punti chiave durante le trasmissioni in diretta senza interrompere il contatto oculare."
+        },
+        "zoom": {
+          "title": "Zoom e videochiamate",
+          "body": "Appunti accanto alla webcam e sguardo nell'obiettivo, invisibili a tutti gli altri."
+        },
+        "mobile": {
+          "title": "iPhone, iPad e Android",
+          "body": "Trasforma in gobbo il dispositivo che hai già: nessuna app, nessun account, anche offline."
+        },
+        "short-form-video": {
+          "title": "TikTok, Reels e Shorts",
+          "body": "Azzecca i primi tre secondi e tieni un copione da 30 secondi in 30 secondi."
+        },
+        "wedding-speeches": {
+          "title": "Discorsi di matrimonio",
+          "body": "Leggi il brindisi dal telefono invece che dai bigliettini e alza lo sguardo sulle battute."
+        },
+        "interviews": {
+          "title": "Colloqui e self-tape",
+          "body": "Mantieni struttura e sguardo in camera nei colloqui a distanza e nei provini."
         }
       },
       "seeAll": "Visualizza dettagli"
@@ -443,116 +463,483 @@
     "items": {
       "youtubers": {
         "meta": {
-          "title": "Teleprompter per YouTubers",
-          "description": "Registra introduzioni YouTube più nitide, tutorial e vlog con un teleprompter browser gratuito. Modalità specchio, schermo intero e scorciatoie da tastiera incluse, con teleprompter online gratis."
+          "title": "Gobbo per YouTuber – Gratis nel browser",
+          "description": "Registra intro, tutorial e vlog migliori con un gobbo elettronico gratuito nel browser. Modalità specchio, scorrimento vocale e scorciatoie da tastiera."
         },
-        "title": "Teleprompter per YouTubers",
-        "subtitle": "Ogni ripresa conta.",
+        "title": "Gobbo elettronico per YouTuber",
+        "subtitle": "Fai valere ogni ripresa.",
         "sections": {
           "why": {
-            "title": "Perché ai creator piace",
+            "title": "Perché piace ai creator",
             "items": [
-              "Riduci le riprese con uno scorrimento costante.",
-              "Guarda direttamente l'obiettivo mentre leggi.",
-              "Salva introduzioni e conclusioni come copioni riutilizzabili.",
-              "Funziona che tu giri su un telefono o una telecamera mirrorless."
+              "Meno riprese grazie a uno scorrimento costante e prevedibile.",
+              "Guarda dritto nell'obiettivo mentre leggi, non gli appunti.",
+              "Salva intro, chiusure e letture sponsorizzate come copioni riutilizzabili.",
+              "Funziona sia che giri col telefono sia con una mirrorless."
             ]
           },
           "setup": {
             "title": "Una configurazione semplice",
-            "body": "Posiziona il tuo telefono o tablet direttamente sotto la tua telecamera, incolla il tuo copione, imposta la velocità per adattarsi al tuo stile di lettura e premi Riproduci. Se usi un impianto a divisore di fascio, attiva la modalità specchio e sei a posto."
+            "body": "Metti telefono o tablet subito sotto l'obiettivo: più piccolo è lo scarto, meno lo sguardo devia in riproduzione. Incolla il copione, imposta la velocità sul tuo ritmo e premi Play. Se usi un gobbo a specchio, attiva la modalità specchio ed è fatta. Per tutorial lunghi, dividi il copione in sezioni e salva ciascuna con un nome, così riparti tra una ripresa e l'altra senza cercare."
           }
-        }
+        },
+        "intro": [
+          "Un'intro di YouTube sono i venti secondi che decidono se qualcuno guarderà il resto, ed è quasi sempre la parte che richiede più riprese. Un gobbo trasforma quell'esercizio di memoria in un esercizio di lettura: mantieni l'energia della prima ripresa senza perdere la formulazione che ti è costata un'ora.",
+          "Su YouTube il punto è che la lettura resti conversazionale. I paragrafi lunghi scorrono come un'avvertenza legale; frasi brevi, un'idea per riga, ti lasciano distogliere lo sguardo, piazzare la battuta e tornare. Scrivi il copione come lo diresti e lascia che sia lo scorrimento a ricordare."
+        ],
+        "recommended": {
+          "summary": "Una ripresa in camera va un po' più veloce di una presentazione. Parti da qui e regola dopo una prova.",
+          "speed": "70–100 px/s per un ritmo naturale in camera. Regola con le frecce durante la ripresa.",
+          "fontSize": "48–64 px se lo schermo è a un braccio di distanza; più grande se la camera è più lontana.",
+          "display": "Bianco su nero è la scelta sicura. Attiva lo specchio solo se leggi attraverso un gobbo a specchio."
+        },
+        "faq": [
+          {
+            "q": "Si capirà che sto leggendo?",
+            "a": "No, se il gobbo sta vicino all'obiettivo e leggi una riga in anticipo sulla voce. A tradire è il movimento degli occhi, non la lettura in sé. Tieni il dispositivo a pochi centimetri dall'obiettivo e scrivi in righe brevi per muovere meno lo sguardo."
+          },
+          {
+            "q": "Quanto deve essere lungo un copione per YouTube?",
+            "a": "Circa 150 parole per minuto di video finito è un buon riferimento per un tono conversazionale. Il gobbo mostra conteggio parole e stima di durata mentre scrivi, così tagli prima di girare invece che in montaggio."
+          },
+          {
+            "q": "Posso usarlo girando col telefono?",
+            "a": "Sì, ma serve un secondo schermo: un telefono non può tenere insieme app fotocamera e gobbo a schermo intero. La maggior parte mette il copione su un tablet o un portatile appena sotto il telefono."
+          }
+        ]
       },
       "podcasters": {
         "meta": {
-          "title": "Teleprompter per podcasters",
-          "description": "Usa Teleprompter Online per monologhi podcast compatti, letture di sponsor e riprese di podcast video, con teleprompter online gratis."
+          "title": "Gobbo per podcaster – Gratis e online",
+          "description": "Usa Teleprompter Online per monologhi, letture sponsorizzate e videopodcast. Gratis, senza registrazione, in qualsiasi browser."
         },
-        "title": "Teleprompter per podcasters",
-        "subtitle": "Mantieni i tuoi monologhi compatti.",
+        "title": "Gobbo elettronico per podcaster",
+        "subtitle": "Tieni stretti i tuoi monologhi.",
         "sections": {
           "why": {
             "title": "Perché i podcaster lo usano",
             "items": [
-              "Consegna le letture pubblicitarie e le introduzioni con un ritmo coerente.",
-              "Rimani sullo script per interviste strutturate ed episodi solo.",
-              "Ideale per podcast video registrati su un secondo monitor."
+              "Leggi pubblicità e intro con lo stesso ritmo in ogni episodio.",
+              "Resta sul copione in interviste strutturate ed episodi da solo.",
+              "Ideale per videopodcast registrati su un secondo monitor.",
+              "Rispetta la formulazione contrattuale dello sponsor senza impararla a memoria."
             ]
           },
           "setup": {
             "title": "Una lettura comoda",
-            "body": "Imposta una velocità di scorrimento leggermente più lenta e un font più grande per una consegna rilassata. Salva la tua introduzione, conclusione e letture pubblicitarie come copioni separati da caricare quando ne hai bisogno."
+            "body": "Usa una velocità un po' più bassa e un testo più grande rispetto al video breve, e posiziona lo schermo appena sopra o accanto al microfono per tenere la testa frontale alla camera. Salva intro, chiusura e ogni lettura sponsorizzata come copioni separati e caricali quando servono: è più rapido che scorrere un documento lungo ed evita di leggere per sbaglio l'inserzionista del mese scorso."
           }
-        }
+        },
+        "intro": [
+          "Il podcast premia una voce sciolta e conversazionale — fino alla lettura dello sponsor, dove ogni parola è definita per contratto e ogni inciampo costa una ripresa. Un gobbo ti lascia tenere il registro sciolto per la conversazione e passare alla formulazione esatta solo dove conta.",
+          "Conta ancora di più nei videopodcast, dove il pubblico ti vede abbassare lo sguardo sul copione. Mettere le parole accanto all'obiettivo tiene stabile il tuo sguardo per novanta minuti di registrazione senza costringerti a memorizzare nulla."
+        ],
+        "recommended": {
+          "summary": "Il ritmo del podcast è più lento e disteso di un'intro YouTube. Concediti spazio per respirare.",
+          "speed": "50–75 px/s. Più lento di quanto pensi: una lettura tranquilla suona meglio di una di fretta.",
+          "fontSize": "56–72 px, per leggere seduto a distanza normale senza sporgerti.",
+          "display": "Un giallo caldo su nero affatica meno gli occhi del bianco puro nelle registrazioni lunghe."
+        },
+        "faq": [
+          {
+            "q": "Come evito che una pubblicità suoni letta?",
+            "a": "Provala una volta alla velocità esatta di registrazione e segna le pause con andate a capo. Leggere una riga in anticipo sulla voce è ciò che lascia spazio all'intonazione invece della semplice pronuncia."
+          },
+          {
+            "q": "Funziona con Riverside, Zencastr o SquadCast?",
+            "a": "Sì. Il gobbo è solo una pagina web: aprilo in un'altra finestra o su un secondo schermo accanto alla scheda di registrazione. Non c'è nulla da installare o collegare."
+          },
+          {
+            "q": "Va bene per un programma con due conduttori?",
+            "a": "Per tutto ciò che è scritto sì: metti il gobbo su uno schermo condiviso visibile a entrambi, oppure aprilo sul dispositivo di ciascuno. Ogni dispositivo mantiene posizione e impostazioni proprie."
+          }
+        ]
       },
       "presenters": {
         "meta": {
-          "title": "Teleprompter per presentatori",
-          "description": "Un teleprompter online gratuito per keynote, webinar e presentazioni interne. Funziona su qualsiasi dispositivo, nessuna registrazione, teleprompter online gratis."
+          "title": "Gobbo per relatori – Keynote e webinar",
+          "description": "Un gobbo elettronico online e gratuito per keynote, webinar e presentazioni interne. Funziona su qualsiasi dispositivo, senza registrazione né installazione."
         },
-        "title": "Teleprompter per presentatori",
+        "title": "Gobbo elettronico per relatori",
         "subtitle": "Tieni le keynote con sicurezza.",
         "sections": {
           "why": {
-            "title": "Perché i presentatori lo usano",
+            "title": "Perché i relatori lo usano",
             "items": [
-              "Mantieni i tuoi occhi sulla telecamera durante i webinar.",
-              "Non perdere mai il tuo posto in script di keynote lunghi.",
-              "Eseguilo su un secondo monitor o tablet mentre presenti."
+              "Tieni lo sguardo in camera durante webinar e assemblee.",
+              "Non perdere mai il filo nei copioni lunghi di una keynote.",
+              "Usalo su un secondo monitor o tablet mentre presenti.",
+              "Rispetta la formulazione approvata su contenuti legali, finanziari o medici."
             ]
           },
           "setup": {
-            "title": "Consegna professionale in pochi minuti",
-            "body": "Incolla il tuo copione, seleziona una velocità di scorrimento calma e vai a schermo intero su uno schermo secondario. Il tuo pubblico non noterà nulla."
+            "title": "Resa professionale in pochi minuti",
+            "body": "Incolla il copione, imposta una velocità calma e vai a schermo intero su un monitor secondario, il più vicino possibile alla camera o alla linea di sguardo del pubblico. Fai una prova alla velocità reale prima della diretta: calibra il respiro quanto il ritmo. Se l'intervento prevede domande, ferma il gobbo alla fine della parte scritta invece di lasciarlo scorrere."
           }
-        }
+        },
+        "intro": [
+          "La parte difficile di una keynote non è conoscere il tema: è tenere la sala mentre ricordi la formulazione esatta che il tuo team ha impiegato due settimane ad approvare. Un gobbo toglie quel carico dalla memoria, così l'attenzione va al ritmo, all'enfasi e alle persone davanti a te.",
+          "Per webinar e comunicazioni interne registrate il vantaggio è ancora più evidente: in sala non c'è nessuno, la camera non perdona dove guardi, e un secondo schermo col copione risolve entrambe le cose insieme."
+        ],
+        "recommended": {
+          "summary": "La presentazione è la lettura più lenta tra gli usi comuni: l'autorevolezza nasce da un ritmo senza fretta.",
+          "speed": "45–70 px/s. Se ti senti incalzato, è lo scorrimento troppo veloce, non il tuo parlato troppo lento.",
+          "fontSize": "64–80 px quando lo schermo è più lontano, come succede su un leggio o un secondo monitor.",
+          "display": "Nero su bianco si legge meglio sotto la luce intensa di un palco o di una sala conferenze."
+        },
+        "faq": [
+          {
+            "q": "Posso usarlo mentre condivido lo schermo?",
+            "a": "Sì. Condividi solo la finestra o la scheda con le slide, mai l'intero desktop, e tieni il gobbo in un'altra finestra. Il pubblico vede la presentazione; tu vedi il copione."
+          },
+          {
+            "q": "E se esco dal copione?",
+            "a": "Premi Spazio per mettere in pausa, di' quello che serve e ripremi per riprendere da dove eri. La modalità voce gestisce la cosa ancora meglio: il copione aspetta e ti segue appena torni alla formulazione scritta."
+          },
+          {
+            "q": "Funziona sullo schermo di un leggio o su un monitor di ritorno?",
+            "a": "Sì. Apri la pagina sul dispositivo che alimenta quello schermo e vai a schermo intero. Se il monitor è rimandato da un vetro, ribalta il testo con la modalità specchio."
+          }
+        ]
       },
       "teachers": {
         "meta": {
-          "title": "Teleprompter per insegnanti",
-          "description": "Registra lezioni, introduzioni ai corsi e video in aula con un teleprompter online gratuito che salva i copioni localmente, teleprompter online gratis."
+          "title": "Gobbo per insegnanti – Lezioni e intro di corso",
+          "description": "Registra lezioni, introduzioni di corso e video per la classe con un gobbo online gratuito che salva i copioni sul tuo dispositivo."
         },
-        "title": "Teleprompter per insegnanti",
-        "subtitle": "Consegna coerente, ogni lezione.",
+        "title": "Gobbo elettronico per insegnanti",
+        "subtitle": "Resa costante in ogni lezione.",
         "sections": {
           "why": {
-            "title": "Perché gli educatori lo usano",
+            "title": "Perché i docenti lo usano",
             "items": [
-              "Registra introduzioni ai corsi e lezioni con un ritmo costante.",
-              "Riutilizza gli script standard su più classi.",
-              "Mantieni l'energia alta senza inciampare sulla riga successiva."
+              "Registra intro e lezioni con un ritmo costante e uniforme.",
+              "Riusa copioni standard su più classi e semestri.",
+              "Mantieni l'energia senza inciampare sulla frase successiva.",
+              "I copioni restano sul tuo dispositivo: utile con le regole sui dati dell'istituto."
             ]
           },
           "setup": {
-            "title": "Pronto per la classe",
-            "body": "Salva un'introduzione standard come copione, caricalo prima di ogni lezione, regola il font per la distanza della tua telecamera e premi Riproduci."
+            "title": "Pronto per l'aula",
+            "body": "Salva un'introduzione standard come copione, caricala prima di ogni lezione, regola il testo alla distanza dalla camera e premi Play. Per un modulo intero tieni un copione per lezione con un nome chiaro: l'elenco dei salvati mostra quando ciascuno è stato modificato, così vedi a colpo d'occhio cosa hai già aggiornato quest'anno. Tutto resta nel browser sulla tua macchina, quindi nessun materiale rivolto agli studenti passa da un server di terze parti."
           }
-        }
+        },
+        "intro": [
+          "Registrare materiale didattico è un lavoro diverso dal fare lezione in aula. Non c'è una classe da leggere, non ci sono domande a cui reagire, e ogni inciampo è un taglio che dovrai fare dopo. Un gobbo restituisce l'unica cosa che un'aula dal vivo offre gratis: un motivo per andare avanti.",
+          "Risolve anche il problema della ripetizione. Se tieni lo stesso modulo ogni semestre, un copione salvato fa sì che la registrazione di quest'anno corrisponda a quella dell'anno scorso per struttura e durata, e rigiri solo ciò che è davvero cambiato."
+        ],
+        "recommended": {
+          "summary": "L'insegnamento privilegia la chiarezza sulla velocità. Alla prima passata stai più lento di quanto sembri naturale.",
+          "speed": "55–80 px/s, ancora più lento su materiale tecnico che gli studenti devono assimilare.",
+          "fontSize": "56–72 px, così puoi allontanarti dallo schermo e gesticolare con naturalezza.",
+          "display": "Bianco su nero in una stanza oscurata; nero su bianco se giri in un'aula luminosa."
+        },
+        "faq": [
+          {
+            "q": "Il mio copione viene caricato da qualche parte?",
+            "a": "No. I copioni salvati e la bozza corrente restano nella memoria locale del browser, sul dispositivo che hai usato. Nulla va verso un server, il che di solito semplifica il rispetto delle politiche sui dati — anche se sono le regole del tuo istituto a decidere."
+          },
+          {
+            "q": "Posso usarlo per lezioni online in diretta?",
+            "a": "Sì. Tienilo in una finestra accanto alla videochiamata e condividi solo la finestra della riunione. Funziona bene per l'apertura scritta della lezione; poi metti in pausa e insegni normalmente."
+          },
+          {
+            "q": "Come mantengo lezioni di durata simile?",
+            "a": "Tieni d'occhio il conteggio parole e la stima di durata sopra la casella del copione. Si aggiornano mentre scrivi e riflettono la tua velocità, così pianifichi una lezione da quindici minuti prima di registrare invece di scoprirne la durata dopo."
+          }
+        ]
       },
       "streamers": {
         "meta": {
-          "title": "Teleprompter per streamer",
-          "description": "Usa Teleprompter Online durante le trasmissioni in diretta per dare un'occhiata agli appunti senza interrompere il contatto oculare, con teleprompter online gratis."
+          "title": "Gobbo per streamer – Appunti durante la diretta",
+          "description": "Usa Teleprompter Online in diretta per consultare punti chiave, letture sponsorizzate e call to action senza perdere il contatto visivo."
         },
-        "title": "Teleprompter per streamer",
-        "subtitle": "Appunti su richiesta, senza interrompere il contatto oculare.",
+        "title": "Gobbo elettronico per streamer",
+        "subtitle": "Appunti a portata, senza perdere il contatto visivo.",
         "sections": {
           "why": {
             "title": "Perché gli streamer lo usano",
             "items": [
-              "Aprilo su uno schermo secondario durante la tua trasmissione in diretta.",
-              "Salva le letture di sponsor e le CTA per il richiamo rapido.",
-              "Mantieni il ritmo naturale anche durante le trasmissioni lunghe."
+              "Aprilo su un secondo schermo durante la diretta.",
+              "Salva letture sponsorizzate e call to action per richiamarle in fretta.",
+              "Mantieni un ritmo naturale anche nelle sessioni lunghe.",
+              "Metti in pausa e riprendi all'istante quando la chat ti porta fuori copione."
             ]
           },
           "setup": {
-            "title": "Adattalo al tuo stream",
-            "body": "Ancorare il teleprompter a un monitor secondario vicino alla tua telecamera. Usa il tema chiaro in stanze luminose e il tema scuro di notte."
+            "title": "Adattalo alla tua diretta",
+            "body": "Aggancia il gobbo a un monitor secondario vicino alla camera, di una dimensione leggibile con la visione periferica senza girare la testa. Lascialo in pausa di default e premi Spazio quando arrivi a una lettura sponsorizzata. Tema chiaro in stanze luminose e scuro di sera: una finestra bianca accesa fuori campo si vede nella luce del viso. Salva ogni segmento ricorrente come copione a sé per caricarlo in un paio di secondi tra una scena e l'altra."
           }
-        }
+        },
+        "intro": [
+          "La diretta è soprattutto improvvisazione, ed è proprio questo il punto — ma le parti non improvvisate sono di solito quelle che pagano. Letture sponsorizzate, annunci di campagna e la struttura di segmenti promessa al pubblico traggono vantaggio dall'essere scritte dove puoi vederle.",
+          "Il problema è che una diretta non ammette seconde riprese. Non ti serve un copione da leggere dall'inizio alla fine, ma una serie di spunti in cui entrare al momento giusto: esattamente ciò per cui esistono i copioni salvati e uno scorrimento che puoi mettere in pausa ovunque."
+        ],
+        "recommended": {
+          "summary": "Un gobbo da diretta si guarda di sfuggita, non si legge di continuo: punta su testo grande, leggibile in mezzo secondo.",
+          "speed": "40–70 px/s, oppure lascialo in pausa e scorri a mano quando arrivi a un tratto scritto.",
+          "fontSize": "64 px in su. Leggi dall'altra parte della scrivania, con la coda dell'occhio, mentre fai altro.",
+          "display": "Bianco o giallo su nero, così una finestra chiara non ti slava il viso in camera."
+        },
+        "faq": [
+          {
+            "q": "Il gobbo comparirà nella mia cattura?",
+            "a": "Solo se catturi quello schermo o quella finestra. Cattura il gioco o la camera come sorgente specifica invece di un monitor intero e il gobbo resta fuori dalla diretta."
+          },
+          {
+            "q": "Posso controllarlo senza cambiare finestra?",
+            "a": "Le scorciatoie funzionano quando la finestra del gobbo ha il focus. Molti streamer lo tengono su un secondo monitor e ci cliccano una volta prima di un segmento scritto; si può anche mappare il tasto Spazio su uno stream deck."
+          },
+          {
+            "q": "Funziona insieme a OBS o Streamlabs?",
+            "a": "Sì. È una pagina web senza cattura, senza intercettazione di scorciatoie e senza processi in background, quindi convive con il software di trasmissione senza interferire."
+          }
+        ]
+      },
+      "zoom": {
+        "meta": {
+          "title": "Gobbo per Zoom, Google Meet e Teams – Gratis",
+          "description": "Usa un gobbo online gratuito durante le chiamate Zoom, Google Meet o Microsoft Teams. Appunti accanto alla webcam e sguardo nell'obiettivo."
+        },
+        "title": "Gobbo per Zoom e videochiamate",
+        "subtitle": "I tuoi appunti, proprio accanto all'obiettivo.",
+        "intro": [
+          "In videochiamata tutti si accorgono quando leggi da un'altra parte dello schermo. Gli occhi scivolano di lato, ti fermi nei momenti sbagliati, e una presentazione ben preparata inizia a sembrare un comunicato letto controvoglia. La soluzione non è prepararsi meno: è mettere le parole dove la camera già si trova.",
+          "Un gobbo nel browser subito sotto la webcam tiene lo sguardo a pochi gradi dall'obiettivo. In una call di vendita, davanti a una commissione, in un aggiornamento al consiglio o in un webinar, questo piccolo cambiamento è la differenza tra leggere alle persone e parlare con loro."
+        ],
+        "sections": {
+          "why": {
+            "title": "Perché funziona nelle videochiamate",
+            "items": [
+              "Tieni gli occhi sull'obiettivo invece di percorrere lo schermo.",
+              "Compatibile con Zoom, Google Meet, Microsoft Teams, Webex e ogni chiamata da browser.",
+              "Nulla da installare — utile sui portatili aziendali bloccati.",
+              "I tuoi appunti restano invisibili a tutti gli altri nella call."
+            ]
+          },
+          "setup": {
+            "title": "Configurarlo in un minuto",
+            "body": "Apri il gobbo in una finestra dedicata e restringila a una striscia stretta subito sotto la webcam — in alto sullo schermo, non in basso — così lo sguardo resta all'altezza dell'obiettivo. Avvia la call come sempre. Quando condividi lo schermo, condividi la finestra specifica delle slide invece dell'intero desktop e il gobbo resta privato. Se la camera è sul bordo superiore del portatile, metti la finestra immediatamente sotto e rendila stretta quanto riesci a leggere comodamente."
+          }
+        },
+        "recommended": {
+          "summary": "In call devi suonare spontaneo: tieni il gobbo piccolo, vicino all'obiettivo e più lento di quanto credi.",
+          "speed": "50–75 px/s. In una call vuoi sembrare uno che pensa, non uno che recita.",
+          "fontSize": "32–48 px — più piccolo del solito, perché la finestra sta vicino al viso e deve restare stretta.",
+          "display": "Abbinalo alla stanza: bianco su nero in uno studio in penombra, nero su bianco se ti illumina una finestra."
+        },
+        "faq": [
+          {
+            "q": "Gli altri partecipanti vedono il mio gobbo?",
+            "a": "No, a meno che tu non lo condivida. Condividi una finestra o una scheda specifica invece dell'intero schermo e la finestra del gobbo non viene mai trasmessa. In Zoom è l'opzione finestra applicazione; Meet e Teams offrono la stessa scelta."
+          },
+          {
+            "q": "Funziona su un portatile aziendale bloccato?",
+            "a": "Di solito sì, perché non c'è nulla da installare: gira nel browser che hai già. La modalità voce richiede in più il permesso del microfono, che alcuni dispositivi gestiti limitano; tutto il resto funziona senza."
+          },
+          {
+            "q": "Dove metto esattamente la finestra?",
+            "a": "Subito sotto la webcam e stretta quanto riesci a leggere comodamente. Ciò che si nota è il movimento degli occhi: una finestra alta li fa salire e scendere visibilmente, mentre una striscia stretta vicino all'obiettivo sembra solo che tu stia pensando."
+          }
+        ]
+      },
+      "mobile": {
+        "meta": {
+          "title": "Gobbo per iPhone, iPad e Android – Gratis, senza app",
+          "description": "Un gobbo gratuito per iPad, iPhone e Android che gira nel browser del telefono. Niente da installare, schermo intero in orizzontale, modalità specchio e uso offline."
+        },
+        "title": "Gobbo per iPhone, iPad e Android",
+        "subtitle": "Un gobbo sul dispositivo con cui già giri.",
+        "intro": [
+          "Gli schermi di telefoni e tablet sono ottimi gobbi: sono luminosi, hanno esattamente la dimensione giusta per stare sotto una camera e ne possiedi già uno. Quel che mancava era un software che non pretendesse installazione, account e abbonamento prima di far scorrere una pagina di testo.",
+          "Poiché Teleprompter Online è una pagina web, il tuo dispositivo ha già tutto il necessario. Aprilo in Safari o Chrome, aggiungilo alla schermata Home se vuoi che si avvii come un'app, e funziona offline dopo la prima visita."
+        ],
+        "sections": {
+          "why": {
+            "title": "Perché il mobile funziona così bene",
+            "items": [
+              "Nessuna app da installare e nessun account — gira in Safari o Chrome.",
+              "Schermo intero in orizzontale con dimensione del testo calibrata sugli schermi piccoli.",
+              "Tocca il testo per mettere in pausa e ritocca per riprendere a metà ripresa.",
+              "Aggiungilo alla Home e si apre come un'app nativa, anche offline."
+            ]
+          },
+          "setup": {
+            "title": "Come prepararlo su iOS o Android",
+            "body": "Apri teleprompteronline.net in Safari o Chrome, incolla il copione e tocca schermo intero: la pagina passa in orizzontale dove il dispositivo lo consente. Per averlo a un tocco, usa Condividi e Aggiungi a Home su iOS, oppure Installa app in Chrome su Android. Fissa il dispositivo appena sotto l'obiettivo; una pinza economica sullo stesso treppiede basta. Se giri con lo stesso telefono da cui leggi, ti servirà un secondo dispositivo, perché nessun telefono può tenere insieme fotocamera e gobbo a schermo intero."
+          }
+        },
+        "recommended": {
+          "summary": "Gli schermi piccoli chiedono un testo relativamente più grande e uno scorrimento più lento di un monitor alla stessa distanza.",
+          "speed": "60–90 px/s su telefono; con meno testo visibile, uno scorrimento veloce risulta frenetico.",
+          "fontSize": "36–48 px su telefono, 56–72 px su un tablet usato accanto alla camera.",
+          "display": "Bianco su nero, così il bagliore dello schermo non ti illumina il viso — a questa distanza si nota di più."
+        },
+        "faq": [
+          {
+            "q": "C'è un'app da scaricare?",
+            "a": "No, ed è voluto. Gira nel browser del telefono, quindi niente installazione, niente account dello store e nessun aggiornamento da inseguire. Aggiungendolo alla Home ottieni un'icona che apre direttamente il gobbo."
+          },
+          {
+            "q": "Funziona offline sul telefono?",
+            "a": "Sì, dopo la prima visita. La pagina resta in cache sul dispositivo, così puoi aprire il gobbo e leggere i copioni salvati durante una ripresa senza segnale."
+          },
+          {
+            "q": "Posso girare e leggere con lo stesso telefono?",
+            "a": "Non contemporaneamente: l'app fotocamera e un browser a schermo intero non possono occupare insieme lo schermo. Usa un secondo telefono o un tablet per il copione, oppure gira con una camera separata e tieni il telefono come gobbo."
+          }
+        ]
+      },
+      "short-form-video": {
+        "meta": {
+          "title": "Gobbo per TikTok, Reels e Shorts – Gratis",
+          "description": "Un gobbo gratuito per TikTok, Instagram Reels e YouTube Shorts. Azzecca un hook da 30 secondi in una ripresa, con modalità specchio e scorrimento vocale."
+        },
+        "title": "Gobbo per TikTok, Reels e Shorts",
+        "subtitle": "Azzecca l'hook in una ripresa.",
+        "intro": [
+          "Il video breve è spietato in modo molto preciso: i primi tre secondi decidono tutto e non c'è spazio per scaldarsi. È il formato in cui avere un copione rende di più e in cui sbagliare la prima frase costa più riprese.",
+          "Il paradosso è che il video breve deve anche sembrare non scritto. Qui il gobbo aiuta proprio perché ti libera dal pensare a cosa viene dopo: quella banda mentale recuperata è ciò che rende la resa disinvolta."
+        ],
+        "sections": {
+          "why": {
+            "title": "Perché lo usano i creator di video brevi",
+            "items": [
+              "Azzecca i primi tre secondi esattamente come scritti, ripresa dopo ripresa.",
+              "Tieni un copione da 30 secondi in 30 secondi con la stima di durata.",
+              "Gira in verticale con il copione subito sotto l'obiettivo.",
+              "Prepara una settimana di clip senza riimparare ogni copione."
+            ]
+          },
+          "setup": {
+            "title": "Un setup per il video verticale",
+            "body": "Metti il telefono in verticale su un treppiede piccolo e posiziona il gobbo su un secondo dispositivo subito dietro o sotto, il più vicino possibile all'obiettivo. Scrivi in righe brevi: un'idea per riga si legge molto meglio a velocità alta di un paragrafo. Usa conteggio parole e stima di durata per tagliare prima di girare, perché un copione che sfora di sei secondi è una nuova ripresa, non un montaggio. Per le sessioni in blocco, salva il copione di ogni clip con un nome e caricali uno dopo l'altro."
+          }
+        },
+        "recommended": {
+          "summary": "Il video breve è più veloce e incisivo di ogni altro formato — e i copioni sono abbastanza corti da provarli davvero.",
+          "speed": "90–130 px/s. L'energia del formato breve è più rapida di un video parlato in camera.",
+          "fontSize": "40–56 px, in colonna stretta perché l'inquadratura verticale non spinga il testo fuori dalla linea di sguardo.",
+          "display": "Contrasto alto, bianco su nero. Spesso si gira a mano libera e con luce che cambia."
+        },
+        "faq": [
+          {
+            "q": "Quante parole sono 30 secondi di TikTok?",
+            "a": "Tra 70 e 80 parole a ritmo normale, meno se vuoi pause di enfasi. La stima di durata sopra la casella del copione si aggiorna mentre scrivi, così tagli prima di girare invece che dopo."
+          },
+          {
+            "q": "Posso usarlo girando in verticale?",
+            "a": "Sì. Il gobbo riempie lo schermo su cui si trova, quindi un secondo telefono tenuto o fissato in verticale funziona bene. Tieni la linea di lettura il più vicino possibile all'obiettivo che riprende."
+          },
+          {
+            "q": "Aiuta in particolare con l'hook?",
+            "a": "È lì che rende di più. Scrivi tre varianti della prima frase, salva ciascuna come copione e girale una dopo l'altra: confrontare riprese vere batte l'indovinare quale hook funziona."
+          }
+        ]
+      },
+      "wedding-speeches": {
+        "meta": {
+          "title": "Gobbo per discorsi di matrimonio e brindisi – Gratis",
+          "description": "Pronuncia il discorso da testimone, damigella o padre della sposa senza bigliettini. Un gobbo gratuito per il telefono, con stima della durata."
+        },
+        "title": "Gobbo per discorsi di matrimonio",
+        "subtitle": "Dillo come l'avevi scritto alle 2 di notte.",
+        "intro": [
+          "Un discorso di matrimonio è la prova di parlare in pubblico più impegnativa che la maggior parte delle persone affronti: davanti a una sala piena di persone che ti vogliono bene, di solito dopo un calice, leggendo da un foglio piegato che è stato tutto il giorno nella tasca della giacca. Il foglio è l'anello debole: fruscia, si legge male con poca luce, e abbassare lo sguardo rompe proprio quel contatto visivo che fa funzionare un brindisi.",
+          "Un telefono tenuto all'altezza del petto, con testo grande che scorre lentamente, risolve tutte e tre le cose. Mantieni la formulazione su cui hai faticato, alzi la testa sulle battute e riesci a leggere anche in una sala a lume di candela."
+        ],
+        "sections": {
+          "why": {
+            "title": "Perché funziona per i discorsi",
+            "items": [
+              "Leggi dal telefono invece di mescolare bigliettini.",
+              "Il testo grande e luminoso resta leggibile nella luce bassa del ricevimento.",
+              "Tieni la testa alta nei momenti che contano.",
+              "La stima di durata ti tiene onesto sulla lunghezza."
+            ]
+          },
+          "setup": {
+            "title": "La sera stessa",
+            "body": "Carica il discorso prima della cena e verifica che scorra a un ritmo comodo, perché la sala sarà più rumorosa e tu più veloce che nella tua cucina. Tieni il telefono all'altezza del petto e non davanti al viso, e metti in pausa con un tocco ogni volta che la sala ride: un brindisi che aspetta le sue risate funziona sempre meglio di uno che ci parla sopra. Punta a tre-cinque minuti: la stima di durata sopra la casella del copione te lo dice prima di alzarti, il che è meglio che scoprirlo al microfono."
+          }
+        },
+        "recommended": {
+          "summary": "Un brindisi è più lento di qualsiasi altra lettura. L'emozione accelera tutti, quindi imposta più lento di quanto sembri giusto.",
+          "speed": "40–60 px/s. Più lento di quanto pensi: quella sera parlerai più in fretta che alla prova.",
+          "fontSize": "48–64 px, per tenere il telefono all'altezza del petto e non davanti al viso.",
+          "display": "Bianco su nero e luminosità al massimo. Le sale da ricevimento sono più buie di come le ricordi."
+        },
+        "faq": [
+          {
+            "q": "Quanto deve durare un discorso di matrimonio?",
+            "a": "Tre-cinque minuti è la misura giusta, all'incirca 450-750 parole. Conteggio e stima si aggiornano mentre scrivi, così tagli prima del giorno invece che a metà brindisi."
+          },
+          {
+            "q": "Leggere dal telefono non sembra impersonale?",
+            "a": "Meno di quanto pensi, e molto meno che leggere dai bigliettini. Tieni il telefono all'altezza del petto, alza lo sguardo su ogni battuta e lascia che sia lo scorrimento a portare le parole. Gli invitati notano il contatto visivo, non il dispositivo."
+          },
+          {
+            "q": "E se mi commuovo e perdo il segno?",
+            "a": "Tocca lo schermo per mettere in pausa e ritocca quando sei pronto. Nulla scorre mentre ti riprendi, e la riga di lettura evidenziata ti mostra esattamente dove eri."
+          }
+        ]
+      },
+      "interviews": {
+        "meta": {
+          "title": "Gobbo per colloqui e self-tape – Gratis",
+          "description": "Prepara colloqui di lavoro, self-tape e presentazioni registrate con un gobbo gratuito nel browser. Risposte strutturate e sguardo in camera."
+        },
+        "title": "Gobbo per colloqui e self-tape",
+        "subtitle": "Risposte strutturate, resa naturale.",
+        "intro": [
+          "Colloqui a distanza e self-tape ti chiedono di essere preciso e rilassato allo stesso tempo, davanti alla camera e di solito da solo in una stanza. Gli appunti di lato fanno vagare lo sguardo; memorizzare irrigidisce. Un gobbo sotto l'obiettivo è il compromesso che funziona davvero.",
+          "La quantità giusta di copione qui è minore di quanto sembri. Risposte complete parola per parola suonano recitate; uno scheletro — la frase d'apertura, i tre punti, il numero da non sbagliare — ti dà una spina dorsale su cui improvvisare."
+        ],
+        "sections": {
+          "why": {
+            "title": "Perché lo usano candidati e attori",
+            "items": [
+              "Tieni strutturate le risposte preparate senza suonare recitato.",
+              "Mantieni la linea di sguardo sull'obiettivo nei self-tape.",
+              "Carica un altro copione tra una ripresa e l'altra in pochi secondi.",
+              "Nulla viene caricato online: i tuoi appunti restano tuoi."
+            ]
+          },
+          "setup": {
+            "title": "Preparare il copione",
+            "body": "Scrivi spunti, non paragrafi: una domanda in evidenza e tre o quattro righe brevi sotto. Salva un copione per ogni domanda probabile, così carichi quello giusto tra una ripresa e l'altra invece di cercarlo. Posiziona lo schermo immediatamente sotto la webcam o l'obiettivo e tieni il gobbo in pausa di default: premi Spazio solo quando vuoi che si muova. Per i self-tape fai una prova alla velocità reale, così le battute del tuo lettore e le tue restano a tempo."
+          }
+        },
+        "recommended": {
+          "summary": "Un colloquio deve suonare ragionato, non letto. Copione essenziale e scorrimento lento.",
+          "speed": "Lascialo in pausa per la maggior parte delle risposte e scorri quando serve; 40–60 px/s quando è in moto.",
+          "fontSize": "36–52 px, dimensionato perché un'occhiata abbracci una riga intera senza spostamenti visibili.",
+          "display": "Quello che si abbina alla luce della stanza — l'importante è che lo schermo non si rifletta sugli occhiali."
+        },
+        "faq": [
+          {
+            "q": "Usare un gobbo a un colloquio è disonesto?",
+            "a": "Per appunti e struttura no: equivale ad avere un foglio di punti preparati, cosa che chi seleziona si aspetta. A farsi notare è leggere risposte intere parola per parola, e comunque suona peggio. Resta al livello degli spunti."
+          },
+          {
+            "q": "Va bene per i self-tape?",
+            "a": "Sì, ed è un uso comune. Metti il copione subito sotto l'obiettivo perché la linea di sguardo sia giusta, e metti in pausa tra le riprese. Molti attori lo usano anche per le battute del lettore."
+          },
+          {
+            "q": "Chi mi intervista noterà che sto leggendo?",
+            "a": "Solo se il tuo sguardo si sposta. Tieni il gobbo subito sotto la camera, usa testo grande perché ogni riga sia una sola occhiata, e guarda l'obiettivo tra un punto e l'altro invece di fissare il testo di continuo."
+          }
+        ]
       }
-    }
+    },
+    "recommended": {
+      "title": "Impostazioni consigliate",
+      "speed": "Velocità",
+      "fontSize": "Dimensione testo",
+      "display": "Visualizzazione"
+    },
+    "faqTitle": "Domande su questa configurazione",
+    "relatedTitle": "Altri modi di usarlo"
   },
   "faq": {
     "meta": {

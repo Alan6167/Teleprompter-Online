@@ -19,7 +19,7 @@ export function FAQAccordion({ items, title, subtitle }: FAQAccordionProps) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="mx-auto max-w-4xl px-3 py-16 sm:px-6 sm:py-20">
+    <section className={cn('mx-auto max-w-4xl', title ? 'px-3 py-16 sm:px-6 sm:py-20' : 'py-6')}>
       {title && (
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">{title}</h2>

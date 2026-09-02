@@ -245,6 +245,26 @@
         "streamers": {
           "title": "Streamers",
           "body": "Glance at talking points during live broadcasts without breaking eye contact."
+        },
+        "zoom": {
+          "title": "Zoom & video calls",
+          "body": "Keep your notes beside the webcam and your eyes on the lens, invisible to everyone else."
+        },
+        "mobile": {
+          "title": "iPhone, iPad & Android",
+          "body": "Turn the device you already own into a prompter — no app, no account, works offline."
+        },
+        "short-form-video": {
+          "title": "TikTok, Reels & Shorts",
+          "body": "Land the first three seconds exactly as written and keep a 30-second script to 30 seconds."
+        },
+        "wedding-speeches": {
+          "title": "Wedding speeches",
+          "body": "Read a toast from your phone instead of cue cards, and keep your head up for the punchlines."
+        },
+        "interviews": {
+          "title": "Interviews & self-tapes",
+          "body": "Hold your structure and your eye line through remote interviews and audition takes."
         }
       },
       "seeAll": "View details"
@@ -443,8 +463,8 @@
     "items": {
       "youtubers": {
         "meta": {
-          "title": "Teleprompter for YouTubers",
-          "description": "Record sharper YouTube intros, tutorials and vlogs with a free browser teleprompter. Mirror mode, fullscreen and keyboard shortcuts included."
+          "title": "Teleprompter for YouTubers – Free Browser Prompter",
+          "description": "Record sharper YouTube intros, tutorials and vlogs with a free browser teleprompter. Mirror mode, voice-following scroll and keyboard shortcuts included."
         },
         "title": "Teleprompter for YouTubers",
         "subtitle": "Make every take count.",
@@ -452,22 +472,46 @@
           "why": {
             "title": "Why creators love it",
             "items": [
-              "Cut down on retakes with a steady scroll.",
-              "Look directly at the lens while you read.",
-              "Save intros and outros as reusable scripts.",
+              "Cut down on retakes with a steady, predictable scroll.",
+              "Look directly at the lens while you read, not down at notes.",
+              "Save intros, outros and sponsor reads as reusable scripts.",
               "Works whether you film on a phone or a mirrorless camera."
             ]
           },
           "setup": {
             "title": "A simple setup",
-            "body": "Put your phone or tablet right under your camera, paste your script, set the speed to match your delivery, and press Play. If you use a beam-splitter rig, turn on mirror mode and you're set."
+            "body": "Put your phone or tablet directly under your camera lens — the smaller the gap, the less your eyes drift off-centre on playback. Paste your script, set the speed to match your delivery, and press Play. If you use a beam-splitter rig, turn on mirror mode and you're set. For long tutorials, break the script into sections and save each as its own named script so you can reset between takes without scrolling."
           }
-        }
+        },
+        "intro": [
+          "A YouTube intro is the twenty seconds that decides whether anyone watches the rest, and it is almost always the part that takes the most takes. A prompter turns that from a memory exercise into a reading one — you keep the energy of take one without losing the wording you spent an hour getting right.",
+          "The trick on YouTube specifically is that the read has to stay conversational. Long paragraphs scroll past like a legal notice; short lines with one idea each let you look away, land the beat, and come back. Write your script the way you would say it, then let the scroll do the remembering."
+        ],
+        "recommended": {
+          "summary": "A talking-head read sits a little quicker than a presentation. Start here and adjust after one rehearsal pass.",
+          "speed": "70–100 px/s for a natural talking-head pace. Nudge it with the arrow keys mid-take.",
+          "fontSize": "48–64 px if the screen is an arm's length away; go bigger if your camera sits further back.",
+          "display": "White on black is the safe default. Turn on mirror only if you read through a beam-splitter rig."
+        },
+        "faq": [
+          {
+            "q": "Will viewers be able to tell I'm reading?",
+            "a": "Not if the prompter sits close to your lens and you read a line ahead of your voice. Eye travel is what gives it away, not the reading itself. Keep the device within a few centimetres of the lens and write in short lines so your eyes move less."
+          },
+          {
+            "q": "How long should a YouTube script be?",
+            "a": "Roughly 150 words per minute of finished video is a good planning figure for a conversational delivery. The prompter shows a live word count and time estimate as you type, so you can trim before you record rather than in the edit."
+          },
+          {
+            "q": "Can I use it while filming on my phone?",
+            "a": "Yes, but you'll need a second screen — a phone can't run the camera app and the prompter fullscreen at once. Most creators put the script on a tablet or laptop just under the phone."
+          }
+        ]
       },
       "podcasters": {
         "meta": {
-          "title": "Teleprompter for podcasters",
-          "description": "Use Teleprompter Online for tight podcast monologues, sponsor reads and video podcast takes."
+          "title": "Teleprompter for Podcasters – Free Online Prompter",
+          "description": "Use Teleprompter Online for tight podcast monologues, sponsor reads and video podcast takes. Free, no signup, works in any browser."
         },
         "title": "Teleprompter for podcasters",
         "subtitle": "Keep your monologues tight.",
@@ -475,21 +519,46 @@
           "why": {
             "title": "Why podcasters use it",
             "items": [
-              "Deliver ad reads and intros with consistent pacing.",
+              "Deliver ad reads and intros with consistent pacing every episode.",
               "Stay on-script for structured interviews and solo episodes.",
-              "Ideal for video podcasts recorded on a second monitor."
+              "Ideal for video podcasts recorded on a second monitor.",
+              "Keep legally exact sponsor wording without memorising it."
             ]
           },
           "setup": {
             "title": "A comfortable read",
-            "body": "Set a slightly slower scroll speed and a larger font for relaxed delivery. Save your intro, outro and ad reads as separate scripts to load when you need them."
+            "body": "Set a slightly slower scroll speed and a larger font than you would for short-form video, then place the screen just above or beside your microphone so your head stays square to the camera. Save your intro, outro and each sponsor read as separate named scripts and load them as you reach them — it's faster than scrolling through one long document and it stops you reading last month's advertiser by accident."
           }
-        }
+        },
+        "intro": [
+          "Podcasting rewards a loose, conversational voice — right up until the sponsor read, where every word is contractually specific and every stumble costs a retake. A prompter lets you keep the loose register for the conversation and switch to exact wording only where it matters.",
+          "It matters more again for video podcasts, where the audience can see you glance down at a script. Putting the words next to the lens keeps your eye line steady across a ninety-minute record without forcing you to memorise anything."
+        ],
+        "recommended": {
+          "summary": "Podcast delivery is slower and more relaxed than a YouTube intro. Give yourself room to breathe.",
+          "speed": "50–75 px/s. Slower than you'd expect — a relaxed read sounds better than a rushed one.",
+          "fontSize": "56–72 px, so you can read it from a normal seated distance without leaning in.",
+          "display": "Warm yellow on black is easier on the eyes across a long record than pure white."
+        },
+        "faq": [
+          {
+            "q": "How do I keep an ad read from sounding read?",
+            "a": "Rehearse it once at the exact scroll speed you'll record at, then mark your own breath points with line breaks. Reading a line ahead of your voice is what gives you room to add inflection rather than just pronouncing words."
+          },
+          {
+            "q": "Can I use it with Riverside, Zencastr or SquadCast?",
+            "a": "Yes. The prompter is just a browser page, so run it in a separate window or on a second screen next to your recording tab. Nothing needs to be installed or connected."
+          },
+          {
+            "q": "Is it useful for a two-host show?",
+            "a": "For anything scripted, yes — put the prompter on a shared screen both hosts can see, or open it on each host's own device. Each device keeps its own scroll position and settings."
+          }
+        ]
       },
       "presenters": {
         "meta": {
-          "title": "Teleprompter for presenters",
-          "description": "A free online teleprompter for keynotes, webinars and internal presentations. Works on any device, no signup."
+          "title": "Teleprompter for Presenters – Keynotes and Webinars",
+          "description": "A free online teleprompter for keynotes, webinars and internal presentations. Works on any device, no signup, no install."
         },
         "title": "Teleprompter for presenters",
         "subtitle": "Deliver keynotes with confidence.",
@@ -497,21 +566,46 @@
           "why": {
             "title": "Why presenters use it",
             "items": [
-              "Keep your eyes on the camera during webinars.",
+              "Keep your eyes on the camera during webinars and town halls.",
               "Never lose your place in long keynote scripts.",
-              "Run it on a second monitor or tablet while you present."
+              "Run it on a second monitor or tablet while you present.",
+              "Hold to approved wording for legal, financial or medical content."
             ]
           },
           "setup": {
             "title": "Pro delivery in minutes",
-            "body": "Paste your script, dial in a calm scroll speed, and go fullscreen on a secondary screen. Your audience won't notice a thing."
+            "body": "Paste your script, dial in a calm scroll speed, and go fullscreen on a secondary screen positioned as close to the camera or audience eye line as the room allows. Do one rehearsal pass at the real speed before you go live — it calibrates your breathing as much as your pace. If your talk has a Q&A section, stop the prompter at the end of the scripted part rather than leaving it scrolling."
           }
-        }
+        },
+        "intro": [
+          "The hard part of a keynote is not knowing the material — it is holding the room while remembering the exact phrasing your team spent two weeks approving. A prompter takes the memory load off so your attention can go to pace, emphasis and the people in front of you.",
+          "For webinars and recorded internal comms the value is even plainer: nobody is in the room, the camera is unforgiving about where you are looking, and a second screen with your script solves both problems at once."
+        ],
+        "recommended": {
+          "summary": "Presentation delivery is the slowest of the common use cases — authority comes from unhurried pacing.",
+          "speed": "45–70 px/s. If you feel rushed, the scroll is too fast, not your delivery too slow.",
+          "fontSize": "64–80 px when the screen sits further away, as it usually does on a lectern or second monitor.",
+          "display": "Black on white reads better under bright stage or conference-room lighting than white on black."
+        },
+        "faq": [
+          {
+            "q": "Can I use it while sharing my screen?",
+            "a": "Yes. Share only the window or tab holding your slides, never your whole desktop, and keep the prompter in a separate window. Your audience sees the deck; you see the script."
+          },
+          {
+            "q": "What if I go off-script during a keynote?",
+            "a": "Press Space to pause, say what you need to say, and press it again to pick up where you left off. Voice mode handles this even more gracefully — the script waits and follows you back in when you return to the written wording."
+          },
+          {
+            "q": "Will it work on a lectern screen or confidence monitor?",
+            "a": "Yes. Open the page on whatever device drives that screen and go fullscreen. If the monitor is mirrored through glass, flip the text with mirror mode."
+          }
+        ]
       },
       "teachers": {
         "meta": {
-          "title": "Teleprompter for teachers",
-          "description": "Record lectures, course intros and classroom videos with a free online teleprompter that saves scripts locally."
+          "title": "Teleprompter for Teachers – Record Lectures and Course Intros",
+          "description": "Record lectures, course intros and classroom videos with a free online teleprompter that saves scripts locally on your own device."
         },
         "title": "Teleprompter for teachers",
         "subtitle": "Consistent delivery, every lesson.",
@@ -519,21 +613,46 @@
           "why": {
             "title": "Why educators use it",
             "items": [
-              "Record course intros and lessons with a steady pace.",
-              "Reuse standard scripts across multiple classes.",
-              "Keep your energy up without stumbling on the next line."
+              "Record course intros and lessons with a steady, even pace.",
+              "Reuse standard scripts across multiple classes and terms.",
+              "Keep your energy up without stumbling on the next line.",
+              "Scripts stay on your own device — useful under school data rules."
             ]
           },
           "setup": {
             "title": "Classroom-ready",
-            "body": "Save a standard intro as a script, load it before each lecture, adjust the font for your camera distance, and press Play."
+            "body": "Save a standard intro as a script, load it before each lecture, adjust the font for your camera distance and press Play. For a whole module, keep one script per lesson with a clear name — the saved list shows when each was last edited, which makes it easy to see what you've already refreshed this term. Everything stays in your browser on your own machine, so no student-facing material passes through a third-party server."
           }
-        }
+        },
+        "intro": [
+          "Recording course material is a different job from teaching a room. There is no class to read, no questions to react to, and every stumble is a cut you will have to make later. A prompter restores the one thing a live room gives you for free: a reason to keep going forward.",
+          "It also solves the repetition problem. If you teach the same module every term, a saved script means this year's recording matches last year's in structure and length, and you only re-record the parts that actually changed."
+        ],
+        "recommended": {
+          "summary": "Teaching delivery wants clarity over speed. Err slower than feels natural on the first pass.",
+          "speed": "55–80 px/s, slower for technical material your students need time to absorb.",
+          "fontSize": "56–72 px so you can stand back from the screen and still gesture naturally.",
+          "display": "White on black for a darkened recording room; black on white if you film in a bright classroom."
+        },
+        "faq": [
+          {
+            "q": "Does my script get uploaded anywhere?",
+            "a": "No. Saved scripts and your current draft stay in your browser's local storage on the device you used. Nothing is sent to a server, which usually makes this straightforward under institutional data policies — though your own institution's rules are the ones that decide."
+          },
+          {
+            "q": "Can I use it for live online classes?",
+            "a": "Yes. Run it in a window beside your video call and share only the meeting window. It works well for the scripted opening of a class, then you can pause it and teach normally."
+          },
+          {
+            "q": "How do I keep lectures to a consistent length?",
+            "a": "Watch the word count and time estimate above the script box as you write. They update as you type and reflect your current scroll speed, so you can plan a fifteen-minute lesson before recording rather than discovering the length afterwards."
+          }
+        ]
       },
       "streamers": {
         "meta": {
-          "title": "Teleprompter for streamers",
-          "description": "Use Teleprompter Online during live streams to glance at notes without breaking eye contact."
+          "title": "Teleprompter for Streamers – Notes During Live Broadcasts",
+          "description": "Use Teleprompter Online during live streams to glance at talking points, sponsor reads and CTAs without breaking eye contact."
         },
         "title": "Teleprompter for streamers",
         "subtitle": "Notes on demand, without breaking eye contact.",
@@ -541,18 +660,286 @@
           "why": {
             "title": "Why streamers use it",
             "items": [
-              "Open it on a second screen during your live stream.",
-              "Save sponsor reads and CTAs for quick recall.",
-              "Keep pacing natural even during long broadcasts."
+              "Open it on a second screen during your live broadcast.",
+              "Save sponsor reads and calls to action for quick recall.",
+              "Keep pacing natural even during long sessions.",
+              "Pause and resume instantly when chat pulls you off-script."
             ]
           },
           "setup": {
             "title": "Fit it to your stream",
-            "body": "Dock the teleprompter on a secondary monitor near your camera. Use light theme in bright rooms and dark theme at night."
+            "body": "Dock the prompter on a secondary monitor near your camera, sized so you can read it peripherally without turning your head. Keep it paused by default and press Space when you reach a sponsor read. Use the light theme in a bright room and the dark theme at night — a glowing white window off-camera will show up in your face lighting. Save each recurring segment as its own script so you can load one in a couple of seconds between scenes."
           }
-        }
+        },
+        "intro": [
+          "Live streaming is mostly improvised, and that is the point — but the parts that aren't improvised are usually the parts that pay. Sponsor reads, campaign call-outs and the segment structure you promised your audience all benefit from being written down where you can see them.",
+          "The challenge is that a stream has no retakes. What you need is not a script to read start to finish but a set of prompts you can drop into at the right moment, which is exactly what saved scripts and a pause-anywhere scroll are for."
+        ],
+        "recommended": {
+          "summary": "A stream prompter is glanced at, not read continuously — favour large text you can catch in half a second.",
+          "speed": "40–70 px/s, or leave it paused and scroll manually when you reach a scripted beat.",
+          "fontSize": "64 px and up. You're reading from across a desk, at a glance, while doing something else.",
+          "display": "White or yellow on black so a bright prompter window doesn't wash out your face on camera."
+        },
+        "faq": [
+          {
+            "q": "Will the prompter show up in my stream capture?",
+            "a": "Only if you capture that display or window. Capture your game or camera source specifically rather than a full monitor, and the prompter stays off-stream."
+          },
+          {
+            "q": "Can I control it without alt-tabbing?",
+            "a": "Keyboard shortcuts work whenever the prompter window has focus. Many streamers put it on a second monitor and click it once before a scripted segment; a stream deck can also be bound to send the Space key."
+          },
+          {
+            "q": "Does it work alongside OBS or Streamlabs?",
+            "a": "Yes. It's a browser page with no capture, no hotkey grabbing and no background process, so it sits alongside broadcasting software without interfering."
+          }
+        ]
+      },
+      "zoom": {
+        "meta": {
+          "title": "Teleprompter for Zoom, Google Meet and Teams – Free",
+          "description": "Use a free online teleprompter during Zoom, Google Meet or Microsoft Teams calls. Keep your notes next to the webcam and your eyes on the camera."
+        },
+        "title": "Teleprompter for Zoom and video calls",
+        "subtitle": "Your notes, right next to the lens.",
+        "intro": [
+          "Everyone on a video call can tell when you are reading from somewhere else on the screen. Your eyes track sideways, you go quiet at the wrong moments, and a well-prepared pitch starts to look like a hostage note. The fix is not to prepare less — it is to put the words where your camera already is.",
+          "A browser teleprompter positioned just under your webcam keeps your gaze within a few degrees of the lens. For a sales pitch, an interview panel, a board update or a webinar, that small change is the difference between reading at people and talking to them."
+        ],
+        "sections": {
+          "why": {
+            "title": "Why it works for video calls",
+            "items": [
+              "Keep your eyes on the lens instead of tracking across the screen.",
+              "Works with Zoom, Google Meet, Microsoft Teams, Webex and any browser call.",
+              "Nothing to install — useful on locked-down work laptops.",
+              "Your notes stay invisible to everyone else on the call."
+            ]
+          },
+          "setup": {
+            "title": "Setting it up in a minute",
+            "body": "Open the prompter in its own browser window and resize it into a narrow strip directly beneath your webcam — top of the screen, not the bottom, so your eyes stay level with the lens. Start your call as usual. When you share your screen, share the specific application window for your slides rather than the entire desktop, and the prompter stays private. If your laptop camera sits at the top of the display, put the prompter window immediately below it and drag it as narrow as it will comfortably go."
+          }
+        },
+        "recommended": {
+          "summary": "Call delivery should sound spontaneous, so keep the prompter small, close to the lens, and slower than you think.",
+          "speed": "50–75 px/s. On a call you want to sound like you're thinking, not reciting.",
+          "fontSize": "32–48 px — smaller than usual, because the window sits close to your face and needs to stay narrow.",
+          "display": "Match your room: white on black in a dim home office, black on white if you're lit by a window."
+        },
+        "faq": [
+          {
+            "q": "Can other people on the call see my teleprompter?",
+            "a": "Not unless you share it. Share a specific window or tab rather than your whole screen, and the prompter window is never transmitted. In Zoom, that's the application window option; Meet and Teams offer the same choice."
+          },
+          {
+            "q": "Does it work on a locked-down work laptop?",
+            "a": "Usually yes, because there is nothing to install — it runs in the browser you already have. Voice mode additionally needs microphone permission, which some managed devices restrict; every other feature works without it."
+          },
+          {
+            "q": "Where exactly should I put the window?",
+            "a": "Directly under your webcam, and as narrow as you can read comfortably. Eye travel is what people notice: a tall window makes your eyes visibly scan up and down, while a narrow strip near the lens looks like normal thinking."
+          }
+        ]
+      },
+      "mobile": {
+        "meta": {
+          "title": "Teleprompter for iPhone, iPad and Android – Free, No App",
+          "description": "A free teleprompter for iPad, iPhone and Android that runs in your mobile browser. No app to install, landscape fullscreen, mirror mode and offline support."
+        },
+        "title": "Teleprompter for iPhone, iPad and Android",
+        "subtitle": "A prompter on the device you already film with.",
+        "intro": [
+          "Phone and tablet screens make excellent teleprompters. They are bright, they are exactly the right size to sit under a camera, and you already own one. What has usually been missing is software that doesn't want an install, an account and a subscription before it will scroll a page of text.",
+          "Because Teleprompter Online is a web page, your device already has everything it needs. Open it in Safari or Chrome, add it to your home screen if you want it to launch like an app, and it works offline after the first visit."
+        ],
+        "sections": {
+          "why": {
+            "title": "Why mobile works so well",
+            "items": [
+              "No app to install and no account — it runs in Safari or Chrome.",
+              "Landscape fullscreen with a tuned default font size for small screens.",
+              "Tap anywhere on the text to pause and tap again to resume mid-take.",
+              "Add it to your home screen and it opens like a native app, offline."
+            ]
+          },
+          "setup": {
+            "title": "Getting set up on iOS or Android",
+            "body": "Open teleprompteronline.net in Safari or Chrome, paste your script, and tap fullscreen — the page switches to landscape where the device allows it. To keep it one tap away, use Share then Add to Home Screen on iOS, or Install app in Chrome on Android. Mount the device just below your camera lens; a cheap phone clamp on the same tripod is enough. If you're filming on the same phone you're reading from, you'll need a second device, since no phone can run the camera and a fullscreen prompter at once."
+          }
+        },
+        "recommended": {
+          "summary": "Small screens need bigger relative type and a slower scroll than a monitor at the same distance.",
+          "speed": "60–90 px/s on a phone; a small screen means less text visible, so a fast scroll feels frantic.",
+          "fontSize": "36–48 px on a phone, 56–72 px on a tablet used as a camera-side prompter.",
+          "display": "White on black to keep screen glare off your face, which matters more on a device this close."
+        },
+        "faq": [
+          {
+            "q": "Is there an app to download?",
+            "a": "No, and that's deliberate. It runs in your mobile browser, so there is no install, no App Store account and no update to chase. Adding it to your home screen gives you an app icon that opens straight into the prompter."
+          },
+          {
+            "q": "Does it work offline on a phone?",
+            "a": "Yes, after your first visit. The page is cached on your device, so you can open the prompter and read your saved scripts on a shoot with no signal."
+          },
+          {
+            "q": "Can I film and read on the same phone?",
+            "a": "Not at the same time — the camera app and a fullscreen browser can't both own the screen. Use a second phone or a tablet for the script, or film on a separate camera with your phone as the prompter."
+          }
+        ]
+      },
+      "short-form-video": {
+        "meta": {
+          "title": "Teleprompter for TikTok, Reels and Shorts – Free",
+          "description": "A free teleprompter for TikTok, Instagram Reels and YouTube Shorts. Nail a 30-second hook in one take with mirror mode and voice-following scroll."
+        },
+        "title": "Teleprompter for TikTok, Reels and Shorts",
+        "subtitle": "Nail the hook in one take.",
+        "intro": [
+          "Short-form video is unforgiving in a very specific way: the first three seconds decide everything, and there is no room to warm up. That makes it the format where scripting pays off most and where fumbling the opening line costs you the most takes.",
+          "The catch is that short-form also has to look unscripted. A prompter helps here precisely because it lets you stop thinking about what comes next — the mental bandwidth you get back is what makes the delivery feel casual."
+        ],
+        "sections": {
+          "why": {
+            "title": "Why short-form creators use it",
+            "items": [
+              "Land the first three seconds exactly as written, take after take.",
+              "Keep a 30-second script to 30 seconds using the live time estimate.",
+              "Film vertically with the script directly under the lens.",
+              "Batch a week of clips without relearning each script."
+            ]
+          },
+          "setup": {
+            "title": "A vertical-video setup",
+            "body": "Stand your phone in portrait on a small tripod and put the prompter on a second device immediately behind or below it, as close to the lens as you can get. Write in short lines — one thought per line reads far better at speed than full paragraphs. Use the word count and time estimate to trim to length before you shoot, since a script that runs six seconds long is a re-record rather than an edit. For a batch session, save each clip's script by name and load them one after another."
+          }
+        },
+        "recommended": {
+          "summary": "Short-form delivery is faster and punchier than any other format — and the scripts are short enough to rehearse properly.",
+          "speed": "90–130 px/s. Short-form energy is quicker than a talking-head video.",
+          "fontSize": "40–56 px, kept narrow so a vertical shot doesn't push the text out of your eye line.",
+          "display": "High contrast, white on black. You're often filming handheld in changing light."
+        },
+        "faq": [
+          {
+            "q": "How many words is a 30-second TikTok?",
+            "a": "Around 70 to 80 words at a normal speaking pace, less if you want pauses for emphasis. The live time estimate above the script box updates as you type, so you can cut to length before filming instead of after."
+          },
+          {
+            "q": "Can I use it filming vertically?",
+            "a": "Yes. The prompter fills whatever screen it's on, so a second phone held or clamped in portrait works well. Keep the reading line as close to the filming lens as possible."
+          },
+          {
+            "q": "Will it help with the hook specifically?",
+            "a": "That's where it earns its keep. Write three variants of your opening line, save each as a script, and shoot all three back to back — comparing real takes beats guessing which hook lands."
+          }
+        ]
+      },
+      "wedding-speeches": {
+        "meta": {
+          "title": "Teleprompter for Wedding Speeches and Toasts – Free",
+          "description": "Deliver a best man, maid of honour or father-of-the-bride speech without cue cards. A free teleprompter for your phone, with a timer to keep it to length."
+        },
+        "title": "Teleprompter for wedding speeches",
+        "subtitle": "Say it the way you wrote it at 2am.",
+        "intro": [
+          "A wedding speech is the highest-stakes public speaking most people ever do, delivered to a room of people who love you, usually after a drink, from a folded piece of paper that has been in a jacket pocket all day. The paper is the weak link. It rustles, it's hard to read in dim light, and looking down at it breaks exactly the eye contact that makes a toast land.",
+          "A phone held at chest height with large, slowly scrolling text solves all three. You keep the wording you agonised over, you keep your head up for the punchlines, and you can see it in a candlelit room."
+        ],
+        "sections": {
+          "why": {
+            "title": "Why it works for speeches",
+            "items": [
+              "Read from your phone instead of shuffling cue cards.",
+              "Large, bright text stays readable in dim reception lighting.",
+              "Keep your head up for the moments that matter.",
+              "The time estimate keeps you honest about length."
+            ]
+          },
+          "setup": {
+            "title": "On the night",
+            "body": "Load your speech before dinner and check it scrolls at a comfortable pace, because the room will be louder and you will be quicker than in your kitchen. Hold the phone at chest height rather than in front of your face, and pause with a tap whenever the room laughs — a toast that waits for its laughs always lands better than one that talks over them. Aim for three to five minutes: the time estimate above the script box tells you where you are before you stand up, and it beats finding out at the microphone."
+          }
+        },
+        "recommended": {
+          "summary": "A toast is slower than any other kind of read. Nerves speed everyone up, so set the scroll slower than feels right.",
+          "speed": "40–60 px/s. Slower than you think — you will speak faster on the night than in rehearsal.",
+          "fontSize": "48–64 px so you can hold the phone at chest height rather than up near your face.",
+          "display": "White on black, screen brightness up. Reception rooms are darker than you remember."
+        },
+        "faq": [
+          {
+            "q": "How long should a wedding speech be?",
+            "a": "Three to five minutes is the sweet spot — roughly 450 to 750 words. The word count and time estimate update as you write, so you can cut before the day rather than mid-toast."
+          },
+          {
+            "q": "Won't reading from a phone look impersonal?",
+            "a": "Less than you'd expect, and far less than reading from cards. Hold the phone at chest height, look up for every punchline, and let the scroll handle the wording. Guests notice eye contact, not the device."
+          },
+          {
+            "q": "What if I get emotional and lose my place?",
+            "a": "Tap the screen to pause; tap it again when you're ready. Nothing scrolls away while you take a moment, and the highlighted reading line shows you exactly where you stopped."
+          }
+        ]
+      },
+      "interviews": {
+        "meta": {
+          "title": "Teleprompter for Interviews and Self-Tapes – Free",
+          "description": "Prepare for job interviews, self-tape auditions and recorded intros with a free browser teleprompter. Keep your answers structured and your eyes on the camera."
+        },
+        "title": "Teleprompter for interviews and self-tapes",
+        "subtitle": "Structured answers, natural delivery.",
+        "intro": [
+          "Remote interviews and self-tapes ask you to be word-perfect and relaxed at the same time, on camera, usually alone in a room. Notes off to the side make your eyes wander; memorising makes you stiff. A prompter under the lens is the compromise that actually works.",
+          "The right amount of scripting here is less than you'd think. Full answers word-for-word sound recited; a structured skeleton — the opening line, the three points, the number you must not get wrong — gives you a spine to improvise around."
+        ],
+        "sections": {
+          "why": {
+            "title": "Why candidates and actors use it",
+            "items": [
+              "Keep prepared answers structured without sounding recited.",
+              "Hold your eye line on the lens for self-tape auditions.",
+              "Load a fresh script between takes in a couple of seconds.",
+              "Nothing is uploaded, so your notes stay yours."
+            ]
+          },
+          "setup": {
+            "title": "Preparing your script",
+            "body": "Write prompts, not paragraphs: a bolded question, then three or four short lines under it. Save one script per likely question so you can load the right one between takes rather than scrolling to find it. Position the screen immediately under your webcam or camera lens, and keep the prompter paused by default — press Space only when you want it to move. For self-tapes, do one rehearsal pass at the real speed so your reader's lines and yours stay in rhythm."
+          }
+        },
+        "recommended": {
+          "summary": "Interview delivery should sound thought-through, not read out. Keep the script sparse and the scroll slow.",
+          "speed": "Leave it paused for most answers and scroll when you need to; 40–60 px/s when you do run it.",
+          "fontSize": "36–52 px, sized so a glance takes in a whole line without a visible eye sweep.",
+          "display": "Whatever matches your room lighting — you want the screen not to reflect in your glasses."
+        },
+        "faq": [
+          {
+            "q": "Is using a teleprompter in an interview dishonest?",
+            "a": "For notes and structure, no — it's the same as having a page of prepared points, which interviewers expect. Reading full answers verbatim is what gets noticed, and it sounds worse anyway. Keep it to prompts."
+          },
+          {
+            "q": "Does it work for self-tape auditions?",
+            "a": "Yes, and it's a common use. Put the script just under the lens so your eye line stays right, and pause between takes. Many actors use it for the reader's lines as well as their own."
+          },
+          {
+            "q": "Will an interviewer notice I'm reading?",
+            "a": "Only if your eyes travel. Keep the prompter directly under the camera, use large text so each line is one glance, and look at the lens between points rather than at the words continuously."
+          }
+        ]
       }
-    }
+    },
+    "recommended": {
+      "title": "Recommended settings",
+      "speed": "Scroll speed",
+      "fontSize": "Font size",
+      "display": "Display"
+    },
+    "faqTitle": "Questions about this setup",
+    "relatedTitle": "Other ways people use it"
   },
   "faq": {
     "meta": {

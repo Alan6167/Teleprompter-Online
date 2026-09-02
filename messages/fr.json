@@ -245,6 +245,26 @@
         "streamers": {
           "title": "Streameurs",
           "body": "Jetez un coup d'œil aux points clés lors de diffusions en direct sans rompre le contact visuel."
+        },
+        "zoom": {
+          "title": "Zoom et visioconférences",
+          "body": "Vos notes juste sous la webcam et le regard dans l'objectif, invisibles pour les autres."
+        },
+        "mobile": {
+          "title": "iPhone, iPad et Android",
+          "body": "Transformez l'appareil que vous avez déjà en prompteur : sans appli, sans compte, hors ligne."
+        },
+        "short-form-video": {
+          "title": "TikTok, Reels et Shorts",
+          "body": "Réussissez les trois premières secondes et tenez un script de 30 secondes en 30 secondes."
+        },
+        "wedding-speeches": {
+          "title": "Discours de mariage",
+          "body": "Lisez votre toast sur votre téléphone plutôt que sur des fiches, et relevez la tête aux chutes."
+        },
+        "interviews": {
+          "title": "Entretiens et self-tapes",
+          "body": "Gardez votre structure et votre regard caméra en entretien à distance et en casting."
         }
       },
       "seeAll": "Voir les détails"
@@ -443,116 +463,483 @@
     "items": {
       "youtubers": {
         "meta": {
-          "title": "Téléprompteur pour YouTubeurs",
-          "description": "Enregistrez des intros, tutoriels et vlogs YouTube plus nets avec un téléprompteur gratuit. Mode miroir, plein écran et raccourcis clavier inclus."
+          "title": "Prompteur pour YouTubeurs – Gratuit dans le navigateur",
+          "description": "Enregistrez de meilleures intros, tutos et vlogs avec un prompteur gratuit dans le navigateur. Mode miroir, défilement vocal et raccourcis clavier."
         },
-        "title": "Téléprompteur pour YouTubeurs",
-        "subtitle": "Faites compter chaque prise.",
+        "title": "Prompteur pour YouTubeurs",
+        "subtitle": "Que chaque prise compte.",
         "sections": {
           "why": {
-            "title": "Pourquoi les créateurs l'adorent",
+            "title": "Pourquoi les créateurs l'adoptent",
             "items": [
-              "Réduisez les reprises avec un défilement régulier.",
-              "Regardez directement l'objectif pendant que vous lisez.",
-              "Enregistrez les intros et outros en tant que scripts réutilisables.",
-              "Fonctionne que vous filmiez sur un téléphone ou un appareil photo sans miroir."
+              "Moins de prises grâce à un défilement régulier et prévisible.",
+              "Regardez l'objectif pendant la lecture, pas vos notes.",
+              "Enregistrez intros, outros et lectures sponsorisées comme textes réutilisables.",
+              "Fonctionne que vous filmiez au téléphone ou avec un hybride."
             ]
           },
           "setup": {
-            "title": "Une configuration simple",
-            "body": "Placez votre téléphone ou votre tablette directement sous votre caméra, collez votre script, réglez la vitesse pour correspondre à votre prononcé, et appuyez sur Lancer. Si vous utilisez une installation à séparatrice de faisceaux, activez le mode miroir et c'est fait."
+            "title": "Une installation simple",
+            "body": "Placez votre téléphone ou votre tablette juste sous l'objectif : plus l'écart est faible, moins votre regard dévie à la lecture. Collez votre texte, réglez la vitesse sur votre débit et appuyez sur Lecture. Si vous utilisez un prompteur à glace, activez le mode miroir et c'est réglé. Pour les tutos longs, découpez le texte en sections et enregistrez chacune sous son nom pour repartir entre les prises sans chercher."
           }
-        }
+        },
+        "intro": [
+          "Une intro YouTube, ce sont les vingt secondes qui décident si quelqu'un regardera la suite — et c'est presque toujours la partie qui demande le plus de prises. Un prompteur transforme cet exercice de mémoire en exercice de lecture : vous gardez l'énergie de la première prise sans perdre la formulation que vous avez mis une heure à trouver.",
+          "Sur YouTube, la difficulté est que la lecture reste conversationnelle. Les longs paragraphes défilent comme une mention légale ; des phrases courtes, une idée par ligne, vous laissent détourner le regard, poser la chute et revenir. Écrivez votre texte comme vous le diriez, et laissez le défilement se charger de la mémoire."
+        ],
+        "recommended": {
+          "summary": "Une prise face caméra va un peu plus vite qu'une présentation. Partez de là et ajustez après une répétition.",
+          "speed": "70–100 px/s pour un rythme naturel face caméra. Ajustez avec les flèches en pleine prise.",
+          "fontSize": "48–64 px si l'écran est à un bras de distance ; plus grand si la caméra est plus loin.",
+          "display": "Blanc sur noir est la valeur sûre. N'activez le miroir que si vous lisez à travers un prompteur à glace."
+        },
+        "faq": [
+          {
+            "q": "Va-t-on voir que je lis ?",
+            "a": "Pas si le prompteur est près de l'objectif et que vous lisez une ligne en avance sur votre voix. C'est le déplacement du regard qui trahit, pas la lecture elle-même. Gardez l'appareil à quelques centimètres de l'objectif et écrivez en lignes courtes pour bouger moins les yeux."
+          },
+          {
+            "q": "Quelle longueur pour un script YouTube ?",
+            "a": "Environ 150 mots par minute de vidéo finale est un bon repère pour un ton conversationnel. Le prompteur affiche le nombre de mots et une estimation de durée pendant que vous tapez : vous coupez avant de tourner plutôt qu'au montage."
+          },
+          {
+            "q": "Puis-je l'utiliser en filmant avec mon téléphone ?",
+            "a": "Oui, mais il vous faudra un deuxième écran : un téléphone ne peut pas faire tourner l'appareil photo et le prompteur en plein écran en même temps. La plupart mettent le texte sur une tablette ou un ordinateur juste sous le téléphone."
+          }
+        ]
       },
       "podcasters": {
         "meta": {
-          "title": "Téléprompteur pour podcasteurs",
-          "description": "Utilisez Teleprompter Online pour des monologues de podcast serrés, des lectures de partenaires et des prises de podcast vidéo."
+          "title": "Prompteur pour podcasteurs – Gratuit et en ligne",
+          "description": "Utilisez Teleprompter Online pour vos monologues de podcast, lectures sponsorisées et podcasts vidéo. Gratuit, sans inscription, dans tout navigateur."
         },
-        "title": "Téléprompteur pour podcasteurs",
+        "title": "Prompteur pour podcasteurs",
         "subtitle": "Gardez vos monologues serrés.",
         "sections": {
           "why": {
             "title": "Pourquoi les podcasteurs l'utilisent",
             "items": [
-              "Livrez les lectures de partenaires et les intros avec un rythme cohérent.",
-              "Restez dans le script pour les interviews structurées et les épisodes en solo.",
-              "Idéal pour les podcasts vidéo enregistrés sur un second moniteur."
+              "Livrez publicités et intros au même rythme d'un épisode à l'autre.",
+              "Tenez le fil sur les entretiens structurés et les épisodes solo.",
+              "Idéal pour les podcasts vidéo enregistrés sur un deuxième écran.",
+              "Respectez la formulation contractuelle sans l'apprendre par cœur."
             ]
           },
           "setup": {
             "title": "Une lecture confortable",
-            "body": "Réglez une vitesse de défilement légèrement plus lente et une police plus grande pour une prononcé décontractée. Enregistrez votre intro, outro et lectures de partenaires en tant que scripts séparés à charger quand vous en avez besoin."
+            "body": "Adoptez une vitesse un peu plus lente et un texte plus grand que pour de la vidéo courte, et placez l'écran juste au-dessus ou à côté du micro pour garder la tête face à la caméra. Enregistrez l'intro, l'outro et chaque lecture sponsorisée comme des textes distincts, puis chargez-les au fil de l'épisode : c'est plus rapide que de faire défiler un long document, et ça évite de lire l'annonceur du mois dernier par erreur."
           }
-        }
+        },
+        "intro": [
+          "Le podcast récompense une voix libre et conversationnelle — jusqu'à la lecture sponsorisée, où chaque mot est contractuellement précis et où chaque hésitation coûte une reprise. Un prompteur vous laisse garder le ton libre pour la conversation et passer à la formulation exacte là où ça compte.",
+          "Cela compte encore plus pour les podcasts vidéo, où le public vous voit baisser les yeux vers votre texte. Mettre les mots à côté de l'objectif garde votre regard stable pendant quatre-vingt-dix minutes d'enregistrement sans rien avoir à mémoriser."
+        ],
+        "recommended": {
+          "summary": "Le débit d'un podcast est plus lent et plus posé qu'une intro YouTube. Donnez-vous de l'air.",
+          "speed": "50–75 px/s. Plus lent qu'on ne croit : une lecture posée sonne mieux qu'une lecture pressée.",
+          "fontSize": "56–72 px, pour lire assis à distance normale sans vous pencher.",
+          "display": "Un jaune chaud sur noir fatigue moins les yeux qu'un blanc pur sur un long enregistrement."
+        },
+        "faq": [
+          {
+            "q": "Comment éviter qu'une pub sonne lue ?",
+            "a": "Répétez-la une fois à la vitesse exacte d'enregistrement et marquez vos respirations par des retours à la ligne. Lire une ligne en avance sur sa voix, c'est ce qui laisse la place à l'intonation au lieu de simplement prononcer."
+          },
+          {
+            "q": "Est-ce compatible avec Riverside, Zencastr ou SquadCast ?",
+            "a": "Oui. Le prompteur n'est qu'une page web : ouvrez-le dans une autre fenêtre ou sur un deuxième écran, à côté de votre onglet d'enregistrement. Rien à installer ni à connecter."
+          },
+          {
+            "q": "Est-ce utile pour une émission à deux ?",
+            "a": "Pour tout ce qui est écrit, oui : mettez le prompteur sur un écran partagé visible des deux, ou ouvrez-le sur l'appareil de chacun. Chaque appareil garde sa propre position et ses propres réglages."
+          }
+        ]
       },
       "presenters": {
         "meta": {
-          "title": "Téléprompteur pour présentateurs",
-          "description": "Un téléprompteur gratuit en ligne pour les conférences, webinaires et présentations internes. Fonctionne sur n'importe quel appareil, pas d'inscription."
+          "title": "Prompteur pour conférenciers – Keynotes et webinaires",
+          "description": "Un prompteur en ligne gratuit pour keynotes, webinaires et présentations internes. Fonctionne sur tout appareil, sans inscription ni installation."
         },
-        "title": "Téléprompteur pour présentateurs",
-        "subtitle": "Présentez des conférences avec confiance.",
+        "title": "Prompteur pour conférenciers",
+        "subtitle": "Livrez vos keynotes en confiance.",
         "sections": {
           "why": {
-            "title": "Pourquoi les présentateurs l'utilisent",
+            "title": "Pourquoi les conférenciers l'utilisent",
             "items": [
-              "Gardez vos yeux sur la caméra pendant les webinaires.",
-              "Ne perdez jamais votre place dans les longs scripts de conférence.",
-              "Exécutez-le sur un moniteur secondaire ou une tablette pendant la présentation."
+              "Gardez le regard caméra pendant webinaires et réunions plénières.",
+              "Ne perdez jamais le fil dans un long texte de keynote.",
+              "Utilisez-le sur un deuxième écran ou une tablette pendant que vous présentez.",
+              "Tenez la formulation validée sur des contenus juridiques, financiers ou médicaux."
             ]
           },
           "setup": {
-            "title": "Prononcé professionnel en quelques minutes",
-            "body": "Collez votre script, réglez une vitesse de défilement calme, et passez en plein écran sur un écran secondaire. Votre audience ne remarquera rien."
+            "title": "Un rendu pro en quelques minutes",
+            "body": "Collez votre texte, réglez une vitesse posée et passez en plein écran sur un écran secondaire, aussi près que possible de la caméra ou de la ligne de regard du public. Faites une répétition à la vitesse réelle avant le direct : cela cale autant votre respiration que votre rythme. Si votre intervention comporte des questions, arrêtez le prompteur à la fin de la partie écrite plutôt que de le laisser défiler."
           }
-        }
+        },
+        "intro": [
+          "Le difficile dans une keynote n'est pas de maîtriser le sujet : c'est de tenir la salle tout en retrouvant la formulation exacte que votre équipe a mis deux semaines à valider. Un prompteur vous décharge de cette mémoire pour que votre attention aille au rythme, à l'emphase et aux gens en face de vous.",
+          "Pour les webinaires et les communications internes enregistrées, l'intérêt est encore plus net : personne dans la salle, une caméra impitoyable sur la direction de votre regard, et un deuxième écran avec votre texte règle les deux d'un coup."
+        ],
+        "recommended": {
+          "summary": "La présentation est le débit le plus lent des usages courants — l'autorité vient d'un rythme sans hâte.",
+          "speed": "45–70 px/s. Si vous vous sentez pressé, c'est le défilement qui est trop rapide, pas votre débit trop lent.",
+          "fontSize": "64–80 px quand l'écran est éloigné, ce qui est courant sur un pupitre ou un deuxième moniteur.",
+          "display": "Le noir sur blanc se lit mieux sous l'éclairage soutenu d'une scène ou d'une salle de conférence."
+        },
+        "faq": [
+          {
+            "q": "Puis-je l'utiliser en partageant mon écran ?",
+            "a": "Oui. Ne partagez que la fenêtre ou l'onglet de vos diapositives, jamais tout le bureau, et gardez le prompteur dans une autre fenêtre. Le public voit la présentation ; vous voyez le texte."
+          },
+          {
+            "q": "Et si je sors du texte ?",
+            "a": "Appuyez sur Espace pour mettre en pause, dites ce que vous avez à dire, et réappuyez pour reprendre là où vous étiez. Le mode voix gère cela encore mieux : le texte attend et vous suit dès que vous revenez à la formulation écrite."
+          },
+          {
+            "q": "Cela marche-t-il sur un écran de pupitre ou un retour ?",
+            "a": "Oui. Ouvrez la page sur l'appareil qui alimente cet écran et passez en plein écran. Si le moniteur est renvoyé par une glace, inversez le texte avec le mode miroir."
+          }
+        ]
       },
       "teachers": {
         "meta": {
-          "title": "Téléprompteur pour enseignants",
-          "description": "Enregistrez des cours, des intros de cours et des vidéos de classe avec un téléprompteur gratuit en ligne qui enregistre les scripts localement."
+          "title": "Prompteur pour enseignants – Cours et intros de module",
+          "description": "Enregistrez cours, introductions de module et vidéos de classe avec un prompteur en ligne gratuit qui garde vos textes sur votre propre appareil."
         },
-        "title": "Téléprompteur pour enseignants",
-        "subtitle": "Prononcé cohérent, chaque leçon.",
+        "title": "Prompteur pour enseignants",
+        "subtitle": "Une livraison constante, à chaque cours.",
         "sections": {
           "why": {
-            "title": "Pourquoi les éducateurs l'utilisent",
+            "title": "Pourquoi les enseignants l'utilisent",
             "items": [
-              "Enregistrez les intros de cours et les leçons avec un rythme régulier.",
-              "Réutilisez les scripts standard dans plusieurs classes.",
-              "Gardez votre énergie élevée sans trébucher sur la ligne suivante."
+              "Enregistrez introductions et cours à un rythme régulier.",
+              "Réutilisez des textes types sur plusieurs classes et semestres.",
+              "Gardez votre énergie sans buter sur la phrase suivante.",
+              "Les textes restent sur votre appareil — utile face aux règles de données de l'établissement."
             ]
           },
           "setup": {
             "title": "Prêt pour la classe",
-            "body": "Enregistrez une intro standard en tant que script, chargez-la avant chaque cours, ajustez la police pour votre distance de caméra, et appuyez sur Lancer."
+            "body": "Enregistrez une introduction type, chargez-la avant chaque cours, ajustez la taille du texte à votre distance de caméra et appuyez sur Lecture. Pour un module entier, gardez un texte par séance avec un nom clair : la liste des enregistrements indique la date de dernière modification, ce qui montre d'un coup d'œil ce que vous avez déjà rafraîchi ce semestre. Tout reste dans votre navigateur, sur votre machine : aucun support destiné aux étudiants ne transite par un serveur tiers."
           }
-        }
+        },
+        "intro": [
+          "Enregistrer un cours n'est pas le même métier que le donner devant une classe. Pas de groupe à lire, pas de questions auxquelles réagir, et chaque hésitation devient une coupe à faire plus tard. Un prompteur redonne la seule chose qu'une salle offre gratuitement : une raison d'avancer.",
+          "Il règle aussi la question de la répétition. Si vous assurez le même module chaque semestre, un texte enregistré fait correspondre l'enregistrement de cette année à celui de l'an dernier en structure et en durée, et vous ne refaites que ce qui a réellement changé."
+        ],
+        "recommended": {
+          "summary": "L'enseignement privilégie la clarté sur la vitesse. Au premier passage, restez plus lent que ce qui semble naturel.",
+          "speed": "55–80 px/s, plus lent encore sur du contenu technique que les étudiants doivent assimiler.",
+          "fontSize": "56–72 px pour pouvoir vous éloigner de l'écran tout en gardant vos gestes naturels.",
+          "display": "Blanc sur noir dans une salle assombrie ; noir sur blanc si vous filmez dans une classe lumineuse."
+        },
+        "faq": [
+          {
+            "q": "Mon texte est-il envoyé quelque part ?",
+            "a": "Non. Les textes enregistrés et le brouillon en cours restent dans le stockage local du navigateur, sur l'appareil utilisé. Rien ne part vers un serveur, ce qui simplifie généralement le respect des politiques de données — même si ce sont les règles de votre établissement qui tranchent."
+          },
+          {
+            "q": "Utilisable pour des cours en ligne en direct ?",
+            "a": "Oui. Ouvrez-le dans une fenêtre à côté de la visioconférence et ne partagez que la fenêtre de la réunion. C'est très pratique pour l'ouverture écrite du cours ; ensuite vous mettez en pause et vous enseignez normalement."
+          },
+          {
+            "q": "Comment garder des cours de durée constante ?",
+            "a": "Surveillez le nombre de mots et l'estimation de durée au-dessus de la zone de texte. Ils se mettent à jour pendant la frappe et tiennent compte de votre vitesse : vous calibrez une séance de quinze minutes avant d'enregistrer, plutôt que de découvrir la durée après."
+          }
+        ]
       },
       "streamers": {
         "meta": {
-          "title": "Téléprompteur pour streameurs",
-          "description": "Utilisez Teleprompter Online pendant les diffusions en direct pour jeter un coup d'œil aux notes sans rompre le contact visuel."
+          "title": "Prompteur pour streamers – Vos notes en direct",
+          "description": "Utilisez Teleprompter Online pendant vos lives pour consulter vos points clés, lectures sponsorisées et appels à l'action sans rompre le contact visuel."
         },
-        "title": "Téléprompteur pour streameurs",
-        "subtitle": "Notes à la demande, sans rompre le contact visuel.",
+        "title": "Prompteur pour streamers",
+        "subtitle": "Vos notes sous la main, sans rompre le contact visuel.",
         "sections": {
           "why": {
-            "title": "Pourquoi les streameurs l'utilisent",
+            "title": "Pourquoi les streamers l'utilisent",
             "items": [
-              "Ouvrez-le sur un second écran pendant votre diffusion en direct.",
-              "Enregistrez les lectures de partenaires et les CTA pour un rappel rapide.",
-              "Gardez le rythme naturel même pendant les longues diffusions."
+              "Ouvrez-le sur un deuxième écran pendant votre direct.",
+              "Enregistrez lectures sponsorisées et appels à l'action pour les retrouver vite.",
+              "Gardez un rythme naturel même sur de longues sessions.",
+              "Mettez en pause et reprenez à l'instant quand le chat vous sort du texte."
             ]
           },
           "setup": {
-            "title": "Adaptez-le à votre stream",
-            "body": "Ancrez le prompteur sur un moniteur secondaire près de votre caméra. Utilisez le thème clair dans les salles lumineuses et le thème sombre la nuit."
+            "title": "L'adapter à votre live",
+            "body": "Placez le prompteur sur un écran secondaire près de la caméra, à une taille lisible en vision périphérique sans tourner la tête. Laissez-le en pause par défaut et appuyez sur Espace quand vient une lecture sponsorisée. Thème clair en pièce lumineuse, thème sombre le soir : une fenêtre blanche allumée hors champ se voit dans votre éclairage. Enregistrez chaque segment récurrent comme texte distinct pour le charger en deux secondes entre deux scènes."
           }
-        }
+        },
+        "intro": [
+          "Le live est surtout de l'improvisation, et c'est bien le principe — mais les parties non improvisées sont souvent celles qui paient. Lectures sponsorisées, annonces de campagne et structure de segments promise à votre audience gagnent à être écrites là où vous pouvez les voir.",
+          "Le problème, c'est qu'un direct n'admet pas de seconde prise. Il ne vous faut pas un texte à lire d'un bout à l'autre, mais un jeu de repères dans lesquels entrer au bon moment : c'est exactement à ça que servent les textes enregistrés et un défilement qu'on met en pause n'importe où."
+        ],
+        "recommended": {
+          "summary": "Un prompteur de live se consulte d'un coup d'œil : privilégiez un grand texte saisissable en une demi-seconde.",
+          "speed": "40–70 px/s, ou laissez-le en pause et faites défiler à la main quand vous arrivez sur un passage écrit.",
+          "fontSize": "64 px et plus. Vous lisez à l'autre bout du bureau, du coin de l'œil, en faisant autre chose.",
+          "display": "Blanc ou jaune sur noir, pour qu'une fenêtre claire ne délave pas votre visage à l'image."
+        },
+        "faq": [
+          {
+            "q": "Le prompteur apparaîtra-t-il dans ma capture ?",
+            "a": "Seulement si vous capturez cet écran ou cette fenêtre. Capturez votre jeu ou votre caméra comme source précise plutôt qu'un moniteur entier, et le prompteur reste hors antenne."
+          },
+          {
+            "q": "Puis-je le piloter sans changer de fenêtre ?",
+            "a": "Les raccourcis clavier fonctionnent quand la fenêtre du prompteur a le focus. Beaucoup de streamers le laissent sur un deuxième écran et cliquent dessus avant un segment écrit ; on peut aussi affecter la touche Espace à un stream deck."
+          },
+          {
+            "q": "Compatible avec OBS ou Streamlabs ?",
+            "a": "Oui. C'est une page web sans capture, sans interception de raccourcis et sans processus en arrière-plan : elle cohabite avec les logiciels de diffusion sans interférer."
+          }
+        ]
+      },
+      "zoom": {
+        "meta": {
+          "title": "Prompteur pour Zoom, Google Meet et Teams – Gratuit",
+          "description": "Utilisez un prompteur en ligne gratuit pendant vos appels Zoom, Google Meet ou Microsoft Teams. Vos notes près de la webcam, les yeux dans l'objectif."
+        },
+        "title": "Prompteur pour Zoom et visioconférences",
+        "subtitle": "Vos notes, juste à côté de l'objectif.",
+        "intro": [
+          "En visioconférence, tout le monde voit quand vous lisez ailleurs sur l'écran. Le regard part sur le côté, vous vous taisez au mauvais moment, et une intervention bien préparée finit par ressembler à un communiqué lu sous contrainte. La solution n'est pas de moins préparer : c'est de mettre les mots là où se trouve déjà la caméra.",
+          "Un prompteur de navigateur juste sous la webcam garde votre regard à quelques degrés de l'objectif. Pour un rendez-vous commercial, un jury d'entretien, un point au conseil ou un webinaire, ce petit changement fait la différence entre lire aux gens et leur parler."
+        ],
+        "sections": {
+          "why": {
+            "title": "Pourquoi ça marche en visio",
+            "items": [
+              "Gardez les yeux dans l'objectif au lieu de balayer l'écran.",
+              "Compatible Zoom, Google Meet, Microsoft Teams, Webex et tout appel dans le navigateur.",
+              "Rien à installer — précieux sur un ordinateur d'entreprise verrouillé.",
+              "Vos notes restent invisibles pour les autres participants."
+            ]
+          },
+          "setup": {
+            "title": "Installé en une minute",
+            "body": "Ouvrez le prompteur dans sa propre fenêtre et réduisez-la en un bandeau étroit juste sous la webcam — en haut de l'écran, pas en bas — pour que votre regard reste au niveau de l'objectif. Lancez l'appel normalement. Au moment de partager, partagez la fenêtre précise de vos diapositives plutôt que tout le bureau : le prompteur reste privé. Si la caméra est en haut de votre portable, placez la fenêtre immédiatement en dessous et rendez-la aussi étroite que le confort de lecture le permet."
+          }
+        },
+        "recommended": {
+          "summary": "En visio il faut sonner spontané : gardez le prompteur petit, près de l'objectif, et plus lent que vous ne le pensez.",
+          "speed": "50–75 px/s. En appel, vous voulez avoir l'air de réfléchir, pas de réciter.",
+          "fontSize": "32–48 px — plus petit que d'habitude, car la fenêtre est proche de votre visage et doit rester étroite.",
+          "display": "Accordez-le à la pièce : blanc sur noir dans un bureau tamisé, noir sur blanc si une fenêtre vous éclaire."
+        },
+        "faq": [
+          {
+            "q": "Les autres participants voient-ils mon prompteur ?",
+            "a": "Non, sauf si vous le partagez. Partagez une fenêtre ou un onglet précis plutôt que tout l'écran, et la fenêtre du prompteur n'est jamais transmise. Dans Zoom, c'est l'option de partage de fenêtre d'application ; Meet et Teams proposent la même chose."
+          },
+          {
+            "q": "Cela marche-t-il sur un portable d'entreprise verrouillé ?",
+            "a": "En général oui, puisqu'il n'y a rien à installer : cela tourne dans le navigateur que vous avez déjà. Le mode voix demande en plus l'autorisation du micro, que certains appareils gérés restreignent ; tout le reste fonctionne sans."
+          },
+          {
+            "q": "Où placer exactement la fenêtre ?",
+            "a": "Juste sous la webcam, et aussi étroite que la lecture le permet. C'est le déplacement du regard qui se remarque : une fenêtre haute fait visiblement monter et descendre les yeux, alors qu'un bandeau étroit près de l'objectif passe pour de la réflexion."
+          }
+        ]
+      },
+      "mobile": {
+        "meta": {
+          "title": "Prompteur pour iPhone, iPad et Android – Gratuit, sans appli",
+          "description": "Un prompteur gratuit pour iPad, iPhone et Android qui tourne dans le navigateur mobile. Rien à installer, plein écran paysage, mode miroir et usage hors ligne."
+        },
+        "title": "Prompteur pour iPhone, iPad et Android",
+        "subtitle": "Un prompteur sur l'appareil avec lequel vous filmez déjà.",
+        "intro": [
+          "Les écrans de téléphone et de tablette font d'excellents prompteurs : ils sont lumineux, exactement à la bonne taille pour se glisser sous une caméra, et vous en avez déjà un. Ce qui manquait, c'était un logiciel qui n'exige ni installation, ni compte, ni abonnement avant de faire défiler une page de texte.",
+          "Comme Teleprompter Online est une page web, votre appareil a déjà tout ce qu'il faut. Ouvrez-le dans Safari ou Chrome, ajoutez-le à l'écran d'accueil si vous voulez le lancer comme une application, et il fonctionne hors ligne après la première visite."
+        ],
+        "sections": {
+          "why": {
+            "title": "Pourquoi le mobile fonctionne si bien",
+            "items": [
+              "Aucune appli à installer et aucun compte — cela tourne dans Safari ou Chrome.",
+              "Plein écran en paysage avec une taille de texte calibrée pour les petits écrans.",
+              "Touchez le texte pour mettre en pause, touchez à nouveau pour repartir en pleine prise.",
+              "Ajoutez-le à l'écran d'accueil : il s'ouvre comme une appli native, hors ligne."
+            ]
+          },
+          "setup": {
+            "title": "La mise en place sur iOS ou Android",
+            "body": "Ouvrez teleprompteronline.net dans Safari ou Chrome, collez votre texte et passez en plein écran : la page bascule en paysage là où l'appareil le permet. Pour l'avoir à portée d'un geste, utilisez Partager puis Sur l'écran d'accueil sur iOS, ou Installer l'application dans Chrome sur Android. Fixez l'appareil juste sous l'objectif ; une pince bon marché sur le même trépied suffit. Si vous filmez avec le téléphone depuis lequel vous lisez, il vous faudra un deuxième appareil : aucun téléphone ne fait tourner l'appareil photo et un prompteur plein écran en même temps."
+          }
+        },
+        "recommended": {
+          "summary": "Les petits écrans réclament un texte relativement plus grand et un défilement plus lent qu'un moniteur à la même distance.",
+          "speed": "60–90 px/s sur téléphone ; avec moins de texte visible, un défilement rapide paraît frénétique.",
+          "fontSize": "36–48 px sur téléphone, 56–72 px sur une tablette placée près de la caméra.",
+          "display": "Blanc sur noir pour éviter que la lueur de l'écran n'éclaire votre visage, ce qui se voit d'autant plus de près."
+        },
+        "faq": [
+          {
+            "q": "Y a-t-il une appli à télécharger ?",
+            "a": "Non, et c'est délibéré. Cela tourne dans votre navigateur mobile : ni installation, ni compte de boutique, ni mise à jour à suivre. L'ajout à l'écran d'accueil vous donne une icône qui ouvre directement le prompteur."
+          },
+          {
+            "q": "Fonctionne-t-il hors ligne sur téléphone ?",
+            "a": "Oui, après la première visite. La page est mise en cache sur l'appareil : vous pouvez ouvrir le prompteur et lire vos textes enregistrés sur un tournage sans réseau."
+          },
+          {
+            "q": "Puis-je filmer et lire sur le même téléphone ?",
+            "a": "Pas en même temps : l'appareil photo et un navigateur en plein écran ne peuvent pas occuper l'écran ensemble. Utilisez un deuxième téléphone ou une tablette pour le texte, ou filmez avec une caméra séparée et gardez le téléphone comme prompteur."
+          }
+        ]
+      },
+      "short-form-video": {
+        "meta": {
+          "title": "Prompteur pour TikTok, Reels et Shorts – Gratuit",
+          "description": "Un prompteur gratuit pour TikTok, Instagram Reels et YouTube Shorts. Réussissez une accroche de 30 secondes en une prise, avec mode miroir et défilement vocal."
+        },
+        "title": "Prompteur pour TikTok, Reels et Shorts",
+        "subtitle": "Réussissez l'accroche en une prise.",
+        "intro": [
+          "La vidéo courte est impitoyable d'une manière très précise : les trois premières secondes décident de tout et il n'y a pas de place pour s'échauffer. C'est le format où écrire un script rapporte le plus, et où rater la première phrase coûte le plus de prises.",
+          "Le piège, c'est que la vidéo courte doit aussi avoir l'air improvisée. Le prompteur aide justement parce qu'il vous libère de la question du « quoi ensuite » : c'est cette bande passante mentale récupérée qui rend la livraison naturelle."
+        ],
+        "sections": {
+          "why": {
+            "title": "Pourquoi les créateurs de format court l'utilisent",
+            "items": [
+              "Réussissez les trois premières secondes au mot près, prise après prise.",
+              "Tenez un script de 30 secondes en 30 secondes grâce à l'estimation de durée.",
+              "Filmez à la verticale avec le texte juste sous l'objectif.",
+              "Préparez une semaine de clips sans réapprendre chaque script."
+            ]
+          },
+          "setup": {
+            "title": "Une installation pour la vidéo verticale",
+            "body": "Posez votre téléphone en portrait sur un petit trépied et placez le prompteur sur un deuxième appareil juste derrière ou dessous, au plus près de l'objectif. Écrivez en lignes courtes : une idée par ligne se lit bien mieux à vitesse élevée qu'un paragraphe. Servez-vous du nombre de mots et de l'estimation de durée pour couper avant de tourner, car un script qui dépasse de six secondes se retourne au lieu de se monter. Pour une session groupée, enregistrez le script de chaque clip sous son nom et chargez-les à la suite."
+          }
+        },
+        "recommended": {
+          "summary": "Le format court est plus rapide et plus percutant que tous les autres — et ses scripts sont assez brefs pour être vraiment répétés.",
+          "speed": "90–130 px/s. L'énergie du format court est plus vive qu'une vidéo face caméra.",
+          "fontSize": "40–56 px, en colonne étroite pour qu'un cadre vertical ne sorte pas le texte de votre ligne de regard.",
+          "display": "Fort contraste, blanc sur noir. On filme souvent à main levée et sous une lumière changeante."
+        },
+        "faq": [
+          {
+            "q": "Combien de mots pour 30 secondes de TikTok ?",
+            "a": "Environ 70 à 80 mots à un débit normal, moins si vous voulez des pauses d'emphase. L'estimation de durée au-dessus de la zone de texte se met à jour pendant la frappe : vous coupez avant de filmer plutôt qu'après."
+          },
+          {
+            "q": "Puis-je l'utiliser en filmant à la verticale ?",
+            "a": "Oui. Le prompteur occupe l'écran sur lequel il se trouve : un deuxième téléphone tenu ou pincé en portrait convient très bien. Gardez la ligne de lecture au plus près de l'objectif qui filme."
+          },
+          {
+            "q": "Est-ce utile spécifiquement pour l'accroche ?",
+            "a": "C'est là qu'il fait la différence. Écrivez trois variantes de votre première phrase, enregistrez chacune comme un texte et tournez-les à la suite : comparer de vraies prises vaut mieux que deviner quelle accroche fonctionne."
+          }
+        ]
+      },
+      "wedding-speeches": {
+        "meta": {
+          "title": "Prompteur pour discours de mariage et toasts – Gratuit",
+          "description": "Prononcez votre discours de témoin ou de père de la mariée sans fiches. Un prompteur gratuit pour téléphone, avec estimation de durée."
+        },
+        "title": "Prompteur pour discours de mariage",
+        "subtitle": "Dites-le comme vous l'avez écrit à 2 heures du matin.",
+        "intro": [
+          "Un discours de mariage est la prise de parole la plus stressante que la plupart des gens affrontent : devant une salle pleine de proches, souvent après un verre, sur une feuille pliée qui a passé la journée dans une poche de veste. La feuille est le maillon faible : elle froisse, elle se lit mal dans la pénombre, et baisser les yeux rompt précisément le contact visuel qui fait qu'un toast fonctionne.",
+          "Un téléphone tenu à hauteur de poitrine, avec un grand texte qui défile lentement, règle les trois problèmes. Vous gardez la formulation que vous avez travaillée, vous relevez la tête pour les chutes, et vous lisez même dans une salle aux bougies."
+        ],
+        "sections": {
+          "why": {
+            "title": "Pourquoi ça marche pour un discours",
+            "items": [
+              "Lisez sur votre téléphone au lieu de jongler avec des fiches.",
+              "Un texte grand et lumineux reste lisible dans la lumière basse d'une réception.",
+              "Gardez la tête haute aux moments qui comptent.",
+              "L'estimation de durée vous garde honnête sur la longueur."
+            ]
+          },
+          "setup": {
+            "title": "Le jour J",
+            "body": "Chargez votre discours avant le dîner et vérifiez qu'il défile à un rythme confortable : la salle sera plus bruyante et vous plus rapide que dans votre cuisine. Tenez le téléphone à hauteur de poitrine plutôt que devant le visage, et mettez en pause d'un geste chaque fois que la salle rit — un toast qui attend ses rires passe toujours mieux qu'un toast qui parle par-dessus. Visez trois à cinq minutes : l'estimation de durée au-dessus de la zone de texte vous le dit avant de vous lever, ce qui vaut mieux que de le découvrir au micro."
+          }
+        },
+        "recommended": {
+          "summary": "Un toast est plus lent que toute autre lecture. Le trac accélère tout le monde : réglez plus lentement que ce qui semble juste.",
+          "speed": "40–60 px/s. Plus lent qu'on ne croit : le jour J, vous parlerez plus vite qu'à la répétition.",
+          "fontSize": "48–64 px pour tenir le téléphone à hauteur de poitrine plutôt que devant le visage.",
+          "display": "Blanc sur noir et luminosité à fond. Les salles de réception sont plus sombres qu'on ne s'en souvient."
+        },
+        "faq": [
+          {
+            "q": "Quelle durée pour un discours de mariage ?",
+            "a": "Trois à cinq minutes, soit environ 450 à 750 mots. Le nombre de mots et l'estimation se mettent à jour pendant que vous écrivez : vous coupez avant le jour J plutôt qu'en plein toast."
+          },
+          {
+            "q": "Lire sur un téléphone, est-ce impersonnel ?",
+            "a": "Moins qu'on ne le croit, et bien moins que lire sur des fiches. Tenez le téléphone à hauteur de poitrine, relevez les yeux à chaque chute et laissez le défilement porter la formulation. Les invités remarquent le contact visuel, pas l'appareil."
+          },
+          {
+            "q": "Et si l'émotion me fait perdre le fil ?",
+            "a": "Touchez l'écran pour mettre en pause, retouchez quand vous êtes prêt. Rien ne défile pendant que vous reprenez votre souffle, et la ligne de lecture vous montre exactement où vous vous êtes arrêté."
+          }
+        ]
+      },
+      "interviews": {
+        "meta": {
+          "title": "Prompteur pour entretiens et self-tapes – Gratuit",
+          "description": "Préparez entretiens d'embauche, self-tapes et présentations enregistrées avec un prompteur gratuit dans le navigateur. Réponses structurées, regard caméra."
+        },
+        "title": "Prompteur pour entretiens et self-tapes",
+        "subtitle": "Des réponses structurées, une livraison naturelle.",
+        "intro": [
+          "Les entretiens à distance et les self-tapes vous demandent d'être précis et détendu en même temps, face caméra et généralement seul dans une pièce. Des notes sur le côté font vagabonder le regard ; apprendre par cœur vous rigidifie. Un prompteur sous l'objectif est le compromis qui marche vraiment.",
+          "La bonne dose d'écriture est ici plus faible qu'on ne pense. Des réponses complètes mot à mot sonnent récitées ; un squelette — la phrase d'ouverture, les trois points, le chiffre à ne pas rater — vous donne une colonne autour de laquelle improviser."
+        ],
+        "sections": {
+          "why": {
+            "title": "Pourquoi candidats et comédiens l'utilisent",
+            "items": [
+              "Gardez vos réponses préparées structurées sans avoir l'air de réciter.",
+              "Tenez votre regard caméra sur les self-tapes de casting.",
+              "Chargez un autre texte entre deux prises en quelques secondes.",
+              "Rien n'est envoyé : vos notes restent les vôtres."
+            ]
+          },
+          "setup": {
+            "title": "Préparer votre texte",
+            "body": "Écrivez des repères, pas des paragraphes : une question en évidence, puis trois ou quatre lignes courtes en dessous. Enregistrez un texte par question probable pour charger le bon entre deux prises plutôt que de le chercher. Placez l'écran immédiatement sous la webcam ou l'objectif, et laissez le prompteur en pause par défaut : appuyez sur Espace seulement quand vous voulez qu'il avance. Pour un self-tape, faites une répétition à la vitesse réelle pour que les répliques de votre partenaire et les vôtres restent dans le rythme."
+          }
+        },
+        "recommended": {
+          "summary": "Un entretien doit sonner réfléchi, pas lu. Texte épuré et défilement lent.",
+          "speed": "Laissez en pause pour la plupart des réponses et faites défiler au besoin ; 40–60 px/s quand il tourne.",
+          "fontSize": "36–52 px, calibré pour qu'un coup d'œil embrasse une ligne entière sans balayage visible.",
+          "display": "Ce qui s'accorde à la lumière de votre pièce — l'important est que l'écran ne se reflète pas dans vos lunettes."
+        },
+        "faq": [
+          {
+            "q": "Utiliser un prompteur en entretien, est-ce malhonnête ?",
+            "a": "Pour des notes et une structure, non — c'est l'équivalent d'une feuille de points préparés, ce que les recruteurs attendent. Ce qui se remarque, c'est de lire des réponses entières mot à mot, et cela sonne moins bien de toute façon. Restez au niveau des repères."
+          },
+          {
+            "q": "Est-ce adapté aux self-tapes ?",
+            "a": "Oui, et c'est un usage courant. Mettez le texte juste sous l'objectif pour garder la bonne ligne de regard, et mettez en pause entre les prises. Beaucoup de comédiens s'en servent aussi pour les répliques du partenaire."
+          },
+          {
+            "q": "Le recruteur verra-t-il que je lis ?",
+            "a": "Seulement si votre regard se déplace. Gardez le prompteur juste sous la caméra, utilisez un grand texte pour qu'une ligne tienne en un coup d'œil, et regardez l'objectif entre les points plutôt que le texte en continu."
+          }
+        ]
       }
-    }
+    },
+    "recommended": {
+      "title": "Réglages conseillés",
+      "speed": "Vitesse",
+      "fontSize": "Taille du texte",
+      "display": "Affichage"
+    },
+    "faqTitle": "Questions sur cette configuration",
+    "relatedTitle": "D'autres façons de l'utiliser"
   },
   "faq": {
     "meta": {

@@ -980,6 +980,10 @@
         "body": "Usamos Google Analytics 4 (ID de medición G-8W0LZYG5VX) y Pageview.app para entender el uso agregado del sitio, como visitas a páginas y referentes. Google Analytics establece cookies de origen (por ejemplo, _ga, _ga_*) para contar visitantes únicos; Pageview.app es un servicio de analítica ligero que no usa cookies. Ninguno de los servicios recibe el contenido de tus guiones. Puedes excluirte de Google Analytics instalando el complemento oficial del navegador o activando \"Do Not Track\" / Global Privacy Control en tu navegador."
       },
       {
+        "title": "Publicidad",
+        "body": "Mostramos anuncios nativos de Adsterra. Sus socios publicitarios pueden recibir tu dirección IP, información del navegador y del dispositivo e interacciones con anuncios, y utilizar cookies o tecnologías similares para mostrar y medir publicidad. Los anuncios se ejecutan en un marco aislado que no puede leer esta página ni su almacenamiento local. No enviamos a Adsterra los datos introducidos ni el contenido guardado. No cargamos publicidad si Do Not Track o Global Privacy Control están activados. Política de privacidad de Adsterra: https://adsterra.com/privacy-policy/."
+      },
+      {
         "title": "Terceros",
         "body": "El sitio está alojado en Cloudflare Pages. Cloudflare puede registrar datos de solicitud a nivel de infraestructura (como direcciones IP) para seguridad y prevención de abusos. Los datos analíticos son procesados por Google (Google Analytics) y por los operadores de Pageview.app."
       },

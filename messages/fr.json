@@ -980,6 +980,10 @@
         "body": "Nous utilisons Google Analytics 4 (ID de mesure G-8W0LZYG5VX) et Pageview.app pour comprendre l'utilisation agrégée du site, comme les pages vues et les sources de trafic. Google Analytics dépose des cookies propriétaires (par exemple _ga, _ga_*) pour compter les visiteurs uniques ; Pageview.app est un service d'analyse léger qui n'utilise pas de cookies. Aucun de ces services ne reçoit le contenu de vos scripts. Vous pouvez vous désinscrire de Google Analytics en installant l'extension officielle ou en activant « Do Not Track » / Global Privacy Control dans votre navigateur."
       },
       {
+        "title": "Publicité",
+        "body": "Nous affichons des publicités natives fournies par Adsterra. Ses partenaires publicitaires peuvent recevoir votre adresse IP, des informations sur votre navigateur et appareil et vos interactions avec les annonces, et utiliser des cookies ou des technologies similaires pour diffuser et mesurer la publicité. Les annonces sont exécutées dans un cadre isolé qui ne peut lire ni cette page ni son stockage local. Nous ne transmettons pas à Adsterra vos saisies ni vos contenus enregistrés. La publicité ne se charge pas si Do Not Track ou Global Privacy Control est activé. Politique de confidentialité d’Adsterra : https://adsterra.com/privacy-policy/."
+      },
+      {
         "title": "Tierces parties",
         "body": "Le site est hébergé sur Cloudflare Pages. Cloudflare peut enregistrer des données de requête au niveau de l'infrastructure (comme les adresses IP) pour la sécurité et la prévention des abus. Les données analytiques sont traitées par Google (Google Analytics) et par les opérateurs de Pageview.app."
       },

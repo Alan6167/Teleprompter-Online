@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Header } from './Header';
+import { AdBanner } from "@/components/AdBanner";
 import { Footer } from './Footer';
 import { ThemeProvider } from './ThemeProvider';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -23,6 +24,7 @@ export async function BaseLayout({ locale, children }: BaseLayoutProps) {
         <div className="flex min-h-[100dvh] flex-col">
           <Header locale={locale} />
           <main className="flex-1">{children}</main>
+          <AdBanner locale={locale} />
           <Footer locale={locale} />
         </div>
       </ThemeProvider>

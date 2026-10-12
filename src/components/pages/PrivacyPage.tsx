@@ -16,7 +16,7 @@ export async function PrivacyPage({ locale }: PrivacyPageProps) {
         <div className="mx-auto max-w-3xl px-3 text-center sm:px-6">
           <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl">{t('title')}</h1>
           <p className="mt-4 text-sm text-muted-foreground">
-            {t('updated', { date: '2026-04-14' })}
+            {t('updated', { date: '2026-10-12' })}
           </p>
         </div>
       </header>

@@ -980,6 +980,10 @@
         "body": "We use Google Analytics 4 (measurement ID G-8W0LZYG5VX) and Pageview.app to understand aggregate site usage such as page views and referrers. Google Analytics sets first-party cookies (e.g. _ga, _ga_*) to count unique visitors; Pageview.app is a lightweight, cookieless analytics service. Neither service receives the content of your teleprompter scripts. You can opt out of Google Analytics via the official browser add-on or by enabling \"Do Not Track\" / Global Privacy Control in your browser."
       },
       {
+        "title": "Advertising",
+        "body": "We display native advertisements supplied by Adsterra. Its advertising partners may receive your IP address, browser and device information, and ad interactions, and may use cookies or similar technologies to deliver and measure advertising. Ads run in a sandboxed frame that cannot read this page or its local storage. We do not pass tool inputs or saved content to Adsterra. Advertising is not loaded when Do Not Track or Global Privacy Control is enabled. See Adsterra’s privacy policy: https://adsterra.com/privacy-policy/."
+      },
+      {
         "title": "Third parties",
         "body": "The site is hosted on Cloudflare Pages. Cloudflare may log infrastructure-level request data (such as IP addresses) for security and abuse prevention. Analytics data is processed by Google (Google Analytics) and by the operators of Pageview.app."
       },

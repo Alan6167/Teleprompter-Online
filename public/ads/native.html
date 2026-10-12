@@ -10,7 +10,13 @@
 <body>
   <div id="container-4b36423c5bd58ee34d57d9079c97d97a"></div>
   <script>
-    const reportSize = () => parent.postMessage({ type: 'native-ad-size', height: document.body.getBoundingClientRect().height }, '*');
+    let canCollapse = false;
+    const reportSize = () => {
+      const height = document.body.getBoundingClientRect().height;
+      if (height >= 40 || canCollapse) parent.postMessage({ type: 'native-ad-size', height }, '*');
+    };
+    // Keep the slot measurable while the asynchronous ad request is loading.
+    setTimeout(() => { canCollapse = true; reportSize(); }, 15000);
     new ResizeObserver(reportSize).observe(document.body);
     addEventListener('load', reportSize);
   </script>
